@@ -4,11 +4,14 @@ layout: home
 hero:
   name: Loyiha standarti
   text: Loyihani boshidan to'g'ri qurish
-  tagline: Bosqichlar, rollar, code review, test, deploy va UI qoidalari — uzedu'ni noldan qurish misolida
+  tagline: Bosqichlar, rollar, code review, test, deploy va UI qoidalari — Test Platformasini noldan qurish misolida
   actions:
     - theme: brand
       text: Standart haqida
       link: /00-root
+    - theme: alt
+      text: Jarayon xaritasi
+      link: /jarayon-xaritasi
     - theme: alt
       text: Hayot sikli (D02)
       link: /D02-loyiha-hayot-sikli
@@ -42,6 +45,6 @@ features:
 
 ## Hamma uchun: qayerdan boshlash
 
-Taxminan 30 daqiqa: [Root doc](00-root.md) → [D02 — hayot sikli](D02-loyiha-hayot-sikli.md) → [D08 — kanban, DoR va DoD](D08-kanban-dor-dod.md). Keyin o'z rolingiz doclari — yuqoridagi kartochkalar yoki chap menyu.
+Taxminan 30 daqiqa: [Jarayon xaritasi](jarayon-xaritasi.md) → [Root doc](00-root.md) → [D02 — hayot sikli](D02-loyiha-hayot-sikli.md) → [D08 — kanban, DoR va DoD](D08-kanban-dor-dod.md). Keyin o'z rolingiz doclari — yuqoridagi kartochkalar yoki chap menyu.
 
 Hali yozilmagan doclar menyuda ko'rinmaydi. Yozish navbati va holati — root docdagi TODO ro'yxatida.

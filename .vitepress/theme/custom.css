@@ -1,0 +1,18 @@
+/* Mermaid yorliqlari ichidagi <p> VitePress'dan `.vp-doc p` uslubini (28px line-height,
+   margin) oladi, Mermaid esa balandlikni 24px bilan hisoblaydi — matn tugun ichida qirqiladi. */
+.vp-doc .mermaid p {
+  margin: 0;
+  line-height: inherit;
+}
+
+/* Sxemalar sahifasi (`pageClass: wide-page`): keng sxema siqilmasin */
+.wide-page .VPDoc .content-container,
+.wide-page .VPDoc .container {
+  max-width: 1040px;
+}
+
+/* Sxema konteyneri: ustida va ostida joy, keng sxema gorizontal aylantiriladi */
+.vp-doc .mermaid {
+  margin: 24px 0;
+  overflow-x: auto;
+}

@@ -151,9 +151,9 @@ Natija: o'tdi / o'tmadi (bug'lar: …)
 it.skip('…', () => { … });
 ```
 
-## 6. uzedu misoli
+## 6. Test Platformasi misoli
 
-Ssenariy: uzedu'ni noldan quryapmiz. Frontend misollari real repozitoriydan (`test-uzedu-user`); backend testlari — `[TO'LDIRILSIN: backend]`.
+Ssenariy: Test Platformasini noldan quryapmiz. Frontend misollari real repozitoriydan (`test-uzedu-user`); backend testlari — `[TO'LDIRILSIN: backend]`.
 
 ### 6.1. Eng muhim 5 oqim va ularning e2e qamrovi
 

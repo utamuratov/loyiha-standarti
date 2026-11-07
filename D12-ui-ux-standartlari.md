@@ -184,9 +184,9 @@ Figma: <havola>   Kod: <fayl yo'li>
 | --- | --- | --- | --- |
 ```
 
-## 7. uzedu misoli
+## 7. Test Platformasi misoli
 
-Ssenariy: uzedu'ni noldan quryapmiz. Frontend faktlari real repozitoriydan (`test-uzedu-user`). Admin panel bu repoda yo'q, shuning uchun jadval standarti (D bo'limi) bu yerda to'liq ko'rsatilmaydi.
+Ssenariy: Test Platformasini noldan quryapmiz. Frontend faktlari real repozitoriydan (`test-uzedu-user`). Admin panel bu repoda yo'q, shuning uchun jadval standarti (D bo'limi) bu yerda to'liq ko'rsatilmaydi.
 
 ### 7.1. Design system va tokenlar (real)
 

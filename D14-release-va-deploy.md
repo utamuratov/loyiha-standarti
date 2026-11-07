@@ -192,9 +192,9 @@ Versiya: v<X.Y.Z> · Muhit: prod/<mijoz> · Sana: … · Deploy qildi: …
 Pipeline: <havola> · Smoke test: o'tdi/o'tmadi (kim) · Rollback: yo'q/ha (sababi)
 ```
 
-## 7. uzedu misoli
+## 7. Test Platformasi misoli
 
-Ssenariy: uzedu'ni noldan quryapmiz. Frontend misollari real repozitoriydan (`test-uzedu-user`). Backend deploy, migratsiyalar va backup — `[TO'LDIRILSIN: backend]`.
+Ssenariy: Test Platformasini noldan quryapmiz. Frontend misollari real repozitoriydan (`test-uzedu-user`). Backend deploy, migratsiyalar va backup — `[TO'LDIRILSIN: backend]`.
 
 ### 7.1. Real frontend pipeline qanday ishlaydi
 
@@ -228,9 +228,9 @@ Manba: `.gitlab-ci.yml`, `Dockerfile`, `nginx.conf`, `angular.json`.
 | Monitoring va loglar (15–16) | [TO'LDIRILSIN] | Frontend xatolarini yig'ish (D16) |
 | Backup va migratsiyalar (13, 17) | [TO'LDIRILSIN: backend] | |
 
-### 7.3. Release vaqti: uzedu uchun
+### 7.3. Release vaqti: Test Platformasi uchun
 
-uzedu'da asosiy xavf — test sessiyasi o'rtasidagi release:
+Test Platformasida asosiy xavf — test sessiyasi o'rtasidagi release:
 
 - Imtihon kunlarida minglab ishtirokchi bir vaqtda test topshiradi (`docs/test-entry-flow.md`).
 - Yangi frontend versiyasi deploy qilinganda, sahifani oldin ochgan foydalanuvchilarning brauzerida eski versiya ishlab turadi. Eski versiya so'raydigan fayllar yangi deploy'dan keyin serverda bo'lmasligi mumkin.

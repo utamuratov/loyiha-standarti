@@ -147,9 +147,9 @@ Nima tanlandi.
 Nima osonlashadi, nima qiyinlashadi, nimani kuzatish kerak.
 ```
 
-## 5. uzedu misoli
+## 5. Test Platformasi misoli
 
-Ssenariy: uzedu'ni noldan quryapmiz. Frontend misollari real repozitoriydan (`test-uzedu-user`). Backend: `[TO'LDIRILSIN: backend]` — backend dasturchilari o'z repolari bo'yicha shu bo'limni to'ldiradi.
+Ssenariy: Test Platformasini noldan quryapmiz. Frontend misollari real repozitoriydan (`test-uzedu-user`). Backend: `[TO'LDIRILSIN: backend]` — backend dasturchilari o'z repolari bo'yicha shu bo'limni to'ldiradi.
 
 ### 5.1. Real frontend repo standart bilan solishtirganda
 

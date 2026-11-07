@@ -126,13 +126,13 @@ Qaror o'zgarsa, eski qator o'chirilmaydi: holati "bekor qilingan" bo'ladi va yan
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | R-01 | | past / o'rta / yuqori | past / o'rta / yuqori | | | | ochiq / yopilgan / sodir bo'ldi |
 
-## 6. uzedu misoli: noldan qurish rejasi
+## 6. Test Platformasi misoli: noldan qurish rejasi
 
-Ssenariy: uzedu'ni bugun noldan quryapmiz (root docdagi "Misol: uzedu'ni noldan qurish"). Jamoa 5 kishi — kichik loyiha, darvozalar qisqa shaklda.
+Ssenariy: Test Platformasini bugun noldan quryapmiz (root docdagi "Misol: Test Platformasini noldan qurish"). Jamoa 5 kishi — kichik loyiha, darvozalar qisqa shaklda.
 
 ### 6.1. Release'larga bo'lish (namunaviy)
 
-Bir martada hamma narsani qurish o'rniga, uzedu uch release'ga bo'linadi. Har biri 5–7 bosqichlardan alohida o'tadi.
+Bir martada hamma narsani qurish o'rniga, Test Platformasi uch release'ga bo'linadi. Har biri 5–7 bosqichlardan alohida o'tadi.
 
 | Release | Scope | Nega shu tartibda |
 | --- | --- | --- |
@@ -140,7 +140,7 @@ Bir martada hamma narsani qurish o'rniga, uzedu uch release'ga bo'linadi. Har bi
 | R2 | Face ID (testdan oldin MyID, test davomida yuzni tekshirish), proktoring, desktop agent | Eng ko'p noaniqlik va integratsiya shu yerda — R1 barqaror bo'lgach |
 | R3 | Ommaviy test portali; yangi mijozlar uchun alohida build'lar | Mustaqil qism, asosiy oqimga ta'sir qilmaydi |
 
-[TO'LDIRILSIN: uzedu'ning real birinchi release scope'i boshqacha bo'lgan bo'lsa, bu bo'linish faqat ssenariy uchun taklif ekanini review'da tasdiqlash]
+[TO'LDIRILSIN: Test Platformasining real birinchi release scope'i boshqacha bo'lgan bo'lsa, bu bo'linish faqat ssenariy uchun taklif ekanini review'da tasdiqlash]
 
 ### 6.2. 2-darvoza yozuvi (namunaviy)
 
@@ -159,7 +159,7 @@ Shaxsiy ma'lumotlar bo'limi bu release uchun bloklovchi edi: R2 yuz tasvirini qa
 
 ### 6.3. Qarorlar jurnalidan yozuvlar
 
-Qarorlarning o'zi hozirgi uzedu'dan olingan (manbasi ko'rsatilgan); sabab va variantlar — ssenariy uchun namuna.
+Qarorlarning o'zi hozirgi Test Platformasidan olingan (manbasi ko'rsatilgan); sabab va variantlar — ssenariy uchun namuna.
 
 | ID | Qaror | Sabab va ko'rilgan variantlar | Ta'siri | Manba (faktning) |
 | --- | --- | --- | --- | --- |

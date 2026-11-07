@@ -129,9 +129,9 @@ Test talabining to'liq versiyasi (qaysi testlar, qamrov, e2e) — [D13](D13-test
 5. **Muallif o'z taskini o'zi testlamaydi.** Kichik jamoada QA bo'lmasa, Testing'ni analitik yoki boshqa dasturchi qiladi. *Nega:* muallif qanday ishlatish kerakligini biladi va xatoga yo'l qo'yadigan qadamni qilmaydi.
 6. **Qaytgan task orqaga suriladi.** Testing'da qabul mezoni bajarilmasa, task In progress'ga qaytadi va izohda sababi yoziladi. Yangi task ochilmaydi (yangi bug faqat boshqa muammo uchun). *Nega:* rework sanaladi va retroda (D17) ko'rinadi.
 
-## 7. uzedu misoli
+## 7. Test Platformasi misoli
 
-Ssenariy: uzedu'ni noldan quryapmiz. Board — Jira, kod — GitLab. Jamoa 5 kishi, alohida QA yo'q, shuning uchun Testing'ni PM/analitik yoki boshqa dasturchi yuritadi. Story'lar [D03](D03-loyiha-boshlangich-hujjati.md) dagi uzedu misolidan.
+Ssenariy: Test Platformasini noldan quryapmiz. Board — Jira, kod — GitLab. Jamoa 5 kishi, alohida QA yo'q, shuning uchun Testing'ni PM/analitik yoki boshqa dasturchi yuritadi. Story'lar [D03](D03-loyiha-boshlangich-hujjati.md) dagi Test Platformasi misolidan.
 
 ### 7.1. Board qanday ko'rinadi (bir kun, namunaviy)
 

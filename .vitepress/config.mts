@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { defineConfig, type DefaultTheme } from 'vitepress';
+import { type DefaultTheme } from 'vitepress';
+import { withMermaid } from 'vitepress-plugin-mermaid';
 
 // Repozitoriy ildizi — doclar shu yerda (`DNN-qisqa-nom.md`)
 const rootDir = fileURLToPath(new URL('..', import.meta.url));
@@ -51,6 +52,7 @@ function sidebar(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Bosh sahifa', link: '/' },
         { text: 'Root doc: standart haqida', link: '/00-root' },
+        { text: 'Jarayon xaritasi', link: '/jarayon-xaritasi' },
       ],
     },
     ...catalog,
@@ -62,18 +64,29 @@ function sidebar(): DefaultTheme.SidebarItem[] {
   ];
 }
 
-export default defineConfig({
+// withMermaid — ```mermaid bloklari saytda sxema bo'lib chiziladi (GitHub/GitLab ham o'zi chizadi)
+export default withMermaid({
   // GitHub Pages'da sayt `/<repo-nomi>/` ostida turadi; workflow DOCS_BASE ni beradi.
   // Lokal ishga tushirishda va o'z domenida — `/`.
   base: process.env.DOCS_BASE || '/',
   lang: 'uz-Latn',
   title: 'Loyiha standarti',
-  description: "Kompaniyada loyiha qurish standarti: bosqichlar, rollar, qoidalar va uzedu misollari",
+  description: "Kompaniyada loyiha qurish standarti: bosqichlar, rollar, qoidalar va Test Platformasi misollari",
   srcExclude: ['node_modules/**', 'README.md'],
   lastUpdated: true,
+  // Mermaid matnni sayt shrifti bilan o'lchasin — aks holda yozuvlar tugun ichida qirqiladi
+  // wrappingWidth: avtomatik qator bo'lish o'chiq — qatorlar faqat `<br/>` bilan bo'linadi
+  mermaid: {
+    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
+    flowchart: { wrappingWidth: 400 },
+    // 8 rolli sequence sxema sahifa kengligiga siqilsa o'qilmaydi: asl o'lchamda,
+    // uzun xabarlar qatorga bo'linadi, kerak bo'lsa gorizontal aylantiriladi
+    sequence: { useMaxWidth: false, wrap: true, width: 100, actorMargin: 8 },
+  },
   themeConfig: {
     nav: [
       { text: 'Root doc', link: '/00-root' },
+      { text: 'Jarayon xaritasi', link: '/jarayon-xaritasi' },
       { text: 'Hayot sikli', link: '/D02-loyiha-hayot-sikli' },
     ],
     sidebar: sidebar(),

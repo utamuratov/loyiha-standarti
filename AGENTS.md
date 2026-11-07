@@ -2,25 +2,25 @@
 
 Bu fayl loyiha standartini yozayotgan agent (va odam muallif) uchun ish tartibi. Standartning o'zi, doclar katalogi va TODO — [00-root.md](00-root.md) da.
 
-Agentning vazifasi: root docdagi katalogdagi doclarni TODO tartibida birma-bir yozish. Har bir doc yangi loyihani qanday qurishni ko'rsatadi, misollar "uzedu'ni noldan qurish" ssenariysi bo'yicha beriladi (root docdagi "Misol: uzedu'ni noldan qurish" bo'limi), doc esa boshqa loyihalarda shablon sifatida ishlatiladi.
+Agentning vazifasi: root docdagi katalogdagi doclarni TODO tartibida birma-bir yozish. Har bir doc yangi loyihani qanday qurishni ko'rsatadi, misollar "Test Platformasini noldan qurish" ssenariysi bo'yicha beriladi (root docdagi "Misol: Test Platformasini noldan qurish" bo'limi), doc esa boshqa loyihalarda shablon sifatida ishlatiladi.
 
 O'quvchi — yangi loyihada ishlaydigan jamoa a'zosi (PM, analitik, dizayner, dasturchi, QA, DevOps, support). U docni o'qib, o'z rolida nima qilishini va qachon ish tugaganini bilishi kerak. Shuning uchun qoidalar "kim nima qiladi" ko'rinishida yoziladi, umumiy nazariya emas.
 
 ## Kirish materiallari (foydalanuvchidan so'raladi)
 
-- uzedu bo'yicha mavjud TZ, doclar, chat yozishmalaridan muhim qismlar.
+- Test Platformasi bo'yicha mavjud TZ, doclar, chat yozishmalaridan muhim qismlar.
 - Ekranlar (skrinshot yoki Figma), modullar va rollar ro'yxati.
 - Repozitoriy yoki texnik stack, mavjud test va deploy holati.
 - Jamoa tarkibi: rollar, soni, kim nima qilgan.
 - Loyihada nima yaxshi o'tgan va nima muammo bo'lgan (qisqa retro).
 
-Reference repozitoriy (faqat o'qish uchun, o'zgartirilmaydi): `test-uzedu-user` — uzedu'ning nomzodlar test topshiradigan frontendi.
+Reference repozitoriy (faqat o'qish uchun, o'zgartirilmaydi): `test-uzedu-user` — Test Platformasining nomzodlar test topshiradigan frontendi.
 
 ## Ish tartibi
 
 1. Ishni boshlashdan oldin root docdagi "Ochiq savollar" bo'limidagi savollarga javob oling.
 2. TODO ro'yxatidagi navbat bo'yicha bitta docni oling.
-3. Misol uchun kerakli faktlarni yig'ing: root docdagi ssenariy va ochiq savollar javoblari, frontend uchun reference repozitoriy. uzedu'ning o'tmishda qanday qurilganini tahlil qilmang. Backend bo'yicha fakt yo'q — `[TO'LDIRILSIN: backend]` qo'ying.
+3. Misol uchun kerakli faktlarni yig'ing: root docdagi ssenariy va ochiq savollar javoblari, frontend uchun reference repozitoriy. Test Platformasining o'tmishda qanday qurilganini tahlil qilmang. Backend bo'yicha fakt yo'q — `[TO'LDIRILSIN: backend]` qo'ying.
 4. Shu asosda docni quyidagi tuzilmada yozing.
 5. Docni foydalanuvchiga ko'rib chiqish uchun bering; izohlar bo'yicha tuzating.
 6. Root docdagi TODO belgisini yangilang va keyingi docga o'ting.
@@ -40,6 +40,7 @@ Doclar oddiy Markdown bo'lib qoladi va GitLab'da ham o'qiladi; sayt ularning ust
 - Matnda `<` va `>` bilan yozilgan joy-to'ldirgichlar (`<ism>`) faqat kod bloki yoki `` `...` `` ichida bo'ladi — aks holda sayt ularni HTML teg deb tushunadi.
 - `localhost` manzillari ham `` `...` `` ichida yoziladi — oddiy matndagi manzilni sayt havolaga aylantiradi va build uni "buzilgan havola" deb to'xtatadi.
 - Docni topshirishdan oldin `npm run docs:build` ishlatiladi: u buzilgan havolalarda xato beradi.
+- Yangi doc yozilgach, [jarayon-xaritasi.md](jarayon-xaritasi.md) dagi jadvallarda ("Har bosqichda qaysi doc kerak", "Qaysi savolga qaysi doc") uning oddiy matnini havolaga aylantiring.
 - Chiqarish: `main` ga har push'da GitHub Actions (`.github/workflows/docs.yml`) saytni build qilib, GitHub Pages'ga qo'yadi. Sayt hozir ochiq (public) — mahfiy ma'lumot (parol, kalit, shaxsiy ma'lumot) doclarga yozilmaydi.
 
 ## Har bir docning tuzilmasi
@@ -48,7 +49,7 @@ Doclar oddiy Markdown bo'lib qoladi va GitLab'da ham o'qiladi; sayt ularning ust
 2. **Kim uchun va qachon** — qaysi rol, loyihaning qaysi bosqichida.
 3. **Qoidalar** — qisqa, raqamlangan, tekshirsa bo'ladigan qoidalar.
 4. **Shablon** — to'ldiriladigan bo'sh forma (agar doc turi talab qilsa).
-5. **uzedu misoli** — shablonning "uzedu'ni noldan qurish" ssenariysi uchun to'ldirilgan varianti. Frontend misoli real repodan olinsa, manbasi (fayl yo'li) ko'rsatiladi; repo standartga mos kelmagan joyda "standart bo'yicha nima qo'shilardi" yoziladi. Imkon bo'lsa, root docdagi "Jamoadagi real og'riqlar" jadvalidan tegishli og'riqqa bog'lanadi.
+5. **Test Platformasi misoli** — shablonning "Test Platformasini noldan qurish" ssenariysi uchun to'ldirilgan varianti. Frontend misoli real repodan olinsa, manbasi (fayl yo'li) ko'rsatiladi; repo standartga mos kelmagan joyda "standart bo'yicha nima qo'shilardi" yoziladi. Imkon bo'lsa, root docdagi "Jamoadagi real og'riqlar" jadvalidan tegishli og'riqqa bog'lanadi.
 6. **Checklist** — "tayyor" deyish uchun tekshiriladigan punktlar.
 7. **Tez-tez uchraydigan xatolar** — 3–5 ta anti-pattern.
 
@@ -56,7 +57,7 @@ Doclar oddiy Markdown bo'lib qoladi va GitLab'da ham o'qiladi; sayt ularning ust
 
 - Til: o'zbek (lotin). Kasbiy atamalar (PR, code review, kanban, e2e) asl holicha qoladi, birinchi uchraganda qisqa izohlanadi.
 - Hajm: asosiy qism 1–3 sahifa. Shablon va misol qo'shimcha bo'lishi mumkin.
-- Faktlarni o'ylab topmang. uzedu bo'yicha ma'lumot yetmasa, `[TO'LDIRILSIN: ...]` deb belgilang va savolni foydalanuvchiga bering.
+- Faktlarni o'ylab topmang. Test Platformasi bo'yicha ma'lumot yetmasa, `[TO'LDIRILSIN: ...]` deb belgilang va savolni foydalanuvchiga bering.
 - Har bir qoida "nega" degan savolga javob bera olsin; asossiz byurokratiya qo'shmang.
 - Doclar bir-biriga havola qiladi (masalan, [D13](D13-test-strategiyasi.md) test strategiyasi [D08](D08-kanban-dor-dod.md) DoD'dagi minimal test talabini kengaytiradi); bir xil qoidani ikki joyda takrorlamang. Har bir mavzuning uyi bitta doc (root docdagi katalogga qarang).
 - Tayyor mezoni tekshirsa bo'ladigan bo'lsin: kim tekshiradi, nimani sanaydi, qancha bo'lishi kerak.

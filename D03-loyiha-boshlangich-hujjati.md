@@ -78,9 +78,9 @@ Tasdiqlagan: <mijoz PO, sana>
 19. Versiyalar tarixi — versiya, sana, nima o'zgardi, asos (D10 change request)
 ```
 
-## 5. uzedu misoli: TZ (qisqartirilgan)
+## 5. Test Platformasi misoli: TZ (qisqartirilgan)
 
-Ssenariy: uzedu'ni noldan quryapmiz; quyida R1 release (asosiy test oqimi) uchun TZ'dan parchalar. Faktlar `test-uzedu-user` frontend repozitoriyidan olingan (manbalar ko'rsatilgan); backend va admin tomoni bu repoda yo'q.
+Ssenariy: Test Platformasini noldan quryapmiz; quyida R1 release (asosiy test oqimi) uchun TZ'dan parchalar. Faktlar `test-uzedu-user` frontend repozitoriyidan olingan (manbalar ko'rsatilgan); backend va admin tomoni bu repoda yo'q.
 
 ### A. Brief
 
