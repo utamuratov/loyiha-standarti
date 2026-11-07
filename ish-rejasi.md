@@ -36,10 +36,10 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 ### 2-faza: Jarayonni to'ldirish
 
 - [x] [D01](D01-rollar-va-raci.md) — Rollar va RACI matritsa (2026-11-07; root docdagi rollar jadvali [D01](D01-rollar-va-raci.md) ga ko'chdi; misoli — rejada)
-- [x] [D05](D05-kickoff-va-doc-review.md) — Kickoff va doc review meeting (2026-11-07; katalogdagi "srok" kickoff natijasidan olib tashlandi — [D06](D06-baholash-va-srok.md) ga zid edi; umumiy meeting qoidalari D09 yozilganda o'sha yerga ko'chadi; misoli — rejada)
+- [x] [D05](D05-kickoff-va-doc-review.md) — Kickoff va doc review meeting (2026-11-07; katalogdagi "srok" kickoff natijasidan olib tashlandi — [D06](D06-baholash-va-srok.md) ga zid edi; umumiy meeting qoidalari [D09](D09-meetinglar-ritmi.md) ga ko'chdi; misoli — rejada)
 - [x] [D06](D06-baholash-va-srok.md) — Baholash va srok belgilash (2026-11-07; baho birligi — soat, [D08](D08-kanban-dor-dod.md) shabloni moslandi; misoli — rejada)
 - [ ] D04 — Dizaynerga brief va dizayn jarayoni
-- [ ] D09 — Meetinglar ritmi
+- [x] [D09](D09-meetinglar-ritmi.md) — Meetinglar ritmi (2026-11-07; har qanday meetingning umumiy qoidalari shu yerda, [D05](D05-kickoff-va-doc-review.md) dan ko'chdi; misoli — rejada)
 
 ### 3-faza: To'liq sikl
 
@@ -47,7 +47,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 - [ ] D10 — O'zgarishlarni boshqarish
 - [ ] D15 — Foydalanuvchi qo'llanmasi va o'qitish
 - [ ] D16 — Support va fikr yig'ish
-- [ ] D17 — Retrospektiva va standartni yangilash
+- [ ] D17 — Retrospektiva va standartni yangilash. Yozishda hal qilish: retro chastotasi — [D02](D02-loyiha-hayot-sikli.md) "har release'dan keyin" deydi, root docdagi moslashtirish jadvali kichik loyiha uchun "loyiha oxirida bitta" deydi; [D06](D06-baholash-va-srok.md) (10-qoida) va [D09](D09-meetinglar-ritmi.md) shu yerga havola qiladi
 
 ### 4-faza: Joriy etish
 

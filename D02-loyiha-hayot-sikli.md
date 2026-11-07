@@ -27,7 +27,7 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 | 7 | Topshirish | Prod'dagi versiya | UAT akti, qo'llanma va o'qitish (D15) | Mijoz (PO) |
 | 8 | Ekspluatatsiya | Qabul qilingan versiya | Murojaat kanali ishlaydi (D16), murojaatlar backlog'ga tushadi; retro (D17) | PM |
 
-**Sikl.** 5–7 bosqichlar har release uchun takrorlanadi: loyiha bir nechta release'ga bo'linadi va har biri o'z darvozalaridan o'tadi. Ishlab chiqish ichida haftalik sikl aylanadi (D09). 8-bosqichda kelgan yangi talab 2-bosqichga qaytadi (D10).
+**Sikl.** 5–7 bosqichlar har release uchun takrorlanadi: loyiha bir nechta release'ga bo'linadi va har biri o'z darvozalaridan o'tadi. Ishlab chiqish ichida haftalik sikl aylanadi ([D09](D09-meetinglar-ritmi.md)). 8-bosqichda kelgan yangi talab 2-bosqichga qaytadi (D10).
 
 ## 4. Qoidalar
 
@@ -38,8 +38,8 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 5. **Darvoza loyiha yoki release darajasida o'tkaziladi.** Katta loyihada modullar turli bosqichda bo'lishi mumkin (A modul ishlab chiqishda, B dizaynda); unda darvoza har release qismi uchun alohida o'tkaziladi. *Nega:* butun loyihani bitta dizayn tugashini kutib to'xtatish shart emas.
 6. **O'zgarish orqaga qaytaradi.** Tasdiqlangan scope o'zgarsa, o'zgargan qism D10 orqali 2-bosqichga qaytadi va 2–4 darvozalardan qayta o'tadi. Faqat o'zgargan qism, butun loyiha emas. *Nega:* yangi talab maket va bahosiz ishlab chiqishga tushsa, srok yashirin buziladi.
 7. **Muhim qaror 1 ish kuni ichida qarorlar jurnaliga yoziladi.** Muhim qaror — scope, srok, arxitektura, UX oqimi, integratsiya yoki mijoz bilan kelishuvga ta'sir qiladigan har qanday qaror, u meetingda, Telegram'da yoki qo'ng'iroqda qabul qilinganidan qat'i nazar. Yozadi — qaror qabul qilingan suhbatdagi PM yoki tech lead. Arxitektura qarorining batafsil tahlili ADR'da ([D11](D11-dasturchilar-qoidalari.md)), jurnalda unga havola. *Nega:* "nega unday qilgandik?" va "kim aytgandi?" savollarining yagona javobi — yozilgan sabab.
-8. **Risk aniqlangan kuni reestrga yoziladi** va haftalik sync'da (D09) ko'riladi. Har riskning egasi va chorasi bor. *Nega:* aytilmagan risk srok o'tib ketganda birdan "chiqadi".
-9. **Jurnal va reestrning uyi bitta.** Ular loyiha hujjatlari yonida ([D03](D03-loyiha-boshlangich-hujjati.md) bilan bir joyda) yuritiladi; [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md), D09, D10 ularga havola qiladi, nusxa olmaydi. *Nega:* ikki joydagi jurnal tez orada ikki xil bo'lib qoladi.
+8. **Risk aniqlangan kuni reestrga yoziladi** va haftalik sync'da ([D09](D09-meetinglar-ritmi.md)) ko'riladi. Har riskning egasi va chorasi bor. *Nega:* aytilmagan risk srok o'tib ketganda birdan "chiqadi".
+9. **Jurnal va reestrning uyi bitta.** Ular loyiha hujjatlari yonida ([D03](D03-loyiha-boshlangich-hujjati.md) bilan bir joyda) yuritiladi; [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md), [D09](D09-meetinglar-ritmi.md), D10 ularga havola qiladi, nusxa olmaydi. *Nega:* ikki joydagi jurnal tez orada ikki xil bo'lib qoladi.
 
 **Kichik loyihada (3–5 kishi).** 8 bosqich va darvozalar saqlanadi, lekin darvoza 15 daqiqalik qisqa tasdiq bo'ladi; 1–2 yoki 3–4 bosqichlar bir haftada o'tishi mumkin. Jurnal va reestr majburiy.
 

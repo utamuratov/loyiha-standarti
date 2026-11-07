@@ -125,7 +125,7 @@ Test talabining to'liq versiyasi (qaysi testlar, qamrov, e2e) — [D13](D13-test
 1. **Boardda yo'q ish — ish emas.** Chatda, qo'ng'iroqda yoki yo'lakda kelgan so'rov 1 ish kuni ichida Backlog'ga yoziladi; chatga task havolasi tashlanadi. Yozadi — so'rovni qabul qilgan odam. *Nega:* aytilgan narsa esdan chiqadi; boardga tushgani — yo'q.
 2. **Holatni so'rash o'rniga boardga qarash.** Bajaruvchi holat o'zgarganda taskni o'zi suradi; "qayerda?" degan savol — board noto'g'ri yuritilayotganining belgisi. *Nega:* shaffoflik jarayonda, odamning esida emas.
 3. **Talab o'rtada o'zgarsa — change request.** Task `change-request` labeli bilan Backlog'ga qaytadi; PM srok va scope'ga ta'sirini yozadi; [D03](D03-loyiha-boshlangich-hujjati.md) versiyasi yangilanadi; shundan keyingina task qayta Ready'ga o'tadi. Kichik o'zgarish chegarasi va to'liq tartib — D10. *Nega:* "yo'l-yo'lakay qo'shib qo'ying" srokni yashirin buzadi.
-4. **Bloklangan task belgilanadi.** Jira'da "Flagged" belgisi va izoh: nima va kimni kutayapti. 1 ish kunidan ortiq bloklansa, PM daily'da (D09) ko'taradi. *Nega:* jim bloklangan task srok o'tgandagina ko'rinadi.
+4. **Bloklangan task belgilanadi.** Jira'da "Flagged" belgisi va izoh: nima va kimni kutayapti. 1 ish kunidan ortiq bloklansa, PM daily'da ([D09](D09-meetinglar-ritmi.md)) ko'taradi. *Nega:* jim bloklangan task srok o'tgandagina ko'rinadi.
 5. **Muallif o'z taskini o'zi testlamaydi.** Kichik jamoada QA bo'lmasa, Testing'ni analitik yoki boshqa dasturchi qiladi. *Nega:* muallif qanday ishlatish kerakligini biladi va xatoga yo'l qo'yadigan qadamni qilmaydi.
 6. **Qaytgan task orqaga suriladi.** Testing'da qabul mezoni bajarilmasa, task In progress'ga qaytadi va izohda sababi yoziladi. Yangi task ochilmaydi (yangi bug faqat boshqa muammo uchun). *Nega:* rework sanaladi va retroda (D17) ko'rinadi.
 
@@ -135,7 +135,7 @@ Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · B
 
 ## 8. Checklist: board to'g'ri yuritilyaptimi
 
-PM haftada bir marta tekshiradi (haftalik sync'dan oldin, D09):
+PM haftada bir marta tekshiradi (haftalik sync'dan oldin, [D09](D09-meetinglar-ritmi.md)):
 
 - [ ] Ready'dagi har task DoR bo'yicha (tasodifiy 3 tasini tekshirish)
 - [ ] In progress'dagi har taskning bajaruvchisi bor va WIP limiti buzilmagan
@@ -150,7 +150,7 @@ PM haftada bir marta tekshiradi (haftalik sync'dan oldin, D09):
 
 1. **"Deyarli tayyor" tasklar.** In progress'da haftalab turgan tasklar. Sababi — task juda katta yoki bloklangan, lekin belgilanmagan. To'g'risi: 3 kundan katta task bo'linadi, bloklangani belgilanadi.
 2. **Done = "men merge qildim".** Tekshirilmagan task Done'da. To'g'risi: Done'ga tekshiruvchi o'tkazadi, muallif emas.
-3. **Board va haqiqat farq qiladi.** Odamlar ishni boshlab, taskni surmaydi; PM chatda so'raydi. To'g'risi: daily'da (D09) board bo'yicha yurish — kartochkasi yo'q ish haqida gapirilmaydi.
+3. **Board va haqiqat farq qiladi.** Odamlar ishni boshlab, taskni surmaydi; PM chatda so'raydi. To'g'risi: daily'da ([D09](D09-meetinglar-ritmi.md)) board bo'yicha yurish — kartochkasi yo'q ish haqida gapirilmaydi.
 4. **Chatdagi "kichik o'zgarish".** Telegram'da "shu tugmani ham qo'shib yuboring" va u hech qayerda yo'q. To'g'risi: Backlog'ga, kerak bo'lsa `change-request`.
 5. **Hammasi "yuqori" prioritetda.** To'g'risi: Backlog tartibini bitta odam (PM) belgilaydi va tartib — prioritetning o'zi.
 

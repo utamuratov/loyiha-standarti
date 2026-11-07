@@ -41,7 +41,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 | [D06](../../D06-baholash-va-srok.md) Baholash | Modullarni (login, ariza, Face ID, test yechish, natija) 1–3 kunlik tasklarga bo'lish va uch nuqtali baho | Rejada |
 | D07 Resurs | Modullar bo'yicha taqsimot jadvali | Rejada |
 | [D08](../../D08-kanban-dor-dod.md) Kanban, DoR, DoD | [Board va tasklar](D08-board-va-tasklar.md) | Yozilgan |
-| D09 Meetinglar | Haftalik sync protokoli | Rejada |
+| [D09](../../D09-meetinglar-ritmi.md) Meetinglar | Haftalik sync protokoli | Rejada |
 | D10 O'zgarishlar | Ishlab chiqish o'rtasida yangi mijoz (alohida build) qo'shilishi — change request | Rejada |
 | [D11](../../D11-dasturchilar-qoidalari.md) Dasturchilar qoidalari | [Repozitoriy, merge request va ADR](D11-repozitoriy-va-review.md) | Yozilgan |
 | [D12](../../D12-ui-ux-standartlari.md) UI/UX | [UI: ekranlar va komponentlar](D12-ui-ekranlar.md) | Yozilgan |

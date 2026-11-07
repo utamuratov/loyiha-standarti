@@ -20,6 +20,8 @@ Loyiha boshida ikki meeting ish boshlanishidan oldin tushunmovchiliklarni ushlay
   - **Doc review** — 2-bosqichda (Talablar), to'liq TZ qoralamasi tayyor bo'lgach, 2-darvozadan oldin ([D02](D02-loyiha-hayot-sikli.md)). TZ katta bo'lsa, release yoki modul bo'yicha bo'lib o'tkaziladi.
   - Change request (D10) TZ'ning katta qismini o'zgartirsa, o'sha qism uchun qisqa doc review takrorlanadi.
 
+Har qanday meetingning umumiy qoidalari (avval yozma, agenda, timebox, har masala natija bilan, protokol) — [D09](D09-meetinglar-ritmi.md). Bu yerda faqat kickoff va doc review'ga xos qoidalar.
+
 **Atamalar.**
 - *Kickoff* — loyihani boshlash meetingi: nima, nega, kim va qanday ishlaymiz.
 - *Doc review* — hujjatni (bu yerda TZ) jamoa tomonidan ko'rib chiqish: avval har kim alohida izoh yozadi, keyin meetingda faqat ochiq qolganlari muhokama qilinadi.
@@ -31,14 +33,14 @@ Loyiha boshida ikki meeting ish boshlanishidan oldin tushunmovchiliklarni ushlay
 1. **Material 1 ish kuni oldin.** Brief (kickoff uchun) yoki TZ (doc review uchun) va agenda meetingdan kamida 1 ish kuni oldin yuboriladi. *Nega:* birinchi marta meetingda ko'rilgan hujjat haqida faqat yuzaki fikr aytiladi; meeting "birga o'qish"ga aylanadi.
 2. **Doc review — avval yozma izohlar.** Har majburiy qatnashchi meetingdan oldin TZ'ning o'ziga izoh qoldiradi, belgilar bilan ([D11](D11-dasturchilar-qoidalari.md) dagi kabi): `[bloklovchi]`, `[savol]`, `[taklif]`. Analitik meetinggacha javob berishi mumkin bo'lganlarini yopadi. *Nega:* ko'p savolning javobi bir gap — ularga meeting vaqti sarflanmaydi; meetingda faqat haqiqiy kelishmovchilik qoladi.
 3. **O'qilmagan bo'lsa — ko'chiriladi.** Meetingdan 2 soat oldin PM izohlarni ko'radi: majburiy rollardan biri (dizayner, tech lead yoki dasturchi, QA) izoh qoldirmagan bo'lsa, doc review 1 ish kuniga suriladi. *Nega:* o'qimagan odam bilan o'tgan review keyin "men buni ko'rmagandim" bo'lib qaytadi — bu rework.
-4. **Timebox.** Kickoff — 60 daqiqa, doc review — 60 daqiqa (kichik loyihada 30–45). Bitta savolga — 10 daqiqa. Vaqt tugasa, savol 5-qoida bo'yicha yopiladi. *Nega:* chegarasiz muhokama eng baland ovozli odam charchaguncha davom etadi.
-5. **Har savol uch natijadan biri bilan chiqadi.** (a) javob — analitik TZ'ga yozadi; (b) qaror — qarorlar jurnaliga ([D02](D02-loyiha-hayot-sikli.md)); (c) ochiq savol — TZ'dagi ochiq savollar ro'yxatiga egasi, muddati va "bloklovchi: ha/yo'q" bilan ([D03](D03-loyiha-boshlangich-hujjati.md)). Kelishilmagan savolni [D01](D01-rollar-va-raci.md) dagi A belgilangan muddatda yolg'iz hal qiladi. "Keyin gaplashamiz" — natija emas. *Nega:* egasiz va muddatsiz savol hech qachon yopilmaydi.
+4. **Timebox.** Kickoff — 60 daqiqa, doc review — 60 daqiqa (kichik loyihada 30–45). Bitta savolga — 10 daqiqa; vaqt tugasa, savol 5-qoida bo'yicha yopiladi. *Nega:* TZ'da savol ko'p — bittasiga ketgan yarim soat qolganlarini muhokamasiz qoldiradi.
+5. **Har izoh TZ'da yopiladi.** Umumiy qoida — har masala natija bilan ([D09](D09-meetinglar-ritmi.md)). Doc review'da: javob — analitik TZ'ga yozadi; qaror — qarorlar jurnaliga ([D02](D02-loyiha-hayot-sikli.md)); ochiq savol — TZ'dagi ochiq savollar ro'yxatiga egasi, muddati va "bloklovchi: ha/yo'q" bilan ([D03](D03-loyiha-boshlangich-hujjati.md)). *Nega:* TZ izohlarida qolgan javob keyingi versiyada yo'qoladi; javob TZ matniga tushishi kerak.
 6. **Bloklovchini meeting belgilaydi, keyin u darvozani to'xtatadi.** Bloklovchi savol ochiq ekan, 2-darvoza o'tmaydi ([D02](D02-loyiha-hayot-sikli.md)); bloklovchi bo'lmaganlari bilan ish davom etadi. Hamma savolni "bloklovchi" qilish mumkin emas: belgilash sababi bir gap bilan aytiladi ("javobisiz API'ni baholab bo'lmaydi"). *Nega:* bloklovchi bo'lmasa — xavfli savol ish ichida "kutilmaganda" chiqadi; hammasi bloklovchi bo'lsa — loyiha boshlanmaydi.
-7. **Protokol 1 ish kuni ichida.** PM protokolni (4.3-shablon) yuboradi: qarorlar, ochiq savollar, risklar, keyingi qadamlar — har birining egasi va muddati bilan. Qarorlar jurnalga, risklar reestrga ko'chiriladi, protokolda ularga havola. *Nega:* protokolsiz meeting har kimda o'z xotirasi bilan qoladi — "aytilgan narsalar esdan chiqadi".
+7. **Protokolda bloklovchilar soni.** Protokol [D09](D09-meetinglar-ritmi.md) qoidasi bo'yicha 1 ish kuni ichida, lekin 4.3-shablonda: bloklovchi savollar soni va 2-darvozaga tayyorlik alohida qator. *Nega:* PO va jamoa bitta raqamdan TZ darvozaga qachon tayyor bo'lishini ko'radi.
 8. **Kickoff'da srok va'da qilinmaydi.** Kickoff'da faqat dastlabki oraliq aytilishi mumkin ([D06](D06-baholash-va-srok.md), 6-qoida); srok 4-darvozada, bajaruvchilar bahosidan keyin. *Nega:* Brief bosqichida aytilgan sana jamoa TZ'ni ko'rmasdan berilgan va'da bo'ladi.
 9. **Kickoff'da maqsadni PO o'zi aytadi.** Muammo, kim uchun va muvaffaqiyat qanday o'lchanishini mijoz jamoaga birinchi qo'ldan tushuntiradi; jamoa savol beradi. *Nega:* ikkinchi qo'ldan eshitilgan maqsad har kimda boshqacha bo'ladi — dizayner bir narsani, dasturchi boshqasini qiladi.
 
-**Kichik loyihada (3–5 kishi).** Kickoff va doc review qisqaradi (30–45 daqiqa), lekin 1-, 2-, 5- va 7-qoidalar saqlanadi: yozma izoh va protokolsiz meeting kichik jamoada ham og'zaki kelishuvga aylanadi.
+**Kichik loyihada (3–5 kishi).** Kickoff va doc review qisqaradi (30–45 daqiqa), lekin 1-, 2- va 5-qoidalar hamda [D09](D09-meetinglar-ritmi.md) dagi protokol qoidasi saqlanadi: yozma izoh va protokolsiz meeting kichik jamoada ham og'zaki kelishuvga aylanadi.
 
 ## 4. Shablonlar
 
