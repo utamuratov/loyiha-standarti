@@ -13,9 +13,9 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 | Rol | D03 dan nima oladi |
 | --- | --- |
 | Dizayner | Ekranlar ro'yxati, story'lar, xato holatlari — maket uchun (D04) |
-| Dasturchi / tech lead | Story'lar, ruxsatlar, API kontrakti talablari, nofunksional talablar — baholash (D06) va kod uchun |
+| Dasturchi / tech lead | Story'lar, ruxsatlar, API kontrakti talablari, nofunksional talablar — baholash ([D06](D06-baholash-va-srok.md)) va kod uchun |
 | QA | Qabul mezonlari — test ssenariylari uchun ([D13](D13-test-strategiyasi.md)) |
-| PM | Scope va release'lar — reja va srok uchun ([D02](D02-loyiha-hayot-sikli.md), D06) |
+| PM | Scope va release'lar — reja va srok uchun ([D02](D02-loyiha-hayot-sikli.md), [D06](D06-baholash-va-srok.md)) |
 | Support | Rollar va asosiy oqimlar — qo'llanma uchun (D15) |
 
 - **Qachon:**

@@ -42,7 +42,7 @@ Har bosqichda qaysi doc kerak:
 | 1 · Boshlash | [D03](D03-loyiha-boshlangich-hujjati.md) — Brief qismi; [D02](D02-loyiha-hayot-sikli.md) — bosqichlar rejasi, qarorlar jurnali va risklar reestri ochiladi; [D01](D01-rollar-va-raci.md) — rollar; D05 — kickoff |
 | 2 · Talablar | [D03](D03-loyiha-boshlangich-hujjati.md) — to'liq TZ; D05 — doc review |
 | 3 · Dizayn | D04 — dizayn brief va jarayon; [D12](D12-ui-ux-standartlari.md) — UI/UX standartlari va handoff |
-| 4 · Planlash | D06 — baholash va srok; D07 — taqsimot va resurs |
+| 4 · Planlash | [D06](D06-baholash-va-srok.md) — baholash va srok; D07 — taqsimot va resurs |
 | 5 · Ishlab chiqish | [D08](D08-kanban-dor-dod.md) — kanban, DoR, DoD; [D11](D11-dasturchilar-qoidalari.md) — kod va review; [D13](D13-test-strategiyasi.md) — test; [D12](D12-ui-ux-standartlari.md) — UI tekshiruvi; D09 — meetinglar; D10 — o'zgarishlar |
 | 6 · Release | [D14](D14-release-va-deploy.md) — release va deploy |
 | 7 · Topshirish | D15 — qo'llanma va o'qitish |
@@ -175,6 +175,7 @@ Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi (D1
 | Qaror qayerda yozilgan, nega shunday qilgandik? | [D02](D02-loyiha-hayot-sikli.md) — qarorlar jurnali |
 | Mijoz nima so'ragan, scope'ga nima kiradi? | [D03](D03-loyiha-boshlangich-hujjati.md) |
 | Maket dasturchiga qachon va qanday beriladi? | [D12](D12-ui-ux-standartlari.md) |
+| Srok qanday belgilanadi, surilsa nima qilinadi? | [D06](D06-baholash-va-srok.md) |
 | Taskni ishga olsa bo'ladimi, tugadimi? | [D08](D08-kanban-dor-dod.md) — DoR va DoD |
 | Branch, commit, merge request, review qanday? | [D11](D11-dasturchilar-qoidalari.md) |
 | Qanday test yoziladi va kim tekshiradi? | [D13](D13-test-strategiyasi.md) |

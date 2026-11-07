@@ -21,7 +21,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 
 - [x] [D02](D02-loyiha-hayot-sikli.md) — Loyiha hayot sikli va bosqich darvozalari (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
 - [x] [D03](D03-loyiha-boshlangich-hujjati.md) — Loyiha boshlang'ich hujjati + Test Platformasi TZ misoli (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
-- [x] [D08](D08-kanban-dor-dod.md) — Kanban qoidalari, DoR va DoD (D06, D10 yadro qoidalari bilan) (2026-11-07, izohsiz qabul qilindi)
+- [x] [D08](D08-kanban-dor-dod.md) — Kanban qoidalari, DoR va DoD ([D06](D06-baholash-va-srok.md), D10 yadro qoidalari bilan) (2026-11-07, izohsiz qabul qilindi)
 - [x] [D11](D11-dasturchilar-qoidalari.md) — Dasturchilar qoidalari va code review (2026-11-07, izohsiz qabul qilindi; `master`/`olympiad` branchlari va protected sozlamasi ochiq)
 - [x] [D13](D13-test-strategiyasi.md) — Test strategiyasi (2026-11-07, izohsiz qabul qilindi; coverage sozlamasi va CI image ochiq)
 - [x] [D14](D14-release-va-deploy.md) — Release va deploy tartibi (2026-11-07, izohsiz qabul qilindi; `Dockerfile.prod`, boshqa mijozlar deploy'i, monitoring ochiq)
@@ -37,7 +37,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 
 - [x] [D01](D01-rollar-va-raci.md) — Rollar va RACI matritsa (2026-11-07; root docdagi rollar jadvali [D01](D01-rollar-va-raci.md) ga ko'chdi; misoli — rejada)
 - [ ] D05 — Kickoff va doc review meeting
-- [ ] D06 — Baholash va srok belgilash
+- [x] [D06](D06-baholash-va-srok.md) — Baholash va srok belgilash (2026-11-07; baho birligi — soat, [D08](D08-kanban-dor-dod.md) shabloni moslandi; misoli — rejada)
 - [ ] D04 — Dizaynerga brief va dizayn jarayoni
 - [ ] D09 — Meetinglar ritmi
 

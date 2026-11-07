@@ -21,7 +21,7 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 | 1 | Boshlash | Mijoz g'oyasi yoki buyurtmasi | [D03](D03-loyiha-boshlangich-hujjati.md) Brief qismi: muammo, maqsad, muvaffaqiyat mezonlari, scope chegarasi; jamoa va rollar; hujjatlar joyi, jurnal va reestr ochilgan | Mijoz (PO) |
 | 2 | Talablar | Tasdiqlangan Brief | To'liq [D03](D03-loyiha-boshlangich-hujjati.md): user story va qabul mezonlari, rollar va ruxsatlar, API kontrakti qoralamasi, nofunksional talablar, shaxsiy ma'lumotlar; D05 doc review o'tgan | Mijoz (PO) — scope; analitik — to'liqlik |
 | 3 | Dizayn | Tasdiqlangan [D03](D03-loyiha-boshlangich-hujjati.md) | Barcha ekranlar barcha holatlari bilan (D04, [D12](D12-ui-ux-standartlari.md)); dasturchilar handoff'ni qabul qilgan; mijoz maketni ko'rgan | PM (mijoz tasdig'i checklist ichida) |
-| 4 | Planlash | [D03](D03-loyiha-boshlangich-hujjati.md) + maketlar | Jira'da tasklar (1–3 kunlik), bajaruvchilar bahosi (D06), release'larga bo'lingan reja, kelishilgan srok | PM; srokni mijoz tasdiqlaydi |
+| 4 | Planlash | [D03](D03-loyiha-boshlangich-hujjati.md) + maketlar | Jira'da tasklar (1–3 kunlik), bajaruvchilar bahosi ([D06](D06-baholash-va-srok.md)), release'larga bo'lingan reja, kelishilgan srok | PM; srokni mijoz tasdiqlaydi |
 | 5 | Ishlab chiqish | Ready ustunidagi tasklar | Release scope'idagi barcha tasklar Done ([D08](D08-kanban-dor-dod.md) DoD); regressiya o'tgan | Tech lead (QA sign-off bilan) |
 | 6 | Release | Release nomzodi (staging'da) | Release checklist ([D14](D14-release-va-deploy.md)), rollback rejasi, release notes; prod'ga chiqqan | Tech lead / DevOps |
 | 7 | Topshirish | Prod'dagi versiya | UAT akti, qo'llanma va o'qitish (D15) | Mijoz (PO) |
@@ -75,7 +75,7 @@ Har darvoza uchun punktlar. ⛔ — bloklovchi: bajarilmasa o'tilmaydi (shartli 
 
 **4-darvoza: Planlash → Ishlab chiqish**
 - [ ] ⛔ Birinchi release scope'idagi tasklar Jira'da, DoR bo'yicha ([D08](D08-kanban-dor-dod.md))
-- [ ] ⛔ Har bahoni bajaruvchining o'zi bergan (D06)
+- [ ] ⛔ Har bahoni bajaruvchining o'zi bergan ([D06](D06-baholash-va-srok.md))
 - [ ] Loyiha release'larga bo'lingan; har release'ning scope'i va sanasi bor
 - [ ] Srok mijoz bilan kelishilgan va jurnalga yozilgan
 - [ ] Muhitlar (dev, staging) va CI tayyor yoki task sifatida rejada ([D14](D14-release-va-deploy.md))

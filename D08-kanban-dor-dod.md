@@ -57,7 +57,7 @@ Tavsif: nima va nega (1–3 gap); D03 bo'limiga havola
 Qabul mezonlari: D03 dagidan nusxa emas — havola + shu taskka tegishlilari
 Maket: <Figma havolasi> (UI bo'lsa)
 API: <endpoint, kontraktga havola> (FE+BE bo'lsa)
-Baho: <soat yoki story point> — bajaruvchi bergan
+Baho: <soat> — bajaruvchi bergan (D06)
 Bajaruvchi: <ism>
 Bog'liqlik: <qaysi task tugashini kutadi>
 ```
@@ -103,7 +103,7 @@ Task Ready'ga faqat quyidagilar bajarilganda o'tadi. O'tkazadi — analitik yoki
 - [ ] Bog'liqliklar tugagan yoki parallel ishlash usuli aniq (masalan, mock bilan)
 - [ ] Bloklovchi ochiq savol yo'q
 
-*Nega:* chala task bilan boshlangan ish o'rtada to'xtaydi yoki qayta qilinadi. Bahoni bajaruvchi berishi esa srokni ishni bilmaydigan odam qo'ymasligi uchun (to'liq qoidalar — D06).
+*Nega:* chala task bilan boshlangan ish o'rtada to'xtaydi yoki qayta qilinadi. Bahoni bajaruvchi berishi esa srokni ishni bilmaydigan odam qo'ymasligi uchun (to'liq qoidalar — [D06](D06-baholash-va-srok.md)).
 
 ## 5. Definition of Done
 

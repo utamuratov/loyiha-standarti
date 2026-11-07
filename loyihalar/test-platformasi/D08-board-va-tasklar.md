@@ -22,7 +22,7 @@ Qabul mezonlari: US-04 ning 4 ta mezoni (internet uzilishi; savol yuklanishi;
         3 marta xatodan keyin; boshqa savolga o'tish)
 Maket: [TO'LDIRILSIN: Figma havolasi — taymer pauza holati va savol xato holati]
 API: qolgan vaqtni yuborish — `save-time` [TO'LDIRILSIN: backend, kontrakt havolasi]
-Baho: 2 kun — Frontend bergan
+Baho: 12 soat (≈ 2 kun, kuniga 6 fokus soati) — Frontend bergan
 Bog'liqlik: yo'q (backend tayyor bo'lmaguncha mock bilan)
 ```
 
