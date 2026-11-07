@@ -16,24 +16,27 @@ const groups: { text: string; from: number; to: number }[] = [
   { text: 'E. Topshirish va ekspluatatsiya', from: 15, to: 17 },
 ];
 
-function docItems(): { id: number; item: DefaultTheme.SidebarItem }[] {
-  return readdirSync(rootDir)
+// `dir` dagi `DNN-....md` fayllari; sarlavha faylning birinchi `# ` qatoridan olinadi
+function docItems(dir = ''): { id: number; item: DefaultTheme.SidebarItem }[] {
+  return readdirSync(`${rootDir}/${dir}`)
     .filter((file) => /^D\d{2}-.+\.md$/.test(file))
     .sort()
     .map((file) => {
-      // Sarlavha faylning birinchi `# ` qatoridan olinadi
-      const heading = readFileSync(`${rootDir}/${file}`, 'utf8')
+      const heading = readFileSync(`${rootDir}/${dir}${file}`, 'utf8')
         .split(/\r?\n/)
         .find((line) => line.startsWith('# '));
       return {
         id: Number(file.slice(1, 3)),
         item: {
           text: heading ? heading.slice(2).trim() : file,
-          link: `/${file.replace(/\.md$/, '')}`,
+          link: `/${dir}${file.replace(/\.md$/, '')}`,
         },
       };
     });
 }
+
+// Misol loyiha: standart doclarning to'ldirilgan variantlari
+const exampleDir = 'loyihalar/test-platformasi/';
 
 function sidebar(): DefaultTheme.SidebarItem[] {
   const docs = docItems();
@@ -57,9 +60,20 @@ function sidebar(): DefaultTheme.SidebarItem[] {
     },
     ...catalog,
     {
+      text: 'Misol loyiha: Test Platformasi',
+      collapsed: false,
+      items: [
+        { text: 'Loyiha kartasi', link: `/${exampleDir}` },
+        ...docItems(exampleDir).map((d) => d.item),
+      ],
+    },
+    {
       text: 'Mualliflar uchun',
       collapsed: true,
-      items: [{ text: 'Doclarni yozish tartibi', link: '/AGENTS' }],
+      items: [
+        { text: 'Ish rejasi (TODO)', link: '/ish-rejasi' },
+        { text: 'Doclarni yozish tartibi', link: '/AGENTS' },
+      ],
     },
   ];
 }
@@ -88,6 +102,7 @@ export default withMermaid({
       { text: 'Root doc', link: '/00-root' },
       { text: 'Jarayon xaritasi', link: '/jarayon-xaritasi' },
       { text: 'Hayot sikli', link: '/D02-loyiha-hayot-sikli' },
+      { text: 'Misol loyiha', link: `/${exampleDir}` },
     ],
     sidebar: sidebar(),
     outline: { level: [2, 3], label: 'Ushbu sahifada' },

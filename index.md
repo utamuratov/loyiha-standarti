@@ -47,4 +47,4 @@ features:
 
 Taxminan 30 daqiqa: [Jarayon xaritasi](jarayon-xaritasi.md) → [Root doc](00-root.md) → [D02 — hayot sikli](D02-loyiha-hayot-sikli.md) → [D08 — kanban, DoR va DoD](D08-kanban-dor-dod.md). Keyin o'z rolingiz doclari — yuqoridagi kartochkalar yoki chap menyu.
 
-Hali yozilmagan doclar menyuda ko'rinmaydi. Yozish navbati va holati — root docdagi TODO ro'yxatida.
+Har doc qoida va bo'sh shablonni beradi; to'ldirilgan variantlar — [misol loyiha: Test Platformasi](loyihalar/test-platformasi/index.md). Hali yozilmagan doclar menyuda ko'rinmaydi; yozish navbati — [ish rejasida](ish-rejasi.md).
