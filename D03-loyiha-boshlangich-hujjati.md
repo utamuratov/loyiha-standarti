@@ -14,8 +14,8 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 | --- | --- |
 | Dizayner | Ekranlar ro'yxati, story'lar, xato holatlari — maket uchun (D04) |
 | Dasturchi / tech lead | Story'lar, ruxsatlar, API kontrakti talablari, nofunksional talablar — baholash (D06) va kod uchun |
-| QA | Qabul mezonlari — test ssenariylari uchun (D13) |
-| PM | Scope va release'lar — reja va srok uchun (D02, D06) |
+| QA | Qabul mezonlari — test ssenariylari uchun ([D13](D13-test-strategiyasi.md)) |
+| PM | Scope va release'lar — reja va srok uchun ([D02](D02-loyiha-hayot-sikli.md), D06) |
 | Support | Rollar va asosiy oqimlar — qo'llanma uchun (D15) |
 
 - **Qachon:**
@@ -35,11 +35,11 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 6. **Har bir rol va ruxsat matritsada.** Rol nima ko'radi, nima qiladi, nima qila olmaydi. *Nega:* ruxsatlar odatda oxirida esga olinadi va xavfsizlik teshigi bo'ladi.
 7. **Sozlanadigan xulq-atvor alohida ro'yxatda.** Admin yoqib-o'chira oladigan har bir narsa — nomi, standart qiymati, qachon kuchga kirishi. *Nega:* "qachon kuchga kiradi" yozilmasa, har dasturchi o'zicha qiladi.
 8. **Nofunksional talablar raqam bilan.** "Tez ishlasin" emas, "imtihon kuni bir vaqtda N ishtirokchi, javobni saqlash 1 soniyadan oshmaydi". *Nega:* raqamsiz talabni tekshirib ham, baholab ham bo'lmaydi.
-9. **Shaxsiy ma'lumot bilan ishlansa, alohida bo'lim majburiy:** qaysi ma'lumot, nima uchun, rozilik qanday olinadi va qayd etiladi, kim ko'radi, qayerda va qancha saqlanadi, qachon o'chiriladi. Himoyaning texnik qoidalari — D14. *Nega:* bu huquqiy majburiyat; keyin qo'shish qimmat.
-10. **API kontrakti talablari D03 da, jarayoni D11 da.** D03 da: qaysi ma'lumot oqimlari, asosiy endpointlar, xato holatlari va kontrakt fayli qayerda saqlanishi. 2-darvozaga qoralama, 3-darvozagacha asosiy endpointlar kelishilgan bo'ladi. *Nega:* frontend va backend bir vaqtda ishlay olishi uchun kontrakt koddan oldin turishi kerak.
+9. **Shaxsiy ma'lumot bilan ishlansa, alohida bo'lim majburiy:** qaysi ma'lumot, nima uchun, rozilik qanday olinadi va qayd etiladi, kim ko'radi, qayerda va qancha saqlanadi, qachon o'chiriladi. Himoyaning texnik qoidalari — [D14](D14-release-va-deploy.md). *Nega:* bu huquqiy majburiyat; keyin qo'shish qimmat.
+10. **API kontrakti talablari D03 da, jarayoni [D11](D11-dasturchilar-qoidalari.md) da.** D03 da: qaysi ma'lumot oqimlari, asosiy endpointlar, xato holatlari va kontrakt fayli qayerda saqlanishi. 2-darvozaga qoralama, 3-darvozagacha asosiy endpointlar kelishilgan bo'ladi. *Nega:* frontend va backend bir vaqtda ishlay olishi uchun kontrakt koddan oldin turishi kerak.
 11. **Ochiq savollar — egasi va muddati bilan.** Ish boshlanishini to'xtatadigan savol "bloklovchi" deb belgilanadi (D05). *Nega:* egasiz savol hech qachon yopilmaydi.
 12. **Faraz yozib qo'yiladi.** Ma'lumot yo'q bo'lsa, faraz qilinadi va "faraz" deb belgilanadi. *Nega:* faraz noto'g'ri chiqsa, qaysi qism qayta ko'rilishi ko'rinadi.
-13. **Versiya va tasdiq.** Har tasdiqlangan versiya raqamlanadi (v1.0, v1.1 …); mijozning yozma tasdig'i va tasdiqlangan versiya raqami Jira epic'ida turadi. Risklar D03 da emas, D02 risklar reestrida. *Nega:* "qaysi versiya bo'yicha qildik" degan bahs bo'lmaydi.
+13. **Versiya va tasdiq.** Har tasdiqlangan versiya raqamlanadi (v1.0, v1.1 …); mijozning yozma tasdig'i va tasdiqlangan versiya raqami Jira epic'ida turadi. Risklar D03 da emas, [D02](D02-loyiha-hayot-sikli.md) risklar reestrida. *Nega:* "qaysi versiya bo'yicha qildik" degan bahs bo'lmaydi.
 
 **Kichik loyihada.** Shablonning hamma bo'limlari qoladi, lekin har biri qisqa bo'lishi mumkin. Dizayn brief'i (D04) alohida yozilmasa, ekranlar ro'yxatiga maket havolasi qo'shiladi.
 
@@ -146,7 +146,7 @@ Manba: `docs/test-entry-flow.md`, "Sozlamalar qachon yangilanadi".
 | Rozilik berish, test yechish, shikoyat yuborish | — | ✅ | — |
 | Kirish va test sozlamalarini o'zgartirish | — | — | ✅ |
 
-Muhim fakt: test yechish so'rovlari ham nazoratchi tokeni bilan ketadi (`docs/test-entry-flow.md`). Bu ruxsatlar bo'limida aytilishi kerak bo'lgan qaror — u xavfsizlik va sessiya xulq-atvoriga ta'sir qiladi; D02 qarorlar jurnaliga ham yoziladi.
+Muhim fakt: test yechish so'rovlari ham nazoratchi tokeni bilan ketadi (`docs/test-entry-flow.md`). Bu ruxsatlar bo'limida aytilishi kerak bo'lgan qaror — u xavfsizlik va sessiya xulq-atvoriga ta'sir qiladi; [D02](D02-loyiha-hayot-sikli.md) qarorlar jurnaliga ham yoziladi.
 
 ### E. Sozlamalar (parcha)
 
@@ -171,7 +171,7 @@ Endpoint nomlari frontend kodidan (`docs/test-entry-flow.md`); javob formati va 
 | `participant/applications` | Ishtirokchi arizalarini topish | `testType`, `computerId`, `pinfl` yoki `applicationNumber` | arizalar ro'yxati | topilmadi — [TO'LDIRILSIN: backend] |
 | `testprocess/generate` | Test savollarini yaratish | `applicationId`, `computerId`, `testEventId`, `selections` | [TO'LDIRILSIN: backend] | [TO'LDIRILSIN: backend] |
 
-Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiyasi]. Uni yuritish tartibi — D11.
+Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiyasi]. Uni yuritish tartibi — [D11](D11-dasturchilar-qoidalari.md).
 
 ### G. Nofunksional talablar (parcha)
 
@@ -220,7 +220,7 @@ Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiya
 1. **Faqat "baxtli yo'l".** Story'larda internet uzilishi, topilmagan foydalanuvchi, ruxsat yo'qligi yozilmaydi — ular release oldidan bug bo'lib chiqadi.
 2. **"Va hokazo" bilan tugaydigan scope.** "Hisobotlar va h.k." — baholab ham, qabul qilib ham bo'lmaydi. Har bir narsa nomi bilan yoki "kirmaydi" ro'yxatida.
 3. **TZ — bir martalik hujjat.** Tasdiqlangandan keyin o'zgarishlar chatda qoladi va D03 eskiradi. To'g'risi: har o'zgarish D10 orqali va versiyalar tarixida.
-4. **Dasturchi yozadigan narsani analitik yozadi.** TZ'da jadval nomlari, kod tuzilmasi. To'g'risi: D03 "nima" va "qanday tekshiriladi" ni yozadi; "qanday quriladi" — ADR va kod (D11).
+4. **Dasturchi yozadigan narsani analitik yozadi.** TZ'da jadval nomlari, kod tuzilmasi. To'g'risi: D03 "nima" va "qanday tekshiriladi" ni yozadi; "qanday quriladi" — ADR va kod ([D11](D11-dasturchilar-qoidalari.md)).
 5. **Raqamsiz nofunksional talablar.** "Ko'p foydalanuvchiga chidasin" — yuklama testi nimaga qarab o'tkazilishi noma'lum.
 
 ---

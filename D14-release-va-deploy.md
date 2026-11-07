@@ -13,7 +13,7 @@ Release oldindan aytiladigan, takrorlanadigan va xavfsiz bo'lsin: nima chiqayotg
 | --- | --- |
 | DevOps | Muhitlar, CI/CD, monitoring, backup; prod deploy'ni bajaradi |
 | Tech lead | Release tarkibini tasdiqlaydi; rollback qarorini qabul qiladi |
-| QA / tekshiruvchi | Staging regressiyasi (D13) va deploy'dan keyingi smoke test |
+| QA / tekshiruvchi | Staging regressiyasi ([D13](D13-test-strategiyasi.md)) va deploy'dan keyingi smoke test |
 | PM | Release sanasini mijoz bilan kelishadi, e'lon qiladi |
 | Support | Release notes'ni oladi, foydalanuvchi savollariga tayyorlanadi (D16) |
 
@@ -47,7 +47,7 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
 ### A. Muhitlar va artefakt
 
 1. **Staging prod'ga o'xshash.** Infratuzilma turi bir xil (masalan, ikkalasi ham konteynerda), farq faqat konfiguratsiyada. *Nega:* staging'da o'tib prod'da yiqilgan xato — muhitlar farqining natijasi.
-2. **Bitta artefakt yuqoriga ko'tariladi.** Staging'da tekshirilgan image o'zgarmasdan prod'ga chiqadi; muhitga xos sozlamalar (API manzili va boshqalar) image'ga emas, ishga tushishda beriladi. Buning iloji bo'lmasa (sozlama build vaqtida kiritilsa), prod build aynan staging'da tekshirilgan commit'dan olinadi va bu D02 risklar reestriga yoziladi. *Nega:* prod uchun alohida build — tekshirilmagan artefakt.
+2. **Bitta artefakt yuqoriga ko'tariladi.** Staging'da tekshirilgan image o'zgarmasdan prod'ga chiqadi; muhitga xos sozlamalar (API manzili va boshqalar) image'ga emas, ishga tushishda beriladi. Buning iloji bo'lmasa (sozlama build vaqtida kiritilsa), prod build aynan staging'da tekshirilgan commit'dan olinadi va bu [D02](D02-loyiha-hayot-sikli.md) risklar reestriga yoziladi. *Nega:* prod uchun alohida build — tekshirilmagan artefakt.
 3. **Infratuzilma va deploy konfiguratsiyasi kodda** (pipeline fayli, GitOps repo, docker-compose). Serverda qo'lda o'zgartirish qilinmaydi; shoshilinch qilingan bo'lsa, 1 ish kuni ichida kodga qaytariladi. *Nega:* qo'lda o'zgartirilgan server keyingi deploy'da yoki yangi serverda takrorlanmaydi.
 
 ### B. Versiyalash va release notes
@@ -58,7 +58,7 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
    - MAJOR — mos kelmaydigan o'zgarish.
 
    Image tegi — versiya va commit SHA (`1.4.0-a1b2c3d`). *Nega:* "prod'da hozir nima turibdi?" savoliga bir qarashda javob topiladi; rollback uchun oldingi versiya aniq.
-5. **Har release'ning release notes'i bor** (6.2). U Conventional Commits (D11) va Jira'dagi Done tasklardan yig'iladi, ikki qismdan iborat:
+5. **Har release'ning release notes'i bor** (6.2). U Conventional Commits ([D11](D11-dasturchilar-qoidalari.md)) va Jira'dagi Done tasklardan yig'iladi, ikki qismdan iborat:
    - jamoa uchun — texnik;
    - support va mijoz uchun — oddiy tilda.
 
@@ -66,7 +66,7 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
 
 ### C. Release jarayoni
 
-6. **Release = `dev` → `main` MR.** MR tavsifida release checklisti (6.1) bo'ladi; uni tech lead tasdiqlaydi. D02 ning 5-darvozasi (testlar, QA sign-off) shu MR'da yopiladi. *Nega:* release ham boshqa o'zgarishlar kabi ko'rinadigan va tasdiqlanadigan bo'ladi.
+6. **Release = `dev` → `main` MR.** MR tavsifida release checklisti (6.1) bo'ladi; uni tech lead tasdiqlaydi. [D02](D02-loyiha-hayot-sikli.md) ning 5-darvozasi (testlar, QA sign-off) shu MR'da yopiladi. *Nega:* release ham boshqa o'zgarishlar kabi ko'rinadigan va tasdiqlanadigan bo'ladi.
 7. **Release vaqti oldindan belgilanadi.**
    - Foydalanuvchilar eng kam bo'lgan vaqt tanlanadi, muhim tadbirlar paytida emas.
    - Juma kechqurun yoki bayram oldidan release qilinmaydi.
@@ -80,7 +80,7 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
 ### D. Rollback va migratsiyalar
 
 11. **Har release'ning rollback rejasi bor** (6.4): oldingi versiya tegi, qaytish qadamlari, kim qaror qiladi.
-    - Smoke test o'tmasa yoki kritik bug chiqsa (D08), tech lead rollback qaroriga keladi.
+    - Smoke test o'tmasa yoki kritik bug chiqsa ([D08](D08-kanban-dor-dod.md)), tech lead rollback qaroriga keladi.
     - Prod'da 15 daqiqadan ortiq "tezda tuzatib qo'yamiz" deb urinilmaydi — avval rollback, keyin tinch tuzatish.
 
     *Nega:* bosim ostida prod'da tuzatish yangi xatolarni keltiradi.
@@ -104,12 +104,12 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
 
 ### G. Shaxsiy ma'lumotlarni himoyalash
 
-Qaysi ma'lumot yig'ilishi va nima uchun — D03 da. Bu bo'lim muhitlar va jarayon qoidalarini beradi.
+Qaysi ma'lumot yig'ilishi va nima uchun — [D03](D03-loyiha-boshlangich-hujjati.md) da. Bu bo'lim muhitlar va jarayon qoidalarini beradi.
 
 18. **Prod ma'lumoti staging yoki local'ga faqat anonimlashtirilib o'tadi.** JShShIR, ism, telefon, yuz tasviri almashtiriladi yoki o'chiriladi. *Nega:* staging himoyasi prod'dagidek emas, unga kirish huquqi ham kengroq.
 19. **Loglarda, xato hisobotlarida va monitoringda shaxsiy ma'lumot yo'q.** JShShIR, token va yuz tasviri o'rniga ichki ID yoziladi. *Nega:* loglar ko'p odamga ochiq va uzoq saqlanadi.
 20. **Prod'ga kirish — nomli akkauntlar bilan, minimal huquq bilan.** Kirish huquqi borlar ro'yxati yuritiladi; jamoadan chiqqan odamning huquqi o'sha kuni olinadi. *Nega:* umumiy akkaunt bilan kim nima qilgani aniqlanmaydi.
-21. **Prod kalitlari faqat himoyalangan branchlar pipeline'iga ochiq** (CI'da protected va masked o'zgaruvchilar, D11). *Nega:* istalgan feature branch'dan prod kalitini o'qib bo'lmasligi kerak.
+21. **Prod kalitlari faqat himoyalangan branchlar pipeline'iga ochiq** (CI'da protected va masked o'zgaruvchilar, [D11](D11-dasturchilar-qoidalari.md)). *Nega:* istalgan feature branch'dan prod kalitini o'qib bo'lmasligi kerak.
 
 **Kichik loyihada.** Release checklisti, rollback rejasi va 18–21-qoidalar majburiy. Monitoring minimum: availability va xatolar.
 
@@ -221,7 +221,7 @@ Manba: `.gitlab-ci.yml`, `Dockerfile`, `nginx.conf`, `angular.json`.
 | Bitta artefakt (2) | Staging va prod uchun alohida build; API manzili build vaqtida kiritiladi | Muhit sozlamasini ishga tushishda yuklash (masalan, image ichidagi `config.json` ni deploy paytida almashtirish). Shunda staging'da tekshirilgan image prod'ga chiqadi. Hozircha — prod build staging'da tekshirilgan commit'dan, risk reestrga |
 | Versiyalash (4) | `package.json` da `0.0.0`; git teglar yo'q; image tegi — build sanasi (`BUILD_DATE`) | SemVer teg, image tegi = versiya + SHA |
 | Rollback (11–12) | Avtomatik rollback yo'q. Image tegi `tag.txt` artefaktida, u 10 daqiqada o'chadi (`expire_in: 10 minutes`) — oldingi tegni keyin topish qiyin | Teglarni release notes va deploy yozuvida saqlash; `deploy_prod` ga oldingi tegni qo'lda berish imkoniyati (`ROLLBACK_TAG` o'zgaruvchisi); staging'da sinash |
-| Testlar deploy'dan oldin | Pipeline'da test bosqichi yo'q (D13) | `build_job` faqat test job'laridan keyin (D13, 6.3) |
+| Testlar deploy'dan oldin | Pipeline'da test bosqichi yo'q ([D13](D13-test-strategiyasi.md)) | `build_job` faqat test job'laridan keyin ([D13](D13-test-strategiyasi.md), 6.3) |
 | `Dockerfile.prod` | Pipeline unga murojaat qiladi, lekin repoda (lokal nusxadagi hech bir branch tarixida) bunday fayl yo'q | [TO'LDIRILSIN: prod image qayerdan yig'iladi — fayl boshqa joydami yoki prod pipeline boshqacha ishlaydimi] |
 | Boshqa mijozlar (argos, olymp, control, ssv) | `package.json` da build skriptlari bor, `.gitlab-ci.yml` da yo'q | [TO'LDIRILSIN: ular qanday deploy qilinadi]. Har mijoz uchun pipeline'da alohida job yoki parametr |
 | Maxfiy kalitlar (21) | CI o'zgaruvchilari orqali | Protected/masked ekanini tekshirish |
@@ -239,7 +239,7 @@ Shuning uchun:
 
 - Release faqat test sessiyalari rejalashtirilmagan vaqtda chiqadi. Jadval: [TO'LDIRILSIN: test sessiyalari jadvali kimda va qayerda].
 - Har imtihon kunidan 2 ish kuni oldin freeze boshlanadi (boshlang'ich qiymat, pilotda tekshiriladi).
-- Sozlama o'zgarishlari release talab qilmaydi. Ular admin orqali o'zgartiriladi va keyingi ishtirokchidan kuchga kiradi (D03, US-06). Shoshilinch o'zgarishni ko'pincha release'siz, sozlama bilan qilish mumkin.
+- Sozlama o'zgarishlari release talab qilmaydi. Ular admin orqali o'zgartiriladi va keyingi ishtirokchidan kuchga kiradi ([D03](D03-loyiha-boshlangich-hujjati.md), US-06). Shoshilinch o'zgarishni ko'pincha release'siz, sozlama bilan qilish mumkin.
 
 ### 7.4. Release notes (real commitlardan namuna)
 

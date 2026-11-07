@@ -15,7 +15,7 @@ Har bir taskning holati hech kimdan so'ramasdan boardda ko'rinsin, "tayyor" so'z
 
 **Atamalar.** *Kanban* — ishni ustunlar bo'ylab harakatlanuvchi kartochkalar orqali boshqarish usuli. *WIP limiti* (work in progress) — bir ustunda bir vaqtda turishi mumkin bo'lgan tasklarning eng ko'p soni. *DoR* (Definition of Ready) — taskni ishga olish mumkinligi mezoni. *DoD* (Definition of Done) — task tugaganligi mezoni.
 
-**Bu doc va D02.** D02 darvozalari butun loyihaning bosqichdan bosqichga o'tishini tekshiradi; DoR va DoD esa bitta taskning ustundan ustunga o'tishini.
+**Bu doc va [D02](D02-loyiha-hayot-sikli.md).** [D02](D02-loyiha-hayot-sikli.md) darvozalari butun loyihaning bosqichdan bosqichga o'tishini tekshiradi; DoR va DoD esa bitta taskning ustundan ustunga o'tishini.
 
 ## 3. Board
 
@@ -26,11 +26,11 @@ Har bir taskning holati hech kimdan so'ramasdan boardda ko'rinsin, "tayyor" so'z
 | Backlog | Qayd etilgan, hali tayyor emas | Istalgan odam | Sarlavha va manba bor |
 | Ready | Ishga olsa bo'ladi | Analitik / PM | DoR bajarilgan |
 | In progress | Ishlanmoqda | Bajaruvchi | Bajaruvchi o'zini biriktirgan |
-| Code review | Merge request ochilgan, review kutilmoqda | Bajaruvchi | MR ochilgan, avtomatik tekshiruvlar yashil (D11) |
+| Code review | Merge request ochilgan, review kutilmoqda | Bajaruvchi | MR ochilgan, avtomatik tekshiruvlar yashil ([D11](D11-dasturchilar-qoidalari.md)) |
 | Testing | Qabul mezonlari bo'yicha tekshirilmoqda | Reviewer | Review tasdiqlangan, test muhitida ishlaydi |
 | Done | Tugadi | Tekshiruvchi | DoD bajarilgan |
 
-Prod'ga chiqarish — alohida jarayon (D14): Done'dagi tasklar keyingi release'ga kiradi.
+Prod'ga chiqarish — alohida jarayon ([D14](D14-release-va-deploy.md)): Done'dagi tasklar keyingi release'ga kiradi.
 
 ### 3.2. WIP limitlari
 
@@ -44,8 +44,8 @@ Limit to'lgan bo'lsa, yangi task olinmaydi: bo'shagan odam avval review yoki tes
 
 ### 3.3. Task turlari va Jira tuzilmasi
 
-- **Epic** — release (D02, masalan "R1").
-- **Story** — D03 dagi user story; sarlavhada ID (`US-04`).
+- **Epic** — release ([D02](D02-loyiha-hayot-sikli.md), masalan "R1").
+- **Story** — [D03](D03-loyiha-boshlangich-hujjati.md) dagi user story; sarlavhada ID (`US-04`).
 - **Task / Sub-task** — story'ni bajarish uchun 1–3 kunlik bo'laklar (frontend, backend alohida).
 - **Bug** — 3.5-bo'limdagi shablon bo'yicha.
 
@@ -96,9 +96,9 @@ Prioritet — Jira'ning standart maydoni. Backlog ichidagi tartibni PM belgilayd
 
 Task Ready'ga faqat quyidagilar bajarilganda o'tadi. O'tkazadi — analitik yoki PM.
 
-- [ ] D03 dagi story'ga havola va qabul mezonlari bor
+- [ ] [D03](D03-loyiha-boshlangich-hujjati.md) dagi story'ga havola va qabul mezonlari bor
 - [ ] UI bo'lsa — barcha holatlari bilan maket havolasi (D04)
-- [ ] FE+BE bo'lsa — endpoint kontraktda kelishilgan (D11)
+- [ ] FE+BE bo'lsa — endpoint kontraktda kelishilgan ([D11](D11-dasturchilar-qoidalari.md))
 - [ ] **Bahoni bajaruvchining o'zi bergan**; baho 3 kundan oshsa, task bo'linadi
 - [ ] Bog'liqliklar tugagan yoki parallel ishlash usuli aniq (masalan, mock bilan)
 - [ ] Bloklovchi ochiq savol yo'q
@@ -109,14 +109,14 @@ Task Ready'ga faqat quyidagilar bajarilganda o'tadi. O'tkazadi — analitik yoki
 
 Task Done'ga faqat quyidagilar bajarilganda o'tadi. O'tkazadi — tekshiruvchi.
 
-- [ ] Kod asosiy ishlab chiqish branchiga merge qilingan, code review o'tgan (D11)
+- [ ] Kod asosiy ishlab chiqish branchiga merge qilingan, code review o'tgan ([D11](D11-dasturchilar-qoidalari.md))
 - [ ] **Biznes logikaga unit test yozilgan**
 - [ ] **Barcha avtomatik tekshiruvlar yashil; qizil test bilan merge qilinmaydi**
 - [ ] Qabul mezonlarining har biri test muhitida tekshirilgan — **task muallifi bo'lmagan odam tomonidan**
 - [ ] Topilgan muammolar shu taskda tuzatilgan yoki alohida bug sifatida ochilgan
-- [ ] Kerak bo'lsa yangilangan: texnik hujjat, tarjima kalitlari, D03 (o'zgarish bo'lsa — D10 orqali)
+- [ ] Kerak bo'lsa yangilangan: texnik hujjat, tarjima kalitlari, [D03](D03-loyiha-boshlangich-hujjati.md) (o'zgarish bo'lsa — D10 orqali)
 
-Test talabining to'liq versiyasi (qaysi testlar, qamrov, e2e) — D13. D13 bu talabni kengaytiradi, takrorlamaydi.
+Test talabining to'liq versiyasi (qaysi testlar, qamrov, e2e) — [D13](D13-test-strategiyasi.md). [D13](D13-test-strategiyasi.md) bu talabni kengaytiradi, takrorlamaydi.
 
 *Nega:* "tayyor" so'zining yagona ma'nosi bo'lmasa, test va review keyinga qoladi va release oldidan to'planadi.
 
@@ -124,14 +124,14 @@ Test talabining to'liq versiyasi (qaysi testlar, qamrov, e2e) — D13. D13 bu ta
 
 1. **Boardda yo'q ish — ish emas.** Chatda, qo'ng'iroqda yoki yo'lakda kelgan so'rov 1 ish kuni ichida Backlog'ga yoziladi; chatga task havolasi tashlanadi. Yozadi — so'rovni qabul qilgan odam. *Nega:* aytilgan narsa esdan chiqadi; boardga tushgani — yo'q.
 2. **Holatni so'rash o'rniga boardga qarash.** Bajaruvchi holat o'zgarganda taskni o'zi suradi; "qayerda?" degan savol — board noto'g'ri yuritilayotganining belgisi. *Nega:* shaffoflik jarayonda, odamning esida emas.
-3. **Talab o'rtada o'zgarsa — change request.** Task `change-request` labeli bilan Backlog'ga qaytadi; PM srok va scope'ga ta'sirini yozadi; D03 versiyasi yangilanadi; shundan keyingina task qayta Ready'ga o'tadi. Kichik o'zgarish chegarasi va to'liq tartib — D10. *Nega:* "yo'l-yo'lakay qo'shib qo'ying" srokni yashirin buzadi.
+3. **Talab o'rtada o'zgarsa — change request.** Task `change-request` labeli bilan Backlog'ga qaytadi; PM srok va scope'ga ta'sirini yozadi; [D03](D03-loyiha-boshlangich-hujjati.md) versiyasi yangilanadi; shundan keyingina task qayta Ready'ga o'tadi. Kichik o'zgarish chegarasi va to'liq tartib — D10. *Nega:* "yo'l-yo'lakay qo'shib qo'ying" srokni yashirin buzadi.
 4. **Bloklangan task belgilanadi.** Jira'da "Flagged" belgisi va izoh: nima va kimni kutayapti. 1 ish kunidan ortiq bloklansa, PM daily'da (D09) ko'taradi. *Nega:* jim bloklangan task srok o'tgandagina ko'rinadi.
 5. **Muallif o'z taskini o'zi testlamaydi.** Kichik jamoada QA bo'lmasa, Testing'ni analitik yoki boshqa dasturchi qiladi. *Nega:* muallif qanday ishlatish kerakligini biladi va xatoga yo'l qo'yadigan qadamni qilmaydi.
 6. **Qaytgan task orqaga suriladi.** Testing'da qabul mezoni bajarilmasa, task In progress'ga qaytadi va izohda sababi yoziladi. Yangi task ochilmaydi (yangi bug faqat boshqa muammo uchun). *Nega:* rework sanaladi va retroda (D17) ko'rinadi.
 
 ## 7. uzedu misoli
 
-Ssenariy: uzedu'ni noldan quryapmiz. Board — Jira, kod — GitLab. Jamoa 5 kishi, alohida QA yo'q, shuning uchun Testing'ni PM/analitik yoki boshqa dasturchi yuritadi. Story'lar D03 dagi uzedu misolidan.
+Ssenariy: uzedu'ni noldan quryapmiz. Board — Jira, kod — GitLab. Jamoa 5 kishi, alohida QA yo'q, shuning uchun Testing'ni PM/analitik yoki boshqa dasturchi yuritadi. Story'lar [D03](D03-loyiha-boshlangich-hujjati.md) dagi uzedu misolidan.
 
 ### 7.1. Board qanday ko'rinadi (bir kun, namunaviy)
 
@@ -177,11 +177,11 @@ Bog'liq story: US-04
 
 ### 7.4. Change request (D03 dagi S-01 dan)
 
-D03 ochiq savoli S-01 "rozilik qayd etilishi kerakmi" mijoz tomonidan "ha" deb yopildi. Bu R1 scope'idagi o'zgarish, shuning uchun:
+[D03](D03-loyiha-boshlangich-hujjati.md) ochiq savoli S-01 "rozilik qayd etilishi kerakmi" mijoz tomonidan "ha" deb yopildi. Bu R1 scope'idagi o'zgarish, shuning uchun:
 
 1. Backlog'ga `change-request` labeli bilan task ochiladi.
-2. PM ta'sirini yozadi: backend (rozilikni saqlash), frontend (yuborish), D03 shaxsiy ma'lumotlar bo'limi; baho — bajaruvchilardan.
-3. D03 v1.1 ga yangilanadi, qaror D02 qarorlar jurnaliga yoziladi.
+2. PM ta'sirini yozadi: backend (rozilikni saqlash), frontend (yuborish), [D03](D03-loyiha-boshlangich-hujjati.md) shaxsiy ma'lumotlar bo'limi; baho — bajaruvchilardan.
+3. [D03](D03-loyiha-boshlangich-hujjati.md) v1.1 ga yangilanadi, qaror [D02](D02-loyiha-hayot-sikli.md) qarorlar jurnaliga yoziladi.
 4. Shundan keyin task DoR bo'yicha Ready'ga o'tadi.
 
 ### 7.5. Real repo bilan solishtirish: "avtomatik tekshiruvlar yashil"
@@ -192,7 +192,7 @@ Real frontend repoda (`test-uzedu-user`):
 - GitLab CI'da test bosqichi yo'q — u faqat build va deploy qiladi (`.gitlab-ci.yml`).
 - Hook lokal va `--no-verify` bilan chetlab o'tiladi.
 
-**Standart bo'yicha nima qo'shilardi:** testlarni CI'ga ham qo'shish va merge request'ni qizil pipeline bilan merge qilib bo'lmaydigan qilish. Shunda DoD'dagi "qizil test bilan merge qilinmaydi" qoidasi odamning intizomiga emas, tizimga bog'lanadi (D13, D14).
+**Standart bo'yicha nima qo'shilardi:** testlarni CI'ga ham qo'shish va merge request'ni qizil pipeline bilan merge qilib bo'lmaydigan qilish. Shunda DoD'dagi "qizil test bilan merge qilinmaydi" qoidasi odamning intizomiga emas, tizimga bog'lanadi ([D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md)).
 
 ### Og'riqqa bog'liqlik
 

@@ -13,7 +13,7 @@ Kompaniyaning barcha loyihalarida interfeys bir xil, tushunarli va qulay bo'lsin
 | --- | --- |
 | Dizayner | Maketlarni shu standart va komponent ro'yxati asosida chizadi; yangi komponent kerak bo'lsa, frontend bilan kelishadi |
 | Frontend dasturchi | Komponentlarni ro'yxatdagi kutubxona komponentlari va tokenlar bilan quradi; maketdan chetga chiqmaydi, chiqish kerak bo'lsa dizaynerga aytadi |
-| Analitik | Ekranlarning holatlari va xato holatlari D03 story'larida bo'lishini ta'minlaydi; matnlar terminologiya lug'atiga mos |
+| Analitik | Ekranlarning holatlari va xato holatlari [D03](D03-loyiha-boshlangich-hujjati.md) story'larida bo'lishini ta'minlaydi; matnlar terminologiya lug'atiga mos |
 | Tekshiruvchi (QA) | Testing'da 5.2-checklist bo'yicha ko'radi |
 
 - **Qachon:**
@@ -82,7 +82,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil — 7-bo'lim.
 
 ### D. Jadvallar va ro'yxatlar
 
-10. **Ma'lumot jadvali standart imkoniyatlar bilan.** Har birini qo'shish yoki qo'shmaslik D03 da story darajasida qaror qilinadi, lekin qo'shilsa — shu ko'rinishda:
+10. **Ma'lumot jadvali standart imkoniyatlar bilan.** Har birini qo'shish yoki qo'shmaslik [D03](D03-loyiha-boshlangich-hujjati.md) da story darajasida qaror qilinadi, lekin qo'shilsa — shu ko'rinishda:
 
 | Imkoniyat | Standart |
 | --- | --- |
@@ -115,7 +115,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil — 7-bo'lim.
 
 ### F. Adaptivlik va accessibility
 
-14. **Qo'llab-quvvatlanadigan ekranlar D03 da yoziladi** (masalan, faqat desktop yoki desktop + telefon). Maket har biri uchun chiziladi. Boshlang'ich breakpoint'lar — UI kutubxonasi va Tailwind'niki. *Nega:* "telefonda ham ochilsin" degan talab oxirida kelsa, ekranlar qayta quriladi.
+14. **Qo'llab-quvvatlanadigan ekranlar [D03](D03-loyiha-boshlangich-hujjati.md) da yoziladi** (masalan, faqat desktop yoki desktop + telefon). Maket har biri uchun chiziladi. Boshlang'ich breakpoint'lar — UI kutubxonasi va Tailwind'niki. *Nega:* "telefonda ham ochilsin" degan talab oxirida kelsa, ekranlar qayta quriladi.
 15. **Accessibility minimumi:**
     - matn kontrasti kamida 4.5:1 (katta matn uchun 3:1);
     - hamma amal klaviatura bilan bajariladi va fokus ko'rinadi;
@@ -126,7 +126,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil — 7-bo'lim.
 
 ### G. Matn va terminologiya
 
-16. **Bitta tushuncha — bitta so'z.** Loyiha boshida terminologiya lug'ati (6.3) tuziladi va D03, maketlar, tarjima kalitlari va qo'llanma (D15) shu lug'atdan foydalanadi. *Nega:* bir ekranda "nomzod", boshqasida "ishtirokchi" — foydalanuvchi ular har xil odam deb o'ylaydi.
+16. **Bitta tushuncha — bitta so'z.** Loyiha boshida terminologiya lug'ati (6.3) tuziladi va [D03](D03-loyiha-boshlangich-hujjati.md), maketlar, tarjima kalitlari va qo'llanma (D15) shu lug'atdan foydalanadi. *Nega:* bir ekranda "nomzod", boshqasida "ishtirokchi" — foydalanuvchi ular har xil odam deb o'ylaydi.
 17. **Tugma matni — fe'l, amalning nomi:** "Saqlash", "Testni boshlash"; "OK" yoki "Davom" emas (keyin nima bo'lishi aniq bo'lmasa).
 18. **Barcha matnlar tarjima kalitlari orqali** — kodda qattiq matn yo'q; har kalitning har bir qo'llab-quvvatlanadigan tilda qiymati bor. *Nega:* yangi til qo'shish yoki matnni tuzatish kod o'zgarishini talab qilmaydi; tarjimasi yo'q kalit UI'da xom chiqmaydi.
 
@@ -225,9 +225,9 @@ Standart bo'yicha tekshiriladigan narsa: "taymer pauzada" holati foydalanuvchiga
 | Qoida | Real holat | Nima qilinadi |
 | --- | --- | --- |
 | Takroriy UI — bitta komponent (4) | Savol turlari komponentlari ommaviy portalda nusxalangan; ular asosiy test oynasi bilan bir xil, faqat `styleUrl` yo'li farq qiladi (`docs/e2e-testing.md`, 9-bo'lim; `features/public-test/solve-test/question-by-type/`) | Umumiy `shared` komponentlarga chiqarish |
-| Tarjima kalitlari to'liq (18) | Ommaviy portalda prod tarjimalarida 5 ta kalit yo'q va UI'da kalitning o'zi chiqadi (`docs/e2e-testing.md`, 9-bo'lim "Ochiq masalalar") | Release checklistiga "yangi tarjima kalitlari prod'da bor" punkti (D14) |
+| Tarjima kalitlari to'liq (18) | Ommaviy portalda prod tarjimalarida 5 ta kalit yo'q va UI'da kalitning o'zi chiqadi (`docs/e2e-testing.md`, 9-bo'lim "Ochiq masalalar") | Release checklistiga "yangi tarjima kalitlari prod'da bor" punkti ([D14](D14-release-va-deploy.md)) |
 | Doimiy holat — banner (12) | Filtr qo'llangach yon paneldagi filtr tanlovni ko'rsatmaydi (o'sha manba) | Filtr holati bitta joyda saqlanadi, D bo'limidagi "qo'llangan filtrlar soni" |
-| Qamrov qarori | Dark mode preset'da selektor bilan e'lon qilingan, lekin amalga oshirilmagan (`src/tailwind.css` dagi TODO) | D03 da qaror: kerakmi? Kerak bo'lmasa — "kirmaydi" ro'yxatiga, preset'dagi qoldiqni olib tashlash |
+| Qamrov qarori | Dark mode preset'da selektor bilan e'lon qilingan, lekin amalga oshirilmagan (`src/tailwind.css` dagi TODO) | [D03](D03-loyiha-boshlangich-hujjati.md) da qaror: kerakmi? Kerak bo'lmasa — "kirmaydi" ro'yxatiga, preset'dagi qoldiqni olib tashlash |
 
 ### 7.5. Terminologiya lug'ati (parcha)
 

@@ -10,15 +10,15 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
   - tech lead — avtomatik testlar, CI;
   - QA — test rejasi, qo'lda test, regressiya.
 
-  Kichik jamoada QA rolini analitik yoki muallif bo'lmagan dasturchi bajaradi (D08).
+  Kichik jamoada QA rolini analitik yoki muallif bo'lmagan dasturchi bajaradi ([D08](D08-kanban-dor-dod.md)).
 - **Kim nima qiladi:**
 
 | Rol | Vazifasi |
 | --- | --- |
 | Dasturchi | O'z taskiga unit va integration test yozadi; e2e'ni o'zgargan oqim uchun yangilaydi |
-| QA / tekshiruvchi | D03 qabul mezonlaridan test ssenariylari tuzadi; Testing ustunida tekshiradi; release oldidan regressiya o'tkazadi |
+| QA / tekshiruvchi | [D03](D03-loyiha-boshlangich-hujjati.md) qabul mezonlaridan test ssenariylari tuzadi; Testing ustunida tekshiradi; release oldidan regressiya o'tkazadi |
 | Tech lead | Testlar pipeline'da ishlashini va qizil pipeline merge'ni bloklashini ta'minlaydi; beqaror (flaky) testlarni kuzatadi |
-| Analitik | Qabul mezonlari tekshirsa bo'ladigan bo'lishini ta'minlaydi (D03) |
+| Analitik | Qabul mezonlari tekshirsa bo'ladigan bo'lishini ta'minlaydi ([D03](D03-loyiha-boshlangich-hujjati.md)) |
 
 - **Qachon:**
   - 4-bosqich (Planlash): test vositalari va CI tayyorlanadi.
@@ -33,7 +33,7 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
 - *Flaky test* — kod o'zgarmasa ham goh o'tib, goh yiqiladigan test.
 - *Regressiya* — avval ishlagan narsaning yangi o'zgarishdan keyin buzilishi.
 
-**Bu doc va D08.** D08 DoD'da minimal talab bor: biznes logikaga unit test yoziladi va qizil test bilan merge qilinmaydi. Bu doc o'sha talabni kengaytiradi: qaysi testlar, qayerda, qancha.
+**Bu doc va [D08](D08-kanban-dor-dod.md).** [D08](D08-kanban-dor-dod.md) DoD'da minimal talab bor: biznes logikaga unit test yoziladi va qizil test bilan merge qilinmaydi. Bu doc o'sha talabni kengaytiradi: qaysi testlar, qayerda, qancha.
 
 ## 3. Test darajalari
 
@@ -44,7 +44,7 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
 | E2E (frontend, mock backend) | Foydalanuvchi oqimlari, ekran holatlari, xato holatlari | Frontend dasturchi | Har MR pipeline'ida (yoki 6-qoida bo'yicha) | Daqiqalar |
 | Smoke (to'liq tizim) | Staging/prod'da asosiy oqim haqiqiy backend bilan ishlaydi | QA / tekshiruvchi | Har deploy'dan keyin | Daqiqalar |
 | Qo'lda va regressiya | Avtomatlashtirilmagan holatlar, qurilma va brauzerlar, UX | QA / tekshiruvchi | Testing ustuni; release oldidan staging | Soatlar |
-| Yuklama | D03 dagi yuklama talabi bajariladi | Backend + DevOps | Release oldidan, agar D03 da raqam bo'lsa | Soatlar |
+| Yuklama | [D03](D03-loyiha-boshlangich-hujjati.md) dagi yuklama talabi bajariladi | Backend + DevOps | Release oldidan, agar [D03](D03-loyiha-boshlangich-hujjati.md) da raqam bo'lsa | Soatlar |
 
 **Nisbat.** Unit testlar eng ko'p, e2e — asosiy oqimlar uchun. Har xato holatini e2e bilan tekshirish qimmat va sekin; mantiq unit testda, oqim e2e'da tekshiriladi.
 
@@ -52,10 +52,10 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
 
 ### A. Nima majburiy
 
-1. **Biznes logikaga unit test** — har task'da (D08 DoD). Biznes logika — natijaga, pulga, vaqtga, ruxsatga yoki ma'lumot saqlanishiga ta'sir qiladigan kod. Faqat ko'rinish (layout, stil) uchun unit test shart emas. *Nega:* eng qimmat xatolar mantiqda; ularni unit test eng arzon ushlaydi.
+1. **Biznes logikaga unit test** — har task'da ([D08](D08-kanban-dor-dod.md) DoD). Biznes logika — natijaga, pulga, vaqtga, ruxsatga yoki ma'lumot saqlanishiga ta'sir qiladigan kod. Faqat ko'rinish (layout, stil) uchun unit test shart emas. *Nega:* eng qimmat xatolar mantiqda; ularni unit test eng arzon ushlaydi.
 2. **Har bug tuzatishi — avval yiqiladigan test.** Tuzatishdan oldin xatoni qaytaradigan test yoziladi, keyin kod tuzatiladi va test o'tadi. Kichik jamoa uchun ham majburiy. *Nega:* bir marta tuzatilgan xato qaytib kelsa, bu — rework va ishonchni yo'qotish.
-3. **D03 dagi har asosiy oqim e2e bilan qoplanadi.** Loyiha uchun eng muhim 5 ta oqim 2-darvozada test rejasida nomi bilan yoziladi. E2E'da baxtli yo'l bilan birga kamida bitta xato holati ham tekshiriladi. *Nega:* oqim — foydalanuvchi ko'radigan narsa; unit testlar o'tsa ham oqim buzilishi mumkin.
-4. **API kontrakti testlanadi.** Backend integration testi endpoint javobi kontraktga (D11) mosligini tekshiradi. Frontend mock'lari ham shu kontraktdan olinadi. *Nega:* mock bilan o'tgan frontend testi faqat mock to'g'ri bo'lsagina foydali.
+3. **[D03](D03-loyiha-boshlangich-hujjati.md) dagi har asosiy oqim e2e bilan qoplanadi.** Loyiha uchun eng muhim 5 ta oqim 2-darvozada test rejasida nomi bilan yoziladi. E2E'da baxtli yo'l bilan birga kamida bitta xato holati ham tekshiriladi. *Nega:* oqim — foydalanuvchi ko'radigan narsa; unit testlar o'tsa ham oqim buzilishi mumkin.
+4. **API kontrakti testlanadi.** Backend integration testi endpoint javobi kontraktga ([D11](D11-dasturchilar-qoidalari.md)) mosligini tekshiradi. Frontend mock'lari ham shu kontraktdan olinadi. *Nega:* mock bilan o'tgan frontend testi faqat mock to'g'ri bo'lsagina foydali.
 
 ### B. Qamrov
 
@@ -78,19 +78,19 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
 ### D. Ishonchli testlar
 
 8. **Selektorlar — maxsus test atributi** (`data-cy` yoki `data-testid`). Matn yoki CSS klass emas. *Nega:* tarjima yoki dizayn o'zgarsa, test xato bo'lmasa ham yiqilmaydi.
-9. **Test ma'lumotlari soxta va kodda.** Factory'lar orqali yaratiladi; real login, parol, JShShIR yoki yuz tasviri ishlatilmaydi. *Nega:* shaxsiy ma'lumot repoga tushmaydi (D11); testlar har kimda bir xil ishlaydi.
+9. **Test ma'lumotlari soxta va kodda.** Factory'lar orqali yaratiladi; real login, parol, JShShIR yoki yuz tasviri ishlatilmaydi. *Nega:* shaxsiy ma'lumot repoga tushmaydi ([D11](D11-dasturchilar-qoidalari.md)); testlar har kimda bir xil ishlaydi.
 10. **E2E'da mock qat'iy (strict).** Mock qilinmagan so'rov testni yiqitadi. *Nega:* test haqiqiy backend'ga jimgina borib, uning holatiga bog'lanib qolmaydi.
 11. **Flaky test darhol hal qilinadi.** Bir kun ichida tuzatiladi yoki karantinga olinadi: test o'tkazib yuboriladi (`skip`), kodda sababi yoziladi, Jira'da egasi va muddati bilan task ochiladi. Karantindagi testlar soni haftalik sync'da ko'riladi. Yangi test 3 marta ketma-ket yuritib tekshiriladi. *Nega:* "goh yiqiladi, qayta yuritamiz" odati odamlarni qizil natijaga e'tibor bermaslikka o'rgatadi.
 12. **Testlar "bo'sh o'tmasligi" tekshiriladi.** Yangi test yozilgach, tekshirilayotgan kod vaqtincha buziladi — test yiqilishi kerak. *Nega:* hech narsani tekshirmaydigan test yashil bo'ladi va noto'g'ri ishonch beradi.
 
 ### E. Qo'lda test, regressiya va bug'lar
 
-13. **Testing ustunida qabul mezonlari bo'yicha tekshiriladi** — muallif bo'lmagan odam tomonidan (D08). *Nega:* avtomatik testlar dasturchi o'ylagan holatlarni tekshiradi, tekshiruvchi esa foydalanuvchi qiladigan narsani.
-14. **Release oldidan staging'da regressiya checklisti** o'tkaziladi (5.3). Natija QA sign-off sifatida 5-darvoza yozuviga tushadi (D02). *Nega:* mock bilan o'tgan testlar haqiqiy backend bilan integratsiyani tekshirmaydi.
-15. **Bug hayot sikli boardda:** bug D08 shabloni bo'yicha ochiladi va Backlog → … → Done yo'lini o'tadi. Bug Done'ga faqat regressiya testi bilan o'tadi (2-qoida). Qayta ochilgan bug'lar soni sanaladi (D17). *Nega:* alohida "bug ro'yxati" boardni ikkiga bo'ladi.
+13. **Testing ustunida qabul mezonlari bo'yicha tekshiriladi** — muallif bo'lmagan odam tomonidan ([D08](D08-kanban-dor-dod.md)). *Nega:* avtomatik testlar dasturchi o'ylagan holatlarni tekshiradi, tekshiruvchi esa foydalanuvchi qiladigan narsani.
+14. **Release oldidan staging'da regressiya checklisti** o'tkaziladi (5.3). Natija QA sign-off sifatida 5-darvoza yozuviga tushadi ([D02](D02-loyiha-hayot-sikli.md)). *Nega:* mock bilan o'tgan testlar haqiqiy backend bilan integratsiyani tekshirmaydi.
+15. **Bug hayot sikli boardda:** bug [D08](D08-kanban-dor-dod.md) shabloni bo'yicha ochiladi va Backlog → … → Done yo'lini o'tadi. Bug Done'ga faqat regressiya testi bilan o'tadi (2-qoida). Qayta ochilgan bug'lar soni sanaladi (D17). *Nega:* alohida "bug ro'yxati" boardni ikkiga bo'ladi.
 16. **Test hujjati repoda:** testlarni qanday ishga tushirish, mock strategiyasi, ma'lum tuzoqlar. Yangi tuzoq topilsa, shu hujjatga qator qo'shiladi. *Nega:* bir marta yarim kun yo'qotilgan muammo keyingi odamga yana yarim kun olmaydi.
 
-**Kichik loyihada.** Minimum — D08 DoD (unit test, yashil tekshiruvlar) va 1–3 va 7-qoidalar. E2E 5 ta asosiy oqim uchun; yuklama testi faqat D03 da raqam bo'lsa.
+**Kichik loyihada.** Minimum — [D08](D08-kanban-dor-dod.md) DoD (unit test, yashil tekshiruvlar) va 1–3 va 7-qoidalar. E2E 5 ta asosiy oqim uchun; yuklama testi faqat [D03](D03-loyiha-boshlangich-hujjati.md) da raqam bo'lsa.
 
 ## 5. Shablonlar
 
@@ -159,7 +159,7 @@ Ssenariy: uzedu'ni noldan quryapmiz. Frontend misollari real repozitoriydan (`te
 
 Real repoda 11 ta e2e spec va 171 ta test bor; testlar backend'siz, to'liq mock bilan ishlaydi (`docs/e2e-testing.md`, 2- va 3-bo'limlar). Quyidagi 5 oqim — test rejasidagi majburiy ro'yxat. Har biri real spec'ga bog'langan.
 
-| # | Oqim | Story (D03) | Real spec | Tekshiriladigan xato holatlari (spec'dan) |
+| # | Oqim | Story ([D03](D03-loyiha-boshlangich-hujjati.md)) | Real spec | Tekshiriladigan xato holatlari (spec'dan) |
 | --- | --- | --- | --- | --- |
 | 1 | Nazoratchi login → ishtirokchini topish → testga kirish | US-01–03 | `login.cy.ts`, `pinfl.cy.ts`, `application-details.cy.ts` | backend xatosi, arizalar topilmadi, rozilik belgilanmagan, noto'g'ri maxfiy kod |
 | 2 | Test yechish → javob saqlash → yakunlash → natija | US-05 | `solve-test.cy.ts`, `question-types.cy.ts` | test yaratilmasa, server yakunlashni rad etsa |
@@ -191,9 +191,9 @@ Xato holatlari: kontent yuklanayotganda ham pauza (alohida test)
 | Staging'da qo'lda tekshiruv (14) | Qo'lda tekshirish jadvali bor (`docs/e2e-testing.md`, 7-bo'lim) | Har release'da to'ldiriladigan regressiya checklisti va 5-darvozaga sign-off |
 | Testlar pipeline'da (6–7) | Testlar faqat lokal `pre-push` hook'da; GitLab CI'da test bosqichi yo'q. Bu ongli qaror sifatida yozilgan: "tashqi CI'ga qaramlik yo'q", cheklovi — `--no-verify` bilan chetlab o'tiladi (`docs/e2e-testing.md`, 9-bo'lim) | Testlarni GitLab CI'ga qo'shish va "Pipelines must succeed" (6.3) |
 | Qamrov o'lchanadi (5) | [TO'LDIRILSIN: Vitest coverage sozlanganmi] | Pipeline'da qamrov hisoboti va chegarasi |
-| Test hujjati dolzarb (16) | `docs/e2e-testing.md` 9-bo'limida e2e branch "hali `main` ga qo'shilmagan" deyilgan, lekin `main` tarixida e2e commitlari bor | Holat bo'limini yangilash — hujjat kod bilan birga yangilanadi (D11, 25-qoida) |
+| Test hujjati dolzarb (16) | `docs/e2e-testing.md` 9-bo'limida e2e branch "hali `main` ga qo'shilmagan" deyilgan, lekin `main` tarixida e2e commitlari bor | Holat bo'limini yangilash — hujjat kod bilan birga yangilanadi ([D11](D11-dasturchilar-qoidalari.md), 25-qoida) |
 | Backend integration va kontrakt testlari (4) | `[TO'LDIRILSIN: backend]` | |
-| Yuklama testi | `[TO'LDIRILSIN: backend]`; raqam D03 dagi S-02 savoliga bog'liq ("imtihon kunlarida minglab parallel ishtirokchi") | Release oldidan yuklama testi |
+| Yuklama testi | `[TO'LDIRILSIN: backend]`; raqam [D03](D03-loyiha-boshlangich-hujjati.md) dagi S-02 savoliga bog'liq ("imtihon kunlarida minglab parallel ishtirokchi") | Release oldidan yuklama testi |
 
 ### 6.3. GitLab CI'ga test bosqichi (namunaviy)
 
@@ -226,16 +226,16 @@ e2e:
     paths: [cypress/screenshots]
 ```
 
-Keyin GitLab'da Settings → Merge requests → "Pipelines must succeed" yoqiladi. Shundan keyin `build_job` faqat testlar o'tgandan keyin ishlashi uchun `needs` ga test job'lari qo'shiladi (D14).
+Keyin GitLab'da Settings → Merge requests → "Pipelines must succeed" yoqiladi. Shundan keyin `build_job` faqat testlar o'tgandan keyin ishlashi uchun `needs` ga test job'lari qo'shiladi ([D14](D14-release-va-deploy.md)).
 
 ### 6.4. Bug → regressiya testi
 
-D08 dagi namunaviy bug ("savol yuklanmay qolganda taymer davom etmoqda") quyidagicha yopiladi:
+[D08](D08-kanban-dor-dod.md) dagi namunaviy bug ("savol yuklanmay qolganda taymer davom etmoqda") quyidagicha yopiladi:
 
 1. Dasturchi avval `TestTimerService` uchun unit test yozadi: `question-loading` sababi bilan `pause` chaqirilganda taymer kamaymaydi. Test yiqiladi.
 2. Kod tuzatiladi — test o'tadi.
 3. `exam-session.cy.ts` dagi "kontent yuklanayotganda pauza" ssenariysi qayta yuritiladi.
-4. Tekshiruvchi staging'da D08 bug yozuvidagi qadamlarni takrorlaydi va bug'ni Done'ga o'tkazadi.
+4. Tekshiruvchi staging'da [D08](D08-kanban-dor-dod.md) bug yozuvidagi qadamlarni takrorlaydi va bug'ni Done'ga o'tkazadi.
 
 ### Og'riqqa bog'liqlik
 
@@ -257,7 +257,7 @@ Tech lead har release oldidan tekshiradi:
 
 ## 8. Tez-tez uchraydigan xatolar
 
-1. **"Testni keyin yozamiz".** Release oldidan vaqt bo'lmaydi va testlar umuman yozilmaydi. To'g'risi: test — taskning bir qismi (D08 DoD).
+1. **"Testni keyin yozamiz".** Release oldidan vaqt bo'lmaydi va testlar umuman yozilmaydi. To'g'risi: test — taskning bir qismi ([D08](D08-kanban-dor-dod.md) DoD).
 2. **Hamma narsa e2e bilan.** Har chegaraviy holat uchun e2e — suite sekinlashadi va beqarorlashadi. To'g'risi: mantiq unit'da, oqim e2e'da.
 3. **Mock'ga ko'r-ko'rona ishonch.** Mock bilan hammasi yashil, staging'da esa backend boshqa format qaytaradi. To'g'risi: mock kontraktdan olinadi (4-qoida), release oldidan staging regressiyasi (14-qoida).
 4. **Flaky testni "qayta yuritib" o'tkazish.** Bir oydan keyin hech kim qizil natijaga ishonmaydi. To'g'risi: bir kun ichida tuzatish yoki karantin (11-qoida).

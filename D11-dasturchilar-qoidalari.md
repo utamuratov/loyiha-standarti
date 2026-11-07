@@ -30,11 +30,11 @@ Kod bir xil uslubda yozilsin, kamida bitta boshqa odam tomonidan tekshirilsin va
 
    Mijozlar yoki versiyalar orasidagi farq branch bilan emas, konfiguratsiya bilan qilinadi. *Nega:* har qo'shimcha doimiy branch tuzatishni bir necha joyga ko'chirishni talab qiladi va ular tez orada ajralib ketadi.
 2. **Har task uchun `dev` dan vaqtinchalik branch ochiladi:** `<tur>/<JIRA-KEY>-qisqa-tavsif`, masalan `feat/UZ-123-test-timer-pause`. Turlari: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`. Branch merge qilingach o'chiriladi. *Nega:* branch nomidan task topiladi; o'lik branchlar yig'ilmaydi.
-3. **`dev` va `main` himoyalangan (protected).** Ularga to'g'ridan-to'g'ri push qilinmaydi, faqat MR orqali. `dev` → `main` merge faqat release jarayonida (D14). *Nega:* review va testsiz kod asosiy branchga tushadigan yagona yo'l — to'g'ridan-to'g'ri push.
+3. **`dev` va `main` himoyalangan (protected).** Ularga to'g'ridan-to'g'ri push qilinmaydi, faqat MR orqali. `dev` → `main` merge faqat release jarayonida ([D14](D14-release-va-deploy.md)). *Nega:* review va testsiz kod asosiy branchga tushadigan yagona yo'l — to'g'ridan-to'g'ri push.
 
 ### B. Commitlar
 
-4. **Format — Conventional Commits:** `<tur>(<scope>): <nima qilindi>`. Masalan, `fix(application-details): show EXE error when proctor start fails`. Commit xabarlari tili jamoada bitta bo'ladi. *Nega:* tarixni o'qish va release notes yig'ish oson (D14).
+4. **Format — Conventional Commits:** `<tur>(<scope>): <nima qilindi>`. Masalan, `fix(application-details): show EXE error when proctor start fails`. Commit xabarlari tili jamoada bitta bo'ladi. *Nega:* tarixni o'qish va release notes yig'ish oson ([D14](D14-release-va-deploy.md)).
 5. **Bitta commit — bitta mantiqiy o'zgarish.** Ilova tuzatishi va test o'zgarishi, refaktoring va yangi funksiya alohida commitda. *Nega:* xato commitni orqaga qaytarish boshqa o'zgarishni buzmaydi; review'da nima nima uchun o'zgargani ko'rinadi.
 
 ### C. Merge request
@@ -46,7 +46,7 @@ Kod bir xil uslubda yozilsin, kamida bitta boshqa odam tomonidan tekshirilsin va
 ### D. Code review
 
 9. **Har MR'ni muallifdan boshqa kamida 1 kishi tasdiqlaydi.** Yo'nalishda bitta mutaxassis bo'lsa (masalan, bitta frontendchi), review'ni boshqa yo'nalish dasturchisi yoki tech lead qiladi: checklistning mantiq, xavfsizlik va test qismlari uchun bu yetarli. *Nega:* ikkinchi ko'z xatoni topadi; qolaversa kodni ikkinchi odam ham biladi ("bus factor", D07).
-10. **Review muddati — 1 ish kuni.** Review navbati yangi taskdan ustun (D08 WIP limiti). *Nega:* kutayotgan MR — tugamagan ish; muallif boshqa ishga o'tib, kontekstni yo'qotadi.
+10. **Review muddati — 1 ish kuni.** Review navbati yangi taskdan ustun ([D08](D08-kanban-dor-dod.md) WIP limiti). *Nega:* kutayotgan MR — tugamagan ish; muallif boshqa ishga o'tib, kontekstni yo'qotadi.
 11. **Reviewer checklist (4.2) bo'yicha tekshiradi va izohga belgi qo'yadi:**
     - `[bloklovchi]` — tuzatilmaguncha merge yo'q;
     - `[taklif]` — muallif qaror qiladi;
@@ -59,7 +59,7 @@ Kod bir xil uslubda yozilsin, kamida bitta boshqa odam tomonidan tekshirilsin va
 ### E. Merge sharti
 
 14. **Merge faqat quyidagilar bajarilganda:**
-    - D08 dagi DoD bajarilgan;
+    - [D08](D08-kanban-dor-dod.md) dagi DoD bajarilgan;
     - pipeline yashil;
     - kamida 1 tasdiq bor;
     - ochiq `[bloklovchi]` izoh yo'q.
@@ -73,20 +73,20 @@ Kod bir xil uslubda yozilsin, kamida bitta boshqa odam tomonidan tekshirilsin va
 
 ### G. FE–BE API kontrakti
 
-17. **Kontrakt koddan oldin.** Endpoint, so'rov va javob formati, xato kodlari bitta kontrakt faylida (masalan, OpenAPI) yoziladi. Fayl backend repozitoriysida turadi; egasi — backend. Talablar D03 da, kelishuv muddati — 3-darvozagacha (D02). *Nega:* frontend va backend bir vaqtda ishlay oladi, integratsiya oxirida "kutilmagan" bo'lmaydi.
-18. **Frontend mock'lari kontraktdan olinadi.** Backend tayyor bo'lmasa, frontend kontrakt bo'yicha mock bilan ishlaydi va testlaydi. *Nega:* bog'liqlik taskni bloklamaydi (D08 DoR).
+17. **Kontrakt koddan oldin.** Endpoint, so'rov va javob formati, xato kodlari bitta kontrakt faylida (masalan, OpenAPI) yoziladi. Fayl backend repozitoriysida turadi; egasi — backend. Talablar [D03](D03-loyiha-boshlangich-hujjati.md) da, kelishuv muddati — 3-darvozagacha ([D02](D02-loyiha-hayot-sikli.md)). *Nega:* frontend va backend bir vaqtda ishlay oladi, integratsiya oxirida "kutilmagan" bo'lmaydi.
+18. **Frontend mock'lari kontraktdan olinadi.** Backend tayyor bo'lmasa, frontend kontrakt bo'yicha mock bilan ishlaydi va testlaydi. *Nega:* bog'liqlik taskni bloklamaydi ([D08](D08-kanban-dor-dod.md) DoR).
 19. **Kontrakt o'zgarishi e'lon qilinadi.** Mavjud maydonni o'chiradigan yoki ma'nosini o'zgartiradigan o'zgarish (breaking change) faqat ikkala tomon kelishgandan keyin merge qilinadi. Bunday o'zgarish kontrakt versiyasida va MR tavsifida belgilanadi. *Nega:* backend'dagi "kichik" o'zgarish prod'da frontend'ni jimgina buzadi.
 
 ### H. Maxfiy ma'lumotlar
 
 20. **Kalit, parol, token repozitoriyga tushmaydi** — na kodda, na konfiguratsiyada, na tarixda. Ular CI o'zgaruvchilarida (masked, protected) turadi; repoda faqat namuna fayl bo'ladi (`.env.example`). *Nega:* repoga kirish huquqi bor har kim — va repo nusxasini olgan har kim — kalitni ham oladi.
-21. **Kalit sizib chiqsa, u darhol almashtiriladi.** Faqat git tarixidan o'chirish yetarli emas. Holat D02 qarorlar jurnaliga yoziladi. *Nega:* tarixdan o'chirilgan kalitning nusxalari allaqachon boshqa joyda bo'lishi mumkin.
-22. **Shaxsiy ma'lumotlar (JShShIR, yuz tasviri) logga, xato xabariga va test fixture'lariga real holda tushmaydi.** Talablar D03 da, muhitlar bo'yicha qoidalar D14 da. *Nega:* log va fixture'lar himoyalanmagan joylarga ko'chadi.
+21. **Kalit sizib chiqsa, u darhol almashtiriladi.** Faqat git tarixidan o'chirish yetarli emas. Holat [D02](D02-loyiha-hayot-sikli.md) qarorlar jurnaliga yoziladi. *Nega:* tarixdan o'chirilgan kalitning nusxalari allaqachon boshqa joyda bo'lishi mumkin.
+22. **Shaxsiy ma'lumotlar (JShShIR, yuz tasviri) logga, xato xabariga va test fixture'lariga real holda tushmaydi.** Talablar [D03](D03-loyiha-boshlangich-hujjati.md) da, muhitlar bo'yicha qoidalar [D14](D14-release-va-deploy.md) da. *Nega:* log va fixture'lar himoyalanmagan joylarga ko'chadi.
 
 ### I. Texnik qarz va qarorlar
 
 23. **Texnik qarz Jira'da `tech-debt` labeli bilan qayd etiladi.** Kodda `TODO` faqat task kaliti bilan yoziladi (`// TODO(UZ-456): ...`). *Nega:* kalitsiz TODO hech qachon rejaga kirmaydi.
-24. **ADR qachon yoziladi:** qaror bir nechta modulga ta'sir qilsa, uni o'zgartirish qimmat bo'lsa yoki jiddiy muqobil variantlar ko'rilgan bo'lsa. Masalan: kutubxona yoki framework tanlash, ma'lumot saqlash usuli, autentifikatsiya, integratsiya usuli. ADR repoda `docs/adr/NNNN-qisqa-nom.md` faylida turadi; D02 qarorlar jurnaliga unga havola qo'yiladi. *Nega:* bir yildan keyin "nega unday qilgandik?" savoliga javob kod yonida bo'ladi.
+24. **ADR qachon yoziladi:** qaror bir nechta modulga ta'sir qilsa, uni o'zgartirish qimmat bo'lsa yoki jiddiy muqobil variantlar ko'rilgan bo'lsa. Masalan: kutubxona yoki framework tanlash, ma'lumot saqlash usuli, autentifikatsiya, integratsiya usuli. ADR repoda `docs/adr/NNNN-qisqa-nom.md` faylida turadi; [D02](D02-loyiha-hayot-sikli.md) qarorlar jurnaliga unga havola qo'yiladi. *Nega:* bir yildan keyin "nega unday qilgandik?" savoliga javob kod yonida bo'ladi.
 25. **Repozitoriy hujjatlari kod bilan birga yangilanadi.** Har repoda: `README` (qanday ishga tushirish), ish qoidalari fayli (`AGENTS.md` yoki `CLAUDE.md`) va murakkab qismlar uchun `docs/`. Oqim yoki arxitektura o'zgarsa, hujjat shu MR'da yangilanadi. *Nega:* alohida "keyin yozamiz" — hech qachon yozilmaydi.
 
 **Kichik loyihada.** Hammasi majburiy (D11 — yadro doc). Faqat review'ni boshqa yo'nalish dasturchisi qilishi mumkin (9-qoida), ADR esa haqiqatan katta qarorlar uchun yoziladi.
@@ -120,8 +120,8 @@ GitLab'da `.gitlab/merge_request_templates/Default.md` faylida turadi va har yan
 - [ ] **Mantiq:** qabul mezonlari bajariladi; xato va chegaraviy holatlar (bo'sh ro'yxat, tarmoq xatosi, takroriy bosish) ko'rilgan
 - [ ] **Nomlash va tuzilma:** nomlar ma'noni aytadi; kod mavjud tuzilma va uslubga mos; takrorlanish yo'q
 - [ ] **Xatolar:** xato yutib yuborilmaydi; foydalanuvchiga tushunarli xabar chiqadi; loglarda maxfiy yoki shaxsiy ma'lumot yo'q
-- [ ] **Xavfsizlik:** ruxsatlar D03 matritsasiga mos; kiruvchi ma'lumot tekshiriladi; maxfiy kalit kodda yo'q
-- [ ] **Testlar:** biznes logikaga unit test bor va u haqiqatan xatoni ushlaydi (D13)
+- [ ] **Xavfsizlik:** ruxsatlar [D03](D03-loyiha-boshlangich-hujjati.md) matritsasiga mos; kiruvchi ma'lumot tekshiriladi; maxfiy kalit kodda yo'q
+- [ ] **Testlar:** biznes logikaga unit test bor va u haqiqatan xatoni ushlaydi ([D13](D13-test-strategiyasi.md))
 - [ ] **Performance:** keraksiz so'rovlar, sikl ichida so'rov, katta ro'yxatni to'liq yuklash yo'q
 - [ ] **Kontrakt:** API o'zgarishi kontraktda aks etgan
 - [ ] **Hujjat:** oqim o'zgargan bo'lsa — `docs/` yangilangan; ADR kerakmi?
@@ -163,7 +163,7 @@ Ssenariy: uzedu'ni noldan quryapmiz. Frontend misollari real repozitoriydan (`te
 | Formatter | Prettier, `printWidth: 100`, `singleQuote` (`package.json`) | Pipeline'da `prettier --check` |
 | Linter | Yo'q (`package.json` da ESLint yo'q) | `angular-eslint` qo'shish va pipeline'da ishlatish |
 | Qat'iy tiplar | `strict`, `strictTemplates` va boshqalar yoqilgan (`tsconfig.json`) | — (mos) |
-| Testlar merge'dan oldin | Faqat lokal `pre-push` hook'da (`.husky/pre-push`); GitLab CI'da test bosqichi yo'q | Pipeline'ga type-check, lint, unit testlar; qizil pipeline bilan merge taqiqi (D13, D14) |
+| Testlar merge'dan oldin | Faqat lokal `pre-push` hook'da (`.husky/pre-push`); GitLab CI'da test bosqichi yo'q | Pipeline'ga type-check, lint, unit testlar; qizil pipeline bilan merge taqiqi ([D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md)) |
 | Maxfiy kalitlar | CI'da o'zgaruvchilar orqali (`$HARBOR_PASSWORD`, `$GITOPS_TOKEN_EDUHR`, `.gitlab-ci.yml`) | — (mos); masked/protected ekanini tekshirish |
 | Repo hujjatlari | `README.md`, `CLAUDE.md` ish qoidalari, `docs/` — oqimlar, arxitektura, testlar | — (namuna sifatida) |
 | ADR | Alohida ADR yo'q, lekin `docs/test-entry-flow.md` da qaror va "Ko'rib chiqilib, rad etilgan variantlar" jadvali bor — mazmunan ADR | Shunday bo'limlarni `docs/adr/` formatiga keltirish (5.4) |
@@ -197,9 +197,9 @@ Yechim real repodagi `TestTimerService` dan olingan (`docs/test-timer-and-questi
 
 - `[bloklovchi]` `resume('offline')` dan keyin `question-error` sababi qolgan bo'lsa ham taymer yuradimi? Shu holatga test kerak.
 - `[taklif]` Sabab nomlarini string emas, `type PauseReason = 'offline' | …` qilsak, xato yozilgan nom kompilyatsiyada ushlanadi.
-- `[savol]` 3 marta urinish soni sozlamadan olinadimi yoki kodda qat'iymi? D03 da yozilmagan.
+- `[savol]` 3 marta urinish soni sozlamadan olinadimi yoki kodda qat'iymi? [D03](D03-loyiha-boshlangich-hujjati.md) da yozilmagan.
 
-Uchinchi izoh D03 dagi bo'shliqni topdi: javob D03 ga qo'shiladi, review'da yo'qolib ketmaydi.
+Uchinchi izoh [D03](D03-loyiha-boshlangich-hujjati.md) dagi bo'shliqni topdi: javob [D03](D03-loyiha-boshlangich-hujjati.md) ga qo'shiladi, review'da yo'qolib ketmaydi.
 
 ### 5.4. ADR (real qarordan)
 
@@ -253,7 +253,7 @@ Tech lead loyiha boshida va har release oldidan tekshiradi:
 2. **2000 qatorli MR.** Reviewer "LGTM" yozadi, chunki o'qib bo'lmaydi. To'g'risi: task bo'linadi, Draft MR bilan erta fikr olinadi.
 3. **Testlar faqat lokal hook'da.** `--no-verify` bilan bir marta chetlab o'tilsa, qizil kod `main` da. To'g'risi: pipeline — asosiy tekshiruv, hook — faqat qulaylik.
 4. **Kontrakt og'zaki.** "Javobda `id` keladi" — Telegram'da. To'g'risi: kontrakt faylida, o'zgarishi MR orqali.
-5. **Qaror faqat MR izohida.** Muhim qaror review muhokamasida qabul qilinib, MR yopilgach yo'qoladi. To'g'risi: ADR va D02 jurnaliga havola.
+5. **Qaror faqat MR izohida.** Muhim qaror review muhokamasida qabul qilinib, MR yopilgach yo'qoladi. To'g'risi: ADR va [D02](D02-loyiha-hayot-sikli.md) jurnaliga havola.
 
 ---
 

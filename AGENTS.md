@@ -30,6 +30,17 @@ Reference repozitoriy (faqat o'qish uchun, o'zgartirilmaydi): `test-uzedu-user` 
 - Har bir doc repozitoriy ildizida, `DNN-qisqa-nom.md` ko'rinishida: masalan, `D03-loyiha-boshlangich-hujjati.md`.
 - Qisqa nom — kichik harf, lotin, so'zlar `-` bilan, apostrofsiz.
 
+## Hujjat sayti (VitePress)
+
+Doclar oddiy Markdown bo'lib qoladi va GitLab'da ham o'qiladi; sayt ularning ustidagi ko'rinish.
+
+- Lokal ko'rish: `npm install`, keyin `npm run docs:dev` (`http://localhost:5173`). Statik build: `npm run docs:build` → `.vitepress/dist/`.
+- Yangi `DNN-....md` fayli chap menyuga o'zi tushadi: guruh ID bo'yicha, sarlavha faylning birinchi `# ` qatoridan (`.vitepress/config.mts`). Config'ni o'zgartirish shart emas.
+- Boshqa docga eslatma — har doim havola: `[D08](D08-kanban-dor-dod.md)`. Hali yozilmagan doc oddiy matn bilan yoziladi ("D09"); doc yozilgach, unga eslatmalar havolaga aylantiriladi.
+- Matnda `<` va `>` bilan yozilgan joy-to'ldirgichlar (`<ism>`) faqat kod bloki yoki `` `...` `` ichida bo'ladi — aks holda sayt ularni HTML teg deb tushunadi.
+- `localhost` manzillari ham `` `...` `` ichida yoziladi — oddiy matndagi manzilni sayt havolaga aylantiradi va build uni "buzilgan havola" deb to'xtatadi.
+- Docni topshirishdan oldin `npm run docs:build` ishlatiladi: u buzilgan havolalarda xato beradi.
+
 ## Har bir docning tuzilmasi
 
 1. **Maqsad** — 1–2 gap: bu doc qaysi muammoni yechadi.
@@ -46,6 +57,6 @@ Reference repozitoriy (faqat o'qish uchun, o'zgartirilmaydi): `test-uzedu-user` 
 - Hajm: asosiy qism 1–3 sahifa. Shablon va misol qo'shimcha bo'lishi mumkin.
 - Faktlarni o'ylab topmang. uzedu bo'yicha ma'lumot yetmasa, `[TO'LDIRILSIN: ...]` deb belgilang va savolni foydalanuvchiga bering.
 - Har bir qoida "nega" degan savolga javob bera olsin; asossiz byurokratiya qo'shmang.
-- Doclar bir-biriga havola qiladi (masalan, D13 test strategiyasi D08 DoD'dagi minimal test talabini kengaytiradi); bir xil qoidani ikki joyda takrorlamang. Har bir mavzuning uyi bitta doc (root docdagi katalogga qarang).
+- Doclar bir-biriga havola qiladi (masalan, [D13](D13-test-strategiyasi.md) test strategiyasi [D08](D08-kanban-dor-dod.md) DoD'dagi minimal test talabini kengaytiradi); bir xil qoidani ikki joyda takrorlamang. Har bir mavzuning uyi bitta doc (root docdagi katalogga qarang).
 - Tayyor mezoni tekshirsa bo'ladigan bo'lsin: kim tekshiradi, nimani sanaydi, qancha bo'lishi kerak.
 - Har bir doc oxirida: egasi (rol), oxirgi yangilangan sana, keyingi ko'rib chiqish sanasi.
