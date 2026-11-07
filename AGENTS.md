@@ -40,6 +40,7 @@ Doclar oddiy Markdown bo'lib qoladi va GitLab'da ham o'qiladi; sayt ularning ust
 - Matnda `<` va `>` bilan yozilgan joy-to'ldirgichlar (`<ism>`) faqat kod bloki yoki `` `...` `` ichida bo'ladi — aks holda sayt ularni HTML teg deb tushunadi.
 - `localhost` manzillari ham `` `...` `` ichida yoziladi — oddiy matndagi manzilni sayt havolaga aylantiradi va build uni "buzilgan havola" deb to'xtatadi.
 - Docni topshirishdan oldin `npm run docs:build` ishlatiladi: u buzilgan havolalarda xato beradi.
+- Chiqarish: `main` ga har push'da GitHub Actions (`.github/workflows/docs.yml`) saytni build qilib, GitHub Pages'ga qo'yadi. Sayt hozir ochiq (public) — mahfiy ma'lumot (parol, kalit, shaxsiy ma'lumot) doclarga yozilmaydi.
 
 ## Har bir docning tuzilmasi
 

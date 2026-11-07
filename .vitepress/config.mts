@@ -63,6 +63,9 @@ function sidebar(): DefaultTheme.SidebarItem[] {
 }
 
 export default defineConfig({
+  // GitHub Pages'da sayt `/<repo-nomi>/` ostida turadi; workflow DOCS_BASE ni beradi.
+  // Lokal ishga tushirishda va o'z domenida — `/`.
+  base: process.env.DOCS_BASE || '/',
   lang: 'uz-Latn',
   title: 'Loyiha standarti',
   description: "Kompaniyada loyiha qurish standarti: bosqichlar, rollar, qoidalar va uzedu misollari",
