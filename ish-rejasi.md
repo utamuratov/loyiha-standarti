@@ -36,7 +36,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 ### 2-faza: Jarayonni to'ldirish
 
 - [x] [D01](D01-rollar-va-raci.md) — Rollar va RACI matritsa (2026-11-07; root docdagi rollar jadvali [D01](D01-rollar-va-raci.md) ga ko'chdi; misoli — rejada)
-- [ ] D05 — Kickoff va doc review meeting
+- [x] [D05](D05-kickoff-va-doc-review.md) — Kickoff va doc review meeting (2026-11-07; katalogdagi "srok" kickoff natijasidan olib tashlandi — [D06](D06-baholash-va-srok.md) ga zid edi; umumiy meeting qoidalari D09 yozilganda o'sha yerga ko'chadi; misoli — rejada)
 - [x] [D06](D06-baholash-va-srok.md) — Baholash va srok belgilash (2026-11-07; baho birligi — soat, [D08](D08-kanban-dor-dod.md) shabloni moslandi; misoli — rejada)
 - [ ] D04 — Dizaynerga brief va dizayn jarayoni
 - [ ] D09 — Meetinglar ritmi

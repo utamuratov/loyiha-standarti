@@ -37,7 +37,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 | [D02](../../D02-loyiha-hayot-sikli.md) Hayot sikli | [Loyiha rejasi, qarorlar va risklar](D02-loyiha-rejasi.md) | Yozilgan |
 | [D03](../../D03-loyiha-boshlangich-hujjati.md) Boshlang'ich hujjat | [TZ (qisqartirilgan)](D03-tz.md) | Yozilgan |
 | D04 Dizayn brief | Face ID tekshiruvi va test yechish ekranlari uchun to'ldirilgan brief | Rejada |
-| D05 Kickoff | Kickoff protokoli | Rejada |
+| [D05](../../D05-kickoff-va-doc-review.md) Kickoff | Kickoff protokoli | Rejada |
 | [D06](../../D06-baholash-va-srok.md) Baholash | Modullarni (login, ariza, Face ID, test yechish, natija) 1–3 kunlik tasklarga bo'lish va uch nuqtali baho | Rejada |
 | D07 Resurs | Modullar bo'yicha taqsimot jadvali | Rejada |
 | [D08](../../D08-kanban-dor-dod.md) Kanban, DoR, DoD | [Board va tasklar](D08-board-va-tasklar.md) | Yozilgan |

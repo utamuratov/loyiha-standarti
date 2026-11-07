@@ -20,7 +20,7 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 
 - **Qachon:**
   - 1-bosqich (Boshlash): **Brief** qismi, 1–2 sahifa — 1-darvozaga.
-  - 2-bosqich (Talablar): **to'liq TZ** — D05 doc review'dan o'tib, 2-darvozaga.
+  - 2-bosqich (Talablar): **to'liq TZ** — [D05](D05-kickoff-va-doc-review.md) doc review'dan o'tib, 2-darvozaga.
   - Keyin: faqat D10 (change request) orqali o'zgaradi.
 
 **Atamalar.** *User story* — foydalanuvchi nuqtai nazaridan yozilgan talab: "kim, nima qiladi, nima uchun". *Qabul mezoni* (acceptance criteria) — story bajarilganini tekshiradigan aniq shartlar. *API kontrakti* — frontend va backend o'rtasidagi kelishuv: endpoint, so'rov va javob formati, xato kodlari. *Nofunksional talab* — tizim *qanday* ishlashi: tezlik, yuklama, xavfsizlik.
@@ -37,7 +37,7 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 8. **Nofunksional talablar raqam bilan.** "Tez ishlasin" emas, "imtihon kuni bir vaqtda N ishtirokchi, javobni saqlash 1 soniyadan oshmaydi". *Nega:* raqamsiz talabni tekshirib ham, baholab ham bo'lmaydi.
 9. **Shaxsiy ma'lumot bilan ishlansa, alohida bo'lim majburiy:** qaysi ma'lumot, nima uchun, rozilik qanday olinadi va qayd etiladi, kim ko'radi, qayerda va qancha saqlanadi, qachon o'chiriladi. Himoyaning texnik qoidalari — [D14](D14-release-va-deploy.md). *Nega:* bu huquqiy majburiyat; keyin qo'shish qimmat.
 10. **API kontrakti talablari D03 da, jarayoni [D11](D11-dasturchilar-qoidalari.md) da.** D03 da: qaysi ma'lumot oqimlari, asosiy endpointlar, xato holatlari va kontrakt fayli qayerda saqlanishi. 2-darvozaga qoralama, 3-darvozagacha asosiy endpointlar kelishilgan bo'ladi. *Nega:* frontend va backend bir vaqtda ishlay olishi uchun kontrakt koddan oldin turishi kerak.
-11. **Ochiq savollar — egasi va muddati bilan.** Ish boshlanishini to'xtatadigan savol "bloklovchi" deb belgilanadi (D05). *Nega:* egasiz savol hech qachon yopilmaydi.
+11. **Ochiq savollar — egasi va muddati bilan.** Ish boshlanishini to'xtatadigan savol "bloklovchi" deb belgilanadi ([D05](D05-kickoff-va-doc-review.md)). *Nega:* egasiz savol hech qachon yopilmaydi.
 12. **Faraz yozib qo'yiladi.** Ma'lumot yo'q bo'lsa, faraz qilinadi va "faraz" deb belgilanadi. *Nega:* faraz noto'g'ri chiqsa, qaysi qism qayta ko'rilishi ko'rinadi.
 13. **Versiya va tasdiq.** Har tasdiqlangan versiya raqamlanadi (v1.0, v1.1 …); mijozning yozma tasdig'i va tasdiqlangan versiya raqami Jira epic'ida turadi. Risklar D03 da emas, [D02](D02-loyiha-hayot-sikli.md) risklar reestrida. *Nega:* "qaysi versiya bo'yicha qildik" degan bahs bo'lmaydi.
 
@@ -93,7 +93,7 @@ Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · T
 - [ ] Nofunksional talablarda raqamlar bor yoki ochiq savol sifatida yozilgan
 - [ ] Shaxsiy ma'lumotlar bo'limi to'ldirilgan (agar tegishli bo'lsa)
 - [ ] API kontrakti qoralamasi va kontrakt fayli havolasi bor
-- [ ] D05 doc review'da bloklovchi savollar soni 0; qolgan savollarning egasi va muddati bor
+- [ ] [D05](D05-kickoff-va-doc-review.md) doc review'da bloklovchi savollar soni 0; qolgan savollarning egasi va muddati bor
 - [ ] Versiya raqami va mijozning yozma tasdig'i Jira epic'ida
 
 ## 7. Tez-tez uchraydigan xatolar

@@ -9,7 +9,7 @@ Har bir ish uchun kim bajaradi, kim yakuniy javob beradi, kimdan maslahat so'ral
 - **Egasi:** PM. Rollarni biriktiradi, jadvalni yuritadi.
 - **Kim ishlatadi:** butun jamoa va mijoz tomoni. Yangi a'zo loyihaga qo'shilgan birinchi kuni o'qiydi.
 - **Qachon:**
-  - 1-bosqichda (Boshlash) loyiha rollari biriktiriladi va kickoff'da (D05) jamoaga ko'rsatiladi — bu 1-darvozaning punkti ([D02](D02-loyiha-hayot-sikli.md)).
+  - 1-bosqichda (Boshlash) loyiha rollari biriktiriladi va kickoff'da ([D05](D05-kickoff-va-doc-review.md)) jamoaga ko'rsatiladi — bu 1-darvozaning punkti ([D02](D02-loyiha-hayot-sikli.md)).
   - Jamoa o'zgarganda (odam qo'shildi, ketdi, uzoq ta'tilga chiqdi) — o'sha hafta yangilanadi.
 
 **Atamalar.**
@@ -26,7 +26,7 @@ Har bir ish uchun kim bajaradi, kim yakuniy javob beradi, kimdan maslahat so'ral
 | Rol | Asosiy mas'uliyat | Qaror huquqi | Asosiy hujjatlari |
 | --- | --- | --- | --- |
 | Mijoz / PO | Biznes maqsad, ustuvorliklar, natijani qabul qilish | Scope va ustuvorlik | Tasdiqlangan [D03](D03-loyiha-boshlangich-hujjati.md), UAT akti |
-| PM | Srok, resurs, risk, aloqa; jarayonni yuritish | Taqsimot, meetinglar, change request'ni rasmiylashtirish | D01, [D02](D02-loyiha-hayot-sikli.md), D05, [D06](D06-baholash-va-srok.md), D07, D09, D10 |
+| PM | Srok, resurs, risk, aloqa; jarayonni yuritish | Taqsimot, meetinglar, change request'ni rasmiylashtirish | D01, [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), D07, D09, D10 |
 | Biznes analitik | Talablarni yig'ish, user story va qabul mezonlari | Talablar to'liqligi (DoR) | [D03](D03-loyiha-boshlangich-hujjati.md) |
 | UI/UX dizayner | Foydalanuvchi oqimlari, maket, design system | UI yechimlari standart doirasida | D04, [D12](D12-ui-ux-standartlari.md) |
 | Tech lead | Arxitektura, texnik baholash, code review sifati | Texnik yechimlar, merge, release tarkibi, rollback | [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) |
