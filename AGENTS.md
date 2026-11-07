@@ -40,7 +40,7 @@ Reference repozitoriy (faqat o'qish uchun, o'zgartirilmaydi): `test-uzedu-user` 
 Doclar oddiy Markdown bo'lib qoladi va GitLab'da ham o'qiladi; sayt ularning ustidagi ko'rinish.
 
 - Lokal ko'rish: `npm install`, keyin `npm run docs:dev` (`http://localhost:5173`). Statik build: `npm run docs:build` → `.vitepress/dist/`.
-- Yangi `DNN-....md` fayli chap menyuga o'zi tushadi: guruh ID bo'yicha, sarlavha faylning birinchi `# ` qatoridan (`.vitepress/config.mts`). `loyihalar/test-platformasi/` dagi fayllar ham "Misol loyiha" guruhiga o'zi tushadi. Config'ni o'zgartirish shart emas.
+- Yangi `DNN-....md` fayli chap menyuga o'zi tushadi: guruh ID bo'yicha, sarlavha faylning birinchi `# ` qatoridan (`.vitepress/config.mts`). `loyihalar/test-platformasi/` dagi fayllar ham "Misol loyiha" guruhiga o'zi tushadi. Config'ni o'zgartirish shart emas. Menyu dev server ishga tushganda yig'iladi: yangi fayl menyuda ko'rinishi uchun `npm run docs:dev` ni qayta ishga tushiring (build'da har doim ko'rinadi).
 - Boshqa docga eslatma — har doim havola: `[D08](D08-kanban-dor-dod.md)`. Hali yozilmagan doc oddiy matn bilan yoziladi ("D09"); doc yozilgach, unga eslatmalar havolaga aylantiriladi.
 - Matnda `<` va `>` bilan yozilgan joy-to'ldirgichlar (`<ism>`) faqat kod bloki yoki `` `...` `` ichida bo'ladi — aks holda sayt ularni HTML teg deb tushunadi.
 - `localhost` manzillari ham `` `...` `` ichida yoziladi — oddiy matndagi manzilni sayt havolaga aylantiradi va build uni "buzilgan havola" deb to'xtatadi.

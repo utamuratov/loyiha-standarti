@@ -72,4 +72,4 @@ Real frontend repoda (`test-uzedu-user`):
 
 ---
 
-Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi D08 o'zgarganda
+Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D08](../../D08-kanban-dor-dod.md) o'zgarganda

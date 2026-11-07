@@ -92,4 +92,4 @@ Keyin GitLab'da Settings → Merge requests → "Pipelines must succeed" yoqilad
 
 ---
 
-Egasi: tech lead + QA · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi D13 o'zgarganda
+Egasi: tech lead + QA · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D13](../../D13-test-strategiyasi.md) o'zgarganda

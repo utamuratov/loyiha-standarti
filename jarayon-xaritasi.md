@@ -39,7 +39,7 @@ Har bosqichda qaysi doc kerak:
 
 | Bosqich | Doclar |
 |---|---|
-| 1 · Boshlash | [D03](D03-loyiha-boshlangich-hujjati.md) — Brief qismi; [D02](D02-loyiha-hayot-sikli.md) — bosqichlar rejasi, qarorlar jurnali va risklar reestri ochiladi; D01 — rollar; D05 — kickoff |
+| 1 · Boshlash | [D03](D03-loyiha-boshlangich-hujjati.md) — Brief qismi; [D02](D02-loyiha-hayot-sikli.md) — bosqichlar rejasi, qarorlar jurnali va risklar reestri ochiladi; [D01](D01-rollar-va-raci.md) — rollar; D05 — kickoff |
 | 2 · Talablar | [D03](D03-loyiha-boshlangich-hujjati.md) — to'liq TZ; D05 — doc review |
 | 3 · Dizayn | D04 — dizayn brief va jarayon; [D12](D12-ui-ux-standartlari.md) — UI/UX standartlari va handoff |
 | 4 · Planlash | D06 — baholash va srok; D07 — taqsimot va resurs |
@@ -179,7 +179,7 @@ Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi (D1
 | Branch, commit, merge request, review qanday? | [D11](D11-dasturchilar-qoidalari.md) |
 | Qanday test yoziladi va kim tekshiradi? | [D13](D13-test-strategiyasi.md) |
 | Prod'ga qanday chiqariladi va qanday qaytariladi? | [D14](D14-release-va-deploy.md) |
-| Kim nimaga javobgar? | Root docdagi "Rollar va mas'uliyat"; to'liq RACI — D01 |
+| Kim nimaga javobgar? Rol bo'sh bo'lsa kim qiladi? | [D01](D01-rollar-va-raci.md) — rollar, RACI, kichik jamoada birlashtirish |
 | Talab o'rtada o'zgarsa nima qilinadi? | [D08](D08-kanban-dor-dod.md) dagi qisqa tartib; to'liq — D10 |
 
 ---

@@ -65,4 +65,4 @@ Tanlangan atamalar — namuna; yakuniy tanlov mijoz va analitik bilan qilinadi. 
 
 ---
 
-Egasi: UI/UX dizayner · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi D12 o'zgarganda
+Egasi: UI/UX dizayner · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D12](../../D12-ui-ux-standartlari.md) o'zgarganda

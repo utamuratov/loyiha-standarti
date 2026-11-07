@@ -54,7 +54,7 @@ Har darvoza uchun punktlar. ⛔ — bloklovchi: bajarilmasa o'tilmaydi (shartli 
 - [ ] O'lchanadigan muvaffaqiyat mezonlari bor
 - [ ] ⛔ Scope chegarasi: nima kiradi va nima kirmaydi
 - [ ] Mijoz tomondan qaror qiluvchi (PO) belgilangan
-- [ ] Jamoa va rollar belgilangan (root doc yoki D01)
+- [ ] Jamoa va rollar belgilangan ([D01](D01-rollar-va-raci.md), 6.1-shablon)
 - [ ] Hujjatlar joyi, Jira loyihasi, qarorlar jurnali va risklar reestri ochilgan
 
 **2-darvoza: Talablar → Dizayn**

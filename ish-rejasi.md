@@ -17,7 +17,7 @@ Ish 5 fazada boradi: tayyorgarlik, doclar uchta fazada, keyin joriy etish. 1-faz
 
 ### 1-faza: Asosiy yadro — jarayon asosi va texnik standartlar
 
-Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar uchun pilotda root docdagi "Rollar va mas'uliyat" jadvali ishlatiladi; to'liq RACI (D01) 2-fazada.
+Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar va RACI — [D01](D01-rollar-va-raci.md) (2-fazada yozildi).
 
 - [x] [D02](D02-loyiha-hayot-sikli.md) — Loyiha hayot sikli va bosqich darvozalari (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
 - [x] [D03](D03-loyiha-boshlangich-hujjati.md) — Loyiha boshlang'ich hujjati + Test Platformasi TZ misoli (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
@@ -35,7 +35,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar u
 
 ### 2-faza: Jarayonni to'ldirish
 
-- [ ] D01 — Rollar va RACI matritsa
+- [x] [D01](D01-rollar-va-raci.md) — Rollar va RACI matritsa (2026-11-07; root docdagi rollar jadvali [D01](D01-rollar-va-raci.md) ga ko'chdi; misoli — rejada)
 - [ ] D05 — Kickoff va doc review meeting
 - [ ] D06 — Baholash va srok belgilash
 - [ ] D04 — Dizaynerga brief va dizayn jarayoni

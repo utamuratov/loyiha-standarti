@@ -6,7 +6,7 @@ Release oldindan aytiladigan, takrorlanadigan va xavfsiz bo'lsin: nima chiqayotg
 
 ## 2. Kim uchun va qachon
 
-- **Egasi:** DevOps. Kichik jamoada DevOps alohida bo'lmasa, bu rol D01 da tech lead yoki backend dasturchiga biriktiriladi.
+- **Egasi:** DevOps. Kichik jamoada DevOps alohida bo'lmasa, bu rol [D01](D01-rollar-va-raci.md) da tech lead yoki backend dasturchiga biriktiriladi.
 - **Kim nima qiladi:**
 
 | Rol | Vazifasi |

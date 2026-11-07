@@ -6,7 +6,7 @@ Kod bir xil uslubda yozilsin, kamida bitta boshqa odam tomonidan tekshirilsin va
 
 ## 2. Kim uchun va qachon
 
-- **Egasi:** tech lead. Kichik jamoada tech lead alohida bo'lmasa, bu rol D01 da biriktiriladi.
+- **Egasi:** tech lead. Kichik jamoada tech lead alohida bo'lmasa, bu rol [D01](D01-rollar-va-raci.md) da biriktiriladi.
 - **Kim ishlatadi:** barcha dasturchilar (frontend, backend, mobile) — har kuni. Reviewer — har merge request'da.
 - **Qachon:**
   - 4-bosqichda (Planlash) repozitoriy, branchlar, formatter, linter va MR shabloni sozlanadi.

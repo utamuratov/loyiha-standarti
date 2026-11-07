@@ -54,4 +54,4 @@ Qarorlarning o'zi hozirgi Test Platformasidan olingan (manbasi ko'rsatilgan); sa
 
 ---
 
-Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi D02 o'zgarganda
+Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D02](../../D02-loyiha-hayot-sikli.md) o'zgarganda

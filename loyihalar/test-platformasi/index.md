@@ -11,7 +11,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 - **Mahsulot.** Maktabgacha va maktab ta'limi vazirligi tizimida nomzodlar va o'qituvchilar test topshiradigan tizim. Oqim: nazoratchi login → JShShIR → ariza → Face ID → test → natija; alohida ommaviy test portali; proktoring (veb-kamera orqali yuzni tanish, brauzerdan chalg'ishni aniqlash, desktop agent). Manba: frontend repodagi `README.md`, `CLAUDE.md`.
 - **Mijozlar.** Bitta mahsulot bir nechta mijozga alohida build bilan yetkaziladi: argos, uzinfocom, olymp, control, ssv.
 - **Holati.** Release qilingan, ekspluatatsiyada — foydalanuvchilar har kuni ishlatadi.
-- **Jamoa (ssenariy uchun).** 5 kishi: PM va analitik bitta odam, dizayner, 2 ta backend, 1 ta frontend. Alohida tech lead, QA, DevOps va support yo'q — bu rollarning ishi jamoa ichida taqsimlanadi (D01).
+- **Jamoa (ssenariy uchun).** 5 kishi: PM va analitik bitta odam, dizayner, 2 ta backend, 1 ta frontend. Alohida tech lead, QA, DevOps va support yo'q — bu rollarning ishi jamoa ichida taqsimlanadi ([D01](../../D01-rollar-va-raci.md)).
 - **Hajmi.** Kichik loyiha (3–5 kishi), shuning uchun root docdagi "Loyiha hajmiga qarab moslashtirish" jadvalidagi qisqa shakl ishlatiladi; to'liq shakl kerak bo'lgan joyda bu alohida aytiladi.
 - **Vositalar.** Jira (board), Figma (dizayn), GitLab (kod va CI, `git.uzinfocom.uz`), Telegram (tezkor aloqa — lekin kelishuv u yerda qolmaydi).
 - **Mavjud hujjatlar.** Belgilangan jarayon ham, TZ ham yo'q edi. Faqat frontend repozitoriyida `CLAUDE.md` ish qoidalari va `docs/` texnik hujjatlari bor (arxitektura, test oqimi, proktoring, Face ID, tarjimalar, unit va e2e testlar).
@@ -33,7 +33,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 
 | Standart | Loyiha hujjati | Holat |
 | --- | --- | --- |
-| D01 Rollar va RACI | 5 kishilik jamoa uchun RACI; tech lead, QA, DevOps va support ishlari kimga biriktiriladi | Rejada |
+| [D01](../../D01-rollar-va-raci.md) Rollar va RACI | 5 kishilik jamoa uchun RACI; tech lead, QA, DevOps va support ishlari kimga biriktiriladi | Rejada |
 | [D02](../../D02-loyiha-hayot-sikli.md) Hayot sikli | [Loyiha rejasi, qarorlar va risklar](D02-loyiha-rejasi.md) | Yozilgan |
 | [D03](../../D03-loyiha-boshlangich-hujjati.md) Boshlang'ich hujjat | [TZ (qisqartirilgan)](D03-tz.md) | Yozilgan |
 | D04 Dizayn brief | Face ID tekshiruvi va test yechish ekranlari uchun to'ldirilgan brief | Rejada |

@@ -109,7 +109,7 @@ Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiya
 | JShShIR, ariza raqami | Ishtirokchini aniqlash | Nazoratchi, admin | [TO'LDIRILSIN: backend] |
 | Yuz tasviri (R2) | Shaxsni tasdiqlash | [TO'LDIRILSIN] | [TO'LDIRILSIN] |
 
-**Standart bo'yicha nima qo'shilardi.** Hozir rozilik faqat ekranda so'raladi: u saqlanmaydi va backendga yuborilmaydi (`docs/test-entry-flow.md`). D03 da shu savol ochiq yozilishi kerak edi: "Rozilikni kim va qachon berganini qayd etish huquqiy jihatdan talab qilinadimi?" — egasi: mijoz yuristi, bloklovchi: ha (R2 dan oldin).
+**Standart bo'yicha nima qo'shilardi.** Hozir rozilik faqat ekranda so'raladi: u saqlanmaydi va backendga yuborilmaydi (`docs/test-entry-flow.md`). TZ'da shu savol ochiq yozilishi kerak edi (I bo'limidagi S-01): "Rozilikni kim va qachon berganini qayd etish huquqiy jihatdan talab qilinadimi?" — egasi: mijoz yuristi, bloklovchi: ha (R2 dan oldin).
 
 ## I. Ochiq savollar (parcha)
 
@@ -125,4 +125,4 @@ Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiya
 
 ---
 
-Egasi: biznes analitik · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi D03 o'zgarganda
+Egasi: biznes analitik · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D03](../../D03-loyiha-boshlangich-hujjati.md) o'zgarganda

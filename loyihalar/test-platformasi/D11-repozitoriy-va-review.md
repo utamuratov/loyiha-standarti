@@ -89,4 +89,4 @@ O'zgarish keyingi ishtirokchidan kuchga kiradi; joriy ishtirokchi eski sozlama b
 
 ---
 
-Egasi: tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi D11 o'zgarganda
+Egasi: tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D11](../../D11-dasturchilar-qoidalari.md) o'zgarganda

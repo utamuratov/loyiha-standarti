@@ -91,4 +91,4 @@ Migratsiya: frontend release — baza o'zgarmaydi
 
 ---
 
-Egasi: DevOps · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi D14 o'zgarganda
+Egasi: DevOps · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D14](../../D14-release-va-deploy.md) o'zgarganda

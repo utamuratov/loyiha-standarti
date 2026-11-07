@@ -42,7 +42,7 @@ Bu jadval pilotdan keyin yana tekshiriladi: og'riq kamaydimi yoki yo'qmi (D17).
 
 Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish, qanday kod yozish va review qilish, qanday test qilish, qanday deploy qilish va UI qanday bo'lishi kerakligi. Har bir doc qoida, bo'sh shablon va checklistni beradi; shablonning to'ldirilgan varianti — [misol loyihada](loyihalar/test-platformasi/index.md). Hammasini o'qish shart emas: avval umumiy qism, keyin o'z rolingiz doclari.
 
-**Hamma uchun (taxminan 30 daqiqa):** [jarayon xaritasi](jarayon-xaritasi.md) → shu root doc → [D02](D02-loyiha-hayot-sikli.md) (hayot sikli) → D01 (rollar) → [D08](D08-kanban-dor-dod.md) (kanban, DoR, DoD).
+**Hamma uchun (taxminan 30 daqiqa):** [jarayon xaritasi](jarayon-xaritasi.md) → shu root doc → [D02](D02-loyiha-hayot-sikli.md) (hayot sikli) → [D01](D01-rollar-va-raci.md) (rollar) → [D08](D08-kanban-dor-dod.md) (kanban, DoR, DoD).
 
 | Rolingiz | Asosiy doclaringiz | Yangi loyihada birinchi qiladigan ishingiz |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ Sxema ko'rinishida — [Jarayon xaritasi](jarayon-xaritasi.md): bosqichlar va da
 
 Loyiha 8 bosqichdan o'tadi; har bosqichning chiqishi keyingisining kirishi bo'ladi. Bosqichdan keyingisiga faqat darvoza mezoni bajarilganda o'tiladi. Batafsil kirish, chiqish va darvoza checklistlari [D02](D02-loyiha-hayot-sikli.md) docda yoziladi.
 
-1. **Boshlash** — loyiha g'oyasi, mijoz va biznes maqsad aniqlanadi. Asosiy doclar: D01, [D03](D03-loyiha-boshlangich-hujjati.md) (Brief qismi).
+1. **Boshlash** — loyiha g'oyasi, mijoz va biznes maqsad aniqlanadi. Asosiy doclar: [D01](D01-rollar-va-raci.md), [D03](D03-loyiha-boshlangich-hujjati.md) (Brief qismi).
 2. **Talablar** — scope, user story, qabul mezonlari, API kontrakti va nofunksional talablar yoziladi; doc review o'tkaziladi. Asosiy doclar: [D03](D03-loyiha-boshlangich-hujjati.md), D05.
 3. **Dizayn** — oqimlar va maketlar chiziladi, dasturchiga topshiriladi. Asosiy doclar: D04, [D12](D12-ui-ux-standartlari.md).
 4. **Planlash** — ish bo'linadi, baholanadi, odamlar biriktiriladi, srok kelishiladi. Asosiy doclar: D06, D07.
@@ -85,19 +85,7 @@ Ishlab chiqish (5) haftalik sikl bo'lib aylanadi. O'rtada kelgan yangi talab D10
 
 ## Rollar va mas'uliyat
 
-Har bir qaror va hujjatning bitta egasi bo'ladi. Bitta odam bir nechta rolni bajarishi mumkin (kichik jamoada PM analitik ham bo'lishi mumkin), lekin har bir rolning mas'uliyati baribir yozilgan bo'ladi. Batafsil RACI matritsa D01 docda.
-
-| Rol | Asosiy mas'uliyat | Qaror huquqi | Asosiy hujjatlari |
-| --- | --- | --- | --- |
-| Mijoz / Product owner | Biznes maqsad, ustuvorliklar, natijani qabul qilish | Scope va ustuvorlik | Tasdiqlangan [D03](D03-loyiha-boshlangich-hujjati.md), UAT akti |
-| PM | Srok, resurs, risk, aloqa; jarayonni yuritish | Taqsimot, meetinglar, change request'ni rasmiylashtirish | D05, D06, D07, D09, D10 |
-| Biznes analitik | Talablarni yig'ish, user story va qabul mezonlari | Talablar to'liqligi (DoR) | [D03](D03-loyiha-boshlangich-hujjati.md) |
-| UI/UX dizayner | Foydalanuvchi oqimlari, maket, design system | UI yechimlari standart doirasida | D04, [D12](D12-ui-ux-standartlari.md) |
-| Tech lead | Arxitektura, texnik baholash, code review sifati | Texnik yechimlar, merge | [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) |
-| Dasturchi (FE/BE/mobile) | Taskni DoD bo'yicha bajarish, testlar, PR | Task ichidagi implementatsiya | PR, unit testlar |
-| QA | Test rejasi, e2e, regressiya, bug hisoboti | Release'ga tayyorlik (QA sign-off) | [D13](D13-test-strategiyasi.md), test hisobotlari |
-| DevOps | Muhitlar, CI/CD, monitoring, backup | Deploy tartibi | [D14](D14-release-va-deploy.md) |
-| Support / Customer success | Qo'llanma, o'qitish, foydalanuvchi murojaatlari | Murojaatlarni toifalash | D15, D16 |
+Loyihada 9 ta rol bor: mijoz (PO), PM, biznes analitik, UI/UX dizayner, tech lead, dasturchi, QA, DevOps va support. Har bir qaror va hujjatning bitta egasi bo'ladi. Bitta odam bir nechta rolni bajarishi mumkin (kichik jamoada PM analitik ham bo'lishi mumkin), lekin har bir rolning mas'uliyati baribir yozilgan bo'ladi. Rollar tavsifi, RACI matritsa va kichik jamoada rollarni birlashtirish — [D01](D01-rollar-va-raci.md) da.
 
 ## Doclar katalogi
 
@@ -105,7 +93,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 
 | ID | Doc | Egasi | Bosqich | Faza |
 | --- | --- | --- | --- | --- |
-| D01 | Rollar va RACI matritsa | PM | Hammasi | 2 |
+| [D01](D01-rollar-va-raci.md) | Rollar va RACI matritsa | PM | Hammasi | 2 |
 | [D02](D02-loyiha-hayot-sikli.md) | Loyiha hayot sikli va bosqich darvozalari | PM | Hammasi | 1 |
 | [D03](D03-loyiha-boshlangich-hujjati.md) | Loyiha boshlang'ich hujjati (Brief + PRD/TZ) | Analitik | Boshlash | 1 |
 | D04 | Dizaynerga brief va dizayn jarayoni | Dizayner + analitik | Dizayn | 2 |
@@ -125,7 +113,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 
 ### A. Asos
 
-**D01 — Rollar va RACI matritsa**
+**[D01](D01-rollar-va-raci.md) — Rollar va RACI matritsa**
 
 - *Maqsad:* har bir faoliyat uchun kim bajaradi (R), kim javobgar (A), kimdan maslahat olinadi (C), kim xabardor qilinadi (I) — aniq bo'lsin.
 - *Mazmuni:* rollar tavsifi; RACI jadvali (talab yig'ish, dizayn, baholash, kod, review, test, deploy, qabul); kichik jamoada rollarni birlashtirish qoidasi.
@@ -247,7 +235,7 @@ Kichik loyihada 17 ta docning hammasini to'liq yuritish byurokratiya bo'ladi. Be
 
 | Doc | Kichik loyiha | O'rta va katta loyiha |
 | --- | --- | --- |
-| D01, [D02](D02-loyiha-hayot-sikli.md), [D03](D03-loyiha-boshlangich-hujjati.md), [D08](D08-kanban-dor-dod.md), [D11](D11-dasturchilar-qoidalari.md) | Majburiy | Majburiy |
+| [D01](D01-rollar-va-raci.md), [D02](D02-loyiha-hayot-sikli.md), [D03](D03-loyiha-boshlangich-hujjati.md), [D08](D08-kanban-dor-dod.md), [D11](D11-dasturchilar-qoidalari.md) | Majburiy | Majburiy |
 | D04 Dizayn brief | [D03](D03-loyiha-boshlangich-hujjati.md) ichida ekranlar ro'yxati va maket havolasi | To'liq |
 | D05 Kickoff | 30 daqiqalik doc review | To'liq |
 | D06 Baholash | [D08](D08-kanban-dor-dod.md) dagi yadro qoida yetarli | To'liq |
