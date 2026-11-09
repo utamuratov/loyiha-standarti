@@ -11,7 +11,7 @@ Ish 5 fazada boradi: tayyorgarlik, doclar uchta fazada, keyin joriy etish. 1-faz
 - [x] Asosiy savollarga javob olish (2026-11-06) — "Kelishuvlar" bo'limi va [misol loyiha kartasi](loyihalar/test-platformasi/index.md)
 - [x] Misol tanlandi: Test Platformasini noldan qurish ssenariysi; frontend misollari real repodan, backend misollari backendchilardan
 - [ ] Backend dasturchilari bilan kelishish: misol loyihadagi `[TO'LDIRILSIN: backend]` qismlarini kim va qachon to'ldiradi ([ochiq joylar](loyihalar/test-platformasi/index.md#ochiq-joylar))
-- [ ] Test Platformasi materiallari: frontend repozitoriyi (`test-uzedu-user`) olindi. Kerak: Figma'dagi asosiy ekranlar (D04, [D12](D12-ui-ux-standartlari.md) misollari uchun)
+- [ ] Test Platformasi materiallari: frontend repozitoriyi (`test-uzedu-user`) olindi. Kerak: Figma'dagi asosiy ekranlar ([D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md) misollari uchun)
 - [x] Nomlash tartibi: `DNN-qisqa-nom.md` (masalan, `D03-loyiha-boshlangich-hujjati.md`), shu repozitoriy ildizida; batafsil — [AGENTS.md](AGENTS.md)
 - [x] Doclarni tasdiqlash: doc egasi tayyorlaydi, jamoa bilan kelishib tasdiqlanadi
 
@@ -38,7 +38,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 - [x] [D01](D01-rollar-va-raci.md) — Rollar va RACI matritsa (2026-11-07; root docdagi rollar jadvali [D01](D01-rollar-va-raci.md) ga ko'chdi; misoli — rejada)
 - [x] [D05](D05-kickoff-va-doc-review.md) — Kickoff va doc review meeting (2026-11-07; katalogdagi "srok" kickoff natijasidan olib tashlandi — [D06](D06-baholash-va-srok.md) ga zid edi; umumiy meeting qoidalari [D09](D09-meetinglar-ritmi.md) ga ko'chdi; misoli — rejada)
 - [x] [D06](D06-baholash-va-srok.md) — Baholash va srok belgilash (2026-11-07; baho birligi — soat, [D08](D08-kanban-dor-dod.md) shabloni moslandi; misoli — rejada)
-- [ ] D04 — Dizaynerga brief va dizayn jarayoni
+- [x] [D04](D04-dizayn-brief-va-jarayon.md) — Dizaynerga brief va dizayn jarayoni (2026-11-09; [D12](D12-ui-ux-standartlari.md) bilan chegara: [D04](D04-dizayn-brief-va-jarayon.md) — jarayon va handoff, [D12](D12-ui-ux-standartlari.md) — nima bilan chiziladi; misoli — rejada)
 - [x] [D09](D09-meetinglar-ritmi.md) — Meetinglar ritmi (2026-11-07; har qanday meetingning umumiy qoidalari shu yerda, [D05](D05-kickoff-va-doc-review.md) dan ko'chdi; misoli — rejada)
 
 ### 3-faza: To'liq sikl

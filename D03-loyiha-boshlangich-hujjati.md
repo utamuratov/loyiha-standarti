@@ -12,7 +12,7 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 
 | Rol | D03 dan nima oladi |
 | --- | --- |
-| Dizayner | Ekranlar ro'yxati, story'lar, xato holatlari — maket uchun (D04) |
+| Dizayner | Ekranlar ro'yxati, story'lar, xato holatlari — maket uchun ([D04](D04-dizayn-brief-va-jarayon.md)) |
 | Dasturchi / tech lead | Story'lar, ruxsatlar, API kontrakti talablari, nofunksional talablar — baholash ([D06](D06-baholash-va-srok.md)) va kod uchun |
 | QA | Qabul mezonlari — test ssenariylari uchun ([D13](D13-test-strategiyasi.md)) |
 | PM | Scope va release'lar — reja va srok uchun ([D02](D02-loyiha-hayot-sikli.md), [D06](D06-baholash-va-srok.md)) |
@@ -41,7 +41,7 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 12. **Faraz yozib qo'yiladi.** Ma'lumot yo'q bo'lsa, faraz qilinadi va "faraz" deb belgilanadi. *Nega:* faraz noto'g'ri chiqsa, qaysi qism qayta ko'rilishi ko'rinadi.
 13. **Versiya va tasdiq.** Har tasdiqlangan versiya raqamlanadi (v1.0, v1.1 …); mijozning yozma tasdig'i va tasdiqlangan versiya raqami Jira epic'ida turadi. Risklar D03 da emas, [D02](D02-loyiha-hayot-sikli.md) risklar reestrida. *Nega:* "qaysi versiya bo'yicha qildik" degan bahs bo'lmaydi.
 
-**Kichik loyihada.** Shablonning hamma bo'limlari qoladi, lekin har biri qisqa bo'lishi mumkin. Dizayn brief'i (D04) alohida yozilmasa, ekranlar ro'yxatiga maket havolasi qo'shiladi.
+**Kichik loyihada.** Shablonning hamma bo'limlari qoladi, lekin har biri qisqa bo'lishi mumkin. Dizayn brief'i ([D04](D04-dizayn-brief-va-jarayon.md)) alohida yozilmasa, ekranlar ro'yxatiga maket havolasi qo'shiladi.
 
 ## 4. Shablon
 

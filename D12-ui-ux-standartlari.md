@@ -28,7 +28,7 @@ Kompaniyaning barcha loyihalarida interfeys bir xil, tushunarli va qulay bo'lsin
 - *Accessibility* (a11y) — interfeysdan imkoniyati cheklangan odamlar ham foydalana olishi: kontrast, klaviatura, ekran o'quvchi.
 - *Adaptivlik* (responsive) — interfeysning turli ekran o'lchamlariga moslashishi.
 
-Dizayn jarayonining o'zi (brief, wireframe, review, handoff) — D04. Bu doc esa "nima bilan va qanday ko'rinishda" chiziladi va quriladi degan savolga javob beradi.
+Dizayn jarayonining o'zi (brief, wireframe, review, handoff) — [D04](D04-dizayn-brief-va-jarayon.md). Bu doc esa "nima bilan va qanday ko'rinishda" chiziladi va quriladi degan savolga javob beradi.
 
 ## 3. Asosiy tamoyillar
 
@@ -64,7 +64,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil — 7-bo'lim.
 | Ruxsat yo'q | Nega ruxsat yo'qligi va kimga murojaat qilish |
 | Internet yo'q | Doimiy banner; ulanish qaytganda avtomatik davom etish |
 
-*Nega:* chizilmagan holatni har dasturchi o'zicha quradi yoki umuman qurmaydi; foydalanuvchi oq ekran ko'radi (D04 da ham tayyor mezoni).
+*Nega:* chizilmagan holatni har dasturchi o'zicha quradi yoki umuman qurmaydi; foydalanuvchi oq ekran ko'radi ([D04](D04-dizayn-brief-va-jarayon.md) da ham tayyor mezoni).
 
 ### C. Formalar
 
@@ -203,7 +203,7 @@ Dizayner va frontend har release oldidan tekshiradi:
 
 ## 9. Tez-tez uchraydigan xatolar
 
-1. **Faqat "chiroyli" holat chiziladi.** Bo'sh, xato va yuklanish holatlari "dasturchi o'zi qiladi" deb qoldiriladi. To'g'risi: holatlarsiz maket handoff'dan o'tmaydi (B bo'limi, D04).
+1. **Faqat "chiroyli" holat chiziladi.** Bo'sh, xato va yuklanish holatlari "dasturchi o'zi qiladi" deb qoldiriladi. To'g'risi: holatlarsiz maket handoff'dan o'tmaydi (B bo'limi, [D04](D04-dizayn-brief-va-jarayon.md)).
 2. **Har ekranda yangi tugma.** Dizayner har gal yangi ko'rinish chizadi, frontend uni noldan quradi. To'g'risi: komponent ro'yxati va kartochka (3-qoida).
 3. **Toast bilan hamma narsa.** Maydon xatosi ham, doimiy holat ham toast'da — foydalanuvchi o'qib ulgurmaydi. To'g'risi: 12-qoidadagi jadval.
 4. **"OK" va "Ha/Yo'q" tugmalari.** Foydalanuvchi nimani tasdiqlayotganini o'qimaydi. To'g'risi: tugmada amal nomi (17-qoida).

@@ -97,7 +97,7 @@ Prioritet — Jira'ning standart maydoni. Backlog ichidagi tartibni PM belgilayd
 Task Ready'ga faqat quyidagilar bajarilganda o'tadi. O'tkazadi — analitik yoki PM.
 
 - [ ] [D03](D03-loyiha-boshlangich-hujjati.md) dagi story'ga havola va qabul mezonlari bor
-- [ ] UI bo'lsa — barcha holatlari bilan maket havolasi (D04)
+- [ ] UI bo'lsa — barcha holatlari bilan maket havolasi ([D04](D04-dizayn-brief-va-jarayon.md))
 - [ ] FE+BE bo'lsa — endpoint kontraktda kelishilgan ([D11](D11-dasturchilar-qoidalari.md))
 - [ ] **Bahoni bajaruvchining o'zi bergan**; baho 3 kundan oshsa, task bo'linadi
 - [ ] Bog'liqliklar tugagan yoki parallel ishlash usuli aniq (masalan, mock bilan)

@@ -31,7 +31,7 @@ Jamoa o'z loyihalarida duch kelgan og'riqlar va standartning qaysi qismi ularni 
 
 | Og'riq (jamoa so'zi bilan) | Sababi | Qaysi doc yopadi |
 | --- | --- | --- |
-| Bitta narsa qayta-qayta qilinadi | Talab va qabul mezoni ish boshlanishidan oldin yozilmagan | [D03](D03-loyiha-boshlangich-hujjati.md) (qabul mezonlari), D04 (handoff), [D08](D08-kanban-dor-dod.md) (DoR) |
+| Bitta narsa qayta-qayta qilinadi | Talab va qabul mezoni ish boshlanishidan oldin yozilmagan | [D03](D03-loyiha-boshlangich-hujjati.md) (qabul mezonlari), [D04](D04-dizayn-brief-va-jarayon.md) (handoff), [D08](D08-kanban-dor-dod.md) (DoR) |
 | Muhokamalar cho'zilib ketadi | Agenda, oldindan o'qish va aniq chiqish yo'q | [D05](D05-kickoff-va-doc-review.md), [D09](D09-meetinglar-ritmi.md) |
 | Aytilgan narsalar esdan chiqadi | Kelishuv Telegram'da qoladi, Jira yoki docga tushmaydi | 1-tamoyil (yagona manba), [D08](D08-kanban-dor-dod.md), [D09](D09-meetinglar-ritmi.md) (protokol) |
 | "Nega unday qilgandik?" degan savollar | Qaror va uning sababi yozilmagan | [D02](D02-loyiha-hayot-sikli.md) (qarorlar jurnali), [D11](D11-dasturchilar-qoidalari.md) (ADR) |
@@ -48,7 +48,7 @@ Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish
 | --- | --- | --- |
 | PM | [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), D07, [D09](D09-meetinglar-ritmi.md), D10, D17 | [D02](D02-loyiha-hayot-sikli.md) bo'yicha bosqichlarni rejalashtirish, kickoff ([D05](D05-kickoff-va-doc-review.md)) o'tkazish |
 | Biznes analitik | [D03](D03-loyiha-boshlangich-hujjati.md), D10 | [D03](D03-loyiha-boshlangich-hujjati.md) shabloni bo'yicha TZ yozish |
-| UI/UX dizayner | D04, [D12](D12-ui-ux-standartlari.md) | D04 brief'ini analitik bilan to'ldirish |
+| UI/UX dizayner | [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md) | [D04](D04-dizayn-brief-va-jarayon.md) brief'ini analitik bilan to'ldirish |
 | Tech lead / dasturchi | [D03](D03-loyiha-boshlangich-hujjati.md) (API kontrakti), [D06](D06-baholash-va-srok.md), [D11](D11-dasturchilar-qoidalari.md), [D12](D12-ui-ux-standartlari.md) (frontend), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) | [D03](D03-loyiha-boshlangich-hujjati.md) ni review qilish, baholash ([D06](D06-baholash-va-srok.md)) |
 | QA | [D13](D13-test-strategiyasi.md), [D08](D08-kanban-dor-dod.md) | [D03](D03-loyiha-boshlangich-hujjati.md) qabul mezonlaridan test rejasini tuzish |
 | DevOps | [D14](D14-release-va-deploy.md) | Muhitlar va release checklistini tayyorlash |
@@ -72,7 +72,7 @@ Loyiha 8 bosqichdan o'tadi; har bosqichning chiqishi keyingisining kirishi bo'la
 
 1. **Boshlash** — loyiha g'oyasi, mijoz va biznes maqsad aniqlanadi. Asosiy doclar: [D01](D01-rollar-va-raci.md), [D03](D03-loyiha-boshlangich-hujjati.md) (Brief qismi).
 2. **Talablar** — scope, user story, qabul mezonlari, API kontrakti va nofunksional talablar yoziladi; doc review o'tkaziladi. Asosiy doclar: [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md).
-3. **Dizayn** — oqimlar va maketlar chiziladi, dasturchiga topshiriladi. Asosiy doclar: D04, [D12](D12-ui-ux-standartlari.md).
+3. **Dizayn** — oqimlar va maketlar chiziladi, dasturchiga topshiriladi. Asosiy doclar: [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md).
 4. **Planlash** — ish bo'linadi, baholanadi, odamlar biriktiriladi, srok kelishiladi. Asosiy doclar: [D06](D06-baholash-va-srok.md), D07.
 5. **Ishlab chiqish** — tasklar kanban bo'yicha DoR → DoD yo'lini o'tadi. Asosiy doclar: [D08](D08-kanban-dor-dod.md), [D09](D09-meetinglar-ritmi.md), D10, [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md).
 6. **Release** — staging'da tekshiriladi, prod'ga chiqariladi, rollback tayyor turadi. Asosiy doc: [D14](D14-release-va-deploy.md).
@@ -96,7 +96,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 | [D01](D01-rollar-va-raci.md) | Rollar va RACI matritsa | PM | Hammasi | 2 |
 | [D02](D02-loyiha-hayot-sikli.md) | Loyiha hayot sikli va bosqich darvozalari | PM | Hammasi | 1 |
 | [D03](D03-loyiha-boshlangich-hujjati.md) | Loyiha boshlang'ich hujjati (Brief + PRD/TZ) | Analitik | Boshlash | 1 |
-| D04 | Dizaynerga brief va dizayn jarayoni | Dizayner + analitik | Dizayn | 2 |
+| [D04](D04-dizayn-brief-va-jarayon.md) | Dizaynerga brief va dizayn jarayoni | Dizayner + analitik | Dizayn | 2 |
 | [D05](D05-kickoff-va-doc-review.md) | Kickoff va doc review meeting | PM | Boshlash | 2 |
 | [D06](D06-baholash-va-srok.md) | Baholash va srok belgilash | PM + tech lead | Planlash | 2 |
 | D07 | Ishlar taqsimoti va resurs planlash | PM | Planlash | 3 |
@@ -133,7 +133,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 - *Mazmuni:* muammo va biznes maqsad; o'lchanadigan muvaffaqiyat mezonlari; foydalanuvchi rollari; scope (nima kiradi va nima **kirmaydi**); modullar va ekranlar ro'yxati; user story + qabul mezonlari; rollar va ruxsatlar matritsasi; integratsiyalar; **FE–BE API kontrakti talablari** (endpointlar ro'yxati, so'rov va javob formati, xato kodlari, kim kelishadi va qayerda saqlanadi); nofunksional talablar (tezlik, xavfsizlik, yuklama); **shaxsiy ma'lumotlar** (qaysi ma'lumot yig'iladi, masalan JShShIR va yuz tasviri; huquqiy asos va rozilik; kim ko'radi; qayerda va qancha saqlanadi; qachon o'chiriladi); cheklovlar va farazlar; ochiq savollar; versiyalar tarixi. Risklar [D02](D02-loyiha-hayot-sikli.md) dagi risklar reestriga yoziladi, [D03](D03-loyiha-boshlangich-hujjati.md) unga havola qiladi.
 - *Tayyor mezoni:* [D05](D05-kickoff-va-doc-review.md) doc review'da bloklovchi deb belgilangan savollar soni 0; qolgan har bir ochiq savolning egasi va muddati bor; har bir story'da qabul mezoni bor.
 
-**D04 — Dizaynerga brief va dizayn jarayoni**
+**[D04](D04-dizayn-brief-va-jarayon.md) — Dizaynerga brief va dizayn jarayoni**
 
 - *Maqsad:* dizayner nima, kim uchun va qanday cheklovlar bilan chizishini aniq bilsin; dasturchiga to'liq maket topshirilsin.
 - *Mazmuni:* brief shabloni (maqsad, foydalanuvchi, oqimlar, ekranlar, kontent, brend, qurilmalar, design system'dan nima ishlatiladi); jarayon: wireframe → review → UI → review → handoff; Figma qoidalari (nomlash, komponentlar, holatlar); handoff checklist.
@@ -235,7 +235,7 @@ Kichik loyihada 17 ta docning hammasini to'liq yuritish byurokratiya bo'ladi. Be
 | Doc | Kichik loyiha | O'rta va katta loyiha |
 | --- | --- | --- |
 | [D01](D01-rollar-va-raci.md), [D02](D02-loyiha-hayot-sikli.md), [D03](D03-loyiha-boshlangich-hujjati.md), [D08](D08-kanban-dor-dod.md), [D11](D11-dasturchilar-qoidalari.md) | Majburiy | Majburiy |
-| D04 Dizayn brief | [D03](D03-loyiha-boshlangich-hujjati.md) ichida ekranlar ro'yxati va maket havolasi | To'liq |
+| [D04](D04-dizayn-brief-va-jarayon.md) Dizayn brief | [D03](D03-loyiha-boshlangich-hujjati.md) ichida ekranlar ro'yxati va maket havolasi | To'liq |
 | [D05](D05-kickoff-va-doc-review.md) Kickoff | Kickoff va doc review 30–45 daqiqadan; yozma izohlar va protokol majburiy | To'liq |
 | [D06](D06-baholash-va-srok.md) Baholash | Tasklar soatda, uch nuqtali baho story darajasida; bufer, yozma srok va kechikish tartibi majburiy | To'liq |
 | D07 Resurs planlash | Ixtiyoriy | To'liq |
