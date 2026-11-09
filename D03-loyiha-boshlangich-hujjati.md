@@ -70,7 +70,7 @@ Tasdiqlagan: <mijoz PO, sana>
 11. Sozlamalar — nomi, ta'siri, standart qiymati, qachon kuchga kiradi
 12. Integratsiyalar — tashqi tizim, nima uchun, kim egasi
 13. API kontrakti talablari — asosiy endpointlar, xato holatlari, kontrakt fayli havolasi
-14. Nofunksional talablar — tezlik, yuklama, ishonchlilik, xavfsizlik, qurilma va brauzerlar
+14. Nofunksional talablar — tezlik, yuklama, ishonchlilik, xavfsizlik, qurilma va brauzerlar, support javob vaqtlari (D16)
 15. Shaxsiy ma'lumotlar — ma'lumot, maqsad, rozilik, kim ko'radi, saqlash joyi va muddati, o'chirish
 16. Farazlar
 17. Ochiq savollar — savol, egasi, muddat, bloklovchi (ha/yo'q)

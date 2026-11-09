@@ -75,7 +75,7 @@ Jiddiylik: kritik / yuqori / o'rta / past
 Bog'liq story: US-<NN>
 ```
 
-**Jiddiylik.** Murojaatlarga javob vaqti (SLA) — D16.
+**Jiddiylik.** Murojaatlarga javob vaqti (SLA) — [D16](D16-support-va-fikr-yigish.md).
 
 | Daraja | Ta'rifi |
 | --- | --- |

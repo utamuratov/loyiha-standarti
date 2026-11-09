@@ -17,7 +17,7 @@ Tasdiqlangan scope'ga kelgan har yangi talab yoki o'zgarish srok va baho bilan b
 | Dizayner, dasturchilar | O'z qismi bo'yicha ta'sir va baho beradi ([D06](D06-baholash-va-srok.md)) |
 | PO (mijoz) | Kichik va katta CR'ni tasdiqlaydi yoki rad etadi; variantlardan birini tanlaydi |
 
-- **Qachon:** TZ ([D03](D03-loyiha-boshlangich-hujjati.md)) 2-darvozada tasdiqlangandan keyin — loyihaning oxirigacha. So'rov qayerdan kelishidan qat'i nazar: demo ([D09](D09-meetinglar-ritmi.md)), dizayn review ([D04](D04-dizayn-brief-va-jarayon.md)), Telegram, qo'ng'iroq, ekspluatatsiyadagi murojaat (D16) yoki jamoaning o'z taklifi.
+- **Qachon:** TZ ([D03](D03-loyiha-boshlangich-hujjati.md)) 2-darvozada tasdiqlangandan keyin — loyihaning oxirigacha. So'rov qayerdan kelishidan qat'i nazar: demo ([D09](D09-meetinglar-ritmi.md)), dizayn review ([D04](D04-dizayn-brief-va-jarayon.md)), Telegram, qo'ng'iroq, ekspluatatsiyadagi murojaat ([D16](D16-support-va-fikr-yigish.md)) yoki jamoaning o'z taklifi.
 
 **Atamalar.**
 - *Change request (CR)* — tasdiqlangan TZ'ni o'zgartirish so'rovi: yangi story, o'zgargan qabul mezoni, yangi ekran, o'zgargan nofunksional talab.

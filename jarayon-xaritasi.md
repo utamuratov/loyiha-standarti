@@ -7,7 +7,7 @@ pageClass: wide-page
 
 Butun standart uchta sxemada: loyiha qaysi bosqichlardan o'tadi, kim kimga nima topshiradi va bitta task qanday yo'l bosadi. Docni ochishdan oldin shu yerdan o'zingiz turgan joyni toping.
 
-Jadvallardagi yozilgan doclar havola bo'lib turadi. Hali yozilmaganlari oddiy matn bilan yozilgan, ularning tavsifi root docdagi katalogda.
+Jadvallardagi har doc nomi — havola: bosib, o'sha docga o'tasiz.
 
 ## 1. Loyiha bosqichlari va darvozalar
 
@@ -46,7 +46,7 @@ Har bosqichda qaysi doc kerak:
 | 5 · Ishlab chiqish | [D08](D08-kanban-dor-dod.md) — kanban, DoR, DoD; [D11](D11-dasturchilar-qoidalari.md) — kod va review; [D13](D13-test-strategiyasi.md) — test; [D12](D12-ui-ux-standartlari.md) — UI tekshiruvi; [D09](D09-meetinglar-ritmi.md) — meetinglar; [D10](D10-ozgarishlarni-boshqarish.md) — o'zgarishlar |
 | 6 · Release | [D14](D14-release-va-deploy.md) — release va deploy |
 | 7 · Topshirish | [D15](D15-qollanma-va-oqitish.md) — qo'llanma va o'qitish |
-| 8 · Ekspluatatsiya | D16 — support va fikr yig'ish; [D17](D17-retro-va-standartni-yangilash.md) — retro |
+| 8 · Ekspluatatsiya | [D16](D16-support-va-fikr-yigish.md) — support va fikr yig'ish; [D17](D17-retro-va-standartni-yangilash.md) — retro |
 
 Sxemada uzuq chiziq bilan ikkita qaytish yo'li ko'rsatilgan:
 
@@ -175,6 +175,7 @@ Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi ([D
 | Qaror qayerda yozilgan, nega shunday qilgandik? | [D02](D02-loyiha-hayot-sikli.md) — qarorlar jurnali |
 | Mijoz nima so'ragan, scope'ga nima kiradi? | [D03](D03-loyiha-boshlangich-hujjati.md) |
 | Maket qanday tartibda chiziladi va dasturchiga qanday beriladi? | [D04](D04-dizayn-brief-va-jarayon.md) (brief → wireframe → UI → handoff); nima bilan chiziladi — [D12](D12-ui-ux-standartlari.md) |
+| Foydalanuvchi murojaati qayerga tushadi, qancha vaqtda javob beriladi? | [D16](D16-support-va-fikr-yigish.md) |
 | Foydalanuvchi uchun qo'llanma va o'qitish qanday bo'ladi? | [D15](D15-qollanma-va-oqitish.md) |
 | Retro qachon va qanday o'tadi, standart qanday o'zgaradi? | [D17](D17-retro-va-standartni-yangilash.md) |
 | Qaysi meetinglar bor, meeting qanday o'tadi va natijasi qayerga yoziladi? | [D09](D09-meetinglar-ritmi.md) |

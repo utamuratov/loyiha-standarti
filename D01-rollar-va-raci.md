@@ -33,7 +33,7 @@ Har bir ish uchun kim bajaradi, kim yakuniy javob beradi, kimdan maslahat so'ral
 | Dasturchi (FE/BE/mobile) | Taskni DoD bo'yicha bajarish, testlar, merge request, boshqalarning MR'ini review qilish | Task ichidagi implementatsiya | MR, unit testlar |
 | QA / tekshiruvchi | Test rejasi, Testing ustuni, regressiya, bug hisoboti | Task Done'mi; release'ga tayyorlik (QA sign-off) | [D13](D13-test-strategiyasi.md), test hisobotlari |
 | DevOps | Muhitlar, CI/CD, monitoring, backup, prod deploy | Deploy tartibi | [D14](D14-release-va-deploy.md) |
-| Support | Qo'llanma, o'qitish, foydalanuvchi murojaatlari | Murojaatlarni toifalash | [D15](D15-qollanma-va-oqitish.md), D16 |
+| Support | Qo'llanma, o'qitish, foydalanuvchi murojaatlari | Murojaatlarni toifalash | [D15](D15-qollanma-va-oqitish.md), [D16](D16-support-va-fikr-yigish.md) |
 
 ## 4. Qoidalar
 
@@ -55,7 +55,7 @@ Kichik loyihada (3–5 kishi) tech lead, QA, DevOps va support ko'pincha alohida
 | Tech lead | Eng tajribali dasturchi | O'z MR'ini o'zi tasdiqlamaydi — review'ni boshqa dasturchi qiladi |
 | QA / tekshiruvchi | Analitik yoki task muallifi bo'lmagan dasturchi ([D08](D08-kanban-dor-dod.md)) | O'z taskini testlamaydi |
 | DevOps | Tech lead yoki backend dasturchi ([D14](D14-release-va-deploy.md)) | Prod'ga kirish huquqi faqat shu odam va zaxirasida |
-| Support | PM/analitik (qo'llanma, toifalash); texnik murojaatlar — dasturchiga (D16) | Murojaat egasiz qolmaydi |
+| Support | PM/analitik (qo'llanma, toifalash); texnik murojaatlar — dasturchiga ([D16](D16-support-va-fikr-yigish.md)) | Murojaat egasiz qolmaydi |
 
 Birlashtirib **bo'lmaydi:** PO va jamoa a'zosi (5-qoida); muallif va uning yagona tekshiruvchisi (3-qoida).
 
@@ -109,7 +109,7 @@ Loyiha shu jadvalni o'zgarishsiz oladi; farq bo'lsa, 6.1 dagi "farqlar" qatoriga
 | UAT va qabul ([D02](D02-loyiha-hayot-sikli.md)) | A/R | C | C | | I | | C | | I |
 | Scope o'zgarishi, change request ([D10](D10-ozgarishlarni-boshqarish.md)) | A | R | C | C | C | C | I | | I |
 | Qo'llanma va o'qitish ([D15](D15-qollanma-va-oqitish.md)) | I | C | C | C | | | | | A/R |
-| Murojaatlar va toifalash (D16) | I | C | | | | C | | | A/R |
+| Murojaatlar va toifalash ([D16](D16-support-va-fikr-yigish.md)) | I | C | | | | C | | | A/R |
 | Retro ([D17](D17-retro-va-standartni-yangilash.md)) | C | A/R | C | C | C | C | C | C | C |
 
 A/R — shu rol ham bajaradi, ham yakuniy javob beradi.

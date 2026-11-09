@@ -48,7 +48,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 | [D13](../../D13-test-strategiyasi.md) Test | [Test rejasi va testlar](D13-test-rejasi.md) | Yozilgan |
 | [D14](../../D14-release-va-deploy.md) Release va deploy | [Release va deploy](D14-release-va-deploy.md) | Yozilgan |
 | [D15](../../D15-qollanma-va-oqitish.md) Qo'llanma | Nomzod roli uchun qo'llanma bo'limi (kirishdan natijagacha) | Rejada |
-| D16 Support | Namunaviy murojaatlarni toifalash ("test paytida kamera ishlamadi", "natija ko'rinmayapti") | Rejada |
+| [D16](../../D16-support-va-fikr-yigish.md) Support | Namunaviy murojaatlarni toifalash ("test paytida kamera ishlamadi", "natija ko'rinmayapti") | Rejada |
 | [D17](../../D17-retro-va-standartni-yangilash.md) Retro | Release'dan keyingi retro | Rejada |
 
 ## Ochiq joylar

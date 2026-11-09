@@ -48,7 +48,7 @@ Boshqa doclar shu yerga yuboradigan raqamlar. Har biri qayerdan olinishi ko'rsat
 | Srok aniqligi | Real release sanasi − rejadagi sana (ish kunida) | [D06](D06-baholash-va-srok.md), 10-qoida |
 | Baho aniqligi | Σ haqiqiy soat ÷ Σ baho; haqiqiy kunlik fokus soati | [D06](D06-baholash-va-srok.md), 10-qoida |
 | Rework ulushi | Testing'dan qaytgan tasklar ÷ Done bo'lgan tasklar | [D08](D08-kanban-dor-dod.md), 6-qoida |
-| Release'dan keyingi bug'lar | Release'dan keyin 2 hafta ichida ochilgan bug'lar soni, jiddiylik bo'yicha | [D08](D08-kanban-dor-dod.md) bug shabloni, D16 |
+| Release'dan keyingi bug'lar | Release'dan keyin 2 hafta ichida ochilgan bug'lar soni, jiddiylik bo'yicha | [D08](D08-kanban-dor-dod.md) bug shabloni, [D16](D16-support-va-fikr-yigish.md) |
 | Lead time | Tasklarning In progress → Done o'rtacha vaqti | Jira |
 | Change request'lar | Soni, jami bahosi, qaysi bosqichda kelgani | [D10](D10-ozgarishlarni-boshqarish.md), 10-qoida |
 | Review vaqti va MR hajmi | MR ochilgandan birinchi review'gacha o'rtacha vaqt; o'rtacha qatorlar soni | [D11](D11-dasturchilar-qoidalari.md) |

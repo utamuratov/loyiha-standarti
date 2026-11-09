@@ -15,7 +15,7 @@ Release oldindan aytiladigan, takrorlanadigan va xavfsiz bo'lsin: nima chiqayotg
 | Tech lead | Release tarkibini tasdiqlaydi; rollback qarorini qabul qiladi |
 | QA / tekshiruvchi | Staging regressiyasi ([D13](D13-test-strategiyasi.md)) va deploy'dan keyingi smoke test |
 | PM | Release sanasini mijoz bilan kelishadi, e'lon qiladi |
-| Support | Release notes'ni oladi, foydalanuvchi savollariga tayyorlanadi (D16) |
+| Support | Release notes'ni oladi, foydalanuvchi savollariga tayyorlanadi ([D16](D16-support-va-fikr-yigish.md)) |
 
 - **Qachon:**
   - 4-bosqichda (Planlash) muhitlar va pipeline tayyorlanadi.
@@ -62,7 +62,7 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
    - jamoa uchun — texnik;
    - support va mijoz uchun — oddiy tilda.
 
-   *Nega:* support yangilikni foydalanuvchidan eshitmasligi kerak (D16); "qachon o'zgargandi?" savoliga javob bo'ladi.
+   *Nega:* support yangilikni foydalanuvchidan eshitmasligi kerak ([D16](D16-support-va-fikr-yigish.md)); "qachon o'zgargandi?" savoliga javob bo'ladi.
 
 ### C. Release jarayoni
 
@@ -98,7 +98,7 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
     - xatolar soni, frontend xatolari ham;
     - javob vaqti.
 
-    Har alertning egasi va javob vaqti bor (D16). *Nega:* muammoni foydalanuvchi emas, monitoring birinchi ko'rishi kerak.
+    Har alertning egasi va javob vaqti bor ([D16](D16-support-va-fikr-yigish.md)). *Nega:* muammoni foydalanuvchi emas, monitoring birinchi ko'rishi kerak.
 16. **Loglar bitta joyda yig'iladi** va saqlash muddati bilan yuritiladi. *Nega:* xato tahlili serverma-server qidirishga aylanmaydi.
 17. **Backup jadval bo'yicha olinadi va tiklash sinab ko'riladi** — kamida chorakda bir marta staging'ga tiklab. *Nega:* tiklab ko'rilmagan backup ishlamasligi mumkin.
 

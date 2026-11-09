@@ -33,7 +33,7 @@ Manba: `.gitlab-ci.yml`, `Dockerfile`, `nginx.conf`, `angular.json`.
 | `Dockerfile.prod` | Pipeline unga murojaat qiladi, lekin repoda (lokal nusxadagi hech bir branch tarixida) bunday fayl yo'q | [TO'LDIRILSIN: prod image qayerdan yig'iladi — fayl boshqa joydami yoki prod pipeline boshqacha ishlaydimi] |
 | Boshqa mijozlar (argos, olymp, control, ssv) | `package.json` da build skriptlari bor, `.gitlab-ci.yml` da yo'q | [TO'LDIRILSIN: ular qanday deploy qilinadi]. Har mijoz uchun pipeline'da alohida job yoki parametr |
 | Maxfiy kalitlar (21) | CI o'zgaruvchilari orqali | Protected/masked ekanini tekshirish |
-| Monitoring va loglar (15–16) | [TO'LDIRILSIN] | Frontend xatolarini yig'ish (D16) |
+| Monitoring va loglar (15–16) | [TO'LDIRILSIN] | Frontend xatolarini yig'ish ([D16](../../D16-support-va-fikr-yigish.md)) |
 | Backup va migratsiyalar (13, 17) | [TO'LDIRILSIN: backend] | |
 
 ## Release vaqti: Test Platformasi uchun
