@@ -222,4 +222,4 @@ DevOps loyiha boshida va har chorakda tekshiradi:
 
 ---
 
-Egasi: DevOps · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: DevOps · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

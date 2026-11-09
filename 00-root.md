@@ -1,6 +1,6 @@
 # Loyiha boshqaruvi standarti — Root doc
 
-Egasi: Odilbek Utamuratov · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: har pilot loyiha retrosidan keyin (D17)
+Egasi: Odilbek Utamuratov · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: har pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))
 
 ## Maqsad va muammo tahlili
 
@@ -36,7 +36,7 @@ Jamoa o'z loyihalarida duch kelgan og'riqlar va standartning qaysi qismi ularni 
 | Aytilgan narsalar esdan chiqadi | Kelishuv Telegram'da qoladi, Jira yoki docga tushmaydi | 1-tamoyil (yagona manba), [D08](D08-kanban-dor-dod.md), [D09](D09-meetinglar-ritmi.md) (protokol) |
 | "Nega unday qilgandik?" degan savollar | Qaror va uning sababi yozilmagan | [D02](D02-loyiha-hayot-sikli.md) (qarorlar jurnali), [D11](D11-dasturchilar-qoidalari.md) (ADR) |
 
-Bu jadval pilotdan keyin yana tekshiriladi: og'riq kamaydimi yoki yo'qmi (D17).
+Bu jadval pilotdan keyin yana tekshiriladi: og'riq kamaydimi yoki yo'qmi ([D17](D17-retro-va-standartni-yangilash.md)).
 
 ## Qo'llanmani qanday o'qish kerak
 
@@ -46,7 +46,7 @@ Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish
 
 | Rolingiz | Asosiy doclaringiz | Yangi loyihada birinchi qiladigan ishingiz |
 | --- | --- | --- |
-| PM | [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), [D07](D07-taqsimot-va-resurs.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), D17 | [D02](D02-loyiha-hayot-sikli.md) bo'yicha bosqichlarni rejalashtirish, kickoff ([D05](D05-kickoff-va-doc-review.md)) o'tkazish |
+| PM | [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), [D07](D07-taqsimot-va-resurs.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), [D17](D17-retro-va-standartni-yangilash.md) | [D02](D02-loyiha-hayot-sikli.md) bo'yicha bosqichlarni rejalashtirish, kickoff ([D05](D05-kickoff-va-doc-review.md)) o'tkazish |
 | Biznes analitik | [D03](D03-loyiha-boshlangich-hujjati.md), [D10](D10-ozgarishlarni-boshqarish.md) | [D03](D03-loyiha-boshlangich-hujjati.md) shabloni bo'yicha TZ yozish |
 | UI/UX dizayner | [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md) | [D04](D04-dizayn-brief-va-jarayon.md) brief'ini analitik bilan to'ldirish |
 | Tech lead / dasturchi | [D03](D03-loyiha-boshlangich-hujjati.md) (API kontrakti), [D06](D06-baholash-va-srok.md), [D11](D11-dasturchilar-qoidalari.md), [D12](D12-ui-ux-standartlari.md) (frontend), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) | [D03](D03-loyiha-boshlangich-hujjati.md) ni review qilish, baholash ([D06](D06-baholash-va-srok.md)) |
@@ -79,7 +79,7 @@ Loyiha 8 bosqichdan o'tadi; har bosqichning chiqishi keyingisining kirishi bo'la
 7. **Topshirish** — mijoz qabul qiladi (UAT), qo'llanma va o'qitish beriladi. Asosiy doc: D15.
 8. **Ekspluatatsiya** — murojaatlar va fikrlar yig'iladi, keyingi rejaga kiradi. Asosiy doc: D16.
 
-Ishlab chiqish (5) haftalik sikl bo'lib aylanadi. O'rtada kelgan yangi talab [D10](D10-ozgarishlarni-boshqarish.md) orqali qayta baholanadi va kerak bo'lsa 2-bosqichga qaytadi. D17 (retro) har bosqich oxirida va loyiha oxirida o'tkaziladi.
+Ishlab chiqish (5) haftalik sikl bo'lib aylanadi. O'rtada kelgan yangi talab [D10](D10-ozgarishlarni-boshqarish.md) orqali qayta baholanadi va kerak bo'lsa 2-bosqichga qaytadi. [D17](D17-retro-va-standartni-yangilash.md) (retro) har release'dan keyin va loyiha oxirida o'tkaziladi.
 
 **Ikki xil darvoza.** [D02](D02-loyiha-hayot-sikli.md) bosqich darvozalari butun loyihaning keyingi bosqichga o'tishini tekshiradi; [D08](D08-kanban-dor-dod.md) dagi DoR va DoD esa bitta taskning board ustunlari orasida o'tishini tekshiradi.
 
@@ -109,7 +109,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 | [D14](D14-release-va-deploy.md) | Release va deploy tartibi | DevOps | Release | 1 |
 | D15 | Foydalanuvchi qo'llanmasi va o'qitish | Support + analitik | Topshirish | 3 |
 | D16 | Support va fikr yig'ish | Support | Ekspluatatsiya | 3 |
-| D17 | Retrospektiva va standartni yangilash | PM | Har bosqich oxiri | 3 |
+| [D17](D17-retro-va-standartni-yangilash.md) | Retrospektiva va standartni yangilash | PM | Har release'dan keyin, loyiha oxiri | 3 |
 
 ### A. Asos
 
@@ -218,7 +218,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 - *Mazmuni:* murojaat kanallari; toifalash (bug, savol, taklif); jiddiylik darajalari va javob vaqti (SLA); bug'ni boardga o'tkazish; fikrlarni yig'ish va tahlil qilish; mijozga hisobot.
 - *Tayyor mezoni:* har bir murojaatning holati va egasi kuzatiladi.
 
-**D17 — Retrospektiva va standartni yangilash**
+**[D17](D17-retro-va-standartni-yangilash.md) — Retrospektiva va standartni yangilash**
 
 - *Maqsad:* jamoa tajribadan o'rgansin, bu standart esa tirik qolsin.
 - *Mazmuni:* retro formati (nima yaxshi, nima yomon, nimani o'zgartiramiz); qachon o'tkaziladi; harakatlar ro'yxati va egasi; standartga o'zgartirish kiritish tartibi; jarayon metrikalari (srok aniqligi, lead time, release'dan keyingi bug'lar soni, rework ulushi).
@@ -242,7 +242,7 @@ Kichik loyihada 17 ta docning hammasini to'liq yuritish byurokratiya bo'ladi. Be
 | [D14](D14-release-va-deploy.md) Release | Release checklist va rollback rejasi | To'liq |
 | D15 Qo'llanma | FAQ | To'liq |
 | D16 Support | Murojaat kanali va javob vaqti | To'liq |
-| D17 Retro | Loyiha oxirida bitta retro | Har bosqich oxirida |
+| [D17](D17-retro-va-standartni-yangilash.md) Retro | Har release'dan keyin 45 daqiqalik retro va loyiha oxirida yakuniy retro | Qo'shimcha: 4-darvozadan keyin boshlash retrosi |
 
 ## Umumiy tamoyillar
 

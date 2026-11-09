@@ -110,7 +110,7 @@ Loyiha shu jadvalni o'zgarishsiz oladi; farq bo'lsa, 6.1 dagi "farqlar" qatoriga
 | Scope o'zgarishi, change request ([D10](D10-ozgarishlarni-boshqarish.md)) | A | R | C | C | C | C | I | | I |
 | Qo'llanma va o'qitish (D15) | I | C | C | C | | | | | A/R |
 | Murojaatlar va toifalash (D16) | I | C | | | | C | | | A/R |
-| Retro (D17) | C | A/R | C | C | C | C | C | C | C |
+| Retro ([D17](D17-retro-va-standartni-yangilash.md)) | C | A/R | C | C | C | C | C | C | C |
 
 A/R — shu rol ham bajaradi, ham yakuniy javob beradi.
 
@@ -137,4 +137,4 @@ Misol loyihada hali yozilmagan: Test Platformasi uchun rollar va RACI — [loyih
 
 ---
 
-Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

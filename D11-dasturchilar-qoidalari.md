@@ -162,7 +162,7 @@ Tech lead loyiha boshida va har release oldidan tekshiradi:
 - [ ] Repoda maxfiy kalit yo'q; CI o'zgaruvchilari masked/protected
 - [ ] API kontrakti fayli bor va frontend unga havola qiladi
 - [ ] `README`, ish qoidalari fayli va `docs/` dolzarb
-- [ ] So'nggi 10 ta MR'dan: har biri shablon bo'yicha, 1 ish kunida review qilingan, kamida 1 tasdiqli (o'rtacha review vaqti va MR hajmi D17 retroda ko'riladi)
+- [ ] So'nggi 10 ta MR'dan: har biri shablon bo'yicha, 1 ish kunida review qilingan, kamida 1 tasdiqli (o'rtacha review vaqti va MR hajmi [D17](D17-retro-va-standartni-yangilash.md) retroda ko'riladi)
 
 ## 7. Tez-tez uchraydigan xatolar
 
@@ -174,4 +174,4 @@ Tech lead loyiha boshida va har release oldidan tekshiradi:
 
 ---
 
-Egasi: tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

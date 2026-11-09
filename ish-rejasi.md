@@ -47,11 +47,11 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 - [x] [D10](D10-ozgarishlarni-boshqarish.md) — O'zgarishlarni boshqarish (2026-11-09; uch tur: aniqlashtirish, kichik va katta CR; [D08](D08-kanban-dor-dod.md) dagi yadro qoida havolaga aylandi, root katalogdagi "yadro qoidalar" bloki olib tashlandi; misoli — qisman, board faylida)
 - [ ] D15 — Foydalanuvchi qo'llanmasi va o'qitish
 - [ ] D16 — Support va fikr yig'ish
-- [ ] D17 — Retrospektiva va standartni yangilash. Yozishda hal qilish: retro chastotasi — [D02](D02-loyiha-hayot-sikli.md) "har release'dan keyin" deydi, root docdagi moslashtirish jadvali kichik loyiha uchun "loyiha oxirida bitta" deydi; [D06](D06-baholash-va-srok.md) (10-qoida) va [D09](D09-meetinglar-ritmi.md) shu yerga havola qiladi
+- [x] [D17](D17-retro-va-standartni-yangilash.md) — Retrospektiva va standartni yangilash (2026-11-09; retro chastotasi hal qilindi: har release'dan keyin va loyiha oxirida, o'rta va katta loyihada 4-darvozadan keyin ham — root doc va [D02](D02-loyiha-hayot-sikli.md) bilan moslandi; boshqa doclar yuboradigan metrikalar bitta jadvalda; misoli — rejada)
 
 ### 4-faza: Joriy etish
 
-- [ ] Pilot loyiha bo'yicha retro (D17 asosida)
+- [ ] Pilot loyiha bo'yicha retro ([D17](D17-retro-va-standartni-yangilash.md) asosida)
 - [ ] Retro natijalari bo'yicha barcha doclarni yangilash
 - [ ] Yangi xodimlar uchun 1 sahifalik qisqa yo'riqnoma (standartga kirish)
 - [ ] Jarayon metrikalarini kuzatishni boshlash va keyingi ko'rib chiqish sanasini belgilash
@@ -66,7 +66,7 @@ Standartni yozish boshida aniqlangan javoblar (2026-11-06, Odilbek Utamuratovdan
 - **Standart kim uchun.** Faqat ichki jamoa uchun. Loyihaning o'z hujjatlari (masalan, [D03](D03-loyiha-boshlangich-hujjati.md) bo'yicha yozilgan TZ) mijoz bilan kelishilishi mumkin, standartning o'zi ko'rsatilmaydi.
 - **Doclarni kim tasdiqlaydi.** Jamoa bilan kelishib: doc egasi tayyorlaydi, 1-faza review meetingida kelishiladi. Saqlash joyi — shu repozitoriy.
 - **Kichik loyiha chegarasi.** Jamoa 3–5 kishi.
-- **Root docning keyingi ko'rib chiqish sanasi.** Vaziyatga qarab — har pilot loyiha retrosidan keyin (D17).
+- **Root docning keyingi ko'rib chiqish sanasi.** Vaziyatga qarab — har pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md)).
 
 ---
 

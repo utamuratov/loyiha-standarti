@@ -25,7 +25,7 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 | 5 | Ishlab chiqish | Ready ustunidagi tasklar | Release scope'idagi barcha tasklar Done ([D08](D08-kanban-dor-dod.md) DoD); regressiya o'tgan | Tech lead (QA sign-off bilan) |
 | 6 | Release | Release nomzodi (staging'da) | Release checklist ([D14](D14-release-va-deploy.md)), rollback rejasi, release notes; prod'ga chiqqan | Tech lead / DevOps |
 | 7 | Topshirish | Prod'dagi versiya | UAT akti, qo'llanma va o'qitish (D15) | Mijoz (PO) |
-| 8 | Ekspluatatsiya | Qabul qilingan versiya | Murojaat kanali ishlaydi (D16), murojaatlar backlog'ga tushadi; retro (D17) | PM |
+| 8 | Ekspluatatsiya | Qabul qilingan versiya | Murojaat kanali ishlaydi (D16), murojaatlar backlog'ga tushadi; retro ([D17](D17-retro-va-standartni-yangilash.md)) | PM |
 
 **Sikl.** 5–7 bosqichlar har release uchun takrorlanadi: loyiha bir nechta release'ga bo'linadi va har biri o'z darvozalaridan o'tadi. Ishlab chiqish ichida haftalik sikl aylanadi ([D09](D09-meetinglar-ritmi.md)). 8-bosqichda kelgan yangi talab 2-bosqichga qaytadi ([D10](D10-ozgarishlarni-boshqarish.md)).
 
@@ -99,7 +99,7 @@ Har darvoza uchun punktlar. ⛔ — bloklovchi: bajarilmasa o'tilmaydi (shartli 
 - [ ] O'qitish o'tkazilgan (kerak bo'lsa)
 - [ ] Murojaat kanali va javob vaqti mijozga aytilgan (D16)
 
-**8: Ekspluatatsiya** — darvoza emas, doimiy holat. Har release'dan keyin retro (D17); yangi talablar 2-bosqichga.
+**8: Ekspluatatsiya** — darvoza emas, doimiy holat. Har release'dan keyin retro ([D17](D17-retro-va-standartni-yangilash.md)); yangi talablar 2-bosqichga.
 
 ### 5.2. Darvoza yozuvi
 
@@ -150,4 +150,4 @@ Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · L
 
 ---
 
-Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

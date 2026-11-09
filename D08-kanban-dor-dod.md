@@ -127,7 +127,7 @@ Test talabining to'liq versiyasi (qaysi testlar, qamrov, e2e) — [D13](D13-test
 3. **Talab o'rtada o'zgarsa — change request.** Task `change-request` labeli bilan Backlog'ga qaytadi va [D10](D10-ozgarishlarni-boshqarish.md) bo'yicha qaror qabul qilinib, [D03](D03-loyiha-boshlangich-hujjati.md) yangilangandan keyingina qayta Ready'ga o'tadi. O'zgarish turlari, kim tasdiqlashi va to'liq tartib — [D10](D10-ozgarishlarni-boshqarish.md). *Nega:* "yo'l-yo'lakay qo'shib qo'ying" srokni yashirin buzadi.
 4. **Bloklangan task belgilanadi.** Jira'da "Flagged" belgisi va izoh: nima va kimni kutayapti. 1 ish kunidan ortiq bloklansa, PM daily'da ([D09](D09-meetinglar-ritmi.md)) ko'taradi. *Nega:* jim bloklangan task srok o'tgandagina ko'rinadi.
 5. **Muallif o'z taskini o'zi testlamaydi.** Kichik jamoada QA bo'lmasa, Testing'ni analitik yoki boshqa dasturchi qiladi. *Nega:* muallif qanday ishlatish kerakligini biladi va xatoga yo'l qo'yadigan qadamni qilmaydi.
-6. **Qaytgan task orqaga suriladi.** Testing'da qabul mezoni bajarilmasa, task In progress'ga qaytadi va izohda sababi yoziladi. Yangi task ochilmaydi (yangi bug faqat boshqa muammo uchun). *Nega:* rework sanaladi va retroda (D17) ko'rinadi.
+6. **Qaytgan task orqaga suriladi.** Testing'da qabul mezoni bajarilmasa, task In progress'ga qaytadi va izohda sababi yoziladi. Yangi task ochilmaydi (yangi bug faqat boshqa muammo uchun). *Nega:* rework sanaladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) ko'rinadi.
 
 ## 7. Misol
 
@@ -142,7 +142,7 @@ PM haftada bir marta tekshiradi (haftalik sync'dan oldin, [D09](D09-meetinglar-r
 - [ ] 1 kundan ortiq bloklangan task'larning izohi va egasi bor
 - [ ] Done'dagi har task DoD bo'yicha (tasodifiy 3 tasini tekshirish)
 - [ ] Hafta davomida chatda kelishilgan so'rovlar boardda bor
-- [ ] Testing'dan qaytgan tasklar soni yozildi (rework metrikasi, D17)
+- [ ] Testing'dan qaytgan tasklar soni yozildi (rework metrikasi, [D17](D17-retro-va-standartni-yangilash.md))
 
 **Tayyor mezoni.** Jamoaga yangi qo'shilgan odam boardni ko'rib, tasodifiy 5 ta taskdan har birining holatini, kim ishlayotganini va nima kutayotganini so'ramasdan aytib bera oladi. Tekshiradi — PM, har yangi xodim ulanganda.
 
@@ -156,4 +156,4 @@ PM haftada bir marta tekshiradi (haftalik sync'dan oldin, [D09](D09-meetinglar-r
 
 ---
 
-Egasi: PM + tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: PM + tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

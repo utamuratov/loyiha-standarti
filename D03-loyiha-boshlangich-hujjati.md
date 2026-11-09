@@ -106,4 +106,4 @@ Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · T
 
 ---
 
-Egasi: biznes analitik · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: biznes analitik · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

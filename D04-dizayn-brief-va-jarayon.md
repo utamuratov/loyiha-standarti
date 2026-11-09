@@ -120,4 +120,4 @@ Misol loyihada hali yozilmagan: Test Platformasi uchun Face ID va test yechish e
 
 ---
 
-Egasi: UI/UX dizayner + biznes analitik · Oxirgi yangilangan: 2026-11-09 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: UI/UX dizayner + biznes analitik · Oxirgi yangilangan: 2026-11-09 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

@@ -63,7 +63,7 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
    - biznes logika papkalarida (servislar, util'lar) satr qamrovi ≥ 80%;
    - MR umumiy qamrovni pasaytirmaydi.
 
-   Chegaralar pilotdan keyin D17 retroda qayta ko'riladi. *Nega:* raqamsiz "test yozing" tekshirilmaydi; raqamning o'zi esa ma'nosiz testlarga olib kelmasligi uchun faqat logika papkalariga qo'yiladi.
+   Chegaralar pilotdan keyin [D17](D17-retro-va-standartni-yangilash.md) retroda qayta ko'riladi. *Nega:* raqamsiz "test yozing" tekshirilmaydi; raqamning o'zi esa ma'nosiz testlarga olib kelmasligi uchun faqat logika papkalariga qo'yiladi.
 
 ### C. CI va merge
 
@@ -87,7 +87,7 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
 
 13. **Testing ustunida qabul mezonlari bo'yicha tekshiriladi** — muallif bo'lmagan odam tomonidan ([D08](D08-kanban-dor-dod.md)). *Nega:* avtomatik testlar dasturchi o'ylagan holatlarni tekshiradi, tekshiruvchi esa foydalanuvchi qiladigan narsani.
 14. **Release oldidan staging'da regressiya checklisti** o'tkaziladi (5.3). Natija QA sign-off sifatida 5-darvoza yozuviga tushadi ([D02](D02-loyiha-hayot-sikli.md)). *Nega:* mock bilan o'tgan testlar haqiqiy backend bilan integratsiyani tekshirmaydi.
-15. **Bug hayot sikli boardda:** bug [D08](D08-kanban-dor-dod.md) shabloni bo'yicha ochiladi va Backlog → … → Done yo'lini o'tadi. Bug Done'ga faqat regressiya testi bilan o'tadi (2-qoida). Qayta ochilgan bug'lar soni sanaladi (D17). *Nega:* alohida "bug ro'yxati" boardni ikkiga bo'ladi.
+15. **Bug hayot sikli boardda:** bug [D08](D08-kanban-dor-dod.md) shabloni bo'yicha ochiladi va Backlog → … → Done yo'lini o'tadi. Bug Done'ga faqat regressiya testi bilan o'tadi (2-qoida). Qayta ochilgan bug'lar soni sanaladi ([D17](D17-retro-va-standartni-yangilash.md)). *Nega:* alohida "bug ro'yxati" boardni ikkiga bo'ladi.
 16. **Test hujjati repoda:** testlarni qanday ishga tushirish, mock strategiyasi, ma'lum tuzoqlar. Yangi tuzoq topilsa, shu hujjatga qator qo'shiladi. *Nega:* bir marta yarim kun yo'qotilgan muammo keyingi odamga yana yarim kun olmaydi.
 
 **Kichik loyihada.** Minimum — [D08](D08-kanban-dor-dod.md) DoD (unit test, yashil tekshiruvlar) va 1–3 va 7-qoidalar. E2E 5 ta asosiy oqim uchun; yuklama testi faqat [D03](D03-loyiha-boshlangich-hujjati.md) da raqam bo'lsa.
@@ -179,4 +179,4 @@ Tech lead har release oldidan tekshiradi:
 
 ---
 
-Egasi: tech lead + QA · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: tech lead + QA · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

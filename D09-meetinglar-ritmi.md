@@ -13,7 +13,7 @@ Meetinglar kam, qisqa va natijali bo'lsin: har birining aniq maqsadi, vaqti va y
   - 5-bosqichda (Ishlab chiqish) daily va haftalik sync doimiy ishlaydi; demo — kelishilgan chastotada.
   - Umumiy qoidalar (3-bo'lim) — loyihaning hamma bosqichida, har qanday meeting uchun.
 
-Loyiha boshidagi kickoff va doc review — [D05](D05-kickoff-va-doc-review.md); retroning formati va chastotasi — D17. Bu doc ularni takrorlamaydi.
+Loyiha boshidagi kickoff va doc review — [D05](D05-kickoff-va-doc-review.md); retroning formati va chastotasi — [D17](D17-retro-va-standartni-yangilash.md). Bu doc ularni takrorlamaydi.
 
 **Atamalar.**
 - *Daily* — har kungi qisqa holat: kim nima qildi, nima qiladi, nima to'sib turibdi.
@@ -41,7 +41,7 @@ Loyiha boshidagi kickoff va doc review — [D05](D05-kickoff-va-doc-review.md); 
 | Daily | Har ish kuni, bir xil vaqtda | 15 daq yoki yozma | Ishlab chiqishdagi jamoa; PM yuritadi | Bloklar boardda belgilangan ([D08](D08-kanban-dor-dod.md)), egasi bilan |
 | Haftalik sync | Haftada 1 marta | 30–45 daq | PM, tech lead, analitik, dizayner, dasturchilar, QA | Protokol; mijozga haftalik holat xati |
 | Demo | Har release oxirida; uzoq release'da — har 2 haftada | 30–45 daq | PO, PM, analitik, jamoa | Mijoz fikrlari Backlog'da; scope o'zgarishi bo'lsa — [D10](D10-ozgarishlarni-boshqarish.md) |
-| Retro | D17 bo'yicha | D17 bo'yicha | Jamoa | D17 bo'yicha |
+| Retro | [D17](D17-retro-va-standartni-yangilash.md) bo'yicha | [D17](D17-retro-va-standartni-yangilash.md) bo'yicha | Jamoa | [D17](D17-retro-va-standartni-yangilash.md) bo'yicha |
 
 ### 4.1. Daily
 
@@ -158,4 +158,4 @@ Misol loyihada hali yozilmagan: Test Platformasi uchun haftalik sync protokoli �
 
 ---
 
-Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

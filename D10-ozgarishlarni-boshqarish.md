@@ -36,7 +36,7 @@ Tasdiqlangan scope'ga kelgan har yangi talab yoki o'zgarish srok va baho bilan b
 7. **Release scope'i yopilgandan keyin — faqat keyingi release'ga.** Release'ning oxirgi haftasida (yoki 5-darvozadan 5 ish kuni oldin) yangi CR shu release'ga kirmaydi; kritik istisnoni PO va tech lead birga, yozma qaror bilan qiladi. *Nega:* oxirgi kunlardagi o'zgarish regressiya va testga vaqt qoldirmaydi — prod bug'iga aylanadi.
 8. **Rad etilgan CR ham yoziladi.** Qarorlar jurnalida sababi bilan: "R2 ga qoldirildi", "rad etildi — maqsadga ta'sir qilmaydi". *Nega:* bir oydan keyin xuddi shu so'rov qaytadi; yozilgan sabab bahsni bir daqiqada yopadi.
 9. **Narx va shartnoma.** CR shartnoma narxi yoki muddatiga ta'sir qilsa, PM ta'sir tahlilini kompaniyaning tijorat tartibi bo'yicha mas'ul odamga beradi; bu doc faqat ta'sirni hisoblaydi va qarorni yozadi. *Nega:* jamoa ichida "bepul qilib beramiz" deb qabul qilingan o'zgarish kompaniya hisobidan bajariladi.
-10. **CR'lar soni va hajmi retroda ko'riladi.** PM har release oxirida CR'lar sonini, jami bahosini va qaysi bosqichda kelganini hisoblaydi (D17). *Nega:* ko'p CR — TZ yoki doc review'da biror narsa o'tkazib yuborilganining belgisi; raqam qayerni tuzatishni ko'rsatadi.
+10. **CR'lar soni va hajmi retroda ko'riladi.** PM har release oxirida CR'lar sonini, jami bahosini va qaysi bosqichda kelganini hisoblaydi ([D17](D17-retro-va-standartni-yangilash.md)). *Nega:* ko'p CR — TZ yoki doc review'da biror narsa o'tkazib yuborilganining belgisi; raqam qayerni tuzatishni ko'rsatadi.
 
 ## 4. O'zgarish turlari
 
@@ -106,4 +106,4 @@ Misol loyihadagi change request: [Board va tasklar](loyihalar/test-platformasi/D
 
 ---
 
-Egasi: PM · Oxirgi yangilangan: 2026-11-09 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: PM · Oxirgi yangilangan: 2026-11-09 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))

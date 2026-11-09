@@ -46,14 +46,14 @@ Har bosqichda qaysi doc kerak:
 | 5 · Ishlab chiqish | [D08](D08-kanban-dor-dod.md) — kanban, DoR, DoD; [D11](D11-dasturchilar-qoidalari.md) — kod va review; [D13](D13-test-strategiyasi.md) — test; [D12](D12-ui-ux-standartlari.md) — UI tekshiruvi; [D09](D09-meetinglar-ritmi.md) — meetinglar; [D10](D10-ozgarishlarni-boshqarish.md) — o'zgarishlar |
 | 6 · Release | [D14](D14-release-va-deploy.md) — release va deploy |
 | 7 · Topshirish | D15 — qo'llanma va o'qitish |
-| 8 · Ekspluatatsiya | D16 — support va fikr yig'ish; D17 — retro |
+| 8 · Ekspluatatsiya | D16 — support va fikr yig'ish; [D17](D17-retro-va-standartni-yangilash.md) — retro |
 
 Sxemada uzuq chiziq bilan ikkita qaytish yo'li ko'rsatilgan:
 
 - **Release sikli.** Loyiha bir nechta release'ga bo'linadi. Har release 5–7 bosqichlardan alohida o'tadi.
 - **O'zgarish.** Tasdiqlangan scope o'zgarsa, faqat o'zgargan qism 2-bosqichga qaytadi va 2–4 darvozalardan qayta o'tadi ([D10](D10-ozgarishlarni-boshqarish.md)).
 
-Retro (D17) har bosqich oxirida va loyiha oxirida o'tkaziladi; u sxemada alohida strelka bilan ko'rsatilmagan.
+Retro ([D17](D17-retro-va-standartni-yangilash.md)) har bosqich oxirida va loyiha oxirida o'tkaziladi; u sxemada alohida strelka bilan ko'rsatilmagan.
 
 ## 2. Kim kimga nima topshiradi
 
@@ -165,7 +165,7 @@ flowchart TD
   RD -.->|"talab o'zgardi · change request"| BL
 ```
 
-Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi (D17). Testing'dan qaytgan task yangi task bo'lib emas, izoh bilan In progress'ga qaytadi.
+Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi ([D17](D17-retro-va-standartni-yangilash.md)). Testing'dan qaytgan task yangi task bo'lib emas, izoh bilan In progress'ga qaytadi.
 
 ## Qaysi savolga qaysi doc
 
@@ -175,6 +175,7 @@ Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi (D1
 | Qaror qayerda yozilgan, nega shunday qilgandik? | [D02](D02-loyiha-hayot-sikli.md) — qarorlar jurnali |
 | Mijoz nima so'ragan, scope'ga nima kiradi? | [D03](D03-loyiha-boshlangich-hujjati.md) |
 | Maket qanday tartibda chiziladi va dasturchiga qanday beriladi? | [D04](D04-dizayn-brief-va-jarayon.md) (brief → wireframe → UI → handoff); nima bilan chiziladi — [D12](D12-ui-ux-standartlari.md) |
+| Retro qachon va qanday o'tadi, standart qanday o'zgaradi? | [D17](D17-retro-va-standartni-yangilash.md) |
 | Qaysi meetinglar bor, meeting qanday o'tadi va natijasi qayerga yoziladi? | [D09](D09-meetinglar-ritmi.md) |
 | TZ'ni qanday ko'rib chiqamiz, savollar qayerga yoziladi? | [D05](D05-kickoff-va-doc-review.md) |
 | Srok qanday belgilanadi, surilsa nima qilinadi? | [D06](D06-baholash-va-srok.md) |

@@ -41,7 +41,7 @@ Srok ishni bajaradigan odamlar bahosiga tayanib, ochiq hisob bilan belgilansin, 
 7. **Srok mijozga yozma: sana, scope va farazlar bilan** (6.2-shablon). Farazlar — srok qaysi shartlarga bog'liq (masalan, "API kontrakti 1-dekabrgacha"). Srok qarorlar jurnaliga yoziladi ([D02](D02-loyiha-hayot-sikli.md)) va PO tasdiqlaydi ([D01](D01-rollar-va-raci.md)). *Nega:* scope'siz sana — bo'sh va'da; farazsiz sana esa kechikish sababini keyin tushuntirib bo'lmaydi.
 8. **Kechikish signali erta.** Task bahosidan yarmidan ko'proq oshib ketsa, bajaruvchi shu kuni daily'da aytadi. Haftalik sync'da ([D09](D09-meetinglar-ritmi.md)) PM qolgan ishni (soat) qolgan vaqt bilan solishtiradi. Faraz buzilsa (kontrakt kech keldi), PM shu hafta mijozga yozadi. *Nega:* kechikish birinchi haftada ko'rinsa, uni scope yoki tartib bilan yopish mumkin; oxirgi kuni esa faqat uzr qoladi.
 9. **Srok sig'masa — variantni PO tanlaydi, sifat kesilmaydi.** Variantlar: scope'dan nimadir keyingi release'ga o'tadi; sana suriladi; odam qo'shiladi (kichik jamoada va oxirgi haftalarda kam yordam beradi — yangi odamni ulash ham vaqt oladi). Test va review'ni qisqartirish variant emas — bu DoD'ni buzish ([D08](D08-kanban-dor-dod.md)). Qaror jurnalga yoziladi (6.3-shablon). *Nega:* yashirin yechim (sifatni kesish, kechasi ishlash) srokni bir marta saqlaydi, keyin bug va charchoq bilan qaytadi.
-10. **Baho va haqiqat solishtiriladi.** Task yopilganda bajaruvchi haqiqiy vaqtni yozadi (Jira'da). Release oxirida PM baho va haqiqat farqini va kunlik fokus soatini hisoblaydi; natija retroga (D17) va keyingi baholarga boradi. *Nega:* solishtirilmagan baho hech qachon aniqlashmaydi; root docdagi "srok aniqligi" metrikasi aynan shu raqam.
+10. **Baho va haqiqat solishtiriladi.** Task yopilganda bajaruvchi haqiqiy vaqtni yozadi (Jira'da). Release oxirida PM baho va haqiqat farqini va kunlik fokus soatini hisoblaydi; natija retroga ([D17](D17-retro-va-standartni-yangilash.md)) va keyingi baholarga boradi. *Nega:* solishtirilmagan baho hech qachon aniqlashmaydi; root docdagi "srok aniqligi" metrikasi aynan shu raqam.
 
 **Kichik loyihada (3–5 kishi).** Uch nuqtali baho story darajasida yetarli; tasklar bitta raqam (soat) bilan. Bufer, yozma srok va 9-qoida — majburiy.
 
@@ -122,4 +122,4 @@ Misol loyihada hali yozilmagan: Test Platformasi uchun release bahosi va srok �
 
 ---
 
-Egasi: PM + tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin (D17)
+Egasi: PM + tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))
