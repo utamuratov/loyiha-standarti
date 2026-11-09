@@ -18,7 +18,7 @@ Loyiha boshida ikki meeting ish boshlanishidan oldin tushunmovchiliklarni ushlay
 - **Qachon:**
   - **Kickoff** — 1-bosqichda (Boshlash), Brief ([D03](D03-loyiha-boshlangich-hujjati.md)) tayyor bo'lgach, 1-darvozadan oldin.
   - **Doc review** — 2-bosqichda (Talablar), to'liq TZ qoralamasi tayyor bo'lgach, 2-darvozadan oldin ([D02](D02-loyiha-hayot-sikli.md)). TZ katta bo'lsa, release yoki modul bo'yicha bo'lib o'tkaziladi.
-  - Change request (D10) TZ'ning katta qismini o'zgartirsa, o'sha qism uchun qisqa doc review takrorlanadi.
+  - Change request ([D10](D10-ozgarishlarni-boshqarish.md)) TZ'ning katta qismini o'zgartirsa, o'sha qism uchun qisqa doc review takrorlanadi.
 
 Har qanday meetingning umumiy qoidalari (avval yozma, agenda, timebox, har masala natija bilan, protokol) — [D09](D09-meetinglar-ritmi.md). Bu yerda faqat kickoff va doc review'ga xos qoidalar.
 

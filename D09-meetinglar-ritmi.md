@@ -40,7 +40,7 @@ Loyiha boshidagi kickoff va doc review — [D05](D05-kickoff-va-doc-review.md); 
 | --- | --- | --- | --- | --- |
 | Daily | Har ish kuni, bir xil vaqtda | 15 daq yoki yozma | Ishlab chiqishdagi jamoa; PM yuritadi | Bloklar boardda belgilangan ([D08](D08-kanban-dor-dod.md)), egasi bilan |
 | Haftalik sync | Haftada 1 marta | 30–45 daq | PM, tech lead, analitik, dizayner, dasturchilar, QA | Protokol; mijozga haftalik holat xati |
-| Demo | Har release oxirida; uzoq release'da — har 2 haftada | 30–45 daq | PO, PM, analitik, jamoa | Mijoz fikrlari Backlog'da; scope o'zgarishi bo'lsa — D10 |
+| Demo | Har release oxirida; uzoq release'da — har 2 haftada | 30–45 daq | PO, PM, analitik, jamoa | Mijoz fikrlari Backlog'da; scope o'zgarishi bo'lsa — [D10](D10-ozgarishlarni-boshqarish.md) |
 | Retro | D17 bo'yicha | D17 bo'yicha | Jamoa | D17 bo'yicha |
 
 ### 4.1. Daily
@@ -69,7 +69,7 @@ Sync'dan keyin PM mijozga **haftalik holat xati** yuboradi (5.3): nima tugadi, n
 
 - Staging'da, real ma'lumotga yaqin ma'lumot bilan, **ishlaydigan** narsa ko'rsatiladi — slayd yoki maket emas.
 - Ko'rsatiladigan story'lar oldindan ro'yxat qilinadi va qabul mezonlari ([D03](D03-loyiha-boshlangich-hujjati.md)) bo'yicha ko'rsatiladi.
-- Mijoz fikri shu yerda yoziladi: xato — bug ([D08](D08-kanban-dor-dod.md)); yangi talab yoki o'zgarish — Backlog'ga `change-request` labeli bilan (D10). Demo'da yangi talab "ha, qilamiz" deb qabul qilinmaydi.
+- Mijoz fikri shu yerda yoziladi: xato — bug ([D08](D08-kanban-dor-dod.md)); yangi talab yoki o'zgarish — Backlog'ga `change-request` labeli bilan ([D10](D10-ozgarishlarni-boshqarish.md)). Demo'da yangi talab "ha, qilamiz" deb qabul qilinmaydi.
 
 *Nega:* mijoz natijani faqat UAT'da birinchi marta ko'rsa, tushunmovchilik eng qimmat paytda chiqadi.
 

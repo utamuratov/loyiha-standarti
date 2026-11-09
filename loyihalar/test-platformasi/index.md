@@ -42,7 +42,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 | D07 Resurs | Modullar bo'yicha taqsimot jadvali | Rejada |
 | [D08](../../D08-kanban-dor-dod.md) Kanban, DoR, DoD | [Board va tasklar](D08-board-va-tasklar.md) | Yozilgan |
 | [D09](../../D09-meetinglar-ritmi.md) Meetinglar | Haftalik sync protokoli | Rejada |
-| D10 O'zgarishlar | Ishlab chiqish o'rtasida yangi mijoz (alohida build) qo'shilishi — change request | Rejada |
+| [D10](../../D10-ozgarishlarni-boshqarish.md) O'zgarishlar | [Board va tasklar](D08-board-va-tasklar.md), "Change request" bo'limi; to'liq misol — ishlab chiqish o'rtasida yangi mijoz (alohida build) qo'shilishi | Qisman |
 | [D11](../../D11-dasturchilar-qoidalari.md) Dasturchilar qoidalari | [Repozitoriy, merge request va ADR](D11-repozitoriy-va-review.md) | Yozilgan |
 | [D12](../../D12-ui-ux-standartlari.md) UI/UX | [UI: ekranlar va komponentlar](D12-ui-ekranlar.md) | Yozilgan |
 | [D13](../../D13-test-strategiyasi.md) Test | [Test rejasi va testlar](D13-test-rejasi.md) | Yozilgan |

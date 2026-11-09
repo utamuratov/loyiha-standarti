@@ -21,7 +21,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 
 - [x] [D02](D02-loyiha-hayot-sikli.md) — Loyiha hayot sikli va bosqich darvozalari (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
 - [x] [D03](D03-loyiha-boshlangich-hujjati.md) — Loyiha boshlang'ich hujjati + Test Platformasi TZ misoli (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
-- [x] [D08](D08-kanban-dor-dod.md) — Kanban qoidalari, DoR va DoD ([D06](D06-baholash-va-srok.md), D10 yadro qoidalari bilan) (2026-11-07, izohsiz qabul qilindi)
+- [x] [D08](D08-kanban-dor-dod.md) — Kanban qoidalari, DoR va DoD ([D06](D06-baholash-va-srok.md), [D10](D10-ozgarishlarni-boshqarish.md) yadro qoidalari bilan) (2026-11-07, izohsiz qabul qilindi)
 - [x] [D11](D11-dasturchilar-qoidalari.md) — Dasturchilar qoidalari va code review (2026-11-07, izohsiz qabul qilindi; `master`/`olympiad` branchlari va protected sozlamasi ochiq)
 - [x] [D13](D13-test-strategiyasi.md) — Test strategiyasi (2026-11-07, izohsiz qabul qilindi; coverage sozlamasi va CI image ochiq)
 - [x] [D14](D14-release-va-deploy.md) — Release va deploy tartibi (2026-11-07, izohsiz qabul qilindi; `Dockerfile.prod`, boshqa mijozlar deploy'i, monitoring ochiq)
@@ -44,7 +44,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 ### 3-faza: To'liq sikl
 
 - [ ] D07 — Ishlar taqsimoti va resurs planlash
-- [ ] D10 — O'zgarishlarni boshqarish
+- [x] [D10](D10-ozgarishlarni-boshqarish.md) — O'zgarishlarni boshqarish (2026-11-09; uch tur: aniqlashtirish, kichik va katta CR; [D08](D08-kanban-dor-dod.md) dagi yadro qoida havolaga aylandi, root katalogdagi "yadro qoidalar" bloki olib tashlandi; misoli — qisman, board faylida)
 - [ ] D15 — Foydalanuvchi qo'llanmasi va o'qitish
 - [ ] D16 — Support va fikr yig'ish
 - [ ] D17 — Retrospektiva va standartni yangilash. Yozishda hal qilish: retro chastotasi — [D02](D02-loyiha-hayot-sikli.md) "har release'dan keyin" deydi, root docdagi moslashtirish jadvali kichik loyiha uchun "loyiha oxirida bitta" deydi; [D06](D06-baholash-va-srok.md) (10-qoida) va [D09](D09-meetinglar-ritmi.md) shu yerga havola qiladi

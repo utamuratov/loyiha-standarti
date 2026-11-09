@@ -43,7 +43,7 @@ Har bosqichda qaysi doc kerak:
 | 2 · Talablar | [D03](D03-loyiha-boshlangich-hujjati.md) — to'liq TZ; [D05](D05-kickoff-va-doc-review.md) — doc review |
 | 3 · Dizayn | [D04](D04-dizayn-brief-va-jarayon.md) — dizayn brief va jarayon; [D12](D12-ui-ux-standartlari.md) — UI/UX standartlari va handoff |
 | 4 · Planlash | [D06](D06-baholash-va-srok.md) — baholash va srok; D07 — taqsimot va resurs |
-| 5 · Ishlab chiqish | [D08](D08-kanban-dor-dod.md) — kanban, DoR, DoD; [D11](D11-dasturchilar-qoidalari.md) — kod va review; [D13](D13-test-strategiyasi.md) — test; [D12](D12-ui-ux-standartlari.md) — UI tekshiruvi; [D09](D09-meetinglar-ritmi.md) — meetinglar; D10 — o'zgarishlar |
+| 5 · Ishlab chiqish | [D08](D08-kanban-dor-dod.md) — kanban, DoR, DoD; [D11](D11-dasturchilar-qoidalari.md) — kod va review; [D13](D13-test-strategiyasi.md) — test; [D12](D12-ui-ux-standartlari.md) — UI tekshiruvi; [D09](D09-meetinglar-ritmi.md) — meetinglar; [D10](D10-ozgarishlarni-boshqarish.md) — o'zgarishlar |
 | 6 · Release | [D14](D14-release-va-deploy.md) — release va deploy |
 | 7 · Topshirish | D15 — qo'llanma va o'qitish |
 | 8 · Ekspluatatsiya | D16 — support va fikr yig'ish; D17 — retro |
@@ -51,7 +51,7 @@ Har bosqichda qaysi doc kerak:
 Sxemada uzuq chiziq bilan ikkita qaytish yo'li ko'rsatilgan:
 
 - **Release sikli.** Loyiha bir nechta release'ga bo'linadi. Har release 5–7 bosqichlardan alohida o'tadi.
-- **O'zgarish.** Tasdiqlangan scope o'zgarsa, faqat o'zgargan qism 2-bosqichga qaytadi va 2–4 darvozalardan qayta o'tadi (D10).
+- **O'zgarish.** Tasdiqlangan scope o'zgarsa, faqat o'zgargan qism 2-bosqichga qaytadi va 2–4 darvozalardan qayta o'tadi ([D10](D10-ozgarishlarni-boshqarish.md)).
 
 Retro (D17) har bosqich oxirida va loyiha oxirida o'tkaziladi; u sxemada alohida strelka bilan ko'rsatilmagan.
 
@@ -183,7 +183,7 @@ Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi (D1
 | Qanday test yoziladi va kim tekshiradi? | [D13](D13-test-strategiyasi.md) |
 | Prod'ga qanday chiqariladi va qanday qaytariladi? | [D14](D14-release-va-deploy.md) |
 | Kim nimaga javobgar? Rol bo'sh bo'lsa kim qiladi? | [D01](D01-rollar-va-raci.md) — rollar, RACI, kichik jamoada birlashtirish |
-| Talab o'rtada o'zgarsa nima qilinadi? | [D08](D08-kanban-dor-dod.md) dagi qisqa tartib; to'liq — D10 |
+| Talab o'rtada o'zgarsa yoki mijoz yangi narsa so'rasa nima qilinadi? | [D10](D10-ozgarishlarni-boshqarish.md) |
 
 ---
 

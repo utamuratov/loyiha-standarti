@@ -46,8 +46,8 @@ Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish
 
 | Rolingiz | Asosiy doclaringiz | Yangi loyihada birinchi qiladigan ishingiz |
 | --- | --- | --- |
-| PM | [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), D07, [D09](D09-meetinglar-ritmi.md), D10, D17 | [D02](D02-loyiha-hayot-sikli.md) bo'yicha bosqichlarni rejalashtirish, kickoff ([D05](D05-kickoff-va-doc-review.md)) o'tkazish |
-| Biznes analitik | [D03](D03-loyiha-boshlangich-hujjati.md), D10 | [D03](D03-loyiha-boshlangich-hujjati.md) shabloni bo'yicha TZ yozish |
+| PM | [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), D07, [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), D17 | [D02](D02-loyiha-hayot-sikli.md) bo'yicha bosqichlarni rejalashtirish, kickoff ([D05](D05-kickoff-va-doc-review.md)) o'tkazish |
+| Biznes analitik | [D03](D03-loyiha-boshlangich-hujjati.md), [D10](D10-ozgarishlarni-boshqarish.md) | [D03](D03-loyiha-boshlangich-hujjati.md) shabloni bo'yicha TZ yozish |
 | UI/UX dizayner | [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md) | [D04](D04-dizayn-brief-va-jarayon.md) brief'ini analitik bilan to'ldirish |
 | Tech lead / dasturchi | [D03](D03-loyiha-boshlangich-hujjati.md) (API kontrakti), [D06](D06-baholash-va-srok.md), [D11](D11-dasturchilar-qoidalari.md), [D12](D12-ui-ux-standartlari.md) (frontend), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) | [D03](D03-loyiha-boshlangich-hujjati.md) ni review qilish, baholash ([D06](D06-baholash-va-srok.md)) |
 | QA | [D13](D13-test-strategiyasi.md), [D08](D08-kanban-dor-dod.md) | [D03](D03-loyiha-boshlangich-hujjati.md) qabul mezonlaridan test rejasini tuzish |
@@ -74,12 +74,12 @@ Loyiha 8 bosqichdan o'tadi; har bosqichning chiqishi keyingisining kirishi bo'la
 2. **Talablar** — scope, user story, qabul mezonlari, API kontrakti va nofunksional talablar yoziladi; doc review o'tkaziladi. Asosiy doclar: [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md).
 3. **Dizayn** — oqimlar va maketlar chiziladi, dasturchiga topshiriladi. Asosiy doclar: [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md).
 4. **Planlash** — ish bo'linadi, baholanadi, odamlar biriktiriladi, srok kelishiladi. Asosiy doclar: [D06](D06-baholash-va-srok.md), D07.
-5. **Ishlab chiqish** — tasklar kanban bo'yicha DoR → DoD yo'lini o'tadi. Asosiy doclar: [D08](D08-kanban-dor-dod.md), [D09](D09-meetinglar-ritmi.md), D10, [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md).
+5. **Ishlab chiqish** — tasklar kanban bo'yicha DoR → DoD yo'lini o'tadi. Asosiy doclar: [D08](D08-kanban-dor-dod.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md).
 6. **Release** — staging'da tekshiriladi, prod'ga chiqariladi, rollback tayyor turadi. Asosiy doc: [D14](D14-release-va-deploy.md).
 7. **Topshirish** — mijoz qabul qiladi (UAT), qo'llanma va o'qitish beriladi. Asosiy doc: D15.
 8. **Ekspluatatsiya** — murojaatlar va fikrlar yig'iladi, keyingi rejaga kiradi. Asosiy doc: D16.
 
-Ishlab chiqish (5) haftalik sikl bo'lib aylanadi. O'rtada kelgan yangi talab D10 orqali qayta baholanadi va kerak bo'lsa 2-bosqichga qaytadi. D17 (retro) har bosqich oxirida va loyiha oxirida o'tkaziladi.
+Ishlab chiqish (5) haftalik sikl bo'lib aylanadi. O'rtada kelgan yangi talab [D10](D10-ozgarishlarni-boshqarish.md) orqali qayta baholanadi va kerak bo'lsa 2-bosqichga qaytadi. D17 (retro) har bosqich oxirida va loyiha oxirida o'tkaziladi.
 
 **Ikki xil darvoza.** [D02](D02-loyiha-hayot-sikli.md) bosqich darvozalari butun loyihaning keyingi bosqichga o'tishini tekshiradi; [D08](D08-kanban-dor-dod.md) dagi DoR va DoD esa bitta taskning board ustunlari orasida o'tishini tekshiradi.
 
@@ -102,7 +102,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 | D07 | Ishlar taqsimoti va resurs planlash | PM | Planlash | 3 |
 | [D08](D08-kanban-dor-dod.md) | Kanban qoidalari, DoR va DoD | PM + tech lead | Ishlab chiqish | 1 |
 | [D09](D09-meetinglar-ritmi.md) | Meetinglar ritmi (daily, haftalik, demo, retro) | PM | Ishlab chiqish | 2 |
-| D10 | O'zgarishlarni boshqarish (change request) | PM | Ishlab chiqish | 3 |
+| [D10](D10-ozgarishlarni-boshqarish.md) | O'zgarishlarni boshqarish (change request) | PM | Ishlab chiqish | 3 |
 | [D11](D11-dasturchilar-qoidalari.md) | Dasturchilar qoidalari va code review | Tech lead | Ishlab chiqish | 1 |
 | [D12](D12-ui-ux-standartlari.md) | UI/UX standartlari va design system | Dizayner | Dizayn, ishlab chiqish | 1 |
 | [D13](D13-test-strategiyasi.md) | Test strategiyasi (unit, integration, e2e) | Tech lead + QA | Ishlab chiqish | 1 |
@@ -122,7 +122,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 **[D02](D02-loyiha-hayot-sikli.md) — Loyiha hayot sikli va bosqich darvozalari**
 
 - *Maqsad:* loyiha qaysi bosqichlardan o'tishi va keyingisiga qachon o'tish mumkinligi aniq bo'lsin.
-- *Mazmuni:* bosqichlar ("Hayot sikli" bo'limiga qarang); har bosqichning kirishi, chiqishi, darvoza mezoni va kim tasdiqlashi; qarorlar jurnali (decision log) va risklar reestri shablonlari hamda ularni yuritish qoidasi. Bu ikkala jurnalning yagona uyi — [D02](D02-loyiha-hayot-sikli.md); boshqa doclar ([D05](D05-kickoff-va-doc-review.md), [D09](D09-meetinglar-ritmi.md), D10) ularga yozadi va shu yerga havola qiladi.
+- *Mazmuni:* bosqichlar ("Hayot sikli" bo'limiga qarang); har bosqichning kirishi, chiqishi, darvoza mezoni va kim tasdiqlashi; qarorlar jurnali (decision log) va risklar reestri shablonlari hamda ularni yuritish qoidasi. Bu ikkala jurnalning yagona uyi — [D02](D02-loyiha-hayot-sikli.md); boshqa doclar ([D05](D05-kickoff-va-doc-review.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md)) ularga yozadi va shu yerga havola qiladi.
 - *Tayyor mezoni:* har bir darvoza tekshiriladigan checklist ko'rinishida.
 
 ### B. Boshlash va dizayn
@@ -163,10 +163,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 
 - *Maqsad:* ish holati hammaga so'ramasdan ko'rinsin, "tayyor" so'zi hamma uchun bir xil ma'noda bo'lsin.
 - *Mazmuni:* ustunlar (Backlog → Ready → In progress → Code review → Testing → Done); WIP limitlari; task shabloni (sarlavha, tavsif, qabul mezoni, maket havolasi, baho, bajaruvchi); Definition of Ready; Definition of Done; bug shabloni; prioritet va labellar; bloklangan task bilan ishlash.
-- *Pilot uchun yadro qoidalar (to'liq doclar chiqquncha shu yerda turadi):*
-  - DoR: taskning bahosini bajaruvchining o'zi bergan ([D06](D06-baholash-va-srok.md) yadrosi).
-  - Talab o'rtada o'zgarsa, task "change request" labeli bilan Backlog'ga qaytadi; PM srok va scope'ga ta'sirini yozadi va [D03](D03-loyiha-boshlangich-hujjati.md) versiyasi yangilanadi; shundan keyingina ishga olinadi (D10 yadrosi).
-  - DoD minimal test talabi: biznes logikaga unit test yozilgan; mavjud avtomatik tekshiruvlar (CI yoki git hook) yashil; qizil test bilan merge qilinmaydi. [D13](D13-test-strategiyasi.md) bu talabni kengaytiradi, takrorlamaydi.
+- *Bog'liqliklar:* DoR'dagi baho sharti — [D06](D06-baholash-va-srok.md); o'zgargan talab — [D10](D10-ozgarishlarni-boshqarish.md); DoD'dagi minimal test talabini [D13](D13-test-strategiyasi.md) kengaytiradi.
 - *Tayyor mezoni:* yangi xodim board'ga qarab har bir taskning holatini tushuntira oladi.
 
 **[D09](D09-meetinglar-ritmi.md) — Meetinglar ritmi**
@@ -175,12 +172,11 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 - *Mazmuni:* daily (15 daqiqa yoki yozma); haftalik sync (progress, risk, srok holati); demo (mijozga ishlaydigan natijani ko'rsatish); retro; har biri uchun: kim qatnashadi, davomiyligi, agenda, protokol shabloni.
 - *Tayyor mezoni:* har bir meetingdan keyin yozma xulosa va vazifalar egasi bilan qoladi.
 
-**D10 — O'zgarishlarni boshqarish (change request)**
+**[D10](D10-ozgarishlarni-boshqarish.md) — O'zgarishlarni boshqarish (change request)**
 
 - *Maqsad:* yangi talab yoki o'zgarish srok va scope'ni nazoratsiz buzmasin.
-- *Mazmuni:* change request shabloni (nima, nega, ta'siri, baho); kim tasdiqlaydi; srok va narxga ta'sirini mijoz bilan kelishish; "kichik" o'zgarish chegarasi; [D03](D03-loyiha-boshlangich-hujjati.md) versiyasini yangilash.
+- *Mazmuni:* o'zgarish turlari (aniqlashtirish, kichik va katta change request) va chegarasi; change request shabloni (nima, nega, ta'siri, baho, variantlar); kim tasdiqlaydi; srok va narxga ta'sirini mijoz bilan kelishish; release scope'ini yopish; [D03](D03-loyiha-boshlangich-hujjati.md) versiyasini yangilash.
 - *Tayyor mezoni:* hech bir o'zgarish [D03](D03-loyiha-boshlangich-hujjati.md) va boardda aks etmasdan ishga olinmaydi.
-- *Pilotda:* to'liq doc 3-fazada; asosiy qoidasi 1-fazada [D08](D08-kanban-dor-dod.md) ichida.
 
 ### D. Ishlab chiqish va sifat
 
@@ -240,7 +236,7 @@ Kichik loyihada 17 ta docning hammasini to'liq yuritish byurokratiya bo'ladi. Be
 | [D06](D06-baholash-va-srok.md) Baholash | Tasklar soatda, uch nuqtali baho story darajasida; bufer, yozma srok va kechikish tartibi majburiy | To'liq |
 | D07 Resurs planlash | Ixtiyoriy | To'liq |
 | [D09](D09-meetinglar-ritmi.md) Meetinglar | Yozma daily, 30 daqiqalik haftalik sync, har release oxirida demo; umumiy qoidalar to'liq | To'liq |
-| D10 Change request | [D08](D08-kanban-dor-dod.md) dagi yadro qoida yetarli | To'liq |
+| [D10](D10-ozgarishlarni-boshqarish.md) Change request | Uch tur va yozma PO qarori; katta CR uchun to'liq doc review shart emas | To'liq |
 | [D12](D12-ui-ux-standartlari.md) UI/UX | Kompaniyaning mavjud design system'i ishlatiladi | To'liq |
 | [D13](D13-test-strategiyasi.md) Test | [D08](D08-kanban-dor-dod.md) DoD'dagi minimal talab | To'liq |
 | [D14](D14-release-va-deploy.md) Release | Release checklist va rollback rejasi | To'liq |

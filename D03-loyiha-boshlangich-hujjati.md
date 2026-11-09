@@ -21,7 +21,7 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 - **Qachon:**
   - 1-bosqich (Boshlash): **Brief** qismi, 1–2 sahifa — 1-darvozaga.
   - 2-bosqich (Talablar): **to'liq TZ** — [D05](D05-kickoff-va-doc-review.md) doc review'dan o'tib, 2-darvozaga.
-  - Keyin: faqat D10 (change request) orqali o'zgaradi.
+  - Keyin: faqat [D10](D10-ozgarishlarni-boshqarish.md) (change request) orqali o'zgaradi.
 
 **Atamalar.** *User story* — foydalanuvchi nuqtai nazaridan yozilgan talab: "kim, nima qiladi, nima uchun". *Qabul mezoni* (acceptance criteria) — story bajarilganini tekshiradigan aniq shartlar. *API kontrakti* — frontend va backend o'rtasidagi kelishuv: endpoint, so'rov va javob formati, xato kodlari. *Nofunksional talab* — tizim *qanday* ishlashi: tezlik, yuklama, xavfsizlik.
 
@@ -100,7 +100,7 @@ Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · T
 
 1. **Faqat "baxtli yo'l".** Story'larda internet uzilishi, topilmagan foydalanuvchi, ruxsat yo'qligi yozilmaydi — ular release oldidan bug bo'lib chiqadi.
 2. **"Va hokazo" bilan tugaydigan scope.** "Hisobotlar va h.k." — baholab ham, qabul qilib ham bo'lmaydi. Har bir narsa nomi bilan yoki "kirmaydi" ro'yxatida.
-3. **TZ — bir martalik hujjat.** Tasdiqlangandan keyin o'zgarishlar chatda qoladi va D03 eskiradi. To'g'risi: har o'zgarish D10 orqali va versiyalar tarixida.
+3. **TZ — bir martalik hujjat.** Tasdiqlangandan keyin o'zgarishlar chatda qoladi va D03 eskiradi. To'g'risi: har o'zgarish [D10](D10-ozgarishlarni-boshqarish.md) orqali va versiyalar tarixida.
 4. **Dasturchi yozadigan narsani analitik yozadi.** TZ'da jadval nomlari, kod tuzilmasi. To'g'risi: D03 "nima" va "qanday tekshiriladi" ni yozadi; "qanday quriladi" — ADR va kod ([D11](D11-dasturchilar-qoidalari.md)).
 5. **Raqamsiz nofunksional talablar.** "Ko'p foydalanuvchiga chidasin" — yuklama testi nimaga qarab o'tkazilishi noma'lum.
 

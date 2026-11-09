@@ -20,7 +20,7 @@ Srok ishni bajaradigan odamlar bahosiga tayanib, ochiq hisob bilan belgilansin, 
   - 1–2-bosqich: **dastlabki baho** — oraliq bilan, TZ hali tasdiqlanmagan (6-qoida).
   - 4-bosqich (Planlash): **reja bahosi** va srok — 4-darvozaga ([D02](D02-loyiha-hayot-sikli.md)).
   - 5-bosqich: yangi task Ready'ga o'tganda baholanadi ([D08](D08-kanban-dor-dod.md) DoR); reja har hafta haqiqat bilan solishtiriladi.
-  - Scope o'zgarganda: o'zgargan qism qayta baholanadi (D10).
+  - Scope o'zgarganda: o'zgargan qism qayta baholanadi ([D10](D10-ozgarishlarni-boshqarish.md)).
 
 **Atamalar.**
 - *Baho* — ishga ketadigan vaqt, **soat**da. Bir odamning toza ish vaqti, uzilishlarsiz.
