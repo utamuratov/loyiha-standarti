@@ -16,7 +16,7 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 | Dasturchi / tech lead | Story'lar, ruxsatlar, API kontrakti talablari, nofunksional talablar — baholash ([D06](D06-baholash-va-srok.md)) va kod uchun |
 | QA | Qabul mezonlari — test ssenariylari uchun ([D13](D13-test-strategiyasi.md)) |
 | PM | Scope va release'lar — reja va srok uchun ([D02](D02-loyiha-hayot-sikli.md), [D06](D06-baholash-va-srok.md)) |
-| Support | Rollar va asosiy oqimlar — qo'llanma uchun (D15) |
+| Support | Rollar va asosiy oqimlar — qo'llanma uchun ([D15](D15-qollanma-va-oqitish.md)) |
 
 - **Qachon:**
   - 1-bosqich (Boshlash): **Brief** qismi, 1–2 sahifa — 1-darvozaga.

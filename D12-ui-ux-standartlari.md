@@ -126,7 +126,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil — 7-bo'lim.
 
 ### G. Matn va terminologiya
 
-16. **Bitta tushuncha — bitta so'z.** Loyiha boshida terminologiya lug'ati (6.3) tuziladi va [D03](D03-loyiha-boshlangich-hujjati.md), maketlar, tarjima kalitlari va qo'llanma (D15) shu lug'atdan foydalanadi. *Nega:* bir ekranda "nomzod", boshqasida "ishtirokchi" — foydalanuvchi ular har xil odam deb o'ylaydi.
+16. **Bitta tushuncha — bitta so'z.** Loyiha boshida terminologiya lug'ati (6.3) tuziladi va [D03](D03-loyiha-boshlangich-hujjati.md), maketlar, tarjima kalitlari va qo'llanma ([D15](D15-qollanma-va-oqitish.md)) shu lug'atdan foydalanadi. *Nega:* bir ekranda "nomzod", boshqasida "ishtirokchi" — foydalanuvchi ular har xil odam deb o'ylaydi.
 17. **Tugma matni — fe'l, amalning nomi:** "Saqlash", "Testni boshlash"; "OK" yoki "Davom" emas (keyin nima bo'lishi aniq bo'lmasa).
 18. **Barcha matnlar tarjima kalitlari orqali** — kodda qattiq matn yo'q; har kalitning har bir qo'llab-quvvatlanadigan tilda qiymati bor. *Nega:* yangi til qo'shish yoki matnni tuzatish kod o'zgarishini talab qilmaydi; tarjimasi yo'q kalit UI'da xom chiqmaydi.
 

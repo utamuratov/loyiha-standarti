@@ -136,7 +136,7 @@ Sana va vaqt: … · Deploy qiladi: … · Rollback qaroriga mas'ul: …
 ### Oldin
 - [ ] Release tarkibi: Jira'da "Fix version = vX.Y.Z", hammasi Done
 - [ ] Pipeline yashil (D13), staging regressiyasi o'tgan, QA sign-off
-- [ ] Release notes tayyor (6.2)
+- [ ] Release notes tayyor (6.2); "O'zgardi" punktlari bo'yicha foydalanuvchi qo'llanmasi yangilangan (D15)
 - [ ] Rollback rejasi to'ldirilgan (6.4); oldingi teg: …
 - [ ] Migratsiya bor/yo'q; bor bo'lsa — orqaga mos, backup olinadi
 - [ ] Yangi sozlama yoki maxfiy kalit bor/yo'q; bor bo'lsa — prod'da qo'shilgan

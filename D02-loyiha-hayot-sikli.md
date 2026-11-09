@@ -24,7 +24,7 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 | 4 | Planlash | [D03](D03-loyiha-boshlangich-hujjati.md) + maketlar | Jira'da tasklar (1–3 kunlik), bajaruvchilar bahosi ([D06](D06-baholash-va-srok.md)), release'larga bo'lingan reja, kelishilgan srok | PM; srokni mijoz tasdiqlaydi |
 | 5 | Ishlab chiqish | Ready ustunidagi tasklar | Release scope'idagi barcha tasklar Done ([D08](D08-kanban-dor-dod.md) DoD); regressiya o'tgan | Tech lead (QA sign-off bilan) |
 | 6 | Release | Release nomzodi (staging'da) | Release checklist ([D14](D14-release-va-deploy.md)), rollback rejasi, release notes; prod'ga chiqqan | Tech lead / DevOps |
-| 7 | Topshirish | Prod'dagi versiya | UAT akti, qo'llanma va o'qitish (D15) | Mijoz (PO) |
+| 7 | Topshirish | Prod'dagi versiya | UAT akti, qo'llanma va o'qitish ([D15](D15-qollanma-va-oqitish.md)) | Mijoz (PO) |
 | 8 | Ekspluatatsiya | Qabul qilingan versiya | Murojaat kanali ishlaydi (D16), murojaatlar backlog'ga tushadi; retro ([D17](D17-retro-va-standartni-yangilash.md)) | PM |
 
 **Sikl.** 5–7 bosqichlar har release uchun takrorlanadi: loyiha bir nechta release'ga bo'linadi va har biri o'z darvozalaridan o'tadi. Ishlab chiqish ichida haftalik sikl aylanadi ([D09](D09-meetinglar-ritmi.md)). 8-bosqichda kelgan yangi talab 2-bosqichga qaytadi ([D10](D10-ozgarishlarni-boshqarish.md)).
@@ -95,7 +95,7 @@ Har darvoza uchun punktlar. ⛔ — bloklovchi: bajarilmasa o'tilmaydi (shartli 
 
 **7-darvoza: Topshirish → Ekspluatatsiya**
 - [ ] ⛔ UAT o'tkazilgan va akt imzolangan (yoki mijozning yozma qabuli)
-- [ ] Qo'llanma yangilangan (D15)
+- [ ] Qo'llanma yangilangan ([D15](D15-qollanma-va-oqitish.md))
 - [ ] O'qitish o'tkazilgan (kerak bo'lsa)
 - [ ] Murojaat kanali va javob vaqti mijozga aytilgan (D16)
 

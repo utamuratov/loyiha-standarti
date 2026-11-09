@@ -52,7 +52,7 @@ Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish
 | Tech lead / dasturchi | [D03](D03-loyiha-boshlangich-hujjati.md) (API kontrakti), [D06](D06-baholash-va-srok.md), [D11](D11-dasturchilar-qoidalari.md), [D12](D12-ui-ux-standartlari.md) (frontend), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) | [D03](D03-loyiha-boshlangich-hujjati.md) ni review qilish, baholash ([D06](D06-baholash-va-srok.md)) |
 | QA | [D13](D13-test-strategiyasi.md), [D08](D08-kanban-dor-dod.md) | [D03](D03-loyiha-boshlangich-hujjati.md) qabul mezonlaridan test rejasini tuzish |
 | DevOps | [D14](D14-release-va-deploy.md) | Muhitlar va release checklistini tayyorlash |
-| Support | D15, D16 | Qo'llanma tuzilmasini [D03](D03-loyiha-boshlangich-hujjati.md) rollari bo'yicha tuzish |
+| Support | [D15](D15-qollanma-va-oqitish.md), D16 | Qo'llanma tuzilmasini [D03](D03-loyiha-boshlangich-hujjati.md) rollari bo'yicha tuzish |
 
 Kichik jamoada bir odam bir nechta rolni bajaradi (masalan, PM va analitik bitta odam) — unda shu rollarning hamma doclari uniki bo'ladi. Qaysi doclar majburiy ekani — "Loyiha hajmiga qarab moslashtirish" bo'limida.
 
@@ -76,7 +76,7 @@ Loyiha 8 bosqichdan o'tadi; har bosqichning chiqishi keyingisining kirishi bo'la
 4. **Planlash** — ish bo'linadi, baholanadi, odamlar biriktiriladi, srok kelishiladi. Asosiy doclar: [D06](D06-baholash-va-srok.md), [D07](D07-taqsimot-va-resurs.md).
 5. **Ishlab chiqish** — tasklar kanban bo'yicha DoR → DoD yo'lini o'tadi. Asosiy doclar: [D08](D08-kanban-dor-dod.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md).
 6. **Release** — staging'da tekshiriladi, prod'ga chiqariladi, rollback tayyor turadi. Asosiy doc: [D14](D14-release-va-deploy.md).
-7. **Topshirish** — mijoz qabul qiladi (UAT), qo'llanma va o'qitish beriladi. Asosiy doc: D15.
+7. **Topshirish** — mijoz qabul qiladi (UAT), qo'llanma va o'qitish beriladi. Asosiy doc: [D15](D15-qollanma-va-oqitish.md).
 8. **Ekspluatatsiya** — murojaatlar va fikrlar yig'iladi, keyingi rejaga kiradi. Asosiy doc: D16.
 
 Ishlab chiqish (5) haftalik sikl bo'lib aylanadi. O'rtada kelgan yangi talab [D10](D10-ozgarishlarni-boshqarish.md) orqali qayta baholanadi va kerak bo'lsa 2-bosqichga qaytadi. [D17](D17-retro-va-standartni-yangilash.md) (retro) har release'dan keyin va loyiha oxirida o'tkaziladi.
@@ -107,7 +107,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 | [D12](D12-ui-ux-standartlari.md) | UI/UX standartlari va design system | Dizayner | Dizayn, ishlab chiqish | 1 |
 | [D13](D13-test-strategiyasi.md) | Test strategiyasi (unit, integration, e2e) | Tech lead + QA | Ishlab chiqish | 1 |
 | [D14](D14-release-va-deploy.md) | Release va deploy tartibi | DevOps | Release | 1 |
-| D15 | Foydalanuvchi qo'llanmasi va o'qitish | Support + analitik | Topshirish | 3 |
+| [D15](D15-qollanma-va-oqitish.md) | Foydalanuvchi qo'llanmasi va o'qitish | Support + analitik | Topshirish | 3 |
 | D16 | Support va fikr yig'ish | Support | Ekspluatatsiya | 3 |
 | [D17](D17-retro-va-standartni-yangilash.md) | Retrospektiva va standartni yangilash | PM | Har release'dan keyin, loyiha oxiri | 3 |
 
@@ -206,7 +206,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 
 ### E. Topshirish va ekspluatatsiya
 
-**D15 — Foydalanuvchi qo'llanmasi va o'qitish**
+**[D15](D15-qollanma-va-oqitish.md) — Foydalanuvchi qo'llanmasi va o'qitish**
 
 - *Maqsad:* foydalanuvchi tizimni yordamsiz ishlata olsin, support'ga savollar kamaysin.
 - *Mazmuni:* qo'llanma tuzilmasi (rol bo'yicha, vazifa bo'yicha "qanday qilish kerak"); skrinshot va qisqa videolar; tizim ichidagi onboarding turlari va maslahatlar; FAQ; o'qitish sessiyasi rejasi; qo'llanmani release bilan birga yangilash qoidasi.
@@ -240,7 +240,7 @@ Kichik loyihada 17 ta docning hammasini to'liq yuritish byurokratiya bo'ladi. Be
 | [D12](D12-ui-ux-standartlari.md) UI/UX | Kompaniyaning mavjud design system'i ishlatiladi | To'liq |
 | [D13](D13-test-strategiyasi.md) Test | [D08](D08-kanban-dor-dod.md) DoD'dagi minimal talab | To'liq |
 | [D14](D14-release-va-deploy.md) Release | Release checklist va rollback rejasi | To'liq |
-| D15 Qo'llanma | FAQ | To'liq |
+| [D15](D15-qollanma-va-oqitish.md) Qo'llanma | Asosiy rol uchun vazifa sahifalari va FAQ; release bilan yangilash va 1–2 kishilik sinov | To'liq |
 | D16 Support | Murojaat kanali va javob vaqti | To'liq |
 | [D17](D17-retro-va-standartni-yangilash.md) Retro | Har release'dan keyin 45 daqiqalik retro va loyiha oxirida yakuniy retro | Qo'shimcha: 4-darvozadan keyin boshlash retrosi |
 

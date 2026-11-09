@@ -45,7 +45,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 
 - [x] [D07](D07-taqsimot-va-resurs.md) — Ishlar taqsimoti va resurs planlash (2026-11-09; kichik loyiha uchun "ixtiyoriy" emas — modullar egasi va zaxirasi majburiy qilindi, misol loyihadagi R-05 riski sabab; misoli — rejada)
 - [x] [D10](D10-ozgarishlarni-boshqarish.md) — O'zgarishlarni boshqarish (2026-11-09; uch tur: aniqlashtirish, kichik va katta CR; [D08](D08-kanban-dor-dod.md) dagi yadro qoida havolaga aylandi, root katalogdagi "yadro qoidalar" bloki olib tashlandi; misoli — qisman, board faylida)
-- [ ] D15 — Foydalanuvchi qo'llanmasi va o'qitish
+- [x] [D15](D15-qollanma-va-oqitish.md) — Foydalanuvchi qo'llanmasi va o'qitish (2026-11-09; [D14](D14-release-va-deploy.md) release checklistiga qo'llanma punkti qo'shildi; misoli — rejada)
 - [ ] D16 — Support va fikr yig'ish
 - [x] [D17](D17-retro-va-standartni-yangilash.md) — Retrospektiva va standartni yangilash (2026-11-09; retro chastotasi hal qilindi: har release'dan keyin va loyiha oxirida, o'rta va katta loyihada 4-darvozadan keyin ham — root doc va [D02](D02-loyiha-hayot-sikli.md) bilan moslandi; boshqa doclar yuboradigan metrikalar bitta jadvalda; misoli — rejada)
 

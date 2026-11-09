@@ -33,7 +33,7 @@ Har bir ish uchun kim bajaradi, kim yakuniy javob beradi, kimdan maslahat so'ral
 | Dasturchi (FE/BE/mobile) | Taskni DoD bo'yicha bajarish, testlar, merge request, boshqalarning MR'ini review qilish | Task ichidagi implementatsiya | MR, unit testlar |
 | QA / tekshiruvchi | Test rejasi, Testing ustuni, regressiya, bug hisoboti | Task Done'mi; release'ga tayyorlik (QA sign-off) | [D13](D13-test-strategiyasi.md), test hisobotlari |
 | DevOps | Muhitlar, CI/CD, monitoring, backup, prod deploy | Deploy tartibi | [D14](D14-release-va-deploy.md) |
-| Support | Qo'llanma, o'qitish, foydalanuvchi murojaatlari | Murojaatlarni toifalash | D15, D16 |
+| Support | Qo'llanma, o'qitish, foydalanuvchi murojaatlari | Murojaatlarni toifalash | [D15](D15-qollanma-va-oqitish.md), D16 |
 
 ## 4. Qoidalar
 
@@ -108,7 +108,7 @@ Loyiha shu jadvalni o'zgarishsiz oladi; farq bo'lsa, 6.1 dagi "farqlar" qatoriga
 | Release sanasini kelishish va e'lon ([D14](D14-release-va-deploy.md)) | C | A/R | | | C | | | I | I |
 | UAT va qabul ([D02](D02-loyiha-hayot-sikli.md)) | A/R | C | C | | I | | C | | I |
 | Scope o'zgarishi, change request ([D10](D10-ozgarishlarni-boshqarish.md)) | A | R | C | C | C | C | I | | I |
-| Qo'llanma va o'qitish (D15) | I | C | C | C | | | | | A/R |
+| Qo'llanma va o'qitish ([D15](D15-qollanma-va-oqitish.md)) | I | C | C | C | | | | | A/R |
 | Murojaatlar va toifalash (D16) | I | C | | | | C | | | A/R |
 | Retro ([D17](D17-retro-va-standartni-yangilash.md)) | C | A/R | C | C | C | C | C | C | C |
 

@@ -46,7 +46,7 @@ Qarorlarning o'zi hozirgi Test Platformasidan olingan (manbasi ko'rsatilgan); sa
 
 | ID | Risk | Ehtimollik | Ta'sir | Egasi | Chora |
 | --- | --- | --- | --- | --- | --- |
-| R-01 | Nomzod kamerasi yoki yorug'lik sabab Face ID'dan o'ta olmaydi va test boshlanmaydi | o'rta | yuqori | Analitik | [TZ](D03-tz.md) da muqobil yo'l (nazoratchi tasdig'i) belgilash; D15 da kamera talablari |
+| R-01 | Nomzod kamerasi yoki yorug'lik sabab Face ID'dan o'ta olmaydi va test boshlanmaydi | o'rta | yuqori | Analitik | [TZ](D03-tz.md) da muqobil yo'l (nazoratchi tasdig'i) belgilash; [D15](../../D15-qollanma-va-oqitish.md) da kamera talablari |
 | R-02 | JShShIR yoki yuz tasvirlari loglar yoki staging orqali sizib chiqadi | past | yuqori | Tech lead | [TZ](D03-tz.md) shaxsiy ma'lumotlar bo'limi; [D14](../../D14-release-va-deploy.md) dagi himoya qoidalari |
 | R-03 | Test vaqtida bir vaqtda ko'p nomzod — yuklama cho'qqisi | o'rta | yuqori | Backend | Nofunksional talabda yuklama soni; release oldidan yuklama testi |
 | R-04 | Desktop agent bilan almashinuv formati kech kelishiladi | o'rta | o'rta | Backend | 3-darvozagacha kontraktni yopish |
