@@ -50,7 +50,7 @@ Qarorlarning o'zi hozirgi Test Platformasidan olingan (manbasi ko'rsatilgan); sa
 | R-02 | JShShIR yoki yuz tasvirlari loglar yoki staging orqali sizib chiqadi | past | yuqori | Tech lead | [TZ](D03-tz.md) shaxsiy ma'lumotlar bo'limi; [D14](../../D14-release-va-deploy.md) dagi himoya qoidalari |
 | R-03 | Test vaqtida bir vaqtda ko'p nomzod — yuklama cho'qqisi | o'rta | yuqori | Backend | Nofunksional talabda yuklama soni; release oldidan yuklama testi |
 | R-04 | Desktop agent bilan almashinuv formati kech kelishiladi | o'rta | o'rta | Backend | 3-darvozagacha kontraktni yopish |
-| R-05 | Frontend bitta odamda — u yo'q bo'lsa ish to'xtaydi | yuqori | yuqori | PM | Code review'ni backendchi ham qiladi; `docs/` va `CLAUDE.md` yuritiladi (D07, [D11](../../D11-dasturchilar-qoidalari.md)) |
+| R-05 | Frontend bitta odamda — u yo'q bo'lsa ish to'xtaydi | yuqori | yuqori | PM | Code review'ni backendchi ham qiladi; `docs/` va `CLAUDE.md` yuritiladi ([D07](../../D07-taqsimot-va-resurs.md), [D11](../../D11-dasturchilar-qoidalari.md)) |
 
 ---
 

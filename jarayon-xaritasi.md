@@ -42,7 +42,7 @@ Har bosqichda qaysi doc kerak:
 | 1 · Boshlash | [D03](D03-loyiha-boshlangich-hujjati.md) — Brief qismi; [D02](D02-loyiha-hayot-sikli.md) — bosqichlar rejasi, qarorlar jurnali va risklar reestri ochiladi; [D01](D01-rollar-va-raci.md) — rollar; [D05](D05-kickoff-va-doc-review.md) — kickoff |
 | 2 · Talablar | [D03](D03-loyiha-boshlangich-hujjati.md) — to'liq TZ; [D05](D05-kickoff-va-doc-review.md) — doc review |
 | 3 · Dizayn | [D04](D04-dizayn-brief-va-jarayon.md) — dizayn brief va jarayon; [D12](D12-ui-ux-standartlari.md) — UI/UX standartlari va handoff |
-| 4 · Planlash | [D06](D06-baholash-va-srok.md) — baholash va srok; D07 — taqsimot va resurs |
+| 4 · Planlash | [D06](D06-baholash-va-srok.md) — baholash va srok; [D07](D07-taqsimot-va-resurs.md) — taqsimot va resurs |
 | 5 · Ishlab chiqish | [D08](D08-kanban-dor-dod.md) — kanban, DoR, DoD; [D11](D11-dasturchilar-qoidalari.md) — kod va review; [D13](D13-test-strategiyasi.md) — test; [D12](D12-ui-ux-standartlari.md) — UI tekshiruvi; [D09](D09-meetinglar-ritmi.md) — meetinglar; [D10](D10-ozgarishlarni-boshqarish.md) — o'zgarishlar |
 | 6 · Release | [D14](D14-release-va-deploy.md) — release va deploy |
 | 7 · Topshirish | D15 — qo'llanma va o'qitish |
@@ -182,6 +182,7 @@ Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi (D1
 | Branch, commit, merge request, review qanday? | [D11](D11-dasturchilar-qoidalari.md) |
 | Qanday test yoziladi va kim tekshiradi? | [D13](D13-test-strategiyasi.md) |
 | Prod'ga qanday chiqariladi va qanday qaytariladi? | [D14](D14-release-va-deploy.md) |
+| Modul kimda, u yo'q bo'lsa kim qiladi? Yangi odam qanday ulanadi? | [D07](D07-taqsimot-va-resurs.md) |
 | Kim nimaga javobgar? Rol bo'sh bo'lsa kim qiladi? | [D01](D01-rollar-va-raci.md) — rollar, RACI, kichik jamoada birlashtirish |
 | Talab o'rtada o'zgarsa yoki mijoz yangi narsa so'rasa nima qilinadi? | [D10](D10-ozgarishlarni-boshqarish.md) |
 

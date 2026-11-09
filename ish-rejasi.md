@@ -43,7 +43,7 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 
 ### 3-faza: To'liq sikl
 
-- [ ] D07 — Ishlar taqsimoti va resurs planlash
+- [x] [D07](D07-taqsimot-va-resurs.md) — Ishlar taqsimoti va resurs planlash (2026-11-09; kichik loyiha uchun "ixtiyoriy" emas — modullar egasi va zaxirasi majburiy qilindi, misol loyihadagi R-05 riski sabab; misoli — rejada)
 - [x] [D10](D10-ozgarishlarni-boshqarish.md) — O'zgarishlarni boshqarish (2026-11-09; uch tur: aniqlashtirish, kichik va katta CR; [D08](D08-kanban-dor-dod.md) dagi yadro qoida havolaga aylandi, root katalogdagi "yadro qoidalar" bloki olib tashlandi; misoli — qisman, board faylida)
 - [ ] D15 — Foydalanuvchi qo'llanmasi va o'qitish
 - [ ] D16 — Support va fikr yig'ish

@@ -45,7 +45,7 @@ Kod bir xil uslubda yozilsin, kamida bitta boshqa odam tomonidan tekshirilsin va
 
 ### D. Code review
 
-9. **Har MR'ni muallifdan boshqa kamida 1 kishi tasdiqlaydi.** Yo'nalishda bitta mutaxassis bo'lsa (masalan, bitta frontendchi), review'ni boshqa yo'nalish dasturchisi yoki tech lead qiladi: checklistning mantiq, xavfsizlik va test qismlari uchun bu yetarli. *Nega:* ikkinchi ko'z xatoni topadi; qolaversa kodni ikkinchi odam ham biladi ("bus factor", D07).
+9. **Har MR'ni muallifdan boshqa kamida 1 kishi tasdiqlaydi.** Yo'nalishda bitta mutaxassis bo'lsa (masalan, bitta frontendchi), review'ni boshqa yo'nalish dasturchisi yoki tech lead qiladi: checklistning mantiq, xavfsizlik va test qismlari uchun bu yetarli. *Nega:* ikkinchi ko'z xatoni topadi; qolaversa kodni ikkinchi odam ham biladi ("bus factor", [D07](D07-taqsimot-va-resurs.md)).
 10. **Review muddati — 1 ish kuni.** Review navbati yangi taskdan ustun ([D08](D08-kanban-dor-dod.md) WIP limiti). *Nega:* kutayotgan MR — tugamagan ish; muallif boshqa ishga o'tib, kontekstni yo'qotadi.
 11. **Reviewer checklist (4.2) bo'yicha tekshiradi va izohga belgi qo'yadi:**
     - `[bloklovchi]` — tuzatilmaguncha merge yo'q;

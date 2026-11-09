@@ -26,7 +26,7 @@ Har bir ish uchun kim bajaradi, kim yakuniy javob beradi, kimdan maslahat so'ral
 | Rol | Asosiy mas'uliyat | Qaror huquqi | Asosiy hujjatlari |
 | --- | --- | --- | --- |
 | Mijoz / PO | Biznes maqsad, ustuvorliklar, natijani qabul qilish | Scope va ustuvorlik | Tasdiqlangan [D03](D03-loyiha-boshlangich-hujjati.md), UAT akti |
-| PM | Srok, resurs, risk, aloqa; jarayonni yuritish | Taqsimot, meetinglar, change request'ni rasmiylashtirish | D01, [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), D07, [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md) |
+| PM | Srok, resurs, risk, aloqa; jarayonni yuritish | Taqsimot, meetinglar, change request'ni rasmiylashtirish | D01, [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), [D07](D07-taqsimot-va-resurs.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md) |
 | Biznes analitik | Talablarni yig'ish, user story va qabul mezonlari | Talablar to'liqligi (DoR) | [D03](D03-loyiha-boshlangich-hujjati.md) |
 | UI/UX dizayner | Foydalanuvchi oqimlari, maket, design system | UI yechimlari standart doirasida | [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md) |
 | Tech lead | Arxitektura, texnik baholash, code review sifati | Texnik yechimlar, merge, release tarkibi, rollback | [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) |
@@ -97,7 +97,7 @@ Loyiha shu jadvalni o'zgarishsiz oladi; farq bo'lsa, 6.1 dagi "farqlar" qatoriga
 | Rollar va RACI (D01) | C | A/R | I | I | C | I | I | I | I |
 | Maketlar va handoff ([D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md)) | C | I | C | A/R | C | C | I | | |
 | Task bahosi ([D06](D06-baholash-va-srok.md)) | | C | | C | A | R | | | |
-| Release rejasi va srok ([D06](D06-baholash-va-srok.md), D07) | A | R | C | C | C | C | I | I | I |
+| Release rejasi va srok ([D06](D06-baholash-va-srok.md), [D07](D07-taqsimot-va-resurs.md)) | A | R | C | C | C | C | I | I | I |
 | Taskni Ready'ga tayyorlash, DoR ([D08](D08-kanban-dor-dod.md)) | | A | R | C | C | C | | | |
 | Kod va testlar ([D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md)) | | | | | A | R | | | |
 | Code review va merge ([D11](D11-dasturchilar-qoidalari.md)) | | | | | A | R (muallif emas) | | | |

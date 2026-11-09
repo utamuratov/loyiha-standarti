@@ -39,7 +39,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 | [D04](../../D04-dizayn-brief-va-jarayon.md) Dizayn brief | Face ID tekshiruvi va test yechish ekranlari uchun to'ldirilgan brief | Rejada |
 | [D05](../../D05-kickoff-va-doc-review.md) Kickoff | Kickoff protokoli | Rejada |
 | [D06](../../D06-baholash-va-srok.md) Baholash | Modullarni (login, ariza, Face ID, test yechish, natija) 1–3 kunlik tasklarga bo'lish va uch nuqtali baho | Rejada |
-| D07 Resurs | Modullar bo'yicha taqsimot jadvali | Rejada |
+| [D07](../../D07-taqsimot-va-resurs.md) Resurs | Modullar bo'yicha taqsimot jadvali | Rejada |
 | [D08](../../D08-kanban-dor-dod.md) Kanban, DoR, DoD | [Board va tasklar](D08-board-va-tasklar.md) | Yozilgan |
 | [D09](../../D09-meetinglar-ritmi.md) Meetinglar | Haftalik sync protokoli | Rejada |
 | [D10](../../D10-ozgarishlarni-boshqarish.md) O'zgarishlar | [Board va tasklar](D08-board-va-tasklar.md), "Change request" bo'limi; to'liq misol — ishlab chiqish o'rtasida yangi mijoz (alohida build) qo'shilishi | Qisman |

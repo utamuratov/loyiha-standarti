@@ -46,7 +46,7 @@ Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish
 
 | Rolingiz | Asosiy doclaringiz | Yangi loyihada birinchi qiladigan ishingiz |
 | --- | --- | --- |
-| PM | [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), D07, [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), D17 | [D02](D02-loyiha-hayot-sikli.md) bo'yicha bosqichlarni rejalashtirish, kickoff ([D05](D05-kickoff-va-doc-review.md)) o'tkazish |
+| PM | [D02](D02-loyiha-hayot-sikli.md), [D05](D05-kickoff-va-doc-review.md), [D06](D06-baholash-va-srok.md), [D07](D07-taqsimot-va-resurs.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), D17 | [D02](D02-loyiha-hayot-sikli.md) bo'yicha bosqichlarni rejalashtirish, kickoff ([D05](D05-kickoff-va-doc-review.md)) o'tkazish |
 | Biznes analitik | [D03](D03-loyiha-boshlangich-hujjati.md), [D10](D10-ozgarishlarni-boshqarish.md) | [D03](D03-loyiha-boshlangich-hujjati.md) shabloni bo'yicha TZ yozish |
 | UI/UX dizayner | [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md) | [D04](D04-dizayn-brief-va-jarayon.md) brief'ini analitik bilan to'ldirish |
 | Tech lead / dasturchi | [D03](D03-loyiha-boshlangich-hujjati.md) (API kontrakti), [D06](D06-baholash-va-srok.md), [D11](D11-dasturchilar-qoidalari.md), [D12](D12-ui-ux-standartlari.md) (frontend), [D13](D13-test-strategiyasi.md), [D14](D14-release-va-deploy.md) | [D03](D03-loyiha-boshlangich-hujjati.md) ni review qilish, baholash ([D06](D06-baholash-va-srok.md)) |
@@ -73,7 +73,7 @@ Loyiha 8 bosqichdan o'tadi; har bosqichning chiqishi keyingisining kirishi bo'la
 1. **Boshlash** — loyiha g'oyasi, mijoz va biznes maqsad aniqlanadi. Asosiy doclar: [D01](D01-rollar-va-raci.md), [D03](D03-loyiha-boshlangich-hujjati.md) (Brief qismi).
 2. **Talablar** — scope, user story, qabul mezonlari, API kontrakti va nofunksional talablar yoziladi; doc review o'tkaziladi. Asosiy doclar: [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md).
 3. **Dizayn** — oqimlar va maketlar chiziladi, dasturchiga topshiriladi. Asosiy doclar: [D04](D04-dizayn-brief-va-jarayon.md), [D12](D12-ui-ux-standartlari.md).
-4. **Planlash** — ish bo'linadi, baholanadi, odamlar biriktiriladi, srok kelishiladi. Asosiy doclar: [D06](D06-baholash-va-srok.md), D07.
+4. **Planlash** — ish bo'linadi, baholanadi, odamlar biriktiriladi, srok kelishiladi. Asosiy doclar: [D06](D06-baholash-va-srok.md), [D07](D07-taqsimot-va-resurs.md).
 5. **Ishlab chiqish** — tasklar kanban bo'yicha DoR → DoD yo'lini o'tadi. Asosiy doclar: [D08](D08-kanban-dor-dod.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md), [D11](D11-dasturchilar-qoidalari.md), [D13](D13-test-strategiyasi.md).
 6. **Release** — staging'da tekshiriladi, prod'ga chiqariladi, rollback tayyor turadi. Asosiy doc: [D14](D14-release-va-deploy.md).
 7. **Topshirish** — mijoz qabul qiladi (UAT), qo'llanma va o'qitish beriladi. Asosiy doc: D15.
@@ -99,7 +99,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 | [D04](D04-dizayn-brief-va-jarayon.md) | Dizaynerga brief va dizayn jarayoni | Dizayner + analitik | Dizayn | 2 |
 | [D05](D05-kickoff-va-doc-review.md) | Kickoff va doc review meeting | PM | Boshlash | 2 |
 | [D06](D06-baholash-va-srok.md) | Baholash va srok belgilash | PM + tech lead | Planlash | 2 |
-| D07 | Ishlar taqsimoti va resurs planlash | PM | Planlash | 3 |
+| [D07](D07-taqsimot-va-resurs.md) | Ishlar taqsimoti va resurs planlash | PM | Planlash | 3 |
 | [D08](D08-kanban-dor-dod.md) | Kanban qoidalari, DoR va DoD | PM + tech lead | Ishlab chiqish | 1 |
 | [D09](D09-meetinglar-ritmi.md) | Meetinglar ritmi (daily, haftalik, demo, retro) | PM | Ishlab chiqish | 2 |
 | [D10](D10-ozgarishlarni-boshqarish.md) | O'zgarishlarni boshqarish (change request) | PM | Ishlab chiqish | 3 |
@@ -153,7 +153,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 
 ### C. Planlash va jarayon
 
-**D07 — Ishlar taqsimoti va resurs planlash**
+**[D07](D07-taqsimot-va-resurs.md) — Ishlar taqsimoti va resurs planlash**
 
 - *Maqsad:* deadline va ko'nikmalarga qarab mos odam biriktirilsin, hech kim ortiqcha yuklanmasin.
 - *Mazmuni:* ko'nikmalar matritsasi (kim nimani biladi, qay darajada); yuklama jadvali (bir odamga bir vaqtda nechta loyiha); "bus factor" — har bir modulni kamida 2 kishi bilishi; yangi xodimni ulash tartibi.
@@ -234,7 +234,7 @@ Kichik loyihada 17 ta docning hammasini to'liq yuritish byurokratiya bo'ladi. Be
 | [D04](D04-dizayn-brief-va-jarayon.md) Dizayn brief | [D03](D03-loyiha-boshlangich-hujjati.md) ichida ekranlar ro'yxati va maket havolasi | To'liq |
 | [D05](D05-kickoff-va-doc-review.md) Kickoff | Kickoff va doc review 30–45 daqiqadan; yozma izohlar va protokol majburiy | To'liq |
 | [D06](D06-baholash-va-srok.md) Baholash | Tasklar soatda, uch nuqtali baho story darajasida; bufer, yozma srok va kechikish tartibi majburiy | To'liq |
-| D07 Resurs planlash | Ixtiyoriy | To'liq |
+| [D07](D07-taqsimot-va-resurs.md) Resurs planlash | Modullar egasi va zaxirasi, onboarding va handover; matritsa va bandlik jadvali — odamlar boshqa loyihada ham band bo'lsa | To'liq |
 | [D09](D09-meetinglar-ritmi.md) Meetinglar | Yozma daily, 30 daqiqalik haftalik sync, har release oxirida demo; umumiy qoidalar to'liq | To'liq |
 | [D10](D10-ozgarishlarni-boshqarish.md) Change request | Uch tur va yozma PO qarori; katta CR uchun to'liq doc review shart emas | To'liq |
 | [D12](D12-ui-ux-standartlari.md) UI/UX | Kompaniyaning mavjud design system'i ishlatiladi | To'liq |
