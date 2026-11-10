@@ -63,6 +63,7 @@ Doclar oddiy Markdown bo'lib qoladi va GitLab'da ham o'qiladi; sayt ularning ust
 - Til: o'zbek (lotin). Kasbiy atamalar (PR, code review, kanban, e2e) asl holicha qoladi, birinchi uchraganda qisqa izohlanadi.
 - Hajm: asosiy qism 1–3 sahifa. Shablon va misol qo'shimcha bo'lishi mumkin.
 - Faktlarni o'ylab topmang. Test Platformasi bo'yicha ma'lumot yetmasa, `[TO'LDIRILSIN: ...]` deb belgilang va savolni foydalanuvchiga bering.
+- Qoidaga yangi raqam yoki chegara (muddat, daqiqa, foiz, soni) qo'yilsa: manbasi bo'lsa — [manbalar.md](manbalar.md) ning 1-bo'limiga qo'shing; manbasi bo'lmasa — raqam yoniga `[b.q.]` (boshlang'ich qiymat) qo'ying va [manbalar.md](manbalar.md) ning 3-bo'limidagi jadvalga yozing. Belgi faqat qiymat qoida sifatida birinchi marta yozilgan joyga qo'yiladi; docda birinchi belgi bo'lsa, sarlavha ostiga izoh qatori qo'shiladi (boshqa doclardagidek). Retroda qiymat tasdiqlansa yoki o'zgarsa, belgi va jadval yangilanadi.
 - Har bir qoida "nega" degan savolga javob bera olsin; asossiz byurokratiya qo'shmang.
 - Doclar bir-biriga havola qiladi (masalan, [D13](D13-test-strategiyasi.md) test strategiyasi [D08](D08-kanban-dor-dod.md) DoD'dagi minimal test talabini kengaytiradi); bir xil qoidani ikki joyda takrorlamang. Har bir mavzuning uyi bitta doc (root docdagi katalogga qarang).
 - Tayyor mezoni tekshirsa bo'ladigan bo'lsin: kim tekshiradi, nimani sanaydi, qancha bo'lishi kerak.

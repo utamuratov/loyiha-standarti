@@ -1,5 +1,7 @@
 # D08 — Kanban qoidalari, DoR va DoD
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Har bir taskning holati hech kimdan so'ramasdan boardda ko'rinsin, "tayyor" so'zi esa hamma uchun bir xil ma'noni bildirsin. Kelishuvlar chatda qolib ketmasin, chala task ishga olinmasin.
@@ -36,7 +38,7 @@ Prod'ga chiqarish alohida jarayon ([D14](D14-release-va-deploy.md)): Done'dagi t
 
 | Ustun | Limit | Nega |
 | --- | --- | --- |
-| In progress | Har bajaruvchiga 1 ta; 2-si faqat 1-si bloklangan bo'lsa | Bir nechta chala ish bitta tugagan ishdan yomon |
+| In progress | Har bajaruvchiga 1 ta [b.q.]; 2-si faqat 1-si bloklangan bo'lsa | Bir nechta chala ish bitta tugagan ishdan yomon |
 | Code review | Jamoadagi dasturchilar soni | Review navbati to'planib qolsa, yangi ish olinmaydi: avval review qilinadi |
 | Testing | Jamoadagi dasturchilar soni | Sababi xuddi shu |
 
@@ -46,7 +48,7 @@ Limit to'lgan bo'lsa, yangi task olinmaydi: bo'shagan odam avval review yoki tes
 
 - **Epic** — release ([D02](D02-loyiha-hayot-sikli.md), masalan "R1").
 - **Story** — [D03](D03-loyiha-boshlangich-hujjati.md) dagi user story; uning sarlavhasida ID bo'ladi (`US-04`).
-- **Task / Sub-task** — story'ni bajarish uchun 1–3 kunlik bo'laklar (frontend va backend alohida).
+- **Task / Sub-task** — story'ni bajarish uchun 1–3 kunlik [b.q.] bo'laklar (frontend va backend alohida).
 - **Bug** — 3.5-bo'limdagi shablon bo'yicha ochiladi.
 
 ### 3.4. Task shabloni
@@ -99,7 +101,7 @@ Task Ready'ga faqat quyidagilar bajarilganda o'tadi. Uni analitik yoki PM o'tkaz
 - [ ] [D03](D03-loyiha-boshlangich-hujjati.md) dagi story'ga havola va qabul mezonlari bor
 - [ ] Task UI'ga tegishli bo'lsa, barcha holatlari chizilgan maket havolasi bor ([D04](D04-dizayn-brief-va-jarayon.md))
 - [ ] Task FE va BE'ga tegishli bo'lsa, endpoint kontraktda kelishilgan ([D11](D11-dasturchilar-qoidalari.md))
-- [ ] **Bahoni bajaruvchining o'zi bergan**; baho 3 kundan oshsa, task bo'linadi
+- [ ] **Bahoni bajaruvchining o'zi bergan**; baho 3 kundan [b.q.] oshsa, task bo'linadi
 - [ ] Bog'liqliklar tugagan yoki parallel ishlash usuli aniq (masalan, mock orqali)
 - [ ] Bloklovchi ochiq savol yo'q
 
@@ -122,10 +124,10 @@ Test talabining to'liq versiyasi (qaysi testlar, qamrov, e2e) [D13](D13-test-str
 
 ## 6. Ish qoidalari
 
-1. **Boardda yo'q ish ish hisoblanmaydi.** Chatda, qo'ng'iroqda yoki yo'lakda kelgan so'rov 1 ish kuni ichida Backlog'ga yoziladi, chatga esa task havolasi tashlanadi. Uni so'rovni qabul qilgan odam yozadi. *Nega:* aytilgan narsa esdan chiqadi, boardga tushgani esa chiqmaydi.
+1. **Boardda yo'q ish ish hisoblanmaydi.** Chatda, qo'ng'iroqda yoki yo'lakda kelgan so'rov 1 ish kuni [b.q.] ichida Backlog'ga yoziladi, chatga esa task havolasi tashlanadi. Uni so'rovni qabul qilgan odam yozadi. *Nega:* aytilgan narsa esdan chiqadi, boardga tushgani esa chiqmaydi.
 2. **Holatni so'rash o'rniga boardga qaraladi.** Bajaruvchi holat o'zgarganda taskni o'zi suradi; "qayerda?" degan savol board noto'g'ri yuritilayotganining belgisi. *Nega:* shaffoflik odamning xotirasida emas, jarayonda bo'lishi kerak.
 3. **Talab o'rtada o'zgarsa, change request ochiladi.** Task `change-request` labeli bilan Backlog'ga qaytadi va [D10](D10-ozgarishlarni-boshqarish.md) bo'yicha qaror qabul qilinib, [D03](D03-loyiha-boshlangich-hujjati.md) yangilangandan keyingina qayta Ready'ga o'tadi. O'zgarish turlari, kim tasdiqlashi va to'liq tartib [D10](D10-ozgarishlarni-boshqarish.md) da yozilgan. *Nega:* "yo'l-yo'lakay qo'shib qo'ying" srokni yashirin buzadi.
-4. **Bloklangan task belgilanadi.** Jira'da unga "Flagged" belgisi qo'yiladi va izohda task nimani va kimni kutayotgani yoziladi. 1 ish kunidan ortiq bloklansa, PM daily'da ([D09](D09-meetinglar-ritmi.md)) ko'taradi. *Nega:* jim bloklangan task srok o'tgandagina ko'rinadi.
+4. **Bloklangan task belgilanadi.** Jira'da unga "Flagged" belgisi qo'yiladi va izohda task nimani va kimni kutayotgani yoziladi. 1 ish kunidan ortiq bloklansa [b.q.], PM daily'da ([D09](D09-meetinglar-ritmi.md)) ko'taradi. *Nega:* jim bloklangan task srok o'tgandagina ko'rinadi.
 5. **Muallif o'z taskini o'zi testlamaydi.** Kichik jamoada QA bo'lmasa, Testing'ni analitik yoki boshqa dasturchi qiladi. *Nega:* muallif tizimni qanday ishlatish kerakligini biladi va xatoga yo'l qo'yadigan qadamni qilmaydi.
 6. **Qaytgan task orqaga suriladi.** Testing'da qabul mezoni bajarilmasa, task In progress'ga qaytadi va izohda sababi yoziladi. Yangi task ochilmaydi (yangi bug faqat boshqa muammo uchun). *Nega:* rework sanaladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) ko'rinadi.
 

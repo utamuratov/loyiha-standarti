@@ -1,8 +1,10 @@
 # D14 — Release va deploy tartibi
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
-Release oldindan aytiladigan, takrorlanadigan va xavfsiz bo'lsin: nima chiqayotgani, qachon va kim chiqarayotgani ma'lum bo'lsin. Muammo chiqsa, 15 daqiqa ichida oldingi versiyaga qaytish mumkin bo'lsin. Foydalanuvchilarning shaxsiy ma'lumotlari esa hech bir muhitda sizib chiqmasin.
+Release oldindan aytiladigan, takrorlanadigan va xavfsiz bo'lsin: nima chiqayotgani, qachon va kim chiqarayotgani ma'lum bo'lsin. Muammo chiqsa, 15 daqiqa ichida oldingi versiyaga [b.q.] qaytish mumkin bo'lsin. Foydalanuvchilarning shaxsiy ma'lumotlari esa hech bir muhitda sizib chiqmasin.
 
 ## 2. Kim uchun va qachon
 
@@ -48,7 +50,7 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
 
 1. **Staging prod'ga o'xshash bo'ladi.** Infratuzilma turi bir xil (masalan, ikkalasi ham konteynerda), farq faqat konfiguratsiyada bo'ladi. *Nega:* staging'da o'tib, prod'da yiqilgan xato muhitlar orasidagi farqning natijasi.
 2. **Bitta artefakt muhitdan muhitga ko'tariladi.** Staging'da tekshirilgan image o'zgarmasdan prod'ga chiqadi; muhitga xos sozlamalar (API manzili va boshqalar) image'ga emas, ishga tushishda beriladi. Buning iloji bo'lmasa (sozlama build vaqtida kiritilsa), prod build aynan staging'da tekshirilgan commit'dan olinadi va bu [D02](D02-loyiha-hayot-sikli.md) risklar reestriga yoziladi. *Nega:* prod uchun alohida qilingan build tekshirilmagan artefakt bo'ladi.
-3. **Infratuzilma va deploy konfiguratsiyasi kodda saqlanadi** (pipeline fayli, GitOps repo, docker-compose). Serverda qo'lda o'zgartirish qilinmaydi; shoshilinch qilingan bo'lsa, 1 ish kuni ichida kodga qaytariladi. *Nega:* qo'lda o'zgartirilgan server keyingi deploy'da yoki yangi serverda takrorlanmaydi.
+3. **Infratuzilma va deploy konfiguratsiyasi kodda saqlanadi** (pipeline fayli, GitOps repo, docker-compose). Serverda qo'lda o'zgartirish qilinmaydi; shoshilinch qilingan bo'lsa, 1 ish kuni ichida kodga [b.q.] qaytariladi. *Nega:* qo'lda o'zgartirilgan server keyingi deploy'da yoki yangi serverda takrorlanmaydi.
 
 ### B. Versiyalash va release notes
 
@@ -75,13 +77,13 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
    *Nega:* release'dan keyin muammo chiqsa, jamoa joyida bo'lishi va foydalanuvchiga ta'siri kam bo'lishi kerak.
 8. **Release e'lon qilinadi** (6.3): jamoa, support va mijozga release'dan oldin ham, keyin ham xabar beriladi. *Nega:* kutilmagan o'zgarish support'ga murojaatlar to'lqinini olib keladi.
 9. **Prod deploy pipeline'dagi qo'lda tasdiqlanadigan qadam bo'ladi.** Uni ruxsati bor nomli odam ishga tushiradi; serverga qo'lda kirib deploy qilinmaydi. *Nega:* kim, qachon, qaysi versiyani chiqargani pipeline tarixida qoladi.
-10. **Deploy'dan keyin 15 daqiqa ichida smoke test o'tkaziladi.** Tekshiruvchi asosiy oqimni prod'da o'tadi va natija deploy yozuviga (6.5) tushadi. *Nega:* muammoni foydalanuvchidan oldin jamoa ko'rishi kerak.
+10. **Deploy'dan keyin 15 daqiqa [b.q.] ichida smoke test o'tkaziladi.** Tekshiruvchi asosiy oqimni prod'da o'tadi va natija deploy yozuviga (6.5) tushadi. *Nega:* muammoni foydalanuvchidan oldin jamoa ko'rishi kerak.
 
 ### D. Rollback va migratsiyalar
 
 11. **Har bir release'ning rollback rejasi bor** (6.4): unda oldingi versiya tegi, qaytish qadamlari va kim qaror qilishi yoziladi.
     - Smoke test o'tmasa yoki kritik bug chiqsa ([D08](D08-kanban-dor-dod.md)), tech lead rollback qaroriga keladi.
-    - Prod'da 15 daqiqadan ortiq "tezda tuzatib qo'yamiz" deb urinilmaydi: avval rollback qilinadi, keyin xato xotirjam tuzatiladi.
+    - Prod'da 15 daqiqadan ortiq [b.q.] "tezda tuzatib qo'yamiz" deb urinilmaydi: avval rollback qilinadi, keyin xato xotirjam tuzatiladi.
 
     *Nega:* bosim ostida prod'da tuzatish yangi xatolarni keltiradi.
 12. **Rollback sinab ko'riladi.** Loyiha boshida va deploy jarayoni o'zgarganda rollback staging'da haqiqatan bajariladi. *Nega:* sinab ko'rilmagan rollback rejasi reja emas, umid xolos.

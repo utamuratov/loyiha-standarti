@@ -1,5 +1,7 @@
 # D17 — Retrospektiva va standartni yangilash
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Jamoa har release'dan keyin raqamlar va o'z tajribasiga qarab ish jarayonini tuzatsin, bu standart esa loyihalardan o'rganib, tirik qolsin. Retro shikoyat yoki ayblash uchun emas: u 1–3 ta aniq o'zgarish bilan tugaydigan qisqa meeting. Standartga tegishli takliflar esa yozma tartib bilan standartga qaytadi.
@@ -12,9 +14,9 @@ Jamoa har release'dan keyin raqamlar va o'z tajribasiga qarab ish jarayonini tuz
 
 | Retro | Qachon | Vaqt | Majburiy |
 | --- | --- | --- | --- |
-| Release retrosi | Har release'dan keyin, 1 hafta ichida ([D02](D02-loyiha-hayot-sikli.md), 8-bosqich) | 45–60 daq | Har loyihada, kichigida ham |
-| Boshlash retrosi | 4-darvozadan keyin: TZ, dizayn va baho qanday o'tdi | 45 daq | O'rta va katta loyihada |
-| Loyiha retrosi | Loyiha oxirida; uzoq loyihada yilda kamida bir marta | 60–90 daq | Har loyihada |
+| Release retrosi | Har release'dan keyin, 1 hafta ichida ( [b.q.][D02](D02-loyiha-hayot-sikli.md), 8-bosqich) | 45–60 daq [b.q.] | Har loyihada, kichigida ham |
+| Boshlash retrosi | 4-darvozadan keyin: TZ, dizayn va baho qanday o'tdi | 45 daq [b.q.] | O'rta va katta loyihada |
+| Loyiha retrosi | Loyiha oxirida; uzoq loyihada yilda kamida bir marta | 60–90 daq [b.q.] | Har loyihada |
 
 Meetingning umumiy qoidalari (agenda, timebox, protokol) [D09](D09-meetinglar-ritmi.md) da yozilgan.
 
@@ -27,10 +29,10 @@ Meetingning umumiy qoidalari (agenda, timebox, protokol) [D09](D09-meetinglar-ri
 
 ## 3. Qoidalar
 
-1. **Raqamlar bilan boshlanadi.** PM retrodan oldin metrikalar jadvalini (5.2) to'ldiradi va qatnashchilarga 1 ish kuni oldin yuboradi. *Nega:* taassurot bilan o'tgan retro eng yaqinda bo'lgan yoki eng baland ovozda aytilgan muammoni muhokama qiladi; raqam esa haqiqiy joyni ko'rsatadi.
+1. **Raqamlar bilan boshlanadi.** PM retrodan oldin metrikalar jadvalini (5.2) to'ldiradi va qatnashchilarga 1 ish kuni oldin yuboradi [b.q.]. *Nega:* taassurot bilan o'tgan retro eng yaqinda bo'lgan yoki eng baland ovozda aytilgan muammoni muhokama qiladi; raqam esa haqiqiy joyni ko'rsatadi.
 2. **Fikrlar oldindan yozma beriladi.** Har bir qatnashchi retrogacha uch savolga qisqa javob yozadi: nima yaxshi ishladi, nima xalaqit berdi, nimani o'zgartiramiz. Meetingda fikrlar guruhlanadi va ovoz bilan 2–3 tasi tanlanadi. *Nega:* og'zaki aylanishda kamgap odamning fikri eshitilmaydi; yozma ravishda esa hammaning fikri teng eshitiladi.
 3. **Odam emas, tizim tahlil qilinadi.** "Kim aybdor?" deb emas, "qaysi qoida, darvoza yoki shablon ishlamadi?" deb so'raladi (root docdagi 10-tamoyil). Ism bilan tanqid qilinmaydi. *Nega:* aybdor qidirilgan retroda odamlar muammoni yashiradi va keyingi retro bo'sh o'tadi.
-4. **Retro egasi va muddati belgilangan 1–3 ta harakat bilan tugaydi.** Har bir harakat Jira'da task bo'ladi. Taklif ko'proq bo'lsa, qolganlari keyingi retroga qoldiriladi. *Nega:* o'nta "yaxshilash" hech biri bajarilmaydigan ro'yxatga aylanadi; bitta bajarilgan o'zgarish esa o'ntasidan foydaliroq.
+4. **Retro egasi va muddati belgilangan 1–3 ta harakat [b.q.] bilan tugaydi.** Har bir harakat Jira'da task bo'ladi. Taklif ko'proq bo'lsa, qolganlari keyingi retroga qoldiriladi. *Nega:* o'nta "yaxshilash" hech biri bajarilmaydigan ro'yxatga aylanadi; bitta bajarilgan o'zgarish esa o'ntasidan foydaliroq.
 5. **Keyingi retro avvalgi harakatlardan boshlanadi.** Har bir harakat bo'yicha u bajarilgani va yordam bergani, bajarilmagan bo'lsa, nega bajarilmagani ko'riladi. *Nega:* harakatlar tekshirilmasa, retro shunchaki gaplashishga aylanadi va jamoa unga ishonmay qo'yadi.
 6. **Loyiha ichidagi va standartga tegishli takliflar ajratiladi.** Faqat shu loyihaga tegishli taklif (masalan, daily vaqti) loyiha hujjatlariga yoziladi. Har qanday loyihaga tegishli taklif (masalan, DoD'ga yangi punkt) standart taklifi sifatida rasmiylashtiriladi (5.4). *Nega:* bitta jamoaning odati standartga tushsa, boshqa loyihalarga ortiqcha qoida bo'ladi; haqiqiy saboq esa loyihada qolib ketsa, keyingi jamoa uni qaytadan o'rganadi.
 7. **Standart faqat yozma taklif orqali o'zgaradi.** Taklifni retro qatnashchisi yozadi, o'sha docning egasi doc o'zgarishini tayyorlaydi, o'zgarish esa jamoa bilan kelishilgach (ish rejasidagi "Kelishuvlar") repozitoriyga kiritiladi. Docning pastidagi "Oxirgi yangilangan" va "Keyingi ko'rib chiqish" yangilanadi, o'zgarish jamoaga e'lon qilinadi. *Nega:* og'zaki "endi bunday qilamiz" keyingi loyihaga yetib bormaydi; yozilgan standart yetib boradi.
@@ -48,7 +50,7 @@ Quyida boshqa doclar shu yerga yuboradigan raqamlar keltirilgan. Har birining qa
 | Srok aniqligi | Real release sanasi − rejadagi sana (ish kunida) | [D06](D06-baholash-va-srok.md), 10-qoida |
 | Baho aniqligi | Σ haqiqiy soat ÷ Σ baho; haqiqiy kunlik fokus soati | [D06](D06-baholash-va-srok.md), 10-qoida |
 | Rework ulushi | Testing'dan qaytgan tasklar ÷ Done bo'lgan tasklar | [D08](D08-kanban-dor-dod.md), 6-qoida |
-| Release'dan keyingi bug'lar | Release'dan keyin 2 hafta ichida ochilgan bug'lar soni, jiddiylik bo'yicha | [D08](D08-kanban-dor-dod.md) bug shabloni, [D16](D16-support-va-fikr-yigish.md) |
+| Release'dan keyingi bug'lar | Release'dan keyin 2 hafta ichida ochilgan [b.q.] bug'lar soni, jiddiylik bo'yicha | [D08](D08-kanban-dor-dod.md) bug shabloni, [D16](D16-support-va-fikr-yigish.md) |
 | Lead time | Tasklarning In progress → Done o'rtacha vaqti | Jira |
 | Change request'lar | Soni, jami bahosi, qaysi bosqichda kelgani | [D10](D10-ozgarishlarni-boshqarish.md), 10-qoida |
 | Review vaqti va MR hajmi | MR ochilgandan birinchi review'gacha o'rtacha vaqt; o'rtacha qatorlar soni | [D11](D11-dasturchilar-qoidalari.md) |

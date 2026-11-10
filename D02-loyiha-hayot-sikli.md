@@ -1,5 +1,7 @@
 # D02 — Loyiha hayot sikli va bosqich darvozalari
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisiga qachon o'tish mumkinligi hamma uchun bir xil bo'lsin. Shuningdek, qarorlar va risklar bitta joyda yozib borilsin, "nega unday qilgandik?" degan savolga javob doim topilsin.
@@ -37,11 +39,11 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 4. **Shartli o'tish ruxsat etiladi, yashirin o'tishga esa yo'l qo'yilmaydi.** Bajarilmagan punkt bilan o'tish mumkin, agar u risklar reestriga egasi va muddati bilan yozilsa. Bloklovchi punkt (masalan, scope tasdiqlanmagan) bilan o'tilmaydi. *Nega:* real loyihada hamma narsa bir vaqtda tayyor bo'lmaydi, lekin ochiq qolgan narsa ko'rinib turishi kerak.
 5. **Darvoza loyiha yoki release darajasida o'tkaziladi.** Katta loyihada modullar turli bosqichda bo'lishi mumkin (A modul ishlab chiqishda, B dizaynda); unda darvoza har release qismi uchun alohida o'tkaziladi. *Nega:* butun loyihani bitta dizayn tugashini kutib to'xtatish shart emas.
 6. **O'zgarish orqaga qaytaradi.** Tasdiqlangan scope o'zgarsa, o'zgargan qism [D10](D10-ozgarishlarni-boshqarish.md) orqali 2-bosqichga qaytadi va 2–4-darvozalardan qayta o'tadi. Butun loyiha emas, faqat o'zgargan qism qaytadi. *Nega:* yangi talab maket va bahosiz ishlab chiqishga tushsa, srok yashirin buziladi.
-7. **Muhim qaror 1 ish kuni ichida qarorlar jurnaliga yoziladi.** Muhim qaror — scope, srok, arxitektura, UX oqimi, integratsiya yoki mijoz bilan kelishuvga ta'sir qiladigan har qanday qaror, u meetingda, Telegram'da yoki qo'ng'iroqda qabul qilinganidan qat'i nazar. Uni qaror qabul qilingan suhbatda qatnashgan PM yoki tech lead yozadi. Arxitektura qarorining batafsil tahlili ADR'da ([D11](D11-dasturchilar-qoidalari.md)) yoziladi, jurnalga esa unga havola qo'yiladi. *Nega:* "nega unday qilgandik?" va "kim aytgandi?" degan savollarga faqat yozib qo'yilgan sabab javob beradi.
+7. **Muhim qaror 1 ish kuni [b.q.] ichida qarorlar jurnaliga yoziladi.** Muhim qaror — scope, srok, arxitektura, UX oqimi, integratsiya yoki mijoz bilan kelishuvga ta'sir qiladigan har qanday qaror, u meetingda, Telegram'da yoki qo'ng'iroqda qabul qilinganidan qat'i nazar. Uni qaror qabul qilingan suhbatda qatnashgan PM yoki tech lead yozadi. Arxitektura qarorining batafsil tahlili ADR'da ([D11](D11-dasturchilar-qoidalari.md)) yoziladi, jurnalga esa unga havola qo'yiladi. *Nega:* "nega unday qilgandik?" va "kim aytgandi?" degan savollarga faqat yozib qo'yilgan sabab javob beradi.
 8. **Risk aniqlangan kuni reestrga yoziladi** va haftalik sync'da ([D09](D09-meetinglar-ritmi.md)) ko'riladi. Har riskning egasi va chorasi bor. *Nega:* aytilmagan risk srok o'tib ketganda birdan "chiqadi".
 9. **Jurnal va reestrning uyi bitta.** Ular loyiha hujjatlari yonida ([D03](D03-loyiha-boshlangich-hujjati.md) bilan bir joyda) yuritiladi; [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md) ularga havola qiladi, nusxa olmaydi. *Nega:* ikki joydagi jurnal tez orada ikki xil bo'lib qoladi.
 
-**Kichik loyihada (3–5 kishi).** 8 bosqich va darvozalar saqlanadi, lekin darvoza 15 daqiqalik qisqa tasdiq bo'ladi; 1–2- yoki 3–4-bosqichlar bir haftada o'tishi mumkin. Jurnal va reestr majburiy.
+**Kichik loyihada (3–5 kishi).** 8 bosqich va darvozalar saqlanadi, lekin darvoza 15 daqiqalik [b.q.] qisqa tasdiq bo'ladi; 1–2- yoki 3–4-bosqichlar bir haftada o'tishi mumkin. Jurnal va reestr majburiy.
 
 ## 5. Shablonlar
 

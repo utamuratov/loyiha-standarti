@@ -57,6 +57,7 @@ function sidebar(): DefaultTheme.SidebarItem[] {
         { text: 'Root doc: standart haqida', link: '/00-root' },
         { text: 'Jarayon xaritasi', link: '/jarayon-xaritasi' },
         { text: 'Jarayon posteri (A3)', link: '/poster' },
+        { text: 'Manbalar va asoslar', link: '/manbalar' },
       ],
     },
     ...catalog,

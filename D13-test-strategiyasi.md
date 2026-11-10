@@ -1,5 +1,7 @@
 # D13 — Test strategiyasi (unit, integration, e2e)
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishlasin. Shunda release oldidan qo'lda tekshirishga bog'liqlik kamayadi, bir marta tuzatilgan xato esa qaytib kelmaydi.
@@ -54,20 +56,20 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
 
 1. **Biznes logikaga har bir taskda unit test yoziladi** ([D08](D08-kanban-dor-dod.md) DoD). Biznes logika deganda natijaga, pulga, vaqtga, ruxsatga yoki ma'lumot saqlanishiga ta'sir qiladigan kod tushuniladi. Faqat ko'rinish (layout, stil) uchun unit test shart emas. *Nega:* eng qimmat xatolar mantiqda bo'ladi, ularni esa unit test eng arzon usulda ushlaydi.
 2. **Har bir bug tuzatishi yiqiladigan testdan boshlanadi.** Tuzatishdan oldin xatoni qaytaradigan test yoziladi, keyin kod tuzatiladi va test o'tadi. Bu kichik jamoa uchun ham majburiy. *Nega:* bir marta tuzatilgan xato qaytib kelsa, bu rework va ishonchni yo'qotish demakdir.
-3. **[D03](D03-loyiha-boshlangich-hujjati.md) dagi har asosiy oqim e2e bilan qoplanadi.** Loyiha uchun eng muhim 5 ta oqim 2-darvozada test rejasida nomi bilan yoziladi. E2E'da baxtli yo'l bilan birga kamida bitta xato holati ham tekshiriladi. *Nega:* foydalanuvchi aynan oqimni ko'radi; unit testlar o'tsa ham oqim buzilgan bo'lishi mumkin.
+3. **[D03](D03-loyiha-boshlangich-hujjati.md) dagi har asosiy oqim e2e bilan qoplanadi.** Loyiha uchun eng muhim 5 ta oqim [b.q.] 2-darvozada test rejasida nomi bilan yoziladi. E2E'da baxtli yo'l bilan birga kamida bitta xato holati ham tekshiriladi. *Nega:* foydalanuvchi aynan oqimni ko'radi; unit testlar o'tsa ham oqim buzilgan bo'lishi mumkin.
 4. **API kontrakti testlanadi.** Backend integration testi endpoint javobi kontraktga ([D11](D11-dasturchilar-qoidalari.md)) mosligini tekshiradi. Frontend mock'lari ham shu kontraktdan olinadi. *Nega:* mock bilan o'tgan frontend testi faqat mock to'g'ri bo'lsagina foyda beradi.
 
 ### B. Qamrov
 
 5. **Qamrov o'lchanadi, lekin u maqsad emas.** Pipeline unit testlar qamrovini (coverage) ko'rsatadi. Boshlang'ich chegaralar:
-   - biznes logika papkalarida (servislar, util'lar) satr qamrovi ≥ 80%;
+   - biznes logika papkalarida (servislar, util'lar) satr qamrovi ≥ 80% [b.q.];
    - MR umumiy qamrovni pasaytirmaydi.
 
    Chegaralar pilotdan keyin [D17](D17-retro-va-standartni-yangilash.md) retroda qayta ko'riladi. *Nega:* raqamsiz "test yozing" tekshirilmaydi; raqamning o'zi esa ma'nosiz testlarga olib kelmasligi uchun faqat logika papkalariga qo'yiladi.
 
 ### C. CI va merge
 
-6. **Har bir MR pipeline'ida formatter, linter, tip tekshiruvi, unit va integration testlar ishlaydi.** To'liq suite 10 daqiqadan oshmasa, e2e ham MR'da ishlaydi. Oshsa:
+6. **Har bir MR pipeline'ida formatter, linter, tip tekshiruvi, unit va integration testlar ishlaydi.** To'liq suite 10 daqiqadan oshmasa [b.q.], e2e ham MR'da ishlaydi. Oshsa:
    - MR'da faqat o'zgargan modul spec'lari ishlaydi;
    - to'liq suite `dev` ga har merge'dan keyin ishlaydi;
    - `dev` → `main` release'idan oldin to'liq suite majburiy.
@@ -80,7 +82,7 @@ Testlar ish davomida, kod bilan birga yozilsin va har o'zgarishda avtomatik ishl
 8. **Selektor sifatida maxsus test atributi ishlatiladi** (`data-cy` yoki `data-testid`), matn yoki CSS klass emas. *Nega:* tarjima yoki dizayn o'zgarganda, xato bo'lmasa, test bekordan yiqilmaydi.
 9. **Test ma'lumotlari soxta bo'ladi va kodda turadi.** Factory'lar orqali yaratiladi; real login, parol, JShShIR yoki yuz tasviri ishlatilmaydi. *Nega:* shaxsiy ma'lumot repoga tushmaydi ([D11](D11-dasturchilar-qoidalari.md)); testlar har kimda bir xil ishlaydi.
 10. **E2E'da mock qat'iy (strict) rejimda ishlaydi.** Mock qilinmagan so'rov testni yiqitadi. *Nega:* test haqiqiy backend'ga jimgina borib, uning holatiga bog'lanib qolmaydi.
-11. **Flaky test darhol hal qilinadi.** Bir kun ichida tuzatiladi yoki karantinga olinadi: test o'tkazib yuboriladi (`skip`), kodda sababi yoziladi, Jira'da egasi va muddati bilan task ochiladi. Karantindagi testlar soni haftalik sync'da ko'riladi. Yangi test 3 marta ketma-ket yuritib tekshiriladi. *Nega:* "goh yiqiladi, qayta yuritamiz" odati odamlarni qizil natijaga e'tibor bermaslikka o'rgatadi.
+11. **Flaky test darhol hal qilinadi.** Bir kun ichida tuzatiladi [b.q.] yoki karantinga olinadi: test o'tkazib yuboriladi (`skip`), kodda sababi yoziladi, Jira'da egasi va muddati bilan task ochiladi. Karantindagi testlar soni haftalik sync'da ko'riladi. Yangi test 3 marta ketma-ket [b.q.] yuritib tekshiriladi. *Nega:* "goh yiqiladi, qayta yuritamiz" odati odamlarni qizil natijaga e'tibor bermaslikka o'rgatadi.
 12. **Testlar "bo'sh o'tmasligi" tekshiriladi.** Yangi test yozilgach, tekshirilayotgan kod vaqtincha buziladi va test yiqilishi kerak. *Nega:* hech narsani tekshirmaydigan test yashil bo'ladi va noto'g'ri ishonch beradi.
 
 ### E. Qo'lda test, regressiya va bug'lar

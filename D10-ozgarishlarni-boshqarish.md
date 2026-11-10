@@ -1,5 +1,7 @@
 # D10 — O'zgarishlarni boshqarish (change request)
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Tasdiqlangan scope'ga kelgan har yangi talab yoki o'zgarish srok va baho bilan birga ko'rilsin va yozma qaror bilan qabul qilinsin, toki "yo'l-yo'lakay qo'shib qo'ying" degan so'rov srokni yashirin buzmasin. Shu bilan birga kichik aniqlashtirishlar og'ir jarayonga tushmasin: o'zgarish hajmiga qarab yo'l ham yengil yoki to'liq bo'ladi.
@@ -27,13 +29,13 @@ Tasdiqlangan scope'ga kelgan har yangi talab yoki o'zgarish srok va baho bilan b
 
 ## 3. Qoidalar
 
-1. **Har bir so'rov 1 ish kuni ichida Backlog'ga yoziladi, javobni esa PM beradi.** So'rovni qabul qilgan odam uni `change-request` labeli bilan Backlog'ga yozadi va so'rovchiga "yozib oldim, PM ta'siri bilan qaytadi" deydi. Jamoa a'zosi mijozga "ha, qilamiz" demaydi. *Nega:* bitta "ha" baholanmagan va rejada yo'q ishni keltirib chiqaradi; uni keyin rad etish ancha qiyin.
+1. **Har bir so'rov 1 ish kuni [b.q.] ichida Backlog'ga yoziladi, javobni esa PM beradi.** So'rovni qabul qilgan odam uni `change-request` labeli bilan Backlog'ga yozadi va so'rovchiga "yozib oldim, PM ta'siri bilan qaytadi" deydi. Jamoa a'zosi mijozga "ha, qilamiz" demaydi. *Nega:* bitta "ha" baholanmagan va rejada yo'q ishni keltirib chiqaradi; uni keyin rad etish ancha qiyin.
 2. **Avval so'rovning turi aniqlanadi.** PM va analitik so'rovni uch turdan biriga ajratadi (4-bo'lim): aniqlashtirish, kichik CR yoki katta CR. So'rov bug bo'lsa, u [D08](D08-kanban-dor-dod.md) bo'yicha bug sifatida ochiladi. *Nega:* har bir aniqlashtirishni to'liq CR qilish byurokratiya bo'ladi; har bir katta o'zgarishni "aniqlashtirish" deb o'tkazish esa yashirin scope'ga aylanadi.
-3. **Bahosiz qaror qabul qilinmaydi.** Kichik va katta CR'ning bahosini bajaruvchilar beradi ([D06](D06-baholash-va-srok.md), 2-qoida); ta'sir tahlili 1–2 ish kuni ichida PO'ga yetkaziladi. *Nega:* "qancha turadi?" deb so'ramasdan qabul qilingan o'zgarish srokdan yashirincha olinadi.
+3. **Bahosiz qaror qabul qilinmaydi.** Kichik va katta CR'ning bahosini bajaruvchilar beradi ([D06](D06-baholash-va-srok.md), 2-qoida); ta'sir tahlili 1–2 ish kuni [b.q.] ichida PO'ga yetkaziladi. *Nega:* "qancha turadi?" deb so'ramasdan qabul qilingan o'zgarish srokdan yashirincha olinadi.
 4. **Katta CR variantlar bilan beriladi, ulardan birini PO tanlaydi.** PM kamida ikki variant beradi: (a) qo'shish va sanani surish; (b) qo'shish va boshqa story'ni keyingi release'ga chiqarish; (c) CR'ni keyingi release'ga qoldirish. Test va review'ni qisqartirish variant emas ([D06](D06-baholash-va-srok.md), 9-qoida). *Nega:* mijoz o'zgarishning narxini ko'rgandagina uning qanchalik muhimligini aniq ayta oladi.
 5. **Qabul qilingan CR hujjatlarda aks etadi, keyin ishga olinadi.** Tartib quyidagicha: qaror qarorlar jurnaliga yoziladi ([D02](D02-loyiha-hayot-sikli.md)); TZ'ning yangi versiyasi chiqariladi va versiyalar tarixiga CR raqami bilan yoziladi ([D03](D03-loyiha-boshlangich-hujjati.md)); maket o'zgarsa, yangi Handoff versiyasi saqlanadi ([D04](D04-dizayn-brief-va-jarayon.md)); tasklar va reja yangilanadi; srok o'zgarsa, mijozga yangilangan srok xati yuboriladi ([D06](D06-baholash-va-srok.md)). Shundan keyingina task Ready'ga o'tadi ([D08](D08-kanban-dor-dod.md)). *Nega:* TZ'da yo'q o'zgarishni QA tekshira olmaydi, keyingi dasturchi esa "nega bunday?" deb so'raydi.
 6. **Katta CR darvozalardan qayta o'tadi.** O'zgargan qism 2–4-darvozalardan o'tadi: TZ'ning shu qismi review qilinadi (o'zgarish katta bo'lsa, qisqa doc review o'tkaziladi, [D05](D05-kickoff-va-doc-review.md)), maket chiziladi va ish baholanadi ([D02](D02-loyiha-hayot-sikli.md), 6-qoida). Butun loyiha emas, faqat o'zgargan qism qaytadi. *Nega:* maket va bahosiz ishlab chiqishga tushgan talab rework'ga olib boradigan eng tez yo'l.
-7. **Release scope'i yopilgandan keyin CR faqat keyingi release'ga kiradi.** Release'ning oxirgi haftasida (yoki 5-darvozadan 5 ish kuni oldin) yangi CR shu release'ga kirmaydi; kritik istisnoni PO va tech lead birga, yozma qaror bilan qiladi. *Nega:* oxirgi kunlardagi o'zgarish regressiya va testga vaqt qoldirmaydi va prod'dagi bug'ga aylanadi.
+7. **Release scope'i yopilgandan keyin CR faqat keyingi release'ga kiradi.** Release'ning oxirgi haftasida (yoki 5-darvozadan 5 ish kuni [b.q.] oldin) yangi CR shu release'ga kirmaydi; kritik istisnoni PO va tech lead birga, yozma qaror bilan qiladi. *Nega:* oxirgi kunlardagi o'zgarish regressiya va testga vaqt qoldirmaydi va prod'dagi bug'ga aylanadi.
 8. **Rad etilgan CR ham yoziladi.** U qarorlar jurnaliga sababi bilan yoziladi: "R2 ga qoldirildi", "rad etildi — maqsadga ta'sir qilmaydi". *Nega:* bir oydan keyin xuddi shu so'rov qaytadi; yozilgan sabab bahsni bir daqiqada yopadi.
 9. **Narx va shartnomaga ta'sir alohida hal qilinadi.** CR shartnoma narxi yoki muddatiga ta'sir qilsa, PM ta'sir tahlilini kompaniyaning tijorat tartibi bo'yicha mas'ul odamga beradi; bu doc faqat ta'sirni hisoblaydi va qarorni yozadi. *Nega:* jamoa ichida "bepul qilib beramiz" deb qabul qilingan o'zgarish kompaniya hisobidan bajariladi.
 10. **CR'lar soni va hajmi retroda ko'riladi.** PM har release oxirida CR'lar sonini, jami bahosini va qaysi bosqichda kelganini hisoblaydi ([D17](D17-retro-va-standartni-yangilash.md)). *Nega:* CR'lar ko'p bo'lsa, bu TZ yoki doc review'da biror narsa o'tkazib yuborilganining belgisi; raqam qayerni tuzatish kerakligini ko'rsatadi.
@@ -43,10 +45,10 @@ Tasdiqlangan scope'ga kelgan har yangi talab yoki o'zgarish srok va baho bilan b
 | Tur | Belgisi | Kim tasdiqlaydi | Yo'li |
 | --- | --- | --- | --- |
 | **Aniqlashtirish** | Ish hajmi o'zgarmaydi; qabul mezonining ma'nosi saqlanadi | Analitik | TZ'ga yoziladi va versiyalar tarixida "aniqlashtirish" deb belgilanadi; jamoa kanaliga xabar beriladi |
-| **Kichik CR** | Jami baho 1 ish kunidan oshmaydi; release buferiga sig'adi ([D06](D06-baholash-va-srok.md), 5-qoida); maket handoff'i, API kontrakti va srok o'zgarmaydi | PO yozma "ha" bilan (xabar yetarli) | Qisqa CR (5.1 ning 1–4-qatorlari), TZ versiyasi, jurnal; bufer hisobidan bajariladi |
+| **Kichik CR** | Jami baho 1 ish kunidan oshmaydi [b.q.]; release buferiga sig'adi ([D06](D06-baholash-va-srok.md), 5-qoida); maket handoff'i, API kontrakti va srok o'zgarmaydi | PO yozma "ha" bilan (xabar yetarli) | Qisqa CR (5.1 ning 1–4-qatorlari), TZ versiyasi, jurnal; bufer hisobidan bajariladi |
 | **Katta CR** | Yuqoridagi shartlardan biri bajarilmaydi | PO variantlardan birini tanlab | To'liq CR (5.1), ta'sir tahlili, variantlar, darvozalardan qayta o'tish (6-qoida) |
 
-Buferning yarmidan ko'pi kichik CR'larga sarflansa, keyingi har bir CR katta deb hisoblanadi va PO'ga variantlar bilan beriladi. *Nega:* kichik o'zgarishlar alohida olganda arzon, birga esa srokni yeb qo'yadi.
+Buferning yarmidan [b.q.] ko'pi kichik CR'larga sarflansa, keyingi har bir CR katta deb hisoblanadi va PO'ga variantlar bilan beriladi. *Nega:* kichik o'zgarishlar alohida olganda arzon, birga esa srokni yeb qo'yadi.
 
 **Kichik loyihada (3–5 kishi).** Shu uch tur va 1-, 3-, 5-qoidalar majburiy. Katta CR uchun to'liq doc review shart emas: analitik va dasturchining yozma ko'rigi yetarli.
 

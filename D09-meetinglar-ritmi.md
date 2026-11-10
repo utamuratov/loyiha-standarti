@@ -1,5 +1,7 @@
 # D09 — Meetinglar ritmi
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Meetinglar kam, qisqa va natijali bo'lsin: har birining aniq maqsadi, vaqti va yozma natijasi bo'ladi, yozma hal bo'ladigan narsa esa meetingga chiqmaydi. Bu doc har qanday meetingning umumiy qoidalari va ishlab chiqish davridagi doimiy ritm (daily, haftalik sync, demo, retro) uchun yagona joy. U "muhokamalar cho'zilib ketadi" va "aytilgan narsalar esdan chiqadi" og'riqlariga javob beradi.
@@ -30,7 +32,7 @@ Loyiha boshidagi kickoff va doc review [D05](D05-kickoff-va-doc-review.md) da, r
 3. **Faqat kerakli odamlar qatnashadi.** Masala bo'yicha qaror qiluvchi (A) va bajaruvchilar (R) qatnashadi ([D01](D01-rollar-va-raci.md)); maslahatchilar (C) fikrini oldindan yozma berishi mumkin; xabardor bo'lishi kerak bo'lganlar (I) faqat protokolni oladi. *Nega:* har bir ortiqcha qatnashchi jamoaning bir soatlik ishini oladi va muhokamaga yana bir fikr qo'shadi.
 4. **Timebox.** Meeting vaqtida boshlanadi va vaqtida tugaydi. Vaqt tugasa, qolgan masala egasi va muddati bilan keyingi qadamga yoziladi, meeting cho'zilmaydi. *Nega:* chegarasiz meeting eng muhim masalani oxiriga, hamma charchagan paytga qoldiradi.
 5. **Har masala natija bilan chiqadi.** Natija uch xil bo'ladi: **qaror** qarorlar jurnaliga yoziladi ([D02](D02-loyiha-hayot-sikli.md)); **vazifa** Jira'ga egasi va muddati bilan yoziladi; **ochiq savol** egasi va muddati bilan yoziladi (TZ'ga tegishli bo'lsa, [D03](D03-loyiha-boshlangich-hujjati.md) dagi ro'yxatga). Kelishilmagan masalani [D01](D01-rollar-va-raci.md) dagi A belgilangan muddatda hal qiladi. "Keyin gaplashamiz" natija hisoblanmaydi. *Nega:* egasiz kelishuv bir haftada unutiladi.
-6. **Protokol 1 ish kuni ichida yoziladi.** Meetingni chaqirgan odam (doimiy meetinglarda PM) protokolni (5.4) loyiha hujjatlari joyiga qo'yadi va jamoa kanaliga havolasini tashlaydi. Qarorlar jurnalga, vazifalar Jira'ga yoziladi; protokolda ularning nusxasi emas, havolasi turadi. Daily uchun protokol yozilmaydi, uning natijasi boardda ko'rinadi. *Nega:* protokolsiz meetingdan keyin har kim faqat o'z xotirasiga tayanadi; protokol esa "kim aytgandi?" degan savolga javob beradi.
+6. **Protokol 1 ish kuni [b.q.] ichida yoziladi.** Meetingni chaqirgan odam (doimiy meetinglarda PM) protokolni (5.4) loyiha hujjatlari joyiga qo'yadi va jamoa kanaliga havolasini tashlaydi. Qarorlar jurnalga, vazifalar Jira'ga yoziladi; protokolda ularning nusxasi emas, havolasi turadi. Daily uchun protokol yozilmaydi, uning natijasi boardda ko'rinadi. *Nega:* protokolsiz meetingdan keyin har kim faqat o'z xotirasiga tayanadi; protokol esa "kim aytgandi?" degan savolga javob beradi.
 7. **Ritm doimiy va kalendarga qo'yilgan bo'ladi.** Doimiy meetinglar har hafta bir xil vaqtda o'tadi va loyiha boshida kalendarga qo'yiladi. Meeting bekor qilinsa, bu kamida yarim kun oldin, sababi bilan aytiladi. *Nega:* doimiy vaqt odamlarga fokus ishini rejalashtirishga imkon beradi; "har safar kelishib" o'tkaziladigan meeting esa yo kechikadi, yo butunlay yo'qoladi.
 8. **Ritm retroda qayta ko'riladi.** Foyda bermayotgan meeting qisqartiriladi yoki olib tashlanadi; yangisi faqat aniq muammo uchun qo'shiladi. *Nega:* meetinglar o'z-o'zidan ko'payadi, hech qachon o'z-o'zidan kamaymaydi.
 
@@ -39,8 +41,8 @@ Loyiha boshidagi kickoff va doc review [D05](D05-kickoff-va-doc-review.md) da, r
 | Meeting | Qachon | Vaqt | Kim | Natija |
 | --- | --- | --- | --- | --- |
 | Daily | Har ish kuni, bir xil vaqtda | 15 daq yoki yozma | Ishlab chiqishdagi jamoa; PM yuritadi | Bloklar boardda belgilangan ([D08](D08-kanban-dor-dod.md)), egasi bilan |
-| Haftalik sync | Haftada 1 marta | 30–45 daq | PM, tech lead, analitik, dizayner, dasturchilar, QA | Protokol; mijozga haftalik holat xati |
-| Demo | Har release oxirida; uzoq release'da har 2 haftada | 30–45 daq | PO, PM, analitik, jamoa | Mijoz fikrlari Backlog'da; scope o'zgarsa, [D10](D10-ozgarishlarni-boshqarish.md) bo'yicha |
+| Haftalik sync | Haftada 1 marta | 30–45 daq [b.q.] | PM, tech lead, analitik, dizayner, dasturchilar, QA | Protokol; mijozga haftalik holat xati |
+| Demo | Har release oxirida; uzoq release'da har 2 haftada [b.q.] | 30–45 daq | PO, PM, analitik, jamoa | Mijoz fikrlari Backlog'da; scope o'zgarsa, [D10](D10-ozgarishlarni-boshqarish.md) bo'yicha |
 | Retro | [D17](D17-retro-va-standartni-yangilash.md) bo'yicha | [D17](D17-retro-va-standartni-yangilash.md) bo'yicha | Jamoa | [D17](D17-retro-va-standartni-yangilash.md) bo'yicha |
 
 ### 4.1. Daily

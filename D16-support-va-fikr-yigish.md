@@ -1,5 +1,7 @@
 # D16 — Support va fikr yig'ish
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Tizim ishga tushgandan keyin foydalanuvchi murojaati yo'qolmasin, kritik muammo tez hal bo'lsin, foydalanuvchilarning fikri esa keyingi rejaga kirsin. Har bir murojaatning egasi, holati va javob muddati ko'rinib tursin; bir xil savollar qo'llanma va interfeysni tuzatishga, takliflar esa Backlog'dagi ishga aylansin.
@@ -39,9 +41,9 @@ Bug shabloni va jiddiylik darajalari [D08](D08-kanban-dor-dod.md) da, hotfix va 
 4. **Bug boardga chat orqali emas, shablon bilan yoziladi.** Support bug'ni [D08](D08-kanban-dor-dod.md) dagi bug shabloni bo'yicha yozadi: qadamlar, muhit, mijoz build'i va dalil. Bug dasturchi bilan alohida chat orqali hal qilinmaydi. Kritik bug haqida navbatchiga darhol xabar beriladi va boardda belgi qo'yiladi. *Nega:* chatdagi bug sanalmaydi, takrorlanmaydi va regressiya testisiz yopiladi ([D13](D13-test-strategiyasi.md), 2-qoida).
 5. **Kritik holatda avval ish tiklanadi, keyin xato tuzatiladi.** Kritik bug yoki alertda birinchi maqsad foydalanuvchi ishini tiklash: aylanib o'tish yo'li yoki rollback. Tuzatish keyin hotfix bilan, review va testlarni qisqartirmasdan qilinadi ([D14](D14-release-va-deploy.md), 14-qoida). Kritik hodisadan keyin qisqa tahlil yoziladi: nima bo'ldi, nega oldindan ushlanmadi va nima o'zgaradi. *Nega:* shoshilinch "prod'da tuzatish" ikkinchi hodisani keltirib chiqaradi; tahlilsiz hodisa takrorlanadi.
 6. **Monitoring alerti ham murojaat hisoblanadi.** [D14](D14-release-va-deploy.md) dagi har bir alert shu tartibda egasi, jiddiyligi va javob vaqti bilan qayd etiladi. *Nega:* monitoring muammoni foydalanuvchidan oldin ko'rsa ham, unga javob berilmasa, bundan foyda yo'q.
-7. **Murojaat yopilganda foydalanuvchiga xabar beriladi va saboq olinadi.** Murojaat yopilganda foydalanuvchiga natija aytiladi. Savol 3 marta takrorlansa, u FAQ'ga yoziladi ([D15](D15-qollanma-va-oqitish.md), 7-qoida); sababi interfeysda bo'lsa, story yoki bug ochiladi. *Nega:* yopilgan, lekin foydalanuvchiga aytilmagan murojaat qayta murojaatga aylanadi; o'rganilmagan savol esa keyingi oy yana o'nta savol olib keladi.
+7. **Murojaat yopilganda foydalanuvchiga xabar beriladi va saboq olinadi.** Murojaat yopilganda foydalanuvchiga natija aytiladi. Savol 3 marta takrorlansa [b.q.], u FAQ'ga yoziladi ([D15](D15-qollanma-va-oqitish.md), 7-qoida); sababi interfeysda bo'lsa, story yoki bug ochiladi. *Nega:* yopilgan, lekin foydalanuvchiga aytilmagan murojaat qayta murojaatga aylanadi; o'rganilmagan savol esa keyingi oy yana o'nta savol olib keladi.
 8. **Navbatchilik jadvali yuritiladi.** Kritik va yuqori murojaatlar uchun har haftaga navbatchi dasturchi va uning zaxirasi belgilanadi (4.3). Muhim tadbir (masalan, imtihon kuni) uchun alohida jonli navbatchilik va to'g'ridan-to'g'ri aloqa kanali tashkil qilinadi, tadbir oldidan esa freeze e'lon qilinadi ([D14](D14-release-va-deploy.md)). *Nega:* "kim ko'radi?" degan savol kritik paytda eng ko'p vaqt yeydi.
-9. **Takliflar oyda bir marta tahlil qilinadi.** PM va support takliflarni guruhlaydi: nechta foydalanuvchi so'ragan, qaysi rol, qaysi vazifa. Muhimlari PO bilan ko'riladi va change request bo'ladi ([D10](D10-ozgarishlarni-boshqarish.md)); rad etilganlari sababi bilan yoziladi. *Nega:* tahlilsiz takliflar ro'yxati o'sib boradi va hech qachon ochilmaydi; foydalanuvchi esa "bizni eshitishmaydi" deb o'ylaydi.
+9. **Takliflar oyda bir marta [b.q.] tahlil qilinadi.** PM va support takliflarni guruhlaydi: nechta foydalanuvchi so'ragan, qaysi rol, qaysi vazifa. Muhimlari PO bilan ko'riladi va change request bo'ladi ([D10](D10-ozgarishlarni-boshqarish.md)); rad etilganlari sababi bilan yoziladi. *Nega:* tahlilsiz takliflar ro'yxati o'sib boradi va hech qachon ochilmaydi; foydalanuvchi esa "bizni eshitishmaydi" deb o'ylaydi.
 10. **Mijozga oylik hisobot yuboriladi** (4.4): unda murojaatlar soni toifa va jiddiylik bo'yicha, javob vaqtlari qanchalik bajarilgani, eng ko'p berilgan savollar, nima tuzatilgani va nima rejada ekani ko'rsatiladi. *Nega:* mijoz support ishini faqat yomon kunda ko'radi; raqamli hisobot esa umumiy holatni ko'rsatadi va keyingi ustuvorliklarni kelishishga asos bo'ladi.
 11. **Murojaatda shaxsiy ma'lumot minimal bo'ladi.** Foydalanuvchidan JShShIR, parol yoki surat ochiq kanalda so'ralmaydi; kerak bo'lsa, faqat murojaatni aniqlash uchun minimal ma'lumot so'raladi. Murojaat yozuvida shaxsiy ma'lumot saqlanmaydi ([D14](D14-release-va-deploy.md) dagi himoya qoidalari). *Nega:* support kanalini ko'p odam ko'radi, shuning uchun u yerdagi shaxsiy ma'lumot sizib chiqish hisoblanadi.
 
@@ -62,7 +64,7 @@ Foydalanuvchiga xabar: <ha, sana>   FAQ'ga: ha / yo'q
 
 ### 4.2. Javob vaqtlari (loyiha uchun kelishiladi)
 
-Quyidagilar boshlang'ich qiymatlar: ular loyiha boshida mijoz bilan kelishib o'zgartiriladi.
+Quyidagilar boshlang'ich qiymatlar [b.q.]: ular loyiha boshida mijoz bilan kelishib o'zgartiriladi.
 
 ```
 | Toifa / jiddiylik | Birinchi javob   | Hal qilish maqsadi                         |

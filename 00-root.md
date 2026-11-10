@@ -64,6 +64,8 @@ Standart qanday qo'llanishini ko'rsatish uchun bitta real loyiha olingan: **Test
 
 Yozish navbati (TODO), fazalar va yozish jarayonidagi kelishuvlar [Ish rejasi](ish-rejasi.md) da, doc yozish tartibi, tuzilmasi va qoidalari esa [AGENTS.md](AGENTS.md) da yozilgan. Doclarni menyu, qidiruv va sxemalari bor hujjat sayti sifatida ham o'qish mumkin; saytni ishga tushirish tartibi [AGENTS.md](AGENTS.md) ning "Hujjat sayti" bo'limida.
 
+**Standart nimaga tayanadi.** Bosqichlar, darvozalar, RACI, kanban, baholash, test va release qoidalari sanoatda keng qo'llanadigan amaliyotlarga asoslangan; ularning manbalari — [Manbalar va asoslar](manbalar.md) sahifasida. Doclardagi `[b.q.]` belgisi qo'yilgan raqamlar esa boshlang'ich qiymat: ular manbadan olinmagan va pilotda tekshiriladi.
+
 ## Hayot sikli
 
 Hayot siklining sxemasi [Jarayon xaritasi](jarayon-xaritasi.md) da: unda bosqichlar va darvozalar, kim kimga nima topshirishi va bitta taskning yo'li ko'rsatilgan.

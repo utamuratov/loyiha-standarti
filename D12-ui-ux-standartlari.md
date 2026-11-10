@@ -1,5 +1,7 @@
 # D12 — UI/UX standartlari va design system
 
+*`[b.q.]` — boshlang'ich qiymat: bu raqam manbadan olinmagan, standart yozilganda taklif sifatida qo'yilgan; pilotda tekshiriladi va retroda ([D17](D17-retro-va-standartni-yangilash.md)) tuzatiladi. Barcha bunday qiymatlar va manbalar — [Manbalar](manbalar.md).*
+
 ## 1. Maqsad
 
 Kompaniyaning barcha loyihalarida interfeys bir xil, tushunarli va qulay bo'lsin: foydalanuvchi bir ekranni o'rgansa, keyingisini taxmin qila olsin. Dizayner va frontend esa bitta komponent ro'yxati va bitta rang/shrift to'plamidan foydalansin, toki "maketda bunday, kodda boshqacha" degan holat bo'lmasin.
@@ -37,7 +39,7 @@ Dizayn jarayonining o'zi (brief, wireframe, review, handoff) [D04](D04-dizayn-br
 3. **Xato xabari aniq va yordam beradi.** U nima bo'lganini va endi nima qilish kerakligini aytadi: "Xatolik yuz berdi" emas, "JShShIR 14 ta raqamdan iborat bo'lishi kerak".
 4. **Xatoning oldi olinadi.** Interfeys noto'g'ri harakatga iloji boricha yo'l qo'ymaydi: shart bajarilmaguncha tugma o'chiq turadi, maydonda format cheklovi bo'ladi, xavfli amaldan oldin tasdiq so'raladi.
 5. **Qaytarib bo'lmaydigan amal tasdiq bilan bajariladi.** O'chirish, yakunlash, yuborish oldidan oqibati yoziladi ("Testni yakunlasangiz, javoblarni o'zgartirib bo'lmaydi").
-6. **Qaytarish imkoni beriladi.** Iloji bo'lsa, tasdiq o'rniga "bekor qilish" beriladi (masalan, o'chirilgandan keyin 5 soniya "Qaytarish").
+6. **Qaytarish imkoni beriladi.** Iloji bo'lsa, tasdiq o'rniga "bekor qilish" beriladi (masalan, o'chirilgandan keyin 5 soniya [b.q.] "Qaytarish").
 7. **Eslab qolish emas, ko'rib tanish.** Variantlar ro'yxatdan tanlanadi, kerakli ma'lumot ekranda ko'rinadi.
 8. **Ortiqcha narsa yo'q.** Har ekranda bitta asosiy amal bo'ladi; ikkinchi darajali amallar kamroq ko'zga tashlanadi.
 
@@ -58,7 +60,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil ma'lumot 10-bo
 
 | Holat | Qanday ko'rsatiladi |
 | --- | --- |
-| Yuklanmoqda | Kontent shaklidagi skeleton; 300 ms dan qisqa yuklanishda hech narsa ko'rsatilmaydi |
+| Yuklanmoqda | Kontent shaklidagi skeleton; 300 ms dan qisqa yuklanishda hech narsa ko'rsatilmaydi [b.q.] |
 | Bo'sh | Nega bo'shligi va keyingi qadam ("Hali test yo'q. Test qo'shish") |
 | Xato | Nima bo'ldi va "Qayta urinish" tugmasi |
 | Ruxsat yo'q | Nega ruxsat yo'qligi va kimga murojaat qilish |
@@ -86,7 +88,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil ma'lumot 10-bo
 
 | Imkoniyat | Standart |
 | --- | --- |
-| Qidiruv | Jadval ustida chapda; yozish to'xtagach 300–500 ms dan keyin qidiradi; "Tozalash" tugmasi |
+| Qidiruv | Jadval ustida chapda; yozish to'xtagach 300–500 ms dan keyin qidiradi [b.q.]; "Tozalash" tugmasi |
 | Filtr | Qidiruv yonida; qo'llangan filtrlar soni tugmada ko'rinadi; "Filtrlarni tozalash" |
 | Saralash | Ustun sarlavhasini bosish; joriy saralash belgisi ko'rinadi |
 | Pagination | Jadval ostida: sahifadagi qatorlar soni (10/20/50), jami yozuvlar soni. Filtr, saralash va sahifa URL'da saqlanadi: havola ulashilsa, xuddi shu ko'rinish ochiladi |
@@ -104,7 +106,7 @@ Manba: Nielsen'ning 10 ta foydalanuvchanlik evristikasi; batafsil ma'lumot 10-bo
 
 | Holat | Komponent |
 | --- | --- |
-| Amal natijasi (saqlandi, yuborildi) | Toast: 3–5 soniya, o'ng yuqorida |
+| Amal natijasi (saqlandi, yuborildi) | Toast: 3–5 soniya [b.q.], o'ng yuqorida |
 | Backend yoki tarmoq xatosi | Qizil toast: o'zi yo'qolmaydi yoki uzunroq turadi; matni aniq bo'ladi |
 | Maydon xatosi | Maydon ostida matn, toast emas |
 | Xavfli amalni tasdiqlash | Tasdiq dialogi: sarlavhada savol, matnda oqibati yoziladi; tugmalarda "Ha/Yo'q" emas, amal nomi turadi ("Yakunlash", "Bekor qilish") |
