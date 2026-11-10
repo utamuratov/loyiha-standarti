@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1188" width="1680" height="1188" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+  <!-- Loyiha standarti — jarayon posteri (A3, gorizontal). Matnni tahrirlash: shu faylda.
+       Manba: 00-root.md (hayot sikli, tamoyillar), D02 (darvozalar), jarayon-xaritasi.md. -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#276BAF"/>
+    </marker>
+    <style>
+      .card { fill: #FFFFFF; stroke: #C9D8EA; stroke-width: 2; }
+      .num { fill: #276BAF; }
+      .numt { fill: #FFFFFF; font-size: 24px; font-weight: 700; text-anchor: middle; }
+      .stage { fill: #14304F; font-size: 26px; font-weight: 700; }
+      .out { fill: #33475B; font-size: 18px; }
+      .chip { fill: #E8F0FA; }
+      .chipt { fill: #1F5A94; font-size: 16px; font-weight: 600; text-anchor: middle; }
+      .gate { fill: #FFFFFF; stroke: #2E8B57; stroke-width: 3; }
+      .gatet { fill: #2E8B57; font-size: 16px; font-weight: 700; text-anchor: middle; }
+      .who { fill: #2E8B57; font-size: 14px; font-weight: 600; text-anchor: middle; }
+      .flow { stroke: #276BAF; stroke-width: 3; fill: none; }
+      .h2 { fill: #14304F; font-size: 24px; font-weight: 700; }
+      .rule { fill: #22313F; font-size: 19px; }
+      .rulen { fill: #276BAF; font-size: 19px; font-weight: 700; }
+      .role { fill: #22313F; font-size: 18px; }
+      .roleb { fill: #14304F; font-size: 18px; font-weight: 700; }
+      .note { fill: #5A6B7B; font-size: 16px; }
+    </style>
+  </defs>
+
+  <rect width="1680" height="1188" fill="#F6F9FC"/>
+
+  <!-- Sarlavha -->
+  <rect width="1680" height="120" fill="#276BAF"/>
+  <text x="60" y="62" fill="#FFFFFF" font-size="40" font-weight="800">Loyiha standarti</text>
+  <text x="60" y="98" fill="#DCE8F5" font-size="21">Loyihani boshidan to'g'ri qurish: 8 bosqich, 7 darvoza, 17 doc</text>
+  <text x="1620" y="62" fill="#FFFFFF" font-size="18" text-anchor="end" font-weight="600">Bosqichdan keyingisiga faqat darvoza orqali o'tiladi</text>
+  <text x="1620" y="92" fill="#DCE8F5" font-size="16" text-anchor="end">✓ — darvoza; ostida — kim tasdiqlaydi (D02)</text>
+
+  <!-- Oqim chiziqlari: 1-qator -->
+  <line class="flow" x1="390" y1="300" x2="468" y2="300" marker-end="url(#arrow)"/>
+  <line class="flow" x1="800" y1="300" x2="878" y2="300" marker-end="url(#arrow)"/>
+  <line class="flow" x1="1210" y1="300" x2="1288" y2="300" marker-end="url(#arrow)"/>
+  <!-- 4 → 5 (qatordan qatorga) -->
+  <path class="flow" d="M1455,420 L1455,470 L225,470 L225,508" marker-end="url(#arrow)"/>
+  <!-- Oqim chiziqlari: 2-qator -->
+  <line class="flow" x1="390" y1="630" x2="468" y2="630" marker-end="url(#arrow)"/>
+  <line class="flow" x1="800" y1="630" x2="878" y2="630" marker-end="url(#arrow)"/>
+  <line class="flow" x1="1210" y1="630" x2="1288" y2="630" marker-end="url(#arrow)"/>
+
+  <!-- 1-qator: bosqichlar 1–4 -->
+  <g>
+    <rect class="card" x="60" y="180" width="330" height="240" rx="16"/>
+    <circle class="num" cx="98" cy="220" r="22"/><text class="numt" x="98" y="228">1</text>
+    <text class="stage" x="132" y="229">Boshlash</text>
+    <text class="out" x="80" y="275">G'oya, mijoz, biznes maqsad</text>
+    <text class="out" x="80" y="302">Brief, rollar, kickoff</text>
+    <text class="out" x="80" y="329">Qarorlar jurnali ochiladi</text>
+    <rect class="chip" x="80" y="365" width="58" height="30" rx="8"/><text class="chipt" x="109" y="386">D01</text>
+    <rect class="chip" x="146" y="365" width="58" height="30" rx="8"/><text class="chipt" x="175" y="386">D02</text>
+    <rect class="chip" x="212" y="365" width="58" height="30" rx="8"/><text class="chipt" x="241" y="386">D03</text>
+    <rect class="chip" x="278" y="365" width="58" height="30" rx="8"/><text class="chipt" x="307" y="386">D05</text>
+  </g>
+  <g>
+    <rect class="card" x="470" y="180" width="330" height="240" rx="16"/>
+    <circle class="num" cx="508" cy="220" r="22"/><text class="numt" x="508" y="228">2</text>
+    <text class="stage" x="542" y="229">Talablar</text>
+    <text class="out" x="490" y="275">TZ: story va qabul mezonlari</text>
+    <text class="out" x="490" y="302">API kontrakti, NFT</text>
+    <text class="out" x="490" y="329">Doc review: savollar yopiladi</text>
+    <rect class="chip" x="490" y="365" width="58" height="30" rx="8"/><text class="chipt" x="519" y="386">D03</text>
+    <rect class="chip" x="556" y="365" width="58" height="30" rx="8"/><text class="chipt" x="585" y="386">D05</text>
+  </g>
+  <g>
+    <rect class="card" x="880" y="180" width="330" height="240" rx="16"/>
+    <circle class="num" cx="918" cy="220" r="22"/><text class="numt" x="918" y="228">3</text>
+    <text class="stage" x="952" y="229">Dizayn</text>
+    <text class="out" x="900" y="275">Brief → wireframe → UI</text>
+    <text class="out" x="900" y="302">Har ekran — barcha holatlari</text>
+    <text class="out" x="900" y="329">Handoff: dasturchi qabul qiladi</text>
+    <rect class="chip" x="900" y="365" width="58" height="30" rx="8"/><text class="chipt" x="929" y="386">D04</text>
+    <rect class="chip" x="966" y="365" width="58" height="30" rx="8"/><text class="chipt" x="995" y="386">D12</text>
+  </g>
+  <g>
+    <rect class="card" x="1290" y="180" width="330" height="240" rx="16"/>
+    <circle class="num" cx="1328" cy="220" r="22"/><text class="numt" x="1328" y="228">4</text>
+    <text class="stage" x="1362" y="229">Planlash</text>
+    <text class="out" x="1310" y="275">1–3 kunlik tasklar</text>
+    <text class="out" x="1310" y="302">Bahoni bajaruvchi beradi</text>
+    <text class="out" x="1310" y="329">Release rejasi, yozma srok</text>
+    <rect class="chip" x="1310" y="365" width="58" height="30" rx="8"/><text class="chipt" x="1339" y="386">D06</text>
+    <rect class="chip" x="1376" y="365" width="58" height="30" rx="8"/><text class="chipt" x="1405" y="386">D07</text>
+  </g>
+
+  <!-- 2-qator: bosqichlar 5–8 -->
+  <g>
+    <rect class="card" x="60" y="510" width="330" height="240" rx="16"/>
+    <circle class="num" cx="98" cy="550" r="22"/><text class="numt" x="98" y="558">5</text>
+    <text class="stage" x="132" y="559">Ishlab chiqish</text>
+    <text class="out" x="80" y="603">Backlog → Ready → In progress</text>
+    <text class="out" x="80" y="628">→ Code review → Testing → Done</text>
+    <text class="out" x="80" y="657">Daily · haftalik sync · demo</text>
+    <rect class="chip" x="80" y="690" width="52" height="30" rx="8"/><text class="chipt" x="106" y="711">D08</text>
+    <rect class="chip" x="138" y="690" width="52" height="30" rx="8"/><text class="chipt" x="164" y="711">D09</text>
+    <rect class="chip" x="196" y="690" width="52" height="30" rx="8"/><text class="chipt" x="222" y="711">D10</text>
+    <rect class="chip" x="254" y="690" width="52" height="30" rx="8"/><text class="chipt" x="280" y="711">D11</text>
+    <rect class="chip" x="312" y="690" width="52" height="30" rx="8"/><text class="chipt" x="338" y="711">D13</text>
+  </g>
+  <g>
+    <rect class="card" x="470" y="510" width="330" height="240" rx="16"/>
+    <circle class="num" cx="508" cy="550" r="22"/><text class="numt" x="508" y="558">6</text>
+    <text class="stage" x="542" y="559">Release</text>
+    <text class="out" x="490" y="605">Staging → prod, versiya tegi</text>
+    <text class="out" x="490" y="632">Release notes va e'lon</text>
+    <text class="out" x="490" y="659">Rollback rejasi tayyor</text>
+    <rect class="chip" x="490" y="690" width="58" height="30" rx="8"/><text class="chipt" x="519" y="711">D14</text>
+  </g>
+  <g>
+    <rect class="card" x="880" y="510" width="330" height="240" rx="16"/>
+    <circle class="num" cx="918" cy="550" r="22"/><text class="numt" x="918" y="558">7</text>
+    <text class="stage" x="952" y="559">Topshirish</text>
+    <text class="out" x="900" y="605">UAT: mijoz qabul qiladi</text>
+    <text class="out" x="900" y="632">Qo'llanma yangilangan</text>
+    <text class="out" x="900" y="659">Foydalanuvchilar o'qitilgan</text>
+    <rect class="chip" x="900" y="690" width="58" height="30" rx="8"/><text class="chipt" x="929" y="711">D15</text>
+  </g>
+  <g>
+    <rect class="card" x="1290" y="510" width="330" height="240" rx="16"/>
+    <circle class="num" cx="1328" cy="550" r="22"/><text class="numt" x="1328" y="558">8</text>
+    <text class="stage" x="1362" y="559">Ekspluatatsiya</text>
+    <text class="out" x="1310" y="605">Murojaatlar: bitta kanal</text>
+    <text class="out" x="1310" y="632">Javob vaqti kelishilgan</text>
+    <text class="out" x="1310" y="659">Retro va keyingi reja</text>
+    <rect class="chip" x="1310" y="690" width="58" height="30" rx="8"/><text class="chipt" x="1339" y="711">D16</text>
+    <rect class="chip" x="1376" y="690" width="58" height="30" rx="8"/><text class="chipt" x="1405" y="711">D17</text>
+  </g>
+
+  <!-- Darvozalar (✓ va tasdiqlovchi) -->
+  <circle class="gate" cx="430" cy="300" r="20"/><text class="gatet" x="430" y="306">✓1</text>
+  <text class="who" x="430" y="345">PO</text>
+  <circle class="gate" cx="840" cy="300" r="20"/><text class="gatet" x="840" y="306">✓2</text>
+  <text class="who" x="840" y="339">PO +</text><text class="who" x="840" y="356">analitik</text>
+  <circle class="gate" cx="1250" cy="300" r="20"/><text class="gatet" x="1250" y="306">✓3</text>
+  <text class="who" x="1250" y="345">PM</text>
+  <circle class="gate" cx="840" cy="470" r="20"/><text class="gatet" x="840" y="476">✓4</text>
+  <text class="who" x="935" y="462">PM · srokni PO</text>
+  <circle class="gate" cx="430" cy="630" r="20"/><text class="gatet" x="430" y="636">✓5</text>
+  <text class="who" x="430" y="669">Tech lead</text><text class="who" x="430" y="686">+ QA</text>
+  <circle class="gate" cx="840" cy="630" r="20"/><text class="gatet" x="840" y="636">✓6</text>
+  <text class="who" x="840" y="669">Tech lead /</text><text class="who" x="840" y="686">DevOps</text>
+  <circle class="gate" cx="1250" cy="630" r="20"/><text class="gatet" x="1250" y="636">✓7</text>
+  <text class="who" x="1250" y="669">PO</text>
+
+  <!-- Qaytish yo'llari -->
+  <text class="note" x="60" y="790">↺ Har release 5–7-bosqichlardan qayta o'tadi.   ↺ Tasdiqlangan scope o'zgarsa — change request (D10), o'zgargan qism 2-bosqichga qaytadi.   ↺ Retro (D17) — har release'dan keyin.</text>
+
+  <!-- Pastki qism: qoidalar -->
+  <rect class="card" x="60" y="825" width="720" height="300" rx="16"/>
+  <text class="h2" x="90" y="868">Esda tuting: 5 ta asosiy qoida</text>
+  <text class="rulen" x="90" y="912">1</text><text class="rule" x="118" y="912">Yozilmagan kelishuv — kelishuv emas: chatdan docga yoki boardga.</text>
+  <text class="rulen" x="90" y="954">2</text><text class="rule" x="118" y="954">Darvozasiz keyingi bosqichga o'tilmaydi.</text>
+  <text class="rulen" x="90" y="996">3</text><text class="rule" x="118" y="996">Srokni ishni bajaradigan odamning bahosi belgilaydi.</text>
+  <text class="rulen" x="90" y="1038">4</text><text class="rule" x="118" y="1038">Har o'zgarish srok va baho bilan birga ko'riladi.</text>
+  <text class="rulen" x="90" y="1080">5</text><text class="rule" x="118" y="1080">Test va review — taskning bir qismi, "keyin" emas.</text>
+
+  <!-- Pastki qism: rollar -->
+  <rect class="card" x="810" y="825" width="470" height="300" rx="16"/>
+  <text class="h2" x="840" y="868">Rolingiz bo'yicha qayerdan boshlash</text>
+  <text class="roleb" x="840" y="906">PM</text><text class="role" x="990" y="906">D02 · D06 · D09 · D10</text>
+  <text class="roleb" x="840" y="936">Analitik</text><text class="role" x="990" y="936">D03 · D05 · D10</text>
+  <text class="roleb" x="840" y="966">Dizayner</text><text class="role" x="990" y="966">D04 · D12</text>
+  <text class="roleb" x="840" y="996">Dasturchi</text><text class="role" x="990" y="996">D11 · D13 · D06</text>
+  <text class="roleb" x="840" y="1026">QA</text><text class="role" x="990" y="1026">D13 · D08</text>
+  <text class="roleb" x="840" y="1056">DevOps</text><text class="role" x="990" y="1056">D14</text>
+  <text class="roleb" x="840" y="1086">Support</text><text class="role" x="990" y="1086">D15 · D16</text>
+
+  <!-- Pastki qism: sayt -->
+  <rect x="1310" y="825" width="310" height="300" rx="16" fill="#276BAF"/>
+  <text x="1465" y="878" fill="#FFFFFF" font-size="24" font-weight="700" text-anchor="middle">Hammasi saytda</text>
+  <text x="1465" y="920" fill="#DCE8F5" font-size="17" text-anchor="middle">Qoidalar, shablonlar,</text>
+  <text x="1465" y="944" fill="#DCE8F5" font-size="17" text-anchor="middle">checklistlar va misol loyiha</text>
+  <rect x="1335" y="975" width="260" height="76" rx="10" fill="#FFFFFF"/>
+  <text x="1465" y="1006" fill="#14304F" font-size="17" font-weight="700" text-anchor="middle">utamuratov.github.io</text>
+  <text x="1465" y="1032" fill="#14304F" font-size="17" font-weight="700" text-anchor="middle">/loyiha-standarti</text>
+  <text x="1465" y="1090" fill="#DCE8F5" font-size="16" text-anchor="middle">Boshlash: Jarayon xaritasi</text>
+
+  <text x="60" y="1160" class="note">Manba: root doc (hayot sikli va tamoyillar), D02 (darvozalar), jarayon xaritasi.   Yangilangan: 2026-11-10</text>
+</svg>

@@ -7,7 +7,7 @@ pageClass: wide-page
 
 Bu sahifa butun standartni uchta sxemada ko'rsatadi: loyiha qaysi bosqichlardan o'tishi, kim kimga nima topshirishi va bitta task qanday yo'l bosishi. Biror docni ochishdan oldin shu yerdan o'zingiz turgan joyni toping.
 
-Jadvallardagi har bir doc nomi havola: uni bossangiz, o'sha docga o'tasiz.
+Jadvallardagi har bir doc nomi havola: uni bossangiz, o'sha docga o'tasiz. Hammasi bitta varaqda, chop etish uchun — [jarayon posteri](poster.md).
 
 ## 1. Loyiha bosqichlari va darvozalar
 
