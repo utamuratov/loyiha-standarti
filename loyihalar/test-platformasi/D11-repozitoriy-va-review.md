@@ -2,24 +2,24 @@
 
 Standart: [D11 — Dasturchilar qoidalari va code review](../../D11-dasturchilar-qoidalari.md). Misol loyiha: [Test Platformasi](index.md).
 
-Frontend misollari real repozitoriydan (`test-uzedu-user`). Backend: `[TO'LDIRILSIN: backend]` — backend dasturchilari o'z repolari bo'yicha shu bo'limni to'ldiradi.
+Frontend misollari real repozitoriydan (`test-uzedu-user`) olingan. Backend qismi `[TO'LDIRILSIN: backend]` deb belgilangan: uni backend dasturchilari o'z repolari bo'yicha to'ldiradi.
 
 ## Real frontend repo standart bilan solishtirganda
 
 | Qoida | Real repoda | Standart bo'yicha nima qo'shilardi |
 | --- | --- | --- |
 | Doimiy branchlar: `main`, `dev` | `main` → prod, `dev` → staging (`.gitlab-ci.yml`). Lekin boshqa uzoq yashaydigan branchlar ham bor: `master`, `olympiad`, `feat/camera-check` | Ortiqcha doimiy branchlarni yopish; mijozga xos farqlarni konfiguratsiyaga ko'chirish. [TO'LDIRILSIN: `master` va `olympiad` nima uchun turibdi] |
-| Himoyalangan branchlar | [TO'LDIRILSIN: GitLab sozlamasi] | `dev` va `main` ga faqat MR orqali |
+| Himoyalangan branchlar | [TO'LDIRILSIN: GitLab sozlamasi] | `dev` va `main` ga o'zgarish faqat MR orqali kiradi |
 | Conventional Commits | Ko'p commitlar formatga mos, masalan `feat(auth): refresh entering test settings on pinfl page` | Formatni commit hook bilan tekshirish (ixtiyoriy) |
-| Bitta commit — bitta o'zgarish | Ish qoidasi yozilgan: ilova tuzatishi va test o'zgarishi alohida commitda (`CLAUDE.md`). Masalan, `6dabeb6 feat(auth): …` va `046eb51 test: cover entering settings refresh …`. Lekin eski commitlar orasida ikki xil o'zgarish bitta xabarga yozilgani ham bor (`0ad2dcb fix(camera): … fix(logs): …`) | Qoida yozilgan — endi uni review'da tekshirish |
+| Bitta commit — bitta o'zgarish | Ish qoidasi yozilgan: ilova tuzatishi va test o'zgarishi alohida commitda (`CLAUDE.md`). Masalan, `6dabeb6 feat(auth): …` va `046eb51 test: cover entering settings refresh …`. Lekin eski commitlar orasida ikki xil o'zgarish bitta xabarga yozilgani ham bor (`0ad2dcb fix(camera): … fix(logs): …`) | Qoida yozilgan, endi uni review'da tekshirish kerak |
 | MR shabloni | Yo'q (`.gitlab/` papkasi yo'q) | `.gitlab/merge_request_templates/Default.md` (standart, 4.1) |
 | Formatter | Prettier, `printWidth: 100`, `singleQuote` (`package.json`) | Pipeline'da `prettier --check` |
 | Linter | Yo'q (`package.json` da ESLint yo'q) | `angular-eslint` qo'shish va pipeline'da ishlatish |
 | Qat'iy tiplar | `strict`, `strictTemplates` va boshqalar yoqilgan (`tsconfig.json`) | — (mos) |
-| Testlar merge'dan oldin | Faqat lokal `pre-push` hook'da (`.husky/pre-push`); GitLab CI'da test bosqichi yo'q | Pipeline'ga type-check, lint, unit testlar; qizil pipeline bilan merge taqiqi ([D13](../../D13-test-strategiyasi.md), [D14](../../D14-release-va-deploy.md)) |
+| Testlar merge'dan oldin | Faqat lokal `pre-push` hook'da (`.husky/pre-push`); GitLab CI'da test bosqichi yo'q | Pipeline'ga type-check, lint va unit testlarni qo'shish; qizil pipeline bilan merge'ni taqiqlash ([D13](../../D13-test-strategiyasi.md), [D14](../../D14-release-va-deploy.md)) |
 | Maxfiy kalitlar | CI'da o'zgaruvchilar orqali (`$HARBOR_PASSWORD`, `$GITOPS_TOKEN_EDUHR`, `.gitlab-ci.yml`) | — (mos); masked/protected ekanini tekshirish |
-| Repo hujjatlari | `README.md`, `CLAUDE.md` ish qoidalari, `docs/` — oqimlar, arxitektura, testlar | — (namuna sifatida) |
-| ADR | Alohida ADR yo'q, lekin `docs/test-entry-flow.md` da qaror va "Ko'rib chiqilib, rad etilgan variantlar" jadvali bor — mazmunan ADR | Shunday bo'limlarni `docs/adr/` formatiga keltirish (5.4) |
+| Repo hujjatlari | `README.md`, `CLAUDE.md` ish qoidalari va `docs/` (oqimlar, arxitektura, testlar) bor | — (namuna sifatida) |
+| ADR | Alohida ADR yo'q, lekin `docs/test-entry-flow.md` da qaror va "Ko'rib chiqilib, rad etilgan variantlar" jadvali bor, ya'ni mazmunan bu ADR | Shunday bo'limlarni `docs/adr/` formatiga keltirish (standart, 4.3) |
 
 ## To'ldirilgan MR (namunaviy)
 
@@ -52,11 +52,11 @@ Yechim real repodagi `TestTimerService` dan olingan (`docs/test-timer-and-questi
 - `[taklif]` Sabab nomlarini string emas, `type PauseReason = 'offline' | …` qilsak, xato yozilgan nom kompilyatsiyada ushlanadi.
 - `[savol]` 3 marta urinish soni sozlamadan olinadimi yoki kodda qat'iymi? [TZ](D03-tz.md) da yozilmagan.
 
-Uchinchi izoh [TZ](D03-tz.md) dagi bo'shliqni topdi: javob TZ ga qo'shiladi, review'da yo'qolib ketmaydi.
+Uchinchi izoh [TZ](D03-tz.md) dagi bo'shliqni topdi: javob review'da yo'qolib ketmasligi uchun TZ'ga qo'shiladi.
 
 ## ADR (real qarordan)
 
-`docs/test-entry-flow.md` dagi qaror ADR formatida:
+Quyida `docs/test-entry-flow.md` dagi qaror ADR formatida yozilgan:
 
 ```markdown
 # ADR-0001: Kirish sozlamalari har ishtirokchi oqimi boshida olinadi

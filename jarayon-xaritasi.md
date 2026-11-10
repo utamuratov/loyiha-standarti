@@ -5,13 +5,13 @@ pageClass: wide-page
 
 # Jarayon xaritasi
 
-Butun standart uchta sxemada: loyiha qaysi bosqichlardan o'tadi, kim kimga nima topshiradi va bitta task qanday yo'l bosadi. Docni ochishdan oldin shu yerdan o'zingiz turgan joyni toping.
+Bu sahifa butun standartni uchta sxemada ko'rsatadi: loyiha qaysi bosqichlardan o'tishi, kim kimga nima topshirishi va bitta task qanday yo'l bosishi. Biror docni ochishdan oldin shu yerdan o'zingiz turgan joyni toping.
 
-Jadvallardagi har doc nomi — havola: bosib, o'sha docga o'tasiz.
+Jadvallardagi har bir doc nomi havola: uni bossangiz, o'sha docga o'tasiz.
 
 ## 1. Loyiha bosqichlari va darvozalar
 
-Loyiha 8 bosqichdan o'tadi. Keyingi bosqichga faqat darvozadan (bosqich oxiridagi tekshiruvdan) o'tgandan keyin o'tiladi. Strelkadagi yozuv — darvozani kim tasdiqlaydi. Batafsil kirish, chiqish va checklistlar — [D02](D02-loyiha-hayot-sikli.md).
+Loyiha 8 bosqichdan o'tadi. Keyingi bosqichga faqat darvozadan (bosqich oxiridagi tekshiruvdan) o'tgandan keyin o'tiladi. Strelkadagi yozuv darvozani kim tasdiqlashini bildiradi. Har bosqichning batafsil kirishi, chiqishi va checklistlari [D02](D02-loyiha-hayot-sikli.md) da.
 
 ```mermaid
 flowchart TD
@@ -35,7 +35,7 @@ flowchart TD
   S8 -.->|"yangi talab (D10)"| S2
 ```
 
-Har bosqichda qaysi doc kerak:
+Har bosqichda qaysi doc kerakligi:
 
 | Bosqich | Doclar |
 |---|---|
@@ -50,22 +50,22 @@ Har bosqichda qaysi doc kerak:
 
 Sxemada uzuq chiziq bilan ikkita qaytish yo'li ko'rsatilgan:
 
-- **Release sikli.** Loyiha bir nechta release'ga bo'linadi. Har release 5–7 bosqichlardan alohida o'tadi.
-- **O'zgarish.** Tasdiqlangan scope o'zgarsa, faqat o'zgargan qism 2-bosqichga qaytadi va 2–4 darvozalardan qayta o'tadi ([D10](D10-ozgarishlarni-boshqarish.md)).
+- **Release sikli.** Loyiha bir nechta release'ga bo'linadi. Har bir release 5–7-bosqichlardan alohida o'tadi.
+- **O'zgarish.** Tasdiqlangan scope o'zgarsa, faqat o'zgargan qism 2-bosqichga qaytadi va 2–4-darvozalardan qayta o'tadi ([D10](D10-ozgarishlarni-boshqarish.md)).
 
 Retro ([D17](D17-retro-va-standartni-yangilash.md)) har bosqich oxirida va loyiha oxirida o'tkaziladi; u sxemada alohida strelka bilan ko'rsatilmagan.
 
 ## 2. Kim kimga nima topshiradi
 
-Har bosqichda kim ishlaydi va natijani kimga beradi. Kichik jamoada bir odam bir nechta rolni bajaradi: masalan, PM va analitik bitta odam; QA bo'lmasa, "QA" chizig'idagi tekshiruvni task muallifi bo'lmagan odam qiladi ([D08](D08-kanban-dor-dod.md)).
+Bu sxema har bosqichda kim ishlashini va natijani kimga berishini ko'rsatadi. Kichik jamoada bir odam bir nechta rolni bajaradi: masalan, PM va analitik bitta odam; QA bo'lmasa, "QA" chizig'idagi tekshiruvni task muallifi bo'lmagan odam qiladi ([D08](D08-kanban-dor-dod.md)).
 
 Sxemani qanday o'qish kerak (yuqoridan pastga, vaqt bo'yicha):
 
-- **Vertikal chiziq** — rol.
-- **To'liq strelka** — kim kimga nima topshiradi. Strelka chapga yoki o'ngga qarashi faqat rollarning joylashuviga bog'liq, orqaga qaytish emas.
+- **Vertikal chiziq** — bitta rol.
+- **To'liq strelka** — kim kimga nima topshirishi. Strelkaning chapga yoki o'ngga qarashi faqat rollarning joylashuviga bog'liq, u orqaga qaytishni bildirmaydi.
 - **Uzuq strelka** — javob: izoh, baho, tekshiruv natijasi.
 - **Rol ustidagi yozuv** — shu rolning o'zi bajaradigan ish.
-- **"✓ N-darvoza" qatori** — bosqich tugadi, kim tasdiqlaydi; shundan keyingina keyingi bosqich boshlanadi.
+- **"✓ N-darvoza" qatori** — bosqich tugagani va uni kim tasdiqlashi; shundan keyingina keyingi bosqich boshlanadi.
 
 ```mermaid
 sequenceDiagram
@@ -149,7 +149,7 @@ sequenceDiagram
 
 ## 3. Bitta taskning yo'li
 
-5-bosqich ichida har task board ustunlari bo'ylab yuradi. Strelkadagi yozuv — keyingi ustunga o'tish sharti va uni kim o'tkazadi. Batafsil: ustunlar va DoR/DoD — [D08](D08-kanban-dor-dod.md), merge request va review — [D11](D11-dasturchilar-qoidalari.md), testlar — [D13](D13-test-strategiyasi.md), release — [D14](D14-release-va-deploy.md).
+5-bosqich ichida har bir task board ustunlari bo'ylab yuradi. Strelkadagi yozuv keyingi ustunga o'tish shartini va taskni kim o'tkazishini bildiradi. Batafsil qoidalar: ustunlar va DoR/DoD — [D08](D08-kanban-dor-dod.md), merge request va review — [D11](D11-dasturchilar-qoidalari.md), testlar — [D13](D13-test-strategiyasi.md), release — [D14](D14-release-va-deploy.md).
 
 ```mermaid
 flowchart TD
@@ -165,7 +165,7 @@ flowchart TD
   RD -.->|"talab o'zgardi · change request"| BL
 ```
 
-Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi ([D17](D17-retro-va-standartni-yangilash.md)). Testing'dan qaytgan task yangi task bo'lib emas, izoh bilan In progress'ga qaytadi.
+Uzuq chiziqli qaytish strelkalari rework'ni (qayta ishlashni) bildiradi. Ularning soni retroda sanaladi ([D17](D17-retro-va-standartni-yangilash.md)). Testing'dan qaytgan task yangi task bo'lib emas, izoh bilan In progress'ga qaytadi.
 
 ## Qaysi savolga qaysi doc
 
@@ -182,7 +182,7 @@ Uzuq chiziqli qaytish strelkalari — rework. Ularning soni retroda sanaladi ([D
 | TZ'ni qanday ko'rib chiqamiz, savollar qayerga yoziladi? | [D05](D05-kickoff-va-doc-review.md) |
 | Srok qanday belgilanadi, surilsa nima qilinadi? | [D06](D06-baholash-va-srok.md) |
 | Taskni ishga olsa bo'ladimi, tugadimi? | [D08](D08-kanban-dor-dod.md) — DoR va DoD |
-| Branch, commit, merge request, review qanday? | [D11](D11-dasturchilar-qoidalari.md) |
+| Branch, commit, merge request va review qanday qilinadi? | [D11](D11-dasturchilar-qoidalari.md) |
 | Qanday test yoziladi va kim tekshiradi? | [D13](D13-test-strategiyasi.md) |
 | Prod'ga qanday chiqariladi va qanday qaytariladi? | [D14](D14-release-va-deploy.md) |
 | Modul kimda, u yo'q bo'lsa kim qiladi? Yangi odam qanday ulanadi? | [D07](D07-taqsimot-va-resurs.md) |

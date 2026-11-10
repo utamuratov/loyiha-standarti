@@ -13,14 +13,14 @@ Release oldindan aytiladigan, takrorlanadigan va xavfsiz bo'lsin: nima chiqayotg
 | --- | --- |
 | DevOps | Muhitlar, CI/CD, monitoring, backup; prod deploy'ni bajaradi |
 | Tech lead | Release tarkibini tasdiqlaydi; rollback qarorini qabul qiladi |
-| QA / tekshiruvchi | Staging regressiyasi ([D13](D13-test-strategiyasi.md)) va deploy'dan keyingi smoke test |
-| PM | Release sanasini mijoz bilan kelishadi, e'lon qiladi |
+| QA / tekshiruvchi | Staging regressiyasini ([D13](D13-test-strategiyasi.md)) va deploy'dan keyingi smoke testni o'tkazadi |
+| PM | Release sanasini mijoz bilan kelishadi va e'lon qiladi |
 | Support | Release notes'ni oladi, foydalanuvchi savollariga tayyorlanadi ([D16](D16-support-va-fikr-yigish.md)) |
 
 - **Qachon:**
   - 4-bosqichda (Planlash) muhitlar va pipeline tayyorlanadi.
-  - 6-bosqichda (Release) har release shu tartib bilan chiqadi.
-  - Hotfix — kerak bo'lganda.
+  - 6-bosqichda (Release) har bir release shu tartib bilan chiqadi.
+  - Hotfix kerak bo'lganda chiqariladi.
 
 **Atamalar.**
 - *Muhit* (environment) — ilovaning alohida nusxasi: local, staging, prod.
@@ -46,72 +46,72 @@ Bir nechta mijozga yetkaziladigan loyihada har mijozning staging va prod muhitla
 
 ### A. Muhitlar va artefakt
 
-1. **Staging prod'ga o'xshash.** Infratuzilma turi bir xil (masalan, ikkalasi ham konteynerda), farq faqat konfiguratsiyada. *Nega:* staging'da o'tib prod'da yiqilgan xato — muhitlar farqining natijasi.
-2. **Bitta artefakt yuqoriga ko'tariladi.** Staging'da tekshirilgan image o'zgarmasdan prod'ga chiqadi; muhitga xos sozlamalar (API manzili va boshqalar) image'ga emas, ishga tushishda beriladi. Buning iloji bo'lmasa (sozlama build vaqtida kiritilsa), prod build aynan staging'da tekshirilgan commit'dan olinadi va bu [D02](D02-loyiha-hayot-sikli.md) risklar reestriga yoziladi. *Nega:* prod uchun alohida build — tekshirilmagan artefakt.
-3. **Infratuzilma va deploy konfiguratsiyasi kodda** (pipeline fayli, GitOps repo, docker-compose). Serverda qo'lda o'zgartirish qilinmaydi; shoshilinch qilingan bo'lsa, 1 ish kuni ichida kodga qaytariladi. *Nega:* qo'lda o'zgartirilgan server keyingi deploy'da yoki yangi serverda takrorlanmaydi.
+1. **Staging prod'ga o'xshash bo'ladi.** Infratuzilma turi bir xil (masalan, ikkalasi ham konteynerda), farq faqat konfiguratsiyada bo'ladi. *Nega:* staging'da o'tib, prod'da yiqilgan xato muhitlar orasidagi farqning natijasi.
+2. **Bitta artefakt muhitdan muhitga ko'tariladi.** Staging'da tekshirilgan image o'zgarmasdan prod'ga chiqadi; muhitga xos sozlamalar (API manzili va boshqalar) image'ga emas, ishga tushishda beriladi. Buning iloji bo'lmasa (sozlama build vaqtida kiritilsa), prod build aynan staging'da tekshirilgan commit'dan olinadi va bu [D02](D02-loyiha-hayot-sikli.md) risklar reestriga yoziladi. *Nega:* prod uchun alohida qilingan build tekshirilmagan artefakt bo'ladi.
+3. **Infratuzilma va deploy konfiguratsiyasi kodda saqlanadi** (pipeline fayli, GitOps repo, docker-compose). Serverda qo'lda o'zgartirish qilinmaydi; shoshilinch qilingan bo'lsa, 1 ish kuni ichida kodga qaytariladi. *Nega:* qo'lda o'zgartirilgan server keyingi deploy'da yoki yangi serverda takrorlanmaydi.
 
 ### B. Versiyalash va release notes
 
-4. **SemVer va git tag.** Har prod release'i `main` dagi git tag: `v1.4.0`. Qaysi raqam oshadi:
-   - PATCH — xato tuzatish;
-   - MINOR — yangi funksiya;
-   - MAJOR — mos kelmaydigan o'zgarish.
+4. **Versiyalar SemVer va git tag bilan belgilanadi.** Har bir prod release'i `main` dagi git tag bilan belgilanadi: `v1.4.0`. Qaysi raqam oshishi:
+   - PATCH — xato tuzatilganda;
+   - MINOR — yangi funksiya qo'shilganda;
+   - MAJOR — mos kelmaydigan o'zgarish bo'lganda.
 
-   Image tegi — versiya va commit SHA (`1.4.0-a1b2c3d`). *Nega:* "prod'da hozir nima turibdi?" savoliga bir qarashda javob topiladi; rollback uchun oldingi versiya aniq.
-5. **Har release'ning release notes'i bor** (6.2). U Conventional Commits ([D11](D11-dasturchilar-qoidalari.md)) va Jira'dagi Done tasklardan yig'iladi, ikki qismdan iborat:
-   - jamoa uchun — texnik;
-   - support va mijoz uchun — oddiy tilda.
+   Image tegi versiya va commit SHA'dan iborat (`1.4.0-a1b2c3d`). *Nega:* "prod'da hozir nima turibdi?" degan savolga bir qarashda javob topiladi, rollback uchun esa oldingi versiya aniq bo'ladi.
+5. **Har bir release'ning release notes'i bo'ladi** (6.2). U Conventional Commits ([D11](D11-dasturchilar-qoidalari.md)) va Jira'dagi Done tasklardan yig'iladi va ikki qismdan iborat:
+   - jamoa uchun texnik qism;
+   - support va mijoz uchun oddiy tilda yozilgan qism.
 
-   *Nega:* support yangilikni foydalanuvchidan eshitmasligi kerak ([D16](D16-support-va-fikr-yigish.md)); "qachon o'zgargandi?" savoliga javob bo'ladi.
+   *Nega:* support yangilikni foydalanuvchidan eshitmasligi kerak ([D16](D16-support-va-fikr-yigish.md)); "qachon o'zgargandi?" degan savolga ham javob bo'ladi.
 
 ### C. Release jarayoni
 
-6. **Release = `dev` → `main` MR.** MR tavsifida release checklisti (6.1) bo'ladi; uni tech lead tasdiqlaydi. [D02](D02-loyiha-hayot-sikli.md) ning 5-darvozasi (testlar, QA sign-off) shu MR'da yopiladi. *Nega:* release ham boshqa o'zgarishlar kabi ko'rinadigan va tasdiqlanadigan bo'ladi.
+6. **Release `dev` → `main` MR orqali qilinadi.** MR tavsifida release checklisti (6.1) bo'ladi; uni tech lead tasdiqlaydi. [D02](D02-loyiha-hayot-sikli.md) ning 5-darvozasi (testlar, QA sign-off) shu MR'da yopiladi. *Nega:* release ham boshqa o'zgarishlar kabi ko'rinadigan va tasdiqlanadigan bo'ladi.
 7. **Release vaqti oldindan belgilanadi.**
    - Foydalanuvchilar eng kam bo'lgan vaqt tanlanadi, muhim tadbirlar paytida emas.
    - Juma kechqurun yoki bayram oldidan release qilinmaydi.
-   - Muhim tadbir (masalan, imtihon kuni) oldidan "freeze" muddati e'lon qilinadi — shu muddatda faqat hotfix chiqadi.
+   - Muhim tadbir (masalan, imtihon kuni) oldidan "freeze" muddati e'lon qilinadi: shu muddatda faqat hotfix chiqadi.
 
    *Nega:* release'dan keyin muammo chiqsa, jamoa joyida bo'lishi va foydalanuvchiga ta'siri kam bo'lishi kerak.
-8. **Release e'lon qilinadi** (6.3): jamoa, support va mijozga, oldindan va keyin. *Nega:* kutilmagan o'zgarish — support'ga murojaatlar to'lqini.
-9. **Prod deploy — qo'lda tasdiqlanadigan pipeline qadami.** Uni ruxsati bor nomli odam ishga tushiradi; serverga qo'lda kirib deploy qilinmaydi. *Nega:* kim, qachon, qaysi versiyani chiqargani pipeline tarixida qoladi.
-10. **Deploy'dan keyin 15 daqiqa ichida smoke test.** Tekshiruvchi asosiy oqimni prod'da o'tadi va natija deploy yozuviga (6.5) tushadi. *Nega:* muammoni foydalanuvchidan oldin jamoa ko'rishi kerak.
+8. **Release e'lon qilinadi** (6.3): jamoa, support va mijozga release'dan oldin ham, keyin ham xabar beriladi. *Nega:* kutilmagan o'zgarish support'ga murojaatlar to'lqinini olib keladi.
+9. **Prod deploy pipeline'dagi qo'lda tasdiqlanadigan qadam bo'ladi.** Uni ruxsati bor nomli odam ishga tushiradi; serverga qo'lda kirib deploy qilinmaydi. *Nega:* kim, qachon, qaysi versiyani chiqargani pipeline tarixida qoladi.
+10. **Deploy'dan keyin 15 daqiqa ichida smoke test o'tkaziladi.** Tekshiruvchi asosiy oqimni prod'da o'tadi va natija deploy yozuviga (6.5) tushadi. *Nega:* muammoni foydalanuvchidan oldin jamoa ko'rishi kerak.
 
 ### D. Rollback va migratsiyalar
 
-11. **Har release'ning rollback rejasi bor** (6.4): oldingi versiya tegi, qaytish qadamlari, kim qaror qiladi.
+11. **Har bir release'ning rollback rejasi bor** (6.4): unda oldingi versiya tegi, qaytish qadamlari va kim qaror qilishi yoziladi.
     - Smoke test o'tmasa yoki kritik bug chiqsa ([D08](D08-kanban-dor-dod.md)), tech lead rollback qaroriga keladi.
-    - Prod'da 15 daqiqadan ortiq "tezda tuzatib qo'yamiz" deb urinilmaydi — avval rollback, keyin tinch tuzatish.
+    - Prod'da 15 daqiqadan ortiq "tezda tuzatib qo'yamiz" deb urinilmaydi: avval rollback qilinadi, keyin xato xotirjam tuzatiladi.
 
     *Nega:* bosim ostida prod'da tuzatish yangi xatolarni keltiradi.
-12. **Rollback sinab ko'riladi.** Loyiha boshida va deploy jarayoni o'zgarganda rollback staging'da haqiqatan bajariladi. *Nega:* sinalmagan rollback rejasi — reja emas, umid.
-13. **Ma'lumotlar bazasi migratsiyasi orqaga mos bo'ladi.** Avval yangi maydon qo'shiladi, eski maydon keyingi release'da o'chiriladi. Migratsiyadan oldin backup olinadi. Kodni oldingi versiyaga qaytarish bazani qaytarmaydi — rollback rejasida shu hisobga olinadi. *Nega:* orqaga mos bo'lmagan migratsiya rollback'ni imkonsiz qiladi.
+12. **Rollback sinab ko'riladi.** Loyiha boshida va deploy jarayoni o'zgarganda rollback staging'da haqiqatan bajariladi. *Nega:* sinab ko'rilmagan rollback rejasi reja emas, umid xolos.
+13. **Ma'lumotlar bazasi migratsiyasi orqaga mos bo'ladi.** Avval yangi maydon qo'shiladi, eski maydon keyingi release'da o'chiriladi. Migratsiyadan oldin backup olinadi. Kodni oldingi versiyaga qaytarish bazani qaytarmaydi, rollback rejasida shu hisobga olinadi. *Nega:* orqaga mos bo'lmagan migratsiya rollback'ni imkonsiz qiladi.
 
 ### E. Hotfix
 
-14. **Hotfix `main` dan ochiladi:** `hotfix/<JIRA-KEY>-...` branch → `main` ga MR → PATCH tag → keyin `dev` ga ham merge. Review, testlar va smoke test qisqartirilmaydi; release checklistining faqat "e'lon" qismi qisqa bo'lishi mumkin. *Nega:* hotfix ham kod, shoshilinchlik xatoni kamaytirmaydi. `dev` ga qaytarilmasa, keyingi release tuzatishni yo'qotadi.
+14. **Hotfix `main` dan ochiladi:** `hotfix/<JIRA-KEY>-...` branch → `main` ga MR → PATCH tag → keyin `dev` ga ham merge. Review, testlar va smoke test qisqartirilmaydi; release checklistining faqat "e'lon" qismi qisqa bo'lishi mumkin. *Nega:* hotfix ham kod, shoshilinchlik esa xatoni kamaytirmaydi. Tuzatish `dev` ga qaytarilmasa, keyingi release uni yo'qotadi.
 
 ### F. Monitoring, loglar, backup
 
-15. **Monitoring va alertlar.** Kamida quyidagilar kuzatiladi:
+15. **Monitoring va alertlar sozlanadi.** Kamida quyidagilar kuzatiladi:
     - prod ishlayaptimi (availability);
-    - xatolar soni, frontend xatolari ham;
+    - xatolar soni, jumladan frontend xatolari;
     - javob vaqti.
 
     Har alertning egasi va javob vaqti bor ([D16](D16-support-va-fikr-yigish.md)). *Nega:* muammoni foydalanuvchi emas, monitoring birinchi ko'rishi kerak.
 16. **Loglar bitta joyda yig'iladi** va saqlash muddati bilan yuritiladi. *Nega:* xato tahlili serverma-server qidirishga aylanmaydi.
-17. **Backup jadval bo'yicha olinadi va tiklash sinab ko'riladi** — kamida chorakda bir marta staging'ga tiklab. *Nega:* tiklab ko'rilmagan backup ishlamasligi mumkin.
+17. **Backup jadval bo'yicha olinadi va tiklash sinab ko'riladi:** kamida chorakda bir marta backup staging'ga tiklab ko'riladi. *Nega:* tiklab ko'rilmagan backup ishlamasligi mumkin.
 
 ### G. Shaxsiy ma'lumotlarni himoyalash
 
-Qaysi ma'lumot yig'ilishi va nima uchun — [D03](D03-loyiha-boshlangich-hujjati.md) da. Bu bo'lim muhitlar va jarayon qoidalarini beradi.
+Qaysi ma'lumot yig'ilishi va nima uchun yig'ilishi [D03](D03-loyiha-boshlangich-hujjati.md) da yozilgan. Bu bo'lim esa muhitlar va jarayon qoidalarini beradi.
 
 18. **Prod ma'lumoti staging yoki local'ga faqat anonimlashtirilib o'tadi.** JShShIR, ism, telefon, yuz tasviri almashtiriladi yoki o'chiriladi. *Nega:* staging himoyasi prod'dagidek emas, unga kirish huquqi ham kengroq.
 19. **Loglarda, xato hisobotlarida va monitoringda shaxsiy ma'lumot yo'q.** JShShIR, token va yuz tasviri o'rniga ichki ID yoziladi. *Nega:* loglar ko'p odamga ochiq va uzoq saqlanadi.
-20. **Prod'ga kirish — nomli akkauntlar bilan, minimal huquq bilan.** Kirish huquqi borlar ro'yxati yuritiladi; jamoadan chiqqan odamning huquqi o'sha kuni olinadi. *Nega:* umumiy akkaunt bilan kim nima qilgani aniqlanmaydi.
+20. **Prod'ga faqat nomli akkauntlar bilan va minimal huquq bilan kiriladi.** Kirish huquqi borlar ro'yxati yuritiladi; jamoadan chiqqan odamning huquqi o'sha kuni olinadi. *Nega:* umumiy akkaunt bilan kim nima qilgani aniqlanmaydi.
 21. **Prod kalitlari faqat himoyalangan branchlar pipeline'iga ochiq** (CI'da protected va masked o'zgaruvchilar, [D11](D11-dasturchilar-qoidalari.md)). *Nega:* istalgan feature branch'dan prod kalitini o'qib bo'lmasligi kerak.
 
-**Kichik loyihada.** Release checklisti, rollback rejasi va 18–21-qoidalar majburiy. Monitoring minimum: availability va xatolar.
+**Kichik loyihada.** Release checklisti, rollback rejasi va 18–21-qoidalar majburiy. Monitoringda kamida availability va xatolar kuzatiladi.
 
 ## 5. Release oqimi qisqacha
 
@@ -194,14 +194,14 @@ Pipeline: <havola> · Smoke test: o'tdi/o'tmadi (kim) · Rollback: yo'q/ha (saba
 
 ## 7. Misol
 
-Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · Release va deploy](loyihalar/test-platformasi/D14-release-va-deploy.md).
+Shu doc bo'yicha to'ldirilgan variantni misol loyihada ko'ring: [Test Platformasi · Release va deploy](loyihalar/test-platformasi/D14-release-va-deploy.md).
 
 ## 8. Checklist: release jarayoni standartga mosmi
 
 DevOps loyiha boshida va har chorakda tekshiradi:
 
-- [ ] Har muhit (va har mijoz) uchun staging va prod bor, staging avtomatik yangilanadi
-- [ ] Prod deploy — pipeline'dagi qo'lda tasdiqlanadigan qadam, uni faqat ruxsati borlar ishga tushiradi
+- [ ] Har bir muhit (va har bir mijoz) uchun staging va prod bor, staging avtomatik yangilanadi
+- [ ] Prod deploy pipeline'dagi qo'lda tasdiqlanadigan qadam; uni faqat ruxsati borlar ishga tushiradi
 - [ ] Prod'dagi versiya git teg va image tegi orqali aniqlanadi
 - [ ] So'nggi 3 release'ning release notes'i, checklisti va deploy yozuvi bor
 - [ ] Rollback staging'da sinab ko'rilgan; sana: …
@@ -210,15 +210,15 @@ DevOps loyiha boshida va har chorakda tekshiradi:
 - [ ] Staging'da haqiqiy shaxsiy ma'lumot yo'q; loglarda JShShIR va tokenlar yo'q
 - [ ] Prod'ga kirish huquqi borlar ro'yxati dolzarb
 
-**Tayyor mezoni.** Rollback kamida bir marta staging'da sinab ko'rilgan (sana deploy yozuvida). Tekshiradi — tech lead.
+**Tayyor mezoni.** Rollback kamida bir marta staging'da sinab ko'rilgan (sanasi deploy yozuvida). Buni tech lead tekshiradi.
 
 ## 9. Tez-tez uchraydigan xatolar
 
-1. **"Faqat frontend, tez chiqaramiz".** Checklistsiz release, foydalanuvchilar sessiya o'rtasida — va test topshirayotganlar sahifasi buziladi. To'g'risi: har release checklist bilan va rejalashtirilgan vaqtda.
-2. **Prod'da tuzatish.** Serverga kirib faylni o'zgartirish yoki 40 daqiqa davomida "tezda tuzatish". To'g'risi: rollback, keyin hotfix (11, 14-qoidalar).
-3. **Prod uchun alohida build.** Staging'da sinalgan narsa emas, boshqa artefakt chiqadi. To'g'risi: bitta artefakt (2-qoida).
-4. **Versiyasiz release.** "Prod'da qaysi versiya?" savoliga hech kim aniq javob bermaydi. To'g'risi: SemVer teg (4-qoida).
-5. **Staging'da prod nusxasi.** Test uchun prod bazasi to'liq ko'chiriladi — shaxsiy ma'lumotlar himoyasiz muhitda. To'g'risi: anonimlashtirish (18-qoida).
+1. **"Faqat frontend, tez chiqaramiz".** Release checklistsiz, foydalanuvchilar sessiya o'rtasida turganda chiqariladi va test topshirayotganlarning sahifasi buziladi. To'g'risi: har bir release checklist bilan va rejalashtirilgan vaqtda chiqariladi.
+2. **Prod'da tuzatish.** Serverga kirib faylni o'zgartirish yoki 40 daqiqa davomida "tezda tuzatish"ga urinish. To'g'risi: avval rollback, keyin hotfix (11- va 14-qoidalar).
+3. **Prod uchun alohida build.** Prod'ga staging'da sinalgan narsa emas, boshqa artefakt chiqadi. To'g'risi: bitta artefakt ishlatiladi (2-qoida).
+4. **Versiyasiz release.** "Prod'da qaysi versiya?" degan savolga hech kim aniq javob bera olmaydi. To'g'risi: SemVer teg qo'yiladi (4-qoida).
+5. **Staging'da prod nusxasi.** Test uchun prod bazasi to'liq ko'chiriladi va shaxsiy ma'lumotlar himoyasiz muhitga tushadi. To'g'risi: ma'lumotlar anonimlashtiriladi (18-qoida).
 
 ---
 

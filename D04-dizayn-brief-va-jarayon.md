@@ -2,7 +2,7 @@
 
 ## 1. Maqsad
 
-Dizayner nima, kim uchun va qanday cheklovlar bilan chizishini ishni boshlashdan oldin aniq bilsin; maket bosqichma-bosqich — avval oqim, keyin ko'rinish — kelishilsin; dasturchiga esa savolsiz quriladigan, to'liq maket topshirilsin. Bu "bitta narsa qayta-qayta qilinadi" og'rig'ining dizayndagi qismi: chala brief, kelishilmagan oqim va holatsiz maket ekranlarni ikki marta chizdiradi va ikki marta qurdiradi.
+Dizayner nima, kim uchun va qanday cheklovlar bilan chizishini ishni boshlashdan oldin aniq bilsin; maket bosqichma-bosqich (avval oqim, keyin ko'rinish) kelishilsin; dasturchiga esa savolsiz quriladigan, to'liq maket topshirilsin. Bu doc "bitta narsa qayta-qayta qilinadi" og'rig'ining dizayndagi qismini yopadi: chala brief, kelishilmagan oqim va holatsiz maket ekranlarni ikki marta chizdiradi va ikki marta qurdiradi.
 
 ## 2. Kim uchun va qachon
 
@@ -13,33 +13,33 @@ Dizayner nima, kim uchun va qanday cheklovlar bilan chizishini ishni boshlashdan
 | --- | --- |
 | Analitik | Brief'ni dizayner bilan birga to'ldiradi; wireframe'da story'lar to'liq qamralganini tekshiradi |
 | Dizayner | Wireframe, UI maket, prototip; review'larni chaqiradi; handoff'ni tayyorlaydi |
-| Frontend / tech lead | Wireframe'da — qurish mumkinmi, kutubxonada bormi; handoff'ni qabul qiladi |
-| QA | Handoff'da holatlar va xato matnlarini ko'radi — test ssenariylari uchun ([D13](D13-test-strategiyasi.md)) |
+| Frontend / tech lead | Wireframe'da ekranni qurish mumkinmi va kerakli komponent kutubxonada bormi, tekshiradi; handoff'ni qabul qiladi |
+| QA | Handoff'da holatlar va xato matnlarini test ssenariylari uchun ko'rib chiqadi ([D13](D13-test-strategiyasi.md)) |
 | PO (mijoz) | Wireframe va UI'ni ko'radi; oqim va kontent bo'yicha izoh beradi |
 | PM | Dizayn ishini rejaga qo'yadi; 3-darvozani tasdiqlaydi ([D02](D02-loyiha-hayot-sikli.md)) |
 
-- **Qachon:** 3-bosqich (Dizayn) — TZ ([D03](D03-loyiha-boshlangich-hujjati.md)) 2-darvozadan o'tgach, butun loyiha yoki release bo'yicha. Ish ketma-ketligi: **brief → wireframe → wireframe review → UI → UI review → mijozga ko'rsatish → handoff.** Ishlab chiqish davomida maket o'zgarsa — 6-qoida.
+- **Qachon:** 3-bosqichda (Dizayn), TZ ([D03](D03-loyiha-boshlangich-hujjati.md)) 2-darvozadan o'tgach, butun loyiha yoki release bo'yicha. Ish ketma-ketligi: **brief → wireframe → wireframe review → UI → UI review → mijozga ko'rsatish → handoff.** Ishlab chiqish davomida maket o'zgarsa, 6-qoida qo'llanadi.
 
-Nima bilan chiziladi (komponentlar, tokenlar, ekran holatlari, formalar, matn) — [D12](D12-ui-ux-standartlari.md). Bu doc o'sha standart bo'yicha ishni qanday tartibda qilish va topshirishni beradi.
+Nima bilan chizilishi (komponentlar, tokenlar, ekran holatlari, formalar, matn) [D12](D12-ui-ux-standartlari.md) da yozilgan. Bu doc esa o'sha standart bo'yicha ishni qanday tartibda qilish va topshirishni ko'rsatadi.
 
 **Atamalar.**
 - *Brief* — dizaynerga topshiriq: nima, kim uchun, qanday cheklovlar bilan.
 - *Wireframe* — ekranning rangsiz sxemasi: qaysi bloklar, qaysi tartibda, oqim qanday.
 - *UI maket* — yakuniy ko'rinish: komponentlar, ranglar, matnlar, holatlar.
-- *Prototip* — ekranlarni bosiladigan qilib bog'langan maket: oqimni sinab ko'rish uchun.
-- *Handoff* — tayyor maketni dasturchiga topshirish: hamma narsa joyida, savollar yopilgan.
+- *Prototip* — ekranlari bosiladigan qilib bog'langan maket; u oqimni sinab ko'rish uchun kerak.
+- *Handoff* — tayyor maketni dasturchiga topshirish: bunda hamma narsa joyida, savollar yopilgan bo'ladi.
 
 ## 3. Qoidalar
 
-1. **Brief'siz chizilmaydi.** Brief (4.1) analitik va dizayner tomonidan tasdiqlangan TZ'ning tegishli bo'limlaridan to'ldiriladi. Brief'da TZ'da yo'q talab paydo bo'lmaydi — bo'lsa, u [D03](D03-loyiha-boshlangich-hujjati.md) ga savol bo'lib qaytadi. *Nega:* og'zaki "shunday ekran kerak" bilan boshlangan dizayn TZ'dan uzoqlashadi va keyin qayta chiziladi.
-2. **Avval wireframe, keyin UI.** UI faqat wireframe review'dan keyin boshlanadi. Wireframe review'da: analitik — har story qamralganmi; frontend yoki tech lead — qurish mumkinmi, kutubxonada bormi; PO — oqim to'g'rimi. Bitta oddiy ekran (masalan, standart forma) uchun wireframe o'tkazib yuborilishi mumkin; ko'p qadamli oqim uchun — yo'q. *Nega:* oqimdagi xato wireframe'da bir soatda tuzatiladi; chiroyli UI'da topilsa — ekranlar qayta chiziladi.
-3. **Har ekran TZ'ga bog'langan.** Figma'dagi har frame nomida ekran ID'si va holati bor (4.2), ekran esa [D03](D03-loyiha-boshlangich-hujjati.md) dagi ekranlar ro'yxatida va story'ga bog'langan. Ro'yxatda yo'q ekran chizilmaydi — avval TZ'ga qo'shiladi. *Nega:* bog'lanmagan ekranni dasturchi topa olmaydi, o'zgarish qaysi ekranlarga ta'sir qilishini esa hech kim ayta olmaydi; ro'yxatdan tashqari ekran — yashirin scope.
+1. **Brief'siz chizilmaydi.** Brief (4.1) analitik va dizayner tomonidan tasdiqlangan TZ'ning tegishli bo'limlaridan to'ldiriladi. Brief'da TZ'da yo'q talab paydo bo'lmaydi; agar paydo bo'lsa, u [D03](D03-loyiha-boshlangich-hujjati.md) ga savol bo'lib qaytadi. *Nega:* og'zaki "shunday ekran kerak" bilan boshlangan dizayn TZ'dan uzoqlashadi va keyin qayta chiziladi.
+2. **Avval wireframe, keyin UI.** UI faqat wireframe review'dan keyin boshlanadi. Wireframe review'da analitik har bir story qamralganini, frontend yoki tech lead ekranni qurish mumkinligi va komponent kutubxonada borligini, PO esa oqim to'g'riligini tekshiradi. Bitta oddiy ekran (masalan, standart forma) uchun wireframe o'tkazib yuborilishi mumkin, ko'p qadamli oqim uchun esa mumkin emas. *Nega:* oqimdagi xato wireframe'da bir soatda tuzatiladi; u chiroyli UI'da topilsa, ekranlar qayta chiziladi.
+3. **Har bir ekran TZ'ga bog'lanadi.** Figma'dagi har bir frame nomida ekran ID'si va holati bo'ladi (4.2), ekranning o'zi esa [D03](D03-loyiha-boshlangich-hujjati.md) dagi ekranlar ro'yxatida turadi va story'ga bog'langan bo'ladi. Ro'yxatda yo'q ekran chizilmaydi: u avval TZ'ga qo'shiladi. *Nega:* bog'lanmagan ekranni dasturchi topa olmaydi, o'zgarish qaysi ekranlarga ta'sir qilishini esa hech kim ayta olmaydi; ro'yxatdan tashqari ekran yashirin scope'ga aylanadi.
 4. **Holatlarsiz ekran tayyor emas.** [D12](D12-ui-ux-standartlari.md) dagi holatlar (B bo'limi) va TZ story'laridagi xato holatlari chizilmaguncha ekran handoff'ga chiqmaydi. *Nega:* chizilmagan holatni har dasturchi o'zicha quradi yoki umuman qurmaydi.
-5. **Review — yozma izohlar bilan, muddat bilan.** Wireframe va UI review'da izohlar Figma'ning o'zida, [D05](D05-kickoff-va-doc-review.md) dagi belgilar bilan qoldiriladi: `[bloklovchi]`, `[savol]`, `[taklif]`. Review muddati — 1 ish kuni. Mijoz izohi scope'ni o'zgartirsa (yangi ekran, yangi funksiya) — change request ([D10](D10-ozgarishlarni-boshqarish.md)); ko'rinish va matn bo'yicha bo'lsa — dizayner tuzatadi. *Nega:* og'zaki izoh eslab qolinmaydi; muddatsiz review dizaynni haftalab kutdiradi; "shu tugmani ham qo'shamiz" esa dizayn orqali scope'ni yashirin kengaytiradi.
-6. **Handoff'dagi maket — yagona haqiqat, o'zgarishi versiya bilan.** Figma'da "Handoff" sahifasidagi narsa quriladi; boshqa sahifalar — ish jarayoni. Handoff'dan keyingi har o'zgarish versiya nomi va izoh bilan saqlanadi (Figma version history), dasturchiga va tegishli Jira taskiga yoziladi. *Nega:* "qaysi maket oxirgisi?" savoli va eski versiya bo'yicha qurilgan ekran — rework'ning eng tez yo'li.
-7. **Handoff checklist bilan va qabul qilinadi.** Dizayner handoff checklistini (4.3) to'ldiradi; frontend va QA ko'rib chiqadi, savollar yopiladi. Dasturchi qabul qilgach, ekran taski Ready'ga tayyor bo'ladi ([D08](D08-kanban-dor-dod.md) DoR). Maket sifatini tekshirish (komponentlar, tokenlar, kontrast) — [D12](D12-ui-ux-standartlari.md) 5.1. *Nega:* "maket tayyor" degani dizayner uchun bir narsa, dasturchi uchun boshqa; checklist ikkalasi uchun bir xil "tayyor".
-8. **Prototip — ko'p qadamli oqim uchun.** Login → test kabi ketma-ket oqimlar uchun bosiladigan prototip qilinadi va PO'ga shu orqali ko'rsatiladi; alohida ekranlar uchun shart emas. *Nega:* mijoz oqimni statik ekranlar qatoridan tasavvur qila olmaydi; prototipda esa qadam yetishmasligi darhol ko'rinadi.
-9. **Dizayner qurilgan ekranni ko'radi.** Har release'dan oldin dizayner asosiy ekranlarni staging'da maket bilan solishtiradi; farqlar bug sifatida ([D08](D08-kanban-dor-dod.md)) ochiladi. Kundalik tekshiruv — Testing'da ([D12](D12-ui-ux-standartlari.md) 5.2). *Nega:* maket va kod sekin-asta ajralib ketadi; ularni eng yaxshi ko'radigan odam — maket muallifi.
+5. **Review yozma izohlar bilan va belgilangan muddatda o'tadi.** Wireframe va UI review'da izohlar Figma'ning o'zida, [D05](D05-kickoff-va-doc-review.md) dagi belgilar bilan qoldiriladi: `[bloklovchi]`, `[savol]`, `[taklif]`. Review muddati 1 ish kuni. Mijoz izohi scope'ni o'zgartirsa (yangi ekran, yangi funksiya), u change request sifatida rasmiylashtiriladi ([D10](D10-ozgarishlarni-boshqarish.md)); izoh ko'rinish yoki matn bo'yicha bo'lsa, dizayner uni o'zi tuzatadi. *Nega:* og'zaki izoh eslab qolinmaydi; muddatsiz review dizaynni haftalab kutdiradi; "shu tugmani ham qo'shamiz" esa dizayn orqali scope'ni yashirin kengaytiradi.
+6. **Handoff'dagi maket yagona haqiqat hisoblanadi va faqat versiya bilan o'zgaradi.** Figma'da faqat "Handoff" sahifasidagi narsa quriladi; boshqa sahifalar ish jarayoni uchun. Handoff'dan keyingi har bir o'zgarish versiya nomi va izoh bilan saqlanadi (Figma version history), dasturchiga yetkaziladi va tegishli Jira taskiga yoziladi. *Nega:* "qaysi maket oxirgisi?" degan savol va eski versiya bo'yicha qurilgan ekran rework'ga olib boradigan eng tez yo'l.
+7. **Handoff checklist bilan o'tadi va dasturchi tomonidan qabul qilinadi.** Dizayner handoff checklistini (4.3) to'ldiradi; frontend va QA ko'rib chiqadi, savollar yopiladi. Dasturchi qabul qilgach, ekran taski Ready'ga tayyor bo'ladi ([D08](D08-kanban-dor-dod.md) DoR). Maket sifatini tekshirish (komponentlar, tokenlar, kontrast) [D12](D12-ui-ux-standartlari.md) ning 5.1-bandida yozilgan. *Nega:* "maket tayyor" degani dizayner uchun bir narsani, dasturchi uchun boshqa narsani bildiradi; checklist esa ikkalasi uchun bir xil "tayyor"ni belgilaydi.
+8. **Prototip ko'p qadamli oqim uchun qilinadi.** Login → test kabi ketma-ket oqimlar uchun bosiladigan prototip qilinadi va PO'ga shu orqali ko'rsatiladi; alohida ekranlar uchun shart emas. *Nega:* mijoz oqimni statik ekranlar qatoridan tasavvur qila olmaydi; prototipda esa qadam yetishmasligi darhol ko'rinadi.
+9. **Dizayner qurilgan ekranni ko'radi.** Har release'dan oldin dizayner asosiy ekranlarni staging'da maket bilan solishtiradi; farqlar bug sifatida ([D08](D08-kanban-dor-dod.md)) ochiladi. Kundalik tekshiruv Testing ustunida o'tkaziladi ([D12](D12-ui-ux-standartlari.md) 5.2). *Nega:* maket va kod sekin-asta bir-biridan ajralib ketadi, bu farqni esa eng yaxshi maket muallifi ko'radi.
 
 **Kichik loyihada (3–5 kishi).** Brief alohida hujjat bo'lmasligi mumkin: TZ'dagi ekranlar ro'yxatiga maket havolasi qo'shiladi ([D03](D03-loyiha-boshlangich-hujjati.md)). Oddiy ekranlar uchun wireframe o'tkazib yuboriladi. 3-, 4-, 6- va 7-qoidalar (TZ'ga bog'lash, holatlar, yagona haqiqat, handoff checklist) majburiy.
 
@@ -99,24 +99,24 @@ Qabul qildi: frontend — <ism>, QA — <ism>, <sana>
 
 ## 5. Misol
 
-Misol loyihada hali yozilmagan: Test Platformasi uchun Face ID va test yechish ekranlari brief'i — [loyiha kartasidagi "Hujjatlar" jadvalida](loyihalar/test-platformasi/index.md) "rejada".
+Test Platformasi uchun Face ID va test yechish ekranlari brief'i misol loyihada hali yozilmagan: [loyiha kartasidagi "Hujjatlar" jadvalida](loyihalar/test-platformasi/index.md) u "rejada" deb belgilangan.
 
 ## 6. Checklist: dizayn bosqichi tayyormi
 
 - [ ] Release yoki modul uchun brief bor va TZ versiyasiga bog'langan
 - [ ] Ko'p qadamli oqimlar wireframe review'dan o'tgan: analitik, frontend yoki tech lead va PO izohlari yopilgan
-- [ ] Figma tuzilmasi 4.2 bo'yicha; har frame nomida ekran ID'si va holati
+- [ ] Figma tuzilmasi 4.2 bo'yicha qurilgan; har bir frame nomida ekran ID'si va holati bor
 - [ ] Handoff checklisti (4.3) to'ldirilgan va frontend hamda QA qabul qilgan
 - [ ] Mijoz maketni yoki prototipni ko'rgan; scope'ni o'zgartiradigan izohlari change request bo'lgan
 - [ ] Handoff'dan keyingi har o'zgarish versiya nomi bilan va Jira taskida qayd etilgan
 
 ## 7. Tez-tez uchraydigan xatolar
 
-1. **To'g'ridan-to'g'ri chiroyli UI.** Oqim kelishilmagan, mijoz uchinchi ekranda "bu qadam umuman kerak emas" deydi. To'g'risi: ko'p qadamli oqim uchun avval wireframe.
-2. **"Oxirgi maket qaysi?"** Figma'da beshta variant, dasturchi eskisini quradi. To'g'risi: "Handoff" sahifasi — yagona haqiqat, o'zgarish — versiya bilan.
-3. **Dizayn orqali scope.** Review'da mijoz yangi ekran so'raydi, dizayner chizadi — TZ'da va bahoda u yo'q. To'g'risi: yangi ekran — change request.
-4. **Handoff — Telegram'da havola.** "Mana maket" degan xabar, holatlar va savollar yo'q. To'g'risi: handoff checklist va dasturchining qabuli.
-5. **Dizayner release'dan keyin yo'qoladi.** Qurilgan ekran maketdan farq qiladi, buni hech kim sezmaydi. To'g'risi: release oldidan dizaynerning staging'dagi ko'rigi.
+1. **To'g'ridan-to'g'ri chiroyli UI.** Oqim kelishilmagan, mijoz esa uchinchi ekranda "bu qadam umuman kerak emas" deydi. To'g'risi: ko'p qadamli oqim uchun avval wireframe chizish.
+2. **"Oxirgi maket qaysi?"** Figma'da beshta variant bor, dasturchi esa eskisini quradi. To'g'risi: "Handoff" sahifasi yagona haqiqat bo'ladi, o'zgarish esa versiya bilan kiritiladi.
+3. **Dizayn orqali scope kengayadi.** Review'da mijoz yangi ekran so'raydi, dizayner uni chizadi, lekin TZ'da ham, bahoda ham u yo'q. To'g'risi: yangi ekran change request orqali kiritiladi.
+4. **Handoff Telegram'dagi havola bilan cheklanadi.** "Mana maket" degan xabar yuboriladi, holatlar chizilmagan, savollar yopilmagan. To'g'risi: handoff checklist bo'yicha topshirish va dasturchining qabuli.
+5. **Dizayner release'dan keyin yo'qoladi.** Qurilgan ekran maketdan farq qiladi, lekin buni hech kim sezmaydi. To'g'risi: release oldidan dizayner ekranlarni staging'da ko'rib chiqadi.
 
 ---
 

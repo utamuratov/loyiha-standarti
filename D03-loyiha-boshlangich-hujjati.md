@@ -6,8 +6,8 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 
 ## 2. Kim uchun va qachon
 
-- **Egasi:** biznes analitik (kichik jamoada — PM). Yozadi, versiyasini yuritadi, savollarni yopadi.
-- **Tasdiqlaydi:** mijoz (PO) — scope va story'lar bo'yicha yozma tasdiq.
+- **Egasi:** biznes analitik (kichik jamoada PM). U hujjatni yozadi, versiyasini yuritadi va ochiq savollarni yopadi.
+- **Tasdiqlaydi:** mijoz (PO); u scope va story'larni yozma tasdiqlaydi.
 - **Kim nimani o'qiydi:**
 
 | Rol | D03 dan nima oladi |
@@ -19,27 +19,27 @@ Loyiha bo'yicha barcha rollar bir xil tushunadigan yagona manba bo'lsin: nima qu
 | Support | Rollar va asosiy oqimlar — qo'llanma uchun ([D15](D15-qollanma-va-oqitish.md)) |
 
 - **Qachon:**
-  - 1-bosqich (Boshlash): **Brief** qismi, 1–2 sahifa — 1-darvozaga.
-  - 2-bosqich (Talablar): **to'liq TZ** — [D05](D05-kickoff-va-doc-review.md) doc review'dan o'tib, 2-darvozaga.
-  - Keyin: faqat [D10](D10-ozgarishlarni-boshqarish.md) (change request) orqali o'zgaradi.
+  - 1-bosqichda (Boshlash) 1–2 sahifalik **Brief** qismi yoziladi va 1-darvozaga olib kelinadi.
+  - 2-bosqichda (Talablar) **to'liq TZ** yoziladi, [D05](D05-kickoff-va-doc-review.md) doc review'dan o'tadi va 2-darvozaga olib kelinadi.
+  - Shundan keyin D03 faqat [D10](D10-ozgarishlarni-boshqarish.md) (change request) orqali o'zgaradi.
 
 **Atamalar.** *User story* — foydalanuvchi nuqtai nazaridan yozilgan talab: "kim, nima qiladi, nima uchun". *Qabul mezoni* (acceptance criteria) — story bajarilganini tekshiradigan aniq shartlar. *API kontrakti* — frontend va backend o'rtasidagi kelishuv: endpoint, so'rov va javob formati, xato kodlari. *Nofunksional talab* — tizim *qanday* ishlashi: tezlik, yuklama, xavfsizlik.
 
 ## 3. Qoidalar
 
 1. **Bitta loyiha — bitta D03.** Talab chatda, ovozli xabarda yoki alohida faylda bo'lsa, u D03 ga tushmaguncha talab hisoblanmaydi. *Nega:* tarqoq talablarni har kim o'zicha yig'adi va farq oxirida chiqadi.
-2. **Avval Brief, keyin TZ.** Brief'da faqat muammo, maqsad, muvaffaqiyat mezoni va scope chegarasi. Story'lar mijoz Brief'ni tasdiqlagandan keyin yoziladi. *Nega:* maqsad kelishilmasdan yozilgan detallar butunlay qayta yoziladi.
+2. **Avval Brief, keyin TZ.** Brief'da faqat muammo, maqsad, muvaffaqiyat mezoni va scope chegarasi yoziladi. Story'lar mijoz Brief'ni tasdiqlagandan keyin yoziladi. *Nega:* maqsad kelishilmasdan yozilgan detallar butunlay qayta yoziladi.
 3. **Scope'da "kirmaydi" ro'yxati majburiy.** *Nega:* aytilmagan narsani mijoz "bo'ladi" deb, jamoa "bo'lmaydi" deb tushunadi.
-4. **Har story'ning ID'si va kamida 2 ta qabul mezoni bor, ulardan biri — xato yoki chegaraviy holat.** Format: "Agar … / Qachon … / Unda …". *Nega:* dizayner xato holatini chizadi, dasturchi uni kodlaydi, QA tekshiradi — hammasi bitta matndan.
+4. **Har story'ning ID'si va kamida 2 ta qabul mezoni bor, ulardan biri — xato yoki chegaraviy holat.** Format: "Agar … / Qachon … / Unda …". *Nega:* dizayner xato holatini chizadi, dasturchi uni kodlaydi, QA tekshiradi va hammasi bitta matnga tayanadi.
 5. **Story ID boshqa joylarda ham ishlatiladi:** Jira task, Figma ekran, test ssenariysi. *Nega:* o'zgarish bo'lsa, nimalarga ta'sir qilishi bir qidiruvda topiladi.
-6. **Har bir rol va ruxsat matritsada.** Rol nima ko'radi, nima qiladi, nima qila olmaydi. *Nega:* ruxsatlar odatda oxirida esga olinadi va xavfsizlik teshigi bo'ladi.
-7. **Sozlanadigan xulq-atvor alohida ro'yxatda.** Admin yoqib-o'chira oladigan har bir narsa — nomi, standart qiymati, qachon kuchga kirishi. *Nega:* "qachon kuchga kiradi" yozilmasa, har dasturchi o'zicha qiladi.
-8. **Nofunksional talablar raqam bilan.** "Tez ishlasin" emas, "imtihon kuni bir vaqtda N ishtirokchi, javobni saqlash 1 soniyadan oshmaydi". *Nega:* raqamsiz talabni tekshirib ham, baholab ham bo'lmaydi.
-9. **Shaxsiy ma'lumot bilan ishlansa, alohida bo'lim majburiy:** qaysi ma'lumot, nima uchun, rozilik qanday olinadi va qayd etiladi, kim ko'radi, qayerda va qancha saqlanadi, qachon o'chiriladi. Himoyaning texnik qoidalari — [D14](D14-release-va-deploy.md). *Nega:* bu huquqiy majburiyat; keyin qo'shish qimmat.
-10. **API kontrakti talablari D03 da, jarayoni [D11](D11-dasturchilar-qoidalari.md) da.** D03 da: qaysi ma'lumot oqimlari, asosiy endpointlar, xato holatlari va kontrakt fayli qayerda saqlanishi. 2-darvozaga qoralama, 3-darvozagacha asosiy endpointlar kelishilgan bo'ladi. *Nega:* frontend va backend bir vaqtda ishlay olishi uchun kontrakt koddan oldin turishi kerak.
-11. **Ochiq savollar — egasi va muddati bilan.** Ish boshlanishini to'xtatadigan savol "bloklovchi" deb belgilanadi ([D05](D05-kickoff-va-doc-review.md)). *Nega:* egasiz savol hech qachon yopilmaydi.
+6. **Har bir rol va ruxsat matritsaga yoziladi.** Unda rol nimani ko'rishi, nima qilishi va nima qila olmasligi ko'rsatiladi. *Nega:* ruxsatlar odatda oxirida esga olinadi va xavfsizlik teshigiga aylanadi.
+7. **Sozlanadigan xulq-atvor alohida ro'yxatga yoziladi.** Admin yoqib-o'chira oladigan har bir narsa uchun nomi, standart qiymati va qachon kuchga kirishi ko'rsatiladi. *Nega:* "qachon kuchga kiradi" yozilmasa, har dasturchi o'zicha qiladi.
+8. **Nofunksional talablar raqam bilan yoziladi.** "Tez ishlasin" emas, "imtihon kuni bir vaqtda N ishtirokchi, javobni saqlash 1 soniyadan oshmaydi". *Nega:* raqamsiz talabni tekshirib ham, baholab ham bo'lmaydi.
+9. **Shaxsiy ma'lumot bilan ishlansa, alohida bo'lim majburiy:** qaysi ma'lumot, nima uchun, rozilik qanday olinadi va qayd etiladi, kim ko'radi, qayerda va qancha saqlanadi, qachon o'chiriladi. Himoyaning texnik qoidalari [D14](D14-release-va-deploy.md) da. *Nega:* bu huquqiy majburiyat, uni keyin qo'shish esa qimmatga tushadi.
+10. **API kontrakti talablari D03 da, jarayoni [D11](D11-dasturchilar-qoidalari.md) da.** D03 da qaysi ma'lumot oqimlari borligi, asosiy endpointlar, xato holatlari va kontrakt fayli qayerda saqlanishi yoziladi. 2-darvozaga kontraktning qoralamasi olib kelinadi, 3-darvozagacha esa asosiy endpointlar kelishilgan bo'ladi. *Nega:* frontend va backend bir vaqtda ishlay olishi uchun kontrakt koddan oldin turishi kerak.
+11. **Ochiq savollar egasi va muddati bilan yoziladi.** Ish boshlanishini to'xtatadigan savol "bloklovchi" deb belgilanadi ([D05](D05-kickoff-va-doc-review.md)). *Nega:* egasiz savol hech qachon yopilmaydi.
 12. **Faraz yozib qo'yiladi.** Ma'lumot yo'q bo'lsa, faraz qilinadi va "faraz" deb belgilanadi. *Nega:* faraz noto'g'ri chiqsa, qaysi qism qayta ko'rilishi ko'rinadi.
-13. **Versiya va tasdiq.** Har tasdiqlangan versiya raqamlanadi (v1.0, v1.1 …); mijozning yozma tasdig'i va tasdiqlangan versiya raqami Jira epic'ida turadi. Risklar D03 da emas, [D02](D02-loyiha-hayot-sikli.md) risklar reestrida. *Nega:* "qaysi versiya bo'yicha qildik" degan bahs bo'lmaydi.
+13. **Versiya va tasdiq.** Har tasdiqlangan versiya raqamlanadi (v1.0, v1.1 …); mijozning yozma tasdig'i va tasdiqlangan versiya raqami Jira epic'ida turadi. Risklar D03 da emas, [D02](D02-loyiha-hayot-sikli.md) dagi risklar reestrida yuritiladi. *Nega:* "qaysi versiya bo'yicha qildik" degan bahs bo'lmaydi.
 
 **Kichik loyihada.** Shablonning hamma bo'limlari qoladi, lekin har biri qisqa bo'lishi mumkin. Dizayn brief'i ([D04](D04-dizayn-brief-va-jarayon.md)) alohida yozilmasa, ekranlar ro'yxatiga maket havolasi qo'shiladi.
 
@@ -80,7 +80,7 @@ Tasdiqlagan: <mijoz PO, sana>
 
 ## 5. Misol
 
-Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · TZ (qisqartirilgan)](loyihalar/test-platformasi/D03-tz.md).
+Shu doc bo'yicha to'ldirilgan variantni misol loyihada ko'ring: [Test Platformasi · TZ (qisqartirilgan)](loyihalar/test-platformasi/D03-tz.md).
 
 ## 6. Checklist: D03 tayyormi
 
@@ -94,15 +94,15 @@ Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · T
 - [ ] Shaxsiy ma'lumotlar bo'limi to'ldirilgan (agar tegishli bo'lsa)
 - [ ] API kontrakti qoralamasi va kontrakt fayli havolasi bor
 - [ ] [D05](D05-kickoff-va-doc-review.md) doc review'da bloklovchi savollar soni 0; qolgan savollarning egasi va muddati bor
-- [ ] Versiya raqami va mijozning yozma tasdig'i Jira epic'ida
+- [ ] Versiya raqami va mijozning yozma tasdig'i Jira epic'ida turibdi
 
 ## 7. Tez-tez uchraydigan xatolar
 
 1. **Faqat "baxtli yo'l".** Story'larda internet uzilishi, topilmagan foydalanuvchi, ruxsat yo'qligi yozilmaydi — ular release oldidan bug bo'lib chiqadi.
-2. **"Va hokazo" bilan tugaydigan scope.** "Hisobotlar va h.k." — baholab ham, qabul qilib ham bo'lmaydi. Har bir narsa nomi bilan yoki "kirmaydi" ro'yxatida.
-3. **TZ — bir martalik hujjat.** Tasdiqlangandan keyin o'zgarishlar chatda qoladi va D03 eskiradi. To'g'risi: har o'zgarish [D10](D10-ozgarishlarni-boshqarish.md) orqali va versiyalar tarixida.
-4. **Dasturchi yozadigan narsani analitik yozadi.** TZ'da jadval nomlari, kod tuzilmasi. To'g'risi: D03 "nima" va "qanday tekshiriladi" ni yozadi; "qanday quriladi" — ADR va kod ([D11](D11-dasturchilar-qoidalari.md)).
-5. **Raqamsiz nofunksional talablar.** "Ko'p foydalanuvchiga chidasin" — yuklama testi nimaga qarab o'tkazilishi noma'lum.
+2. **"Va hokazo" bilan tugaydigan scope.** "Hisobotlar va h.k." kabi scope'ni baholab ham, qabul qilib ham bo'lmaydi. To'g'risi: har bir narsa nomi bilan yoziladi yoki "kirmaydi" ro'yxatiga kiritiladi.
+3. **TZ bir martalik hujjat deb qaraladi.** Tasdiqlangandan keyin o'zgarishlar chatda qoladi va D03 eskiradi. To'g'risi: har bir o'zgarish [D10](D10-ozgarishlarni-boshqarish.md) orqali kiritiladi va versiyalar tarixiga yoziladi.
+4. **Dasturchi yozadigan narsani analitik yozadi.** TZ'da jadval nomlari va kod tuzilmasi paydo bo'ladi. To'g'risi: D03 "nima" va "qanday tekshiriladi" degan savollarga javob beradi; "qanday quriladi" esa ADR va kodda yoziladi ([D11](D11-dasturchilar-qoidalari.md)).
+5. **Raqamsiz nofunksional talablar.** "Ko'p foydalanuvchiga chidasin" deb yoziladi, lekin yuklama testini nimaga qarab o'tkazish noma'lum bo'lib qoladi.
 
 ---
 

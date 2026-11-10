@@ -2,7 +2,7 @@
 
 Standart: [D14 — Release va deploy tartibi](../../D14-release-va-deploy.md). Misol loyiha: [Test Platformasi](index.md).
 
-Frontend misollari real repozitoriydan (`test-uzedu-user`). Backend deploy, migratsiyalar va backup — `[TO'LDIRILSIN: backend]`.
+Frontend misollari real repozitoriydan (`test-uzedu-user`) olingan. Backend deploy, migratsiyalar va backup `[TO'LDIRILSIN: backend]` deb belgilangan.
 
 ## Real frontend pipeline qanday ishlaydi
 
@@ -11,11 +11,11 @@ Manba: `.gitlab-ci.yml`, `Dockerfile`, `nginx.conf`, `angular.json`.
 - **`dev` branch:**
   1. `npm run staging-uzinfocom` bilan build;
   2. nginx image yig'iladi va Harbor registry'ga yuboriladi;
-  3. `deploy` job GitOps repozitoriysidagi `kustomization.yaml` da image tegini yangilaydi — staging avtomatik yangilanadi.
+  3. `deploy` job GitOps repozitoriysidagi `kustomization.yaml` da image tegini yangilaydi va staging avtomatik yangilanadi.
 - **`main` branch:**
   1. `npm run production-uzinfocom` bilan build;
   2. alohida image (`Dockerfile.prod` bilan) yig'iladi;
-  3. `deploy_prod` — qo'lda tasdiqlanadigan job (`when: manual`): SSH orqali prod serverga kirib `docker compose pull` va `up` qiladi.
+  3. `deploy_prod` qo'lda tasdiqlanadigan job (`when: manual`): u SSH orqali prod serverga kirib `docker compose pull` va `up` qiladi.
 - **Mijozlar:** har mijozning API manzili build vaqtida kiritiladi (`angular.json` dagi `fileReplacements`, `src/environments/<mijoz>/`). Pipeline faqat uzinfocom konfiguratsiyasini yig'adi, `nginx.conf` ham `index.uzinfocom.html` ni beradi.
 
 ## Standart bilan solishtirganda
@@ -24,12 +24,12 @@ Manba: `.gitlab-ci.yml`, `Dockerfile`, `nginx.conf`, `angular.json`.
 | --- | --- | --- |
 | Muhitlar ajratilgan (3-bo'lim) | `dev` → staging, `main` → prod | — (mos) |
 | Staging'ga avtomatik deploy | Ha, GitOps orqali | — (mos) |
-| Konfiguratsiya kodda (3) | Staging — GitOps repoda; prod — SSH va serverdagi `docker compose` | Prod'ni ham GitOps'ga o'tkazish yoki compose faylini repoda yuritish |
-| Prod deploy qo'lda tasdiq bilan (9) | `deploy_prod` — `when: manual` | — (mos); job'ni kim ishga tushira olishini protected environment bilan cheklash |
-| Bitta artefakt (2) | Staging va prod uchun alohida build; API manzili build vaqtida kiritiladi | Muhit sozlamasini ishga tushishda yuklash (masalan, image ichidagi `config.json` ni deploy paytida almashtirish). Shunda staging'da tekshirilgan image prod'ga chiqadi. Hozircha — prod build staging'da tekshirilgan commit'dan, risk reestrga |
-| Versiyalash (4) | `package.json` da `0.0.0`; git teglar yo'q; image tegi — build sanasi (`BUILD_DATE`) | SemVer teg, image tegi = versiya + SHA |
-| Rollback (11–12) | Avtomatik rollback yo'q. Image tegi `tag.txt` artefaktida, u 10 daqiqada o'chadi (`expire_in: 10 minutes`) — oldingi tegni keyin topish qiyin | Teglarni release notes va deploy yozuvida saqlash; `deploy_prod` ga oldingi tegni qo'lda berish imkoniyati (`ROLLBACK_TAG` o'zgaruvchisi); staging'da sinash |
-| Testlar deploy'dan oldin | Pipeline'da test bosqichi yo'q ([D13](../../D13-test-strategiyasi.md)) | `build_job` faqat test job'laridan keyin ([test rejasi](D13-test-rejasi.md), CI job namunasi) |
+| Konfiguratsiya kodda (3) | Staging konfiguratsiyasi GitOps repoda; prod esa SSH va serverdagi `docker compose` orqali boshqariladi | Prod'ni ham GitOps'ga o'tkazish yoki compose faylini repoda yuritish |
+| Prod deploy qo'lda tasdiq bilan (9) | `deploy_prod` job'i `when: manual` | — (mos); job'ni kim ishga tushira olishini protected environment bilan cheklash |
+| Bitta artefakt (2) | Staging va prod uchun alohida build; API manzili build vaqtida kiritiladi | Muhit sozlamasini ishga tushishda yuklash (masalan, image ichidagi `config.json` ni deploy paytida almashtirish). Shunda staging'da tekshirilgan image prod'ga chiqadi. Hozircha prod build staging'da tekshirilgan commit'dan olinadi va bu risk reestrga yoziladi |
+| Versiyalash (4) | `package.json` da `0.0.0`; git teglar yo'q; image tegi sifatida build sanasi (`BUILD_DATE`) ishlatiladi | SemVer teg, image tegi = versiya + SHA |
+| Rollback (11–12) | Avtomatik rollback yo'q. Image tegi `tag.txt` artefaktida turadi va u 10 daqiqada o'chadi (`expire_in: 10 minutes`), shuning uchun oldingi tegni keyin topish qiyin | Teglarni release notes va deploy yozuvida saqlash; `deploy_prod` ga oldingi tegni qo'lda berish imkoniyati (`ROLLBACK_TAG` o'zgaruvchisi); staging'da sinash |
+| Testlar deploy'dan oldin | Pipeline'da test bosqichi yo'q ([D13](../../D13-test-strategiyasi.md)) | `build_job` faqat test job'laridan keyin ishlaydi ([test rejasi](D13-test-rejasi.md), CI job namunasi) |
 | `Dockerfile.prod` | Pipeline unga murojaat qiladi, lekin repoda (lokal nusxadagi hech bir branch tarixida) bunday fayl yo'q | [TO'LDIRILSIN: prod image qayerdan yig'iladi — fayl boshqa joydami yoki prod pipeline boshqacha ishlaydimi] |
 | Boshqa mijozlar (argos, olymp, control, ssv) | `package.json` da build skriptlari bor, `.gitlab-ci.yml` da yo'q | [TO'LDIRILSIN: ular qanday deploy qilinadi]. Har mijoz uchun pipeline'da alohida job yoki parametr |
 | Maxfiy kalitlar (21) | CI o'zgaruvchilari orqali | Protected/masked ekanini tekshirish |
@@ -38,7 +38,7 @@ Manba: `.gitlab-ci.yml`, `Dockerfile`, `nginx.conf`, `angular.json`.
 
 ## Release vaqti: Test Platformasi uchun
 
-Test Platformasida asosiy xavf — test sessiyasi o'rtasidagi release:
+Test Platformasida asosiy xavf test sessiyasi o'rtasida chiqarilgan release'dan keladi:
 
 - Imtihon kunlarida minglab ishtirokchi bir vaqtda test topshiradi (`docs/test-entry-flow.md`).
 - Yangi frontend versiyasi deploy qilinganda, sahifani oldin ochgan foydalanuvchilarning brauzerida eski versiya ishlab turadi. Eski versiya so'raydigan fayllar yangi deploy'dan keyin serverda bo'lmasligi mumkin.
@@ -68,7 +68,7 @@ Real `main` tarixidagi commitlar (`git log`) release notes'ga shunday aylanadi:
 - feat(ssv): add new environment configurations and index.html for SSV
 ```
 
-Versiya raqami va sana — namuna; real repoda teg yo'q.
+Versiya raqami va sana namuna sifatida berilgan; real repoda teg yo'q.
 
 ## Rollback (namunaviy reja)
 
@@ -83,11 +83,11 @@ Qadamlar:
 Migratsiya: frontend release — baza o'zgarmaydi
 ```
 
-`ROLLBACK_TAG` — standart bo'yicha qo'shiladigan o'zgaruvchi, real pipeline'da hozir yo'q.
+`ROLLBACK_TAG` standart bo'yicha qo'shiladigan o'zgaruvchi, real pipeline'da u hozir yo'q.
 
 ## Og'riqqa bog'liqlik
 
-"Aytilgan narsalar esdan chiqadi" va "Nega unday qilgandik?" — release notes va deploy yozuvi (standart: 5-qoida, 6.5) "qachon nima o'zgardi va kim chiqardi" savoliga yozma javob beradi. Bu javob Telegram'dagi xabarlar orasidan qidirilmaydi.
+"Aytilgan narsalar esdan chiqadi" va "Nega unday qilgandik?" og'riqlariga bog'liq: release notes va deploy yozuvi (standart: 5-qoida, 6.5) "qachon nima o'zgardi va kim chiqardi" savoliga yozma javob beradi. Bu javob Telegram'dagi xabarlar orasidan qidirilmaydi.
 
 ---
 

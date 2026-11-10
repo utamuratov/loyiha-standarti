@@ -1,6 +1,6 @@
 # Ish rejasi: standartni yozish va joriy etish
 
-Bu sahifa standartning o'zi emas — uni yozish va joriy etish rejasi hamda yozish jarayonida qabul qilingan kelishuvlar. Standart — [root doc](00-root.md), misol loyiha — [Test Platformasi](loyihalar/test-platformasi/index.md), doc yozish tartibi — [AGENTS.md](AGENTS.md).
+Bu sahifa standartning o'zi emas: unda standartni yozish va joriy etish rejasi hamda yozish jarayonida qabul qilingan kelishuvlar bor. Standartning o'zi [root doc](00-root.md) dan boshlanadi, misol loyiha [Test Platformasi](loyihalar/test-platformasi/index.md) papkasida, doc yozish tartibi esa [AGENTS.md](AGENTS.md) da.
 
 ## TODO ro'yxati
 
@@ -17,7 +17,7 @@ Ish 5 fazada boradi: tayyorgarlik, doclar uchta fazada, keyin joriy etish. 1-faz
 
 ### 1-faza: Asosiy yadro — jarayon asosi va texnik standartlar
 
-Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar va RACI — [D01](D01-rollar-va-raci.md) (2-fazada yozildi).
+Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazaga kiradi. Rollar va RACI ([D01](D01-rollar-va-raci.md)) 2-fazada yozildi.
 
 - [x] [D02](D02-loyiha-hayot-sikli.md) — Loyiha hayot sikli va bosqich darvozalari (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
 - [x] [D03](D03-loyiha-boshlangich-hujjati.md) — Loyiha boshlang'ich hujjati + Test Platformasi TZ misoli (2026-11-07, izohsiz qabul qilindi; `[TO'LDIRILSIN]` lari ochiq)
@@ -58,15 +58,15 @@ Eng ko'p so'ralgan mavzular (code review, test, deploy, UI) shu fazada. Rollar v
 
 ## Kelishuvlar
 
-Standartni yozish boshida aniqlangan javoblar (2026-11-06, Odilbek Utamuratovdan). Test Platformasining o'ziga oid faktlar (mahsulot, jamoa, vositalar, repo) — [misol loyiha kartasida](loyihalar/test-platformasi/index.md).
+Standartni yozish boshida aniqlangan javoblar (2026-11-06, Odilbek Utamuratovdan). Test Platformasining o'ziga oid faktlar (mahsulot, jamoa, vositalar, repo) [misol loyiha kartasida](loyihalar/test-platformasi/index.md) yozilgan.
 
-- **Qo'llanmaning asosiy maqsadi.** Yangi loyihani qurish uchun nima bo'lishi va qanday harakat qilish kerakligi — ayniqsa deploy, code review, test va UI standartlari. Shu sabab [D11](D11-dasturchilar-qoidalari.md)–[D14](D14-release-va-deploy.md) 1-fazaga olindi.
-- **Eng ko'p og'riq bergan muammolar.** Root docdagi "Jamoadagi real og'riqlar" jadvali.
-- **Misol qanday ishlatiladi.** Test Platformasi jarayon namunasi emas (kamchiliklari ko'p), lekin release qilingan real mahsulot. Misollar "Test Platformasini noldan qurish" ssenariysi bo'yicha, standartdan alohida — misol loyiha papkasida yoziladi.
-- **Standart kim uchun.** Faqat ichki jamoa uchun. Loyihaning o'z hujjatlari (masalan, [D03](D03-loyiha-boshlangich-hujjati.md) bo'yicha yozilgan TZ) mijoz bilan kelishilishi mumkin, standartning o'zi ko'rsatilmaydi.
-- **Doclarni kim tasdiqlaydi.** Jamoa bilan kelishib: doc egasi tayyorlaydi, 1-faza review meetingida kelishiladi. Saqlash joyi — shu repozitoriy.
-- **Kichik loyiha chegarasi.** Jamoa 3–5 kishi.
-- **Root docning keyingi ko'rib chiqish sanasi.** Vaziyatga qarab — har pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md)).
+- **Qo'llanmaning asosiy maqsadi.** Yangi loyihani qurish uchun nima bo'lishi kerakligini va qanday harakat qilishni ko'rsatish, ayniqsa deploy, code review, test va UI standartlari bo'yicha. Shu sabab [D11](D11-dasturchilar-qoidalari.md)–[D14](D14-release-va-deploy.md) 1-fazaga olindi.
+- **Eng ko'p og'riq bergan muammolar.** Ular root docdagi "Jamoadagi real og'riqlar" jadvalida.
+- **Misol qanday ishlatiladi.** Test Platformasi jarayon namunasi emas (kamchiliklari ko'p), lekin u release qilingan real mahsulot. Misollar "Test Platformasini noldan qurish" ssenariysi bo'yicha standartdan alohida, misol loyiha papkasida yoziladi.
+- **Standart kim uchun.** Faqat ichki jamoa uchun. Loyihaning o'z hujjatlari (masalan, [D03](D03-loyiha-boshlangich-hujjati.md) bo'yicha yozilgan TZ) mijoz bilan kelishilishi mumkin, lekin standartning o'zi mijozga ko'rsatilmaydi.
+- **Doclarni kim tasdiqlaydi.** Doc egasi tayyorlaydi, keyin u 1-faza review meetingida jamoa bilan kelishiladi. Doclar shu repozitoriyda saqlanadi.
+- **Kichik loyiha chegarasi.** Jamoasi 3–5 kishi bo'lgan loyiha.
+- **Root docning keyingi ko'rib chiqish sanasi.** Aniq sana yo'q: root doc har pilot loyiha retrosidan keyin ko'rib chiqiladi ([D17](D17-retro-va-standartni-yangilash.md)).
 
 ---
 

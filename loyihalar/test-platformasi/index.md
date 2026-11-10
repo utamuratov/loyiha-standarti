@@ -2,31 +2,31 @@
 
 Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishini ko'rsatadi. Standartdagi har bir doc qoida va bo'sh shablonni beradi, bu yerda esa shu shablonlarning bitta real loyiha uchun to'ldirilgan varianti turadi.
 
-**Ssenariy: Test Platformasini bugun noldan qurayapmiz.** Natija hozirgi Test Platformasi darajasida bo'lishi kerak. Savol — unga qaysi bosqichlar, hujjatlar va qoidalar orqali, kamroq rework bilan yetiladi. Test Platformasining o'tmishda qanday qurilgani tahlil qilinmaydi: u jarayon namunasi emas (kamchiliklari ko'p), lekin release qilingan va har kuni ishlatilayotgan real mahsulot.
+**Ssenariy: Test Platformasini bugun noldan qurayapmiz.** Natija hozirgi Test Platformasi darajasida bo'lishi kerak. Savol shundaki, unga qaysi bosqichlar, hujjatlar va qoidalar orqali, kamroq rework bilan yetiladi. Test Platformasining o'tmishda qanday qurilgani tahlil qilinmaydi: u jarayon namunasi emas (kamchiliklari ko'p), lekin release qilingan va har kuni ishlatilayotgan real mahsulot.
 
-**Yangi loyiha uchun.** Shu papka tuzilmasini nusxalang: `loyihalar/<loyiha-nomi>/`, ichida `index.md` (loyiha kartasi) va har doc uchun bitta fayl. Yozilmagan doc fayli yaratilmaydi — jadvalda "rejada" bo'lib turadi.
+**Yangi loyiha uchun.** Shu papka tuzilmasini nusxalang: `loyihalar/<loyiha-nomi>/`, ichida `index.md` (loyiha kartasi) va har doc uchun bitta fayl. Hali yozilmagan doc uchun fayl yaratilmaydi, u jadvalda "rejada" deb turadi.
 
 ## Loyiha kartasi
 
 - **Mahsulot.** Maktabgacha va maktab ta'limi vazirligi tizimida nomzodlar va o'qituvchilar test topshiradigan tizim. Oqim: nazoratchi login → JShShIR → ariza → Face ID → test → natija; alohida ommaviy test portali; proktoring (veb-kamera orqali yuzni tanish, brauzerdan chalg'ishni aniqlash, desktop agent). Manba: frontend repodagi `README.md`, `CLAUDE.md`.
 - **Mijozlar.** Bitta mahsulot bir nechta mijozga alohida build bilan yetkaziladi: argos, uzinfocom, olymp, control, ssv.
-- **Holati.** Release qilingan, ekspluatatsiyada — foydalanuvchilar har kuni ishlatadi.
-- **Jamoa (ssenariy uchun).** 5 kishi: PM va analitik bitta odam, dizayner, 2 ta backend, 1 ta frontend. Alohida tech lead, QA, DevOps va support yo'q — bu rollarning ishi jamoa ichida taqsimlanadi ([D01](../../D01-rollar-va-raci.md)).
+- **Holati.** Release qilingan va ekspluatatsiyada: foydalanuvchilar uni har kuni ishlatadi.
+- **Jamoa (ssenariy uchun).** 5 kishi: PM va analitik bitta odam, dizayner, 2 ta backend va 1 ta frontend dasturchi. Alohida tech lead, QA, DevOps va support yo'q, bu rollarning ishi jamoa ichida taqsimlanadi ([D01](../../D01-rollar-va-raci.md)).
 - **Hajmi.** Kichik loyiha (3–5 kishi), shuning uchun root docdagi "Loyiha hajmiga qarab moslashtirish" jadvalidagi qisqa shakl ishlatiladi; to'liq shakl kerak bo'lgan joyda bu alohida aytiladi.
-- **Vositalar.** Jira (board), Figma (dizayn), GitLab (kod va CI, `git.uzinfocom.uz`), Telegram (tezkor aloqa — lekin kelishuv u yerda qolmaydi).
+- **Vositalar.** Jira (board), Figma (dizayn), GitLab (kod va CI, `git.uzinfocom.uz`), Telegram (tezkor aloqa uchun, lekin kelishuvlar u yerda qolmaydi).
 - **Mavjud hujjatlar.** Belgilangan jarayon ham, TZ ham yo'q edi. Faqat frontend repozitoriyida `CLAUDE.md` ish qoidalari va `docs/` texnik hujjatlari bor (arxitektura, test oqimi, proktoring, Face ID, tarjimalar, unit va e2e testlar).
 
 ## Misollar qayerdan olinadi
 
-- **Frontend** — real repozitoriydan: `test-uzedu-user` (Test Platformasining frontendi; repo nomi o'zgartirilmagan). Standartga mos joylari namuna sifatida, mos kelmaydigan joylari esa "standart bo'yicha nima qo'shilardi" sifatida ko'rsatiladi. Har faktning manbasi (fayl yo'li) yoziladi.
-- **Backend** — kodi bu ishda yo'q, backend alohida repozitoriyda. Aniq misollar `[TO'LDIRILSIN: backend]` deb belgilangan va backend dasturchilari to'ldiradi.
+- **Frontend** misollari real repozitoriydan olinadi: `test-uzedu-user` (Test Platformasining frontendi; repo nomi o'zgartirilmagan). Uning standartga mos joylari namuna sifatida, mos kelmaydigan joylari esa "standart bo'yicha nima qo'shilardi" sifatida ko'rsatiladi. Har bir faktning manbasi (fayl yo'li) yoziladi.
+- **Backend** kodi bu ishda yo'q, u alohida repozitoriyda. Aniq misollar `[TO'LDIRILSIN: backend]` deb belgilangan, ularni backend dasturchilari to'ldiradi.
 
 **Frontend repo faktlari** (keyingi hujjatlar shularga tayanadi):
 
 - *Stack (`package.json`, `CLAUDE.md`):* Angular 21 (standalone, signals, zoneless), PrimeNG 21, Tailwind v4, Transloco (tarjimalar backend'dan), SignalR, face-api.js.
-- *Testlar (`cypress/e2e/`, `docs/unit-testing.md`):* unit — Vitest; e2e — Cypress, backend to'liq mock, 11 ta spec faylda 171 ta test (`docs/e2e-testing.md`, 2-bo'lim). `docs/e2e-testing.md` 9-bo'limida e2e branch hali `main` ga qo'shilmagan deyilgan, lekin `main` tarixida e2e commitlari bor — hujjat eskirgan.
+- *Testlar (`cypress/e2e/`, `docs/unit-testing.md`):* unit — Vitest; e2e — Cypress, backend to'liq mock, 11 ta spec faylda 171 ta test (`docs/e2e-testing.md`, 2-bo'lim). `docs/e2e-testing.md` ning 9-bo'limida e2e branch hali `main` ga qo'shilmagani aytilgan, lekin `main` tarixida e2e commitlari bor, ya'ni hujjat eskirgan.
 - *CI/CD (`.gitlab-ci.yml`):* `dev` push → staging build → Harbor image → GitOps orqali avtomatik deploy. `main` push → production build → image → prod'ga deploy qo'lda (`when: manual`). CI'da test bosqichi yo'q.
-- *Hook'lar (`.husky/pre-push`):* har push'da type-check va unit testlar, `main` push'ida qo'shimcha e2e (~6 daqiqa). Hook lokal, `--no-verify` yoki `SKIP_E2E=1` bilan chetlab o'tiladi — [D08](../../D08-kanban-dor-dod.md) DoD'dagi "qizil test bilan merge yo'q" qoidasi uchun muhim cheklov.
+- *Hook'lar (`.husky/pre-push`):* har push'da type-check va unit testlar, `main` push'ida qo'shimcha e2e (~6 daqiqa). Hook lokal ishlaydi va uni `--no-verify` yoki `SKIP_E2E=1` bilan chetlab o'tish mumkin; bu [D08](../../D08-kanban-dor-dod.md) DoD'dagi "qizil test bilan merge yo'q" qoidasi uchun muhim cheklov.
 - *Branch tartibi (`.gitlab-ci.yml`, `docs/e2e-testing.md`):* `dev` → staging, `main` → prod; ikkita remote (`origin` va `uzinfocom`). `docs/e2e-testing.md` Jenkins publish'ini ham tilga oladi — [TO'LDIRILSIN: Jenkins hozir ishlatiladimi].
 
 ## Hujjatlar
@@ -42,7 +42,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 | [D07](../../D07-taqsimot-va-resurs.md) Resurs | Modullar bo'yicha taqsimot jadvali | Rejada |
 | [D08](../../D08-kanban-dor-dod.md) Kanban, DoR, DoD | [Board va tasklar](D08-board-va-tasklar.md) | Yozilgan |
 | [D09](../../D09-meetinglar-ritmi.md) Meetinglar | Haftalik sync protokoli | Rejada |
-| [D10](../../D10-ozgarishlarni-boshqarish.md) O'zgarishlar | [Board va tasklar](D08-board-va-tasklar.md), "Change request" bo'limi; to'liq misol — ishlab chiqish o'rtasida yangi mijoz (alohida build) qo'shilishi | Qisman |
+| [D10](../../D10-ozgarishlarni-boshqarish.md) O'zgarishlar | [Board va tasklar](D08-board-va-tasklar.md), "Change request" bo'limi; to'liq misol sifatida ishlab chiqish o'rtasida yangi mijoz (alohida build) qo'shilishi yoziladi | Qisman |
 | [D11](../../D11-dasturchilar-qoidalari.md) Dasturchilar qoidalari | [Repozitoriy, merge request va ADR](D11-repozitoriy-va-review.md) | Yozilgan |
 | [D12](../../D12-ui-ux-standartlari.md) UI/UX | [UI: ekranlar va komponentlar](D12-ui-ekranlar.md) | Yozilgan |
 | [D13](../../D13-test-strategiyasi.md) Test | [Test rejasi va testlar](D13-test-rejasi.md) | Yozilgan |
@@ -53,12 +53,12 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 
 ## Ochiq joylar
 
-Hujjatlardagi `[TO'LDIRILSIN]` belgilari — kim to'ldirishi bo'yicha:
+Hujjatlardagi `[TO'LDIRILSIN]` belgilari ularni kim to'ldirishi bo'yicha guruhlangan:
 
 - **Frontend va infratuzilma:** `Dockerfile.prod` qayerda va boshqa mijozlar qanday deploy qilinadi, monitoring, test sessiyalari jadvali ([Release va deploy](D14-release-va-deploy.md)); Vitest coverage, CI uchun Cypress image ([Test rejasi](D13-test-rejasi.md)); `master` va `olympiad` branchlari, protected branch sozlamasi ([Repozitoriy](D11-repozitoriy-va-review.md)); har mijozga runtime sozlama varianti nega tanlanmadi ([Loyiha rejasi](D02-loyiha-rejasi.md), Q-02); Jenkins (yuqorida).
 - **Dizayner:** Figma havolalari, taymer pauza holati maketda bormi, UI'dagi atamalar ([UI](D12-ui-ekranlar.md), [TZ](D03-tz.md), [Board](D08-board-va-tasklar.md)).
 - **Backend dasturchilari:** API kontrakti va endpointlar, shaxsiy ma'lumotlar, integration va yuklama testlari, deploy, migratsiya va backup ([TZ](D03-tz.md), [Test rejasi](D13-test-rejasi.md), [Release va deploy](D14-release-va-deploy.md), [Repozitoriy](D11-repozitoriy-va-review.md)).
-- **PM / analitik:** biznes maqsad va muvaffaqiyat raqamlari, yuklama va tezlik talablari, qurilmalar ([TZ](D03-tz.md)). Misol uchun majburiy emas; real loyihaning TZ'sida majburiy.
+- **PM / analitik:** biznes maqsad va muvaffaqiyat raqamlari, yuklama va tezlik talablari, qurilmalar ([TZ](D03-tz.md)). Bular misol uchun majburiy emas, lekin real loyihaning TZ'sida majburiy.
 
 ---
 

@@ -16,7 +16,7 @@ Bu hujjat kompaniyaning loyiha qurish standartini (playbook) yaratish uchun yago
 
 Asosiy alomatlar:
 
-- Talablar og'zaki yoki tarqoq (chat, ovozli xabar) — yagona manba yo'q.
+- Talablar og'zaki yoki tarqoq (chat, ovozli xabar) bo'ladi, ular uchun yagona manba yo'q.
 - Dizayner va dasturchi to'liq bo'lmagan doc bilan ishni boshlaydi.
 - Srok ishni bajaradigan odam bilan kelishilmasdan qo'yiladi.
 - Task qachon "tayyor" ekani aniqlanmagan, shuning uchun test va review keyinga qoladi.
@@ -27,7 +27,7 @@ Asosiy alomatlar:
 
 ### Jamoadagi real og'riqlar va ularni yopadigan doclar
 
-Jamoa o'z loyihalarida duch kelgan og'riqlar va standartning qaysi qismi ularni yopishi:
+Quyidagi jadvalda jamoa o'z loyihalarida duch kelgan og'riqlar va standartning qaysi qismi ularni yopishi ko'rsatilgan.
 
 | Og'riq (jamoa so'zi bilan) | Sababi | Qaysi doc yopadi |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ Bu jadval pilotdan keyin yana tekshiriladi: og'riq kamaydimi yoki yo'qmi ([D17](
 
 ## Qo'llanmani qanday o'qish kerak
 
-Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish, qanday kod yozish va review qilish, qanday test qilish, qanday deploy qilish va UI qanday bo'lishi kerakligi. Har bir doc qoida, bo'sh shablon va checklistni beradi; shablonning to'ldirilgan varianti — [misol loyihada](loyihalar/test-platformasi/index.md). Hammasini o'qish shart emas: avval umumiy qism, keyin o'z rolingiz doclari.
+Bu qo'llanma yangi loyihani boshidan to'g'ri qurishga yordam beradi: unda qanday harakat qilish, qanday kod yozish va review qilish, qanday test qilish, qanday deploy qilish va UI qanday bo'lishi kerakligi yozilgan. Har bir doc qoida, bo'sh shablon va checklist beradi; shablonning to'ldirilgan varianti [misol loyihada](loyihalar/test-platformasi/index.md) turadi. Hammasini o'qish shart emas: avval umumiy qismni, keyin o'z rolingizga tegishli doclarni o'qing.
 
 **Hamma uchun (taxminan 30 daqiqa):** [jarayon xaritasi](jarayon-xaritasi.md) → shu root doc → [D02](D02-loyiha-hayot-sikli.md) (hayot sikli) → [D01](D01-rollar-va-raci.md) (rollar) → [D08](D08-kanban-dor-dod.md) (kanban, DoR, DoD).
 
@@ -54,7 +54,7 @@ Bu qo'llanma yangi loyihani boshidan to'g'ri qurish uchun: qanday harakat qilish
 | DevOps | [D14](D14-release-va-deploy.md) | Muhitlar va release checklistini tayyorlash |
 | Support | [D15](D15-qollanma-va-oqitish.md), [D16](D16-support-va-fikr-yigish.md) | Qo'llanma tuzilmasini [D03](D03-loyiha-boshlangich-hujjati.md) rollari bo'yicha tuzish |
 
-Kichik jamoada bir odam bir nechta rolni bajaradi (masalan, PM va analitik bitta odam) — unda shu rollarning hamma doclari uniki bo'ladi. Qaysi doclar majburiy ekani — "Loyiha hajmiga qarab moslashtirish" bo'limida.
+Kichik jamoada bir odam bir nechta rolni bajaradi (masalan, PM va analitik bitta odam). Unda shu rollarning hamma doclari o'sha odamga tegishli bo'ladi. Qaysi doclar majburiy ekani "Loyiha hajmiga qarab moslashtirish" bo'limida yozilgan.
 
 ## Misol loyiha: Test Platformasi
 
@@ -62,11 +62,11 @@ Standart qanday qo'llanishini ko'rsatish uchun bitta real loyiha olingan: **Test
 
 ## Standartni yozish va yangilash
 
-Yozish navbati (TODO), fazalar va yozish jarayonidagi kelishuvlar — [Ish rejasi](ish-rejasi.md). Doc yozish tartibi, tuzilmasi va qoidalari — [AGENTS.md](AGENTS.md). Doclar menyu, qidiruv va sxemalar bilan hujjat sayti sifatida ham o'qiladi (ishga tushirish — [AGENTS.md](AGENTS.md), "Hujjat sayti").
+Yozish navbati (TODO), fazalar va yozish jarayonidagi kelishuvlar [Ish rejasi](ish-rejasi.md) da, doc yozish tartibi, tuzilmasi va qoidalari esa [AGENTS.md](AGENTS.md) da yozilgan. Doclarni menyu, qidiruv va sxemalari bor hujjat sayti sifatida ham o'qish mumkin; saytni ishga tushirish tartibi [AGENTS.md](AGENTS.md) ning "Hujjat sayti" bo'limida.
 
 ## Hayot sikli
 
-Sxema ko'rinishida — [Jarayon xaritasi](jarayon-xaritasi.md): bosqichlar va darvozalar, kim kimga nima topshiradi, bitta taskning yo'li.
+Hayot siklining sxemasi [Jarayon xaritasi](jarayon-xaritasi.md) da: unda bosqichlar va darvozalar, kim kimga nima topshirishi va bitta taskning yo'li ko'rsatilgan.
 
 Loyiha 8 bosqichdan o'tadi; har bosqichning chiqishi keyingisining kirishi bo'ladi. Bosqichdan keyingisiga faqat darvoza mezoni bajarilganda o'tiladi. Batafsil kirish, chiqish va darvoza checklistlari [D02](D02-loyiha-hayot-sikli.md) docda yoziladi.
 
@@ -85,7 +85,7 @@ Ishlab chiqish (5) haftalik sikl bo'lib aylanadi. O'rtada kelgan yangi talab [D1
 
 ## Rollar va mas'uliyat
 
-Loyihada 9 ta rol bor: mijoz (PO), PM, biznes analitik, UI/UX dizayner, tech lead, dasturchi, QA, DevOps va support. Har bir qaror va hujjatning bitta egasi bo'ladi. Bitta odam bir nechta rolni bajarishi mumkin (kichik jamoada PM analitik ham bo'lishi mumkin), lekin har bir rolning mas'uliyati baribir yozilgan bo'ladi. Rollar tavsifi, RACI matritsa va kichik jamoada rollarni birlashtirish — [D01](D01-rollar-va-raci.md) da.
+Loyihada 9 ta rol bor: mijoz (PO), PM, biznes analitik, UI/UX dizayner, tech lead, dasturchi, QA, DevOps va support. Har bir qaror va hujjatning bitta egasi bo'ladi. Bitta odam bir nechta rolni bajarishi mumkin (kichik jamoada PM analitik ham bo'lishi mumkin), lekin har bir rolning mas'uliyati baribir yozilgan bo'ladi. Rollar tavsifi, RACI matritsa va kichik jamoada rollarni birlashtirish qoidasi [D01](D01-rollar-va-raci.md) da yozilgan.
 
 ## Doclar katalogi
 
@@ -115,7 +115,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 
 **[D01](D01-rollar-va-raci.md) — Rollar va RACI matritsa**
 
-- *Maqsad:* har bir faoliyat uchun kim bajaradi (R), kim javobgar (A), kimdan maslahat olinadi (C), kim xabardor qilinadi (I) — aniq bo'lsin.
+- *Maqsad:* har bir faoliyat uchun kim bajarishi (R), kim javobgarligi (A), kimdan maslahat olinishi (C) va kim xabardor qilinishi (I) aniq bo'lsin.
 - *Mazmuni:* rollar tavsifi; RACI jadvali (talab yig'ish, dizayn, baholash, kod, review, test, deploy, qabul); kichik jamoada rollarni birlashtirish qoidasi.
 - *Tayyor mezoni:* har bir qatorda aynan bitta A bor.
 
@@ -129,7 +129,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 
 **[D03](D03-loyiha-boshlangich-hujjati.md) — Loyiha boshlang'ich hujjati (Brief + PRD/TZ)**
 
-- *Maqsad:* barcha rollar bir xil tushunadigan yagona manba. Eng muhim doc.
+- *Maqsad:* barcha rollar bir xil tushunadigan yagona manba bo'lsin. Bu standartdagi eng muhim doc.
 - *Mazmuni:* muammo va biznes maqsad; o'lchanadigan muvaffaqiyat mezonlari; foydalanuvchi rollari; scope (nima kiradi va nima **kirmaydi**); modullar va ekranlar ro'yxati; user story + qabul mezonlari; rollar va ruxsatlar matritsasi; integratsiyalar; **FE–BE API kontrakti talablari** (endpointlar ro'yxati, so'rov va javob formati, xato kodlari, kim kelishadi va qayerda saqlanadi); nofunksional talablar (tezlik, xavfsizlik, yuklama); **shaxsiy ma'lumotlar** (qaysi ma'lumot yig'iladi, masalan JShShIR va yuz tasviri; huquqiy asos va rozilik; kim ko'radi; qayerda va qancha saqlanadi; qachon o'chiriladi); cheklovlar va farazlar; ochiq savollar; versiyalar tarixi. Risklar [D02](D02-loyiha-hayot-sikli.md) dagi risklar reestriga yoziladi, [D03](D03-loyiha-boshlangich-hujjati.md) unga havola qiladi.
 - *Tayyor mezoni:* [D05](D05-kickoff-va-doc-review.md) doc review'da bloklovchi deb belgilangan savollar soni 0; qolgan har bir ochiq savolning egasi va muddati bor; har bir story'da qabul mezoni bor.
 
@@ -142,7 +142,7 @@ Standart 17 ta docdan iborat, 5 guruhga bo'lingan. Faza ustuni yozish navbatini 
 **[D05](D05-kickoff-va-doc-review.md) — Kickoff va doc review meeting**
 
 - *Maqsad:* ish boshlanishidan oldin hamma [D03](D03-loyiha-boshlangich-hujjati.md)'ni o'qib chiqqan, muammoli joylar topilgan va har savolning egasi bo'lsin.
-- *Mazmuni:* qatnashchilar; oldindan o'qish talabi (1 ish kuni oldin); agenda; yozma izohlar (`[bloklovchi]`, `[savol]`, `[taklif]`), savolni "bloklovchi" deb belgilash qoidasi; chiqish: scope chegarasi, ochiq savollar, risklar reestri va qarorlar jurnaliga birinchi yozuvlar (shablonlari [D02](D02-loyiha-hayot-sikli.md) da); protokol shabloni. Srok bu yerda emas — 4-darvozada ([D06](D06-baholash-va-srok.md)).
+- *Mazmuni:* qatnashchilar; oldindan o'qish talabi (1 ish kuni oldin); agenda; yozma izohlar (`[bloklovchi]`, `[savol]`, `[taklif]`), savolni "bloklovchi" deb belgilash qoidasi; chiqish: scope chegarasi, ochiq savollar, risklar reestri va qarorlar jurnaliga birinchi yozuvlar (shablonlari [D02](D02-loyiha-hayot-sikli.md) da); protokol shabloni. Srok bu yerda emas, 4-darvozada belgilanadi ([D06](D06-baholash-va-srok.md)).
 - *Tayyor mezoni:* meetingdan keyin har bir ochiq savolning egasi va muddati bor.
 
 **[D06](D06-baholash-va-srok.md) — Baholash va srok belgilash**
@@ -234,7 +234,7 @@ Kichik loyihada 17 ta docning hammasini to'liq yuritish byurokratiya bo'ladi. Be
 | [D04](D04-dizayn-brief-va-jarayon.md) Dizayn brief | [D03](D03-loyiha-boshlangich-hujjati.md) ichida ekranlar ro'yxati va maket havolasi | To'liq |
 | [D05](D05-kickoff-va-doc-review.md) Kickoff | Kickoff va doc review 30–45 daqiqadan; yozma izohlar va protokol majburiy | To'liq |
 | [D06](D06-baholash-va-srok.md) Baholash | Tasklar soatda, uch nuqtali baho story darajasida; bufer, yozma srok va kechikish tartibi majburiy | To'liq |
-| [D07](D07-taqsimot-va-resurs.md) Resurs planlash | Modullar egasi va zaxirasi, onboarding va handover; matritsa va bandlik jadvali — odamlar boshqa loyihada ham band bo'lsa | To'liq |
+| [D07](D07-taqsimot-va-resurs.md) Resurs planlash | Modullar egasi va zaxirasi, onboarding va handover; matritsa va bandlik jadvali faqat odamlar boshqa loyihada ham band bo'lsa yuritiladi | To'liq |
 | [D09](D09-meetinglar-ritmi.md) Meetinglar | Yozma daily, 30 daqiqalik haftalik sync, har release oxirida demo; umumiy qoidalar to'liq | To'liq |
 | [D10](D10-ozgarishlarni-boshqarish.md) Change request | Uch tur va yozma PO qarori; katta CR uchun to'liq doc review shart emas | To'liq |
 | [D12](D12-ui-ux-standartlari.md) UI/UX | Kompaniyaning mavjud design system'i ishlatiladi | To'liq |
@@ -261,8 +261,8 @@ Barcha doclar va jarayonlar shu tamoyillarga tayanadi. Agar biror qoida ularga z
 
 **Muvaffaqiyatni o'lchash (pilotdan keyin kuzatiladi):**
 
-- Srok aniqligi: rejadagi va real muddat farqi.
-- Rework ulushi: talab tushunmovchiligi sabab qayta qilingan ishlar.
+- Srok aniqligi: rejadagi va real muddat orasidagi farq.
+- Rework ulushi: talabni noto'g'ri tushunish sababli qayta qilingan ishlar ulushi.
 - Release'dan keyingi bug'lar soni.
 - Task "In progress"dan "Done"gacha o'rtacha vaqti (lead time).
 - Jamoaning jarayondan qoniqishi (retroda qisqa so'rovnoma).

@@ -2,14 +2,14 @@
 
 Standart: [D03 — Loyiha boshlang'ich hujjati (Brief + TZ)](../../D03-loyiha-boshlangich-hujjati.md). Misol loyiha: [Test Platformasi](index.md).
 
-Quyida R1 release (asosiy test oqimi) uchun TZ'dan parchalar. Faktlar `test-uzedu-user` frontend repozitoriyidan olingan (manbalar ko'rsatilgan); backend va admin tomoni bu repoda yo'q.
+Quyida R1 release (asosiy test oqimi) uchun TZ'dan parchalar berilgan. Faktlar `test-uzedu-user` frontend repozitoriyidan olingan (manbalar ko'rsatilgan); backend va admin tomoni bu repoda yo'q.
 
 ## A. Brief
 
-1. **Muammo.** Nomzodlar va o'qituvchilarning test sinovlari shaffof va nazorat ostida o'tishi kerak: test topshiruvchi aynan ro'yxatdagi odam ekani, test vaqtida begona yordam yo'qligi, natija adolatli hisoblanishi. (`README.md`)
+1. **Muammo.** Nomzodlar va o'qituvchilarning test sinovlari shaffof va nazorat ostida o'tishi kerak: test topshiruvchi aynan ro'yxatdagi odam ekani, test vaqtida begona yordam yo'qligi va natija adolatli hisoblanishi ta'minlanishi lozim. (`README.md`)
 2. **Biznes maqsad.** [TO'LDIRILSIN: mijozning o'z so'zlari bilan — masalan, qo'lda o'tkaziladigan imtihonlarni almashtirish]
 3. **Muvaffaqiyat mezonlari.** [TO'LDIRILSIN: raqamlar — masalan, bir imtihon kunida o'tkaziladigan testlar soni, texnik sabab bilan to'xtatilgan testlar ulushi]
-4. **Rollar.** Nazoratchi (test o'tkaziladigan joyda ishlaydi), ishtirokchi (nomzod), admin (sozlamalar va test turlari — backend tomonida). Ommaviy portal foydalanuvchisi — R3.
+4. **Rollar.** Nazoratchi (test o'tkaziladigan joyda ishlaydi), ishtirokchi (nomzod), admin (sozlamalar va test turlari, backend tomonida). Ommaviy portal foydalanuvchisi R3 ga kiradi.
 5. **Scope (R1).**
    - *Kiradi:* nazoratchi login'i va test turini tanlash; ishtirokchini JShShIR yoki ariza raqami bo'yicha topish; ariza va fanni tanlash; shaxsiy ma'lumotlarga rozilik; test yechish (6 ta savol turi, taymer); testni yakunlash va natija.
    - *Kirmaydi (R1 da):* Face ID va proktoring (R2), desktop agent (R2), ommaviy test portali (R3), admin panel (alohida loyiha — [TO'LDIRILSIN: admin panel kimda va qanday quriladi]).
@@ -29,10 +29,10 @@ Manba: `docs/test-entry-flow.md`.
 
 ## C. User story'lar (parcha)
 
-Qabul mezonlari repodagi hozirgi xulq-atvordan olingan — ya'ni ular amalda ishlayotgani tasdiqlangan talablar.
+Qabul mezonlari repodagi hozirgi xulq-atvordan olingan, ya'ni ular amalda ishlayotgani tasdiqlangan talablardir.
 
 **US-03. Ishtirokchi sifatida shaxsiy ma'lumotlarimdan foydalanishga rozilik beraman, testga kirish uchun.** (E-03)
-- Agar rozilik belgilanmagan bo'lsa, unda «Kirish» tugmasi o'chiq.
+- Agar rozilik belgilanmagan bo'lsa, unda «Kirish» tugmasi o'chiq turadi.
 - Agar ishtirokchi rozilik havolasini bossa, unda qaysi ma'lumotlar va qaysi maqsadda ishlatilishi ko'rsatilgan oyna ochiladi; «Roziman» rozilikni belgilaydi.
 - Agar sahifa qayta ochilsa, unda rozilik qaytadan so'raladi.
 
@@ -68,7 +68,7 @@ Manba: `docs/test-entry-flow.md`, "Sozlamalar qachon yangilanadi".
 | Rozilik berish, test yechish, shikoyat yuborish | — | ✅ | — |
 | Kirish va test sozlamalarini o'zgartirish | — | — | ✅ |
 
-Muhim fakt: test yechish so'rovlari ham nazoratchi tokeni bilan ketadi (`docs/test-entry-flow.md`). Bu ruxsatlar bo'limida aytilishi kerak bo'lgan qaror — u xavfsizlik va sessiya xulq-atvoriga ta'sir qiladi; [qarorlar jurnaliga](D02-loyiha-rejasi.md) ham yoziladi.
+Muhim fakt: test yechish so'rovlari ham nazoratchi tokeni bilan yuboriladi (`docs/test-entry-flow.md`). Bu ruxsatlar bo'limida aytilishi kerak bo'lgan qaror, chunki u xavfsizlik va sessiya xulq-atvoriga ta'sir qiladi; [qarorlar jurnaliga](D02-loyiha-rejasi.md) ham yoziladi.
 
 ## E. Sozlamalar (parcha)
 
@@ -81,19 +81,19 @@ Manba: `docs/test-entry-flow.md`, "Sozlamalar xulosasi".
 | `inputTypes` | Ishtirokchini qaysi maydon bo'yicha topish; bo'sh bo'lsa oqim to'xtaydi | Keyingi ishtirokchidan |
 | `allowCalculator`, `allowReferenceMaterials` | Test oynasida kalkulyator va ma'lumotnoma | Keyingi testdan |
 
-Standart qiymatlari — [TO'LDIRILSIN: backend].
+Standart qiymatlari: [TO'LDIRILSIN: backend].
 
 ## F. API kontrakti talablari (parcha)
 
-Endpoint nomlari frontend kodidan (`docs/test-entry-flow.md`); javob formati va xato kodlari backendda yozilishi kerak.
+Endpoint nomlari frontend kodidan olingan (`docs/test-entry-flow.md`); javob formati va xato kodlarini backend tomoni yozishi kerak.
 
 | Endpoint | Maqsad | So'rov | Javob | Xato holatlari |
 | --- | --- | --- | --- | --- |
 | `supervisor/login` | Nazoratchi kirishi | login, parol | `accessToken` | [TO'LDIRILSIN: backend] |
-| `participant/applications` | Ishtirokchi arizalarini topish | `testType`, `computerId`, `pinfl` yoki `applicationNumber` | arizalar ro'yxati | topilmadi — [TO'LDIRILSIN: backend] |
+| `participant/applications` | Ishtirokchi arizalarini topish | `testType`, `computerId`, `pinfl` yoki `applicationNumber` | arizalar ro'yxati | topilmadi: [TO'LDIRILSIN: backend] |
 | `testprocess/generate` | Test savollarini yaratish | `applicationId`, `computerId`, `testEventId`, `selections` | [TO'LDIRILSIN: backend] | [TO'LDIRILSIN: backend] |
 
-Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiyasi]. Uni yuritish tartibi — [D11](../../D11-dasturchilar-qoidalari.md).
+Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiyasi]. Uni yuritish tartibi [D11](../../D11-dasturchilar-qoidalari.md) da yozilgan.
 
 ## G. Nofunksional talablar (parcha)
 
@@ -109,7 +109,7 @@ Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiya
 | JShShIR, ariza raqami | Ishtirokchini aniqlash | Nazoratchi, admin | [TO'LDIRILSIN: backend] |
 | Yuz tasviri (R2) | Shaxsni tasdiqlash | [TO'LDIRILSIN] | [TO'LDIRILSIN] |
 
-**Standart bo'yicha nima qo'shilardi.** Hozir rozilik faqat ekranda so'raladi: u saqlanmaydi va backendga yuborilmaydi (`docs/test-entry-flow.md`). TZ'da shu savol ochiq yozilishi kerak edi (I bo'limidagi S-01): "Rozilikni kim va qachon berganini qayd etish huquqiy jihatdan talab qilinadimi?" — egasi: mijoz yuristi, bloklovchi: ha (R2 dan oldin).
+**Standart bo'yicha nima qo'shilardi.** Hozir rozilik faqat ekranda so'raladi: u saqlanmaydi va backendga yuborilmaydi (`docs/test-entry-flow.md`). TZ'da shu savol ochiq yozilishi kerak edi (I bo'limidagi S-01): "Rozilikni kim va qachon berganini qayd etish huquqiy jihatdan talab qilinadimi?" Savolning egasi mijoz yuristi, u bloklovchi (R2 dan oldin yopilishi kerak).
 
 ## I. Ochiq savollar (parcha)
 
@@ -121,7 +121,7 @@ Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiya
 
 ## Og'riqqa bog'liqlik
 
-"Bitta narsa qayta-qayta qilinadi" (root doc, "Jamoadagi real og'riqlar") — US-04 kabi talab qabul mezonisiz "internet uzilsa taymer to'xtasin" deb berilsa, savol yuklanishi va xato holati keyin, alohida topshiriq sifatida qaytib keladi. Qabul mezonlari ularni birinchi topshiriqdayoq ochadi.
+Bu misol "Bitta narsa qayta-qayta qilinadi" og'rig'iga bog'liq (root doc, "Jamoadagi real og'riqlar"). US-04 kabi talab qabul mezonisiz, faqat "internet uzilsa taymer to'xtasin" deb berilsa, savol yuklanishi va xato holati keyinroq alohida topshiriq sifatida qaytib keladi. Qabul mezonlari esa ularni birinchi topshiriqdayoq ochib beradi.
 
 ---
 

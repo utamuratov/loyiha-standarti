@@ -45,6 +45,6 @@ features:
 
 ## Hamma uchun: qayerdan boshlash
 
-Taxminan 30 daqiqa: [Jarayon xaritasi](jarayon-xaritasi.md) → [Root doc](00-root.md) → [D02 — hayot sikli](D02-loyiha-hayot-sikli.md) → [D08 — kanban, DoR va DoD](D08-kanban-dor-dod.md). Keyin o'z rolingiz doclari — yuqoridagi kartochkalar yoki chap menyu.
+Taxminan 30 daqiqa: [Jarayon xaritasi](jarayon-xaritasi.md) → [Root doc](00-root.md) → [D02 — hayot sikli](D02-loyiha-hayot-sikli.md) → [D08 — kanban, DoR va DoD](D08-kanban-dor-dod.md). Keyin o'z rolingizga tegishli doclarni o'qing: ular yuqoridagi kartochkalarda va chap menyuda.
 
-Har doc qoida va bo'sh shablonni beradi; to'ldirilgan variantlar — [misol loyiha: Test Platformasi](loyihalar/test-platformasi/index.md). Standartdagi 17 ta docning hammasi chap menyuda, guruhlar bo'yicha; ularning holati va keyingi ishlar — [ish rejasida](ish-rejasi.md).
+Har bir doc qoida va bo'sh shablon beradi; to'ldirilgan variantlar [misol loyiha: Test Platformasi](loyihalar/test-platformasi/index.md) bo'limida. Standartdagi 17 ta docning hammasi chap menyuda guruhlar bo'yicha joylashgan; ularning holati va keyingi ishlar [ish rejasida](ish-rejasi.md) yozilgan.

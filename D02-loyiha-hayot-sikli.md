@@ -12,7 +12,7 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 
 **Atamalar.** *Darvoza* (gate) — bosqich oxiridagi tekshiruv: checklist bajarilganmi va keyingi bosqichga o'tsa bo'ladimi. *UAT* (user acceptance testing) — mijozning natijani qabul qilish sinovi. *ADR* (architecture decision record) — arxitektura qarorining batafsil yozuvi ([D11](D11-dasturchilar-qoidalari.md)).
 
-**Ikki xil darvoza.** Bu doc butun loyiha (yoki release) bosqichdan bosqichga o'tishini tekshiradi. Bitta taskning board ustunlari orasida o'tishi — [D08](D08-kanban-dor-dod.md) dagi DoR va DoD.
+**Ikki xil darvoza.** Bu doc butun loyiha (yoki release) bosqichdan bosqichga o'tishini tekshiradi. Bitta taskning board ustunlari orasida o'tishini esa [D08](D08-kanban-dor-dod.md) dagi DoR va DoD tekshiradi.
 
 ## 3. Bosqichlar
 
@@ -27,27 +27,27 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 | 7 | Topshirish | Prod'dagi versiya | UAT akti, qo'llanma va o'qitish ([D15](D15-qollanma-va-oqitish.md)) | Mijoz (PO) |
 | 8 | Ekspluatatsiya | Qabul qilingan versiya | Murojaat kanali ishlaydi ([D16](D16-support-va-fikr-yigish.md)), murojaatlar backlog'ga tushadi; retro ([D17](D17-retro-va-standartni-yangilash.md)) | PM |
 
-**Sikl.** 5–7 bosqichlar har release uchun takrorlanadi: loyiha bir nechta release'ga bo'linadi va har biri o'z darvozalaridan o'tadi. Ishlab chiqish ichida haftalik sikl aylanadi ([D09](D09-meetinglar-ritmi.md)). 8-bosqichda kelgan yangi talab 2-bosqichga qaytadi ([D10](D10-ozgarishlarni-boshqarish.md)).
+**Sikl.** 5–7-bosqichlar har release uchun takrorlanadi: loyiha bir nechta release'ga bo'linadi va har biri o'z darvozalaridan o'tadi. Ishlab chiqish ichida haftalik sikl aylanadi ([D09](D09-meetinglar-ritmi.md)). 8-bosqichda kelgan yangi talab 2-bosqichga qaytadi ([D10](D10-ozgarishlarni-boshqarish.md)).
 
 ## 4. Qoidalar
 
-1. **Darvozasiz o'tish yo'q.** Keyingi bosqich ishi faqat darvoza tasdig'idan keyin boshlanadi. *Nega:* to'liq bo'lmagan doc bilan boshlangan ish keyin qayta qilinadi — rework'ning asosiy manbai.
-2. **Darvoza — checklist va yozma tasdiq.** Checklist (5-bo'lim) punktma-punkt tekshiriladi; natija "Darvoza yozuvi" shablonida qayd etiladi. Og'zaki yoki Telegram'dagi "bo'ldi" tasdiq emas. *Nega:* og'zaki kelishuv esdan chiqadi va keyin bahsga aylanadi.
-3. **Har darvozaning bitta tasdiqlovchisi bor** (3-bo'limdagi jadval). Boshqalar maslahat beradi, lekin qaror bitta odamda. *Nega:* "hamma tasdiqlashi kerak" degani amalda "hech kim tasdiqlamaydi".
-4. **Shartli o'tish ruxsat etiladi, yashirin o'tish — yo'q.** Bajarilmagan punkt bilan o'tish mumkin, agar u risklar reestriga egasi va muddati bilan yozilsa. Bloklovchi punkt (masalan, scope tasdiqlanmagan) bilan o'tilmaydi. *Nega:* real loyihada hamma narsa bir vaqtda tayyor bo'lmaydi, lekin ochiq qolgan narsa ko'rinib turishi kerak.
+1. **Darvozasiz o'tish yo'q.** Keyingi bosqich ishi faqat darvoza tasdig'idan keyin boshlanadi. *Nega:* to'liq bo'lmagan doc bilan boshlangan ish keyin qayta qilinadi, bu esa rework'ning asosiy manbai.
+2. **Darvoza checklist va yozma tasdiqdan iborat.** Checklist (5-bo'lim) punktma-punkt tekshiriladi; natija "Darvoza yozuvi" shablonida qayd etiladi. Og'zaki yoki Telegram'da aytilgan "bo'ldi" tasdiq hisoblanmaydi. *Nega:* og'zaki kelishuv esdan chiqadi va keyin bahsga aylanadi.
+3. **Har darvozaning bitta tasdiqlovchisi bor** (3-bo'limdagi jadval). Boshqalar maslahat beradi, lekin qaror bitta odamda. *Nega:* "hamma tasdiqlashi kerak" degani amalda "hech kim tasdiqlamaydi" degani.
+4. **Shartli o'tish ruxsat etiladi, yashirin o'tishga esa yo'l qo'yilmaydi.** Bajarilmagan punkt bilan o'tish mumkin, agar u risklar reestriga egasi va muddati bilan yozilsa. Bloklovchi punkt (masalan, scope tasdiqlanmagan) bilan o'tilmaydi. *Nega:* real loyihada hamma narsa bir vaqtda tayyor bo'lmaydi, lekin ochiq qolgan narsa ko'rinib turishi kerak.
 5. **Darvoza loyiha yoki release darajasida o'tkaziladi.** Katta loyihada modullar turli bosqichda bo'lishi mumkin (A modul ishlab chiqishda, B dizaynda); unda darvoza har release qismi uchun alohida o'tkaziladi. *Nega:* butun loyihani bitta dizayn tugashini kutib to'xtatish shart emas.
-6. **O'zgarish orqaga qaytaradi.** Tasdiqlangan scope o'zgarsa, o'zgargan qism [D10](D10-ozgarishlarni-boshqarish.md) orqali 2-bosqichga qaytadi va 2–4 darvozalardan qayta o'tadi. Faqat o'zgargan qism, butun loyiha emas. *Nega:* yangi talab maket va bahosiz ishlab chiqishga tushsa, srok yashirin buziladi.
-7. **Muhim qaror 1 ish kuni ichida qarorlar jurnaliga yoziladi.** Muhim qaror — scope, srok, arxitektura, UX oqimi, integratsiya yoki mijoz bilan kelishuvga ta'sir qiladigan har qanday qaror, u meetingda, Telegram'da yoki qo'ng'iroqda qabul qilinganidan qat'i nazar. Yozadi — qaror qabul qilingan suhbatdagi PM yoki tech lead. Arxitektura qarorining batafsil tahlili ADR'da ([D11](D11-dasturchilar-qoidalari.md)), jurnalda unga havola. *Nega:* "nega unday qilgandik?" va "kim aytgandi?" savollarining yagona javobi — yozilgan sabab.
+6. **O'zgarish orqaga qaytaradi.** Tasdiqlangan scope o'zgarsa, o'zgargan qism [D10](D10-ozgarishlarni-boshqarish.md) orqali 2-bosqichga qaytadi va 2–4-darvozalardan qayta o'tadi. Butun loyiha emas, faqat o'zgargan qism qaytadi. *Nega:* yangi talab maket va bahosiz ishlab chiqishga tushsa, srok yashirin buziladi.
+7. **Muhim qaror 1 ish kuni ichida qarorlar jurnaliga yoziladi.** Muhim qaror — scope, srok, arxitektura, UX oqimi, integratsiya yoki mijoz bilan kelishuvga ta'sir qiladigan har qanday qaror, u meetingda, Telegram'da yoki qo'ng'iroqda qabul qilinganidan qat'i nazar. Uni qaror qabul qilingan suhbatda qatnashgan PM yoki tech lead yozadi. Arxitektura qarorining batafsil tahlili ADR'da ([D11](D11-dasturchilar-qoidalari.md)) yoziladi, jurnalga esa unga havola qo'yiladi. *Nega:* "nega unday qilgandik?" va "kim aytgandi?" degan savollarga faqat yozib qo'yilgan sabab javob beradi.
 8. **Risk aniqlangan kuni reestrga yoziladi** va haftalik sync'da ([D09](D09-meetinglar-ritmi.md)) ko'riladi. Har riskning egasi va chorasi bor. *Nega:* aytilmagan risk srok o'tib ketganda birdan "chiqadi".
 9. **Jurnal va reestrning uyi bitta.** Ular loyiha hujjatlari yonida ([D03](D03-loyiha-boshlangich-hujjati.md) bilan bir joyda) yuritiladi; [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md) ularga havola qiladi, nusxa olmaydi. *Nega:* ikki joydagi jurnal tez orada ikki xil bo'lib qoladi.
 
-**Kichik loyihada (3–5 kishi).** 8 bosqich va darvozalar saqlanadi, lekin darvoza 15 daqiqalik qisqa tasdiq bo'ladi; 1–2 yoki 3–4 bosqichlar bir haftada o'tishi mumkin. Jurnal va reestr majburiy.
+**Kichik loyihada (3–5 kishi).** 8 bosqich va darvozalar saqlanadi, lekin darvoza 15 daqiqalik qisqa tasdiq bo'ladi; 1–2- yoki 3–4-bosqichlar bir haftada o'tishi mumkin. Jurnal va reestr majburiy.
 
 ## 5. Shablonlar
 
 ### 5.1. Darvoza checklistlari
 
-Har darvoza uchun punktlar. ⛔ — bloklovchi: bajarilmasa o'tilmaydi (shartli o'tish ham yo'q).
+Quyida har bir darvozaning punktlari berilgan. ⛔ belgisi bloklovchi punktni bildiradi: u bajarilmasa, o'tilmaydi (shartli o'tish ham mumkin emas).
 
 **1-darvoza: Boshlash → Talablar**
 - [ ] ⛔ Muammo va biznes maqsad yozilgan ([D03](D03-loyiha-boshlangich-hujjati.md) Brief)
@@ -69,7 +69,7 @@ Har darvoza uchun punktlar. ⛔ — bloklovchi: bajarilmasa o'tilmaydi (shartli 
 **3-darvoza: Dizayn → Planlash**
 - [ ] ⛔ [D03](D03-loyiha-boshlangich-hujjati.md) dagi har bir ekran chizilgan
 - [ ] Har ekranning holatlari: bo'sh, yuklanmoqda, xato, ruxsat yo'q ([D12](D12-ui-ux-standartlari.md), B bo'limi)
-- [ ] Komponentlar [D12](D12-ui-ux-standartlari.md) ro'yxatidan; yangi komponent bo'lsa — kelishilgan
+- [ ] Komponentlar [D12](D12-ui-ux-standartlari.md) ro'yxatidan; yangi komponent bo'lsa, u kelishilgan
 - [ ] Dasturchilar maketni ko'rib, handoff checklistini qabul qilgan ([D04](D04-dizayn-brief-va-jarayon.md), 4.3)
 - [ ] Mijoz maketni ko'rgan, izohlari yopilgan yoki jurnalga yozilgan
 
@@ -99,7 +99,7 @@ Har darvoza uchun punktlar. ⛔ — bloklovchi: bajarilmasa o'tilmaydi (shartli 
 - [ ] O'qitish o'tkazilgan (kerak bo'lsa)
 - [ ] Murojaat kanali va javob vaqti mijozga aytilgan ([D16](D16-support-va-fikr-yigish.md))
 
-**8: Ekspluatatsiya** — darvoza emas, doimiy holat. Har release'dan keyin retro ([D17](D17-retro-va-standartni-yangilash.md)); yangi talablar 2-bosqichga.
+**8: Ekspluatatsiya** darvoza emas, doimiy holat. Har release'dan keyin retro o'tkaziladi ([D17](D17-retro-va-standartni-yangilash.md)); yangi talablar 2-bosqichga qaytadi.
 
 ### 5.2. Darvoza yozuvi
 
@@ -128,7 +128,7 @@ Qaror o'zgarsa, eski qator o'chirilmaydi: holati "bekor qilingan" bo'ladi va yan
 
 ## 6. Misol
 
-Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · Loyiha rejasi, qarorlar va risklar](loyihalar/test-platformasi/D02-loyiha-rejasi.md).
+Shu doc bo'yicha to'ldirilgan variantni misol loyihada ko'ring: [Test Platformasi · Loyiha rejasi, qarorlar va risklar](loyihalar/test-platformasi/D02-loyiha-rejasi.md).
 
 ## 7. Checklist: loyihada D02 qo'llandimi
 
@@ -136,16 +136,16 @@ Shu doc bo'yicha to'ldirilgan variant — misol loyihada: [Test Platformasi · L
 - [ ] Har darvozaning tasdiqlovchisi ismi bilan belgilangan
 - [ ] Qarorlar jurnali va risklar reestri ochilgan, [D03](D03-loyiha-boshlangich-hujjati.md) dan havola bor
 - [ ] Har o'tilgan darvoza uchun darvoza yozuvi bor
-- [ ] Shartli o'tilgan har punkt reestrda egasi va muddati bilan
+- [ ] Shartli o'tilgan har bir punkt reestrga egasi va muddati bilan yozilgan
 - [ ] Haftalik sync'da risklar reestri ko'rilmoqda
 - [ ] Telegram'da qabul qilingan muhim qarorlar ham jurnalda bor
 
 ## 8. Tez-tez uchraydigan xatolar
 
 1. **"Dizayner hozircha boshlab tursin".** [D03](D03-loyiha-boshlangich-hujjati.md) tasdiqlanmasdan dizayn boshlanadi, keyin maketlar qayta chiziladi. To'g'risi: 2-darvozani kuting yoki tasdiqlangan qism (release) bo'yicha boshlang.
-2. **Darvoza — formallik.** Checklist "hammasi bor" deb o'qilmasdan belgilanadi. To'g'risi: tasdiqlovchi har punktga havola (doc, Jira) so'raydi.
-3. **Qaror Telegram'da qoladi.** Bir oydan keyin hech kim topolmaydi. To'g'risi: kelishuvdan keyin 1 ish kuni ichida jurnalga yozish va Telegram'ga jurnal havolasini tashlash.
-4. **Risklar reestri loyiha boshida to'ldirilib, keyin ochilmaydi.** To'g'risi: haftalik sync agendasida doimiy punkt.
+2. **Darvoza formallikka aylanadi.** Checklist "hammasi bor" deb o'qilmasdan belgilanadi. To'g'risi: tasdiqlovchi har punktga havola (doc, Jira) so'raydi.
+3. **Qaror Telegram'da qoladi.** Bir oydan keyin uni hech kim topolmaydi. To'g'risi: kelishuvdan keyin 1 ish kuni ichida jurnalga yozish va Telegram'ga jurnal havolasini tashlash.
+4. **Risklar reestri loyiha boshida to'ldirilib, keyin ochilmaydi.** To'g'risi: reestrni haftalik sync agendasining doimiy punktiga aylantirish.
 5. **Bitta katta release.** Hamma narsa oxirida birga chiqadi va birinchi fikr juda kech keladi. To'g'risi: kamida 2–3 release'ga bo'lish.
 
 ---
