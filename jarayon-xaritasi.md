@@ -53,7 +53,7 @@ Sxemada uzuq chiziq bilan ikkita qaytish yo'li ko'rsatilgan:
 - **Release sikli.** Loyiha bir nechta release'ga bo'linadi. Har bir release 5–7-bosqichlardan alohida o'tadi.
 - **O'zgarish.** Tasdiqlangan scope o'zgarsa, faqat o'zgargan qism 2-bosqichga qaytadi va 2–4-darvozalardan qayta o'tadi ([D10](D10-ozgarishlarni-boshqarish.md)).
 
-Retro ([D17](D17-retro-va-standartni-yangilash.md)) har bosqich oxirida va loyiha oxirida o'tkaziladi; u sxemada alohida strelka bilan ko'rsatilmagan.
+Retro ([D17](D17-retro-va-standartni-yangilash.md)) har release'dan keyin va loyiha oxirida o'tkaziladi (o'rta va katta loyihada 4-darvozadan keyin ham); u sxemada alohida strelka bilan ko'rsatilmagan.
 
 ## 2. Kim kimga nima topshiradi
 
