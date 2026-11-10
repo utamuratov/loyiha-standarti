@@ -19,7 +19,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 ## Misollar qayerdan olinadi
 
 - **Frontend** misollari real repozitoriydan olinadi: `test-uzedu-user` (Test Platformasining frontendi; repo nomi o'zgartirilmagan). Uning standartga mos joylari namuna sifatida, mos kelmaydigan joylari esa "standart bo'yicha nima qo'shilardi" sifatida ko'rsatiladi. Har bir faktning manbasi (fayl yo'li) yoziladi.
-- **Backend** kodi bu ishda yo'q, u alohida repozitoriyda. Aniq misollar `[TO'LDIRILSIN: backend]` deb belgilangan, ularni backend dasturchilari to'ldiradi.
+- **Backend** kodi bu ishda yo'q, u alohida repozitoriyda. Aniq misollar `[TO'LDIRILSIN: backend]` deb belgilangan, ularni backend dasturchilari to'ldiradi. Ma'lum bitta fakt: backend Swagger bilan ishlaydi, API kontrakti endpoint skeletlaridan generatsiya qilinadi ([ADR-0002](D11-repozitoriy-va-review.md#adr-backend-qarori)).
 
 **Frontend repo faktlari** (keyingi hujjatlar shularga tayanadi):
 

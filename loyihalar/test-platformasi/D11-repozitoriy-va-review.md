@@ -82,6 +82,41 @@ bilan o'tadi.
 O'zgarish keyingi ishtirokchidan kuchga kiradi; joriy ishtirokchi eski sozlama bilan tugatadi.
 ```
 
+## ADR (backend qarori)
+
+Bu qarorni loyiha muallifi bergan: backend jamoasi Swagger bilan ishlaydi. Qaror 17-qoidadagi ikki usuldan birini tanlaydi.
+
+```markdown
+# ADR-0002: API kontraktini tayyorlash usuli
+Sana: 2026-11-10 · Holat: qabul qilingan
+Muallif: Backend 1 · Tasdiqlagan: [TO'LDIRILSIN: tech lead vazifasini bajaruvchi]
+
+## Kontekst
+Frontend va backend parallel ishlashi uchun API formati biznes logika
+yozilishidan oldin kelishilishi kerak (3-darvozagacha). Backend jamoasi
+Swagger orqali OpenAPI generatsiya qilish jarayonidan foydalanadi.
+
+## Qaror
+Avval logikasiz endpoint skeletlari yoziladi: marshrut, so'rov va javob
+DTO'lari, xato kodlari. Ulardan OpenAPI generatsiya qilinadi va fayl backend
+repozitoriysida saqlanadi. Frontend shu fayl bo'yicha kelishadi va mock bilan
+ishlaydi. Kontrakt kelishilgach, biznes logika yoziladi.
+
+## Ko'rib chiqilgan variantlar
+| Variant | Nega tanlanmadi |
+| --- | --- |
+| OpenAPI faylini qo'lda yozish (design-first) | Fayl va kod alohida yuritiladi va vaqt o'tib bir-biridan ajralib qoladi; jamoada Swagger generatsiyasi allaqachon bor, qo'lda yozish ortiqcha ish |
+
+## Oqibatlari
+- Osonlashadi: kontrakt koddan generatsiya qilingani uchun kod bilan doim mos.
+- Backendchi endpoint skeletlarini oldindan tayyorlaydi; frontend mock'ni
+  skeletlar tayyor bo'lgandan keyin boshlaydi.
+- Xato kodlari va misollar annotatsiyada yozilmasa, spetsifikatsiyada
+  chiqmaydi — review'da tekshiriladi.
+- Kelishilgan kontraktning o'zgarishi frontend bilan muvofiqlashtiriladi
+  (breaking change — 19-qoida).
+```
+
 ## Og'riqqa bog'liqlik
 
 - "Nega unday qilgandik?" → ADR (24-qoida). Yuqoridagi ADR yozuvi bo'lmasa, keyingi dasturchi "sozlamani bir marta login'da olsak bo'lardi-ku" deb rad etilgan variantga qaytadi.
@@ -89,4 +124,4 @@ O'zgarish keyingi ishtirokchidan kuchga kiradi; joriy ishtirokchi eski sozlama b
 
 ---
 
-Egasi: tech lead · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: standartdagi [D11](../../D11-dasturchilar-qoidalari.md) o'zgarganda
+Egasi: tech lead · Oxirgi yangilangan: 2026-11-10 · Keyingi ko'rib chiqish: standartdagi [D11](../../D11-dasturchilar-qoidalari.md) o'zgarganda

@@ -93,7 +93,7 @@ Endpoint nomlari frontend kodidan olingan (`docs/test-entry-flow.md`); javob for
 | `participant/applications` | Ishtirokchi arizalarini topish | `testType`, `computerId`, `pinfl` yoki `applicationNumber` | arizalar ro'yxati | topilmadi: [TO'LDIRILSIN: backend] |
 | `testprocess/generate` | Test savollarini yaratish | `applicationId`, `computerId`, `testEventId`, `selections` | [TO'LDIRILSIN: backend] | [TO'LDIRILSIN: backend] |
 
-Kontrakt fayli: [TO'LDIRILSIN: masalan, backend repodagi OpenAPI spetsifikatsiyasi]. Uni yuritish tartibi [D11](../../D11-dasturchilar-qoidalari.md) da yozilgan.
+Kontrakt fayli: endpoint skeletlaridan generatsiya qilingan OpenAPI spetsifikatsiyasi, backend repozitoriysida ([ADR-0002](D11-repozitoriy-va-review.md#adr-backend-qarori)); fayl yo'li [TO'LDIRILSIN: backend]. Uni yuritish tartibi [D11](../../D11-dasturchilar-qoidalari.md) da yozilgan.
 
 ## G. Nofunksional talablar (parcha)
 

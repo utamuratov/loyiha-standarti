@@ -24,6 +24,7 @@ Manbalar kitob, standart yoki hujjat nomi va muallifi darajasida keltirilgan. Bu
 | O'zgarishlarni boshqarish (change request, ta'sir tahlili) | PMI, "PMBOK Guide" (integratsiyalashgan o'zgarishlar nazorati) | [D10](D10-ozgarishlarni-boshqarish.md) |
 | Code review: kichik MR, review'ga javob ko'pi bilan 1 ish kunida | Google — "Engineering Practices" (google.github.io/eng-practices) | [D11](D11-dasturchilar-qoidalari.md) |
 | Commit xabarlari formati | Conventional Commits spetsifikatsiyasi (conventionalcommits.org) | [D11](D11-dasturchilar-qoidalari.md) |
+| API kontrakti fayli; design-first va code-first usullari | OpenAPI Specification (OpenAPI Initiative, spec.openapis.org); yondashuvlar nomi — Swagger (SmartBear) hujjatlari | [D11](D11-dasturchilar-qoidalari.md) |
 | Arxitektura qarori yozuvi (ADR) | Michael Nygard — "Documenting Architecture Decisions" | [D11](D11-dasturchilar-qoidalari.md) |
 | UI tamoyillari | Jakob Nielsen — 10 ta foydalanuvchanlik evristikasi (Nielsen Norman Group) | [D12](D12-ui-ux-standartlari.md) |
 | Kontrast 4.5:1 va accessibility minimumi | W3C — WCAG 2.x | [D12](D12-ui-ux-standartlari.md) |
