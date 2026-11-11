@@ -42,6 +42,7 @@ Loyiha qaysi bosqichlardan o'tishi, har bosqich nima bilan tugashi va keyingisig
 7. **Muhim qaror 1 ish kuni [b.q.] ichida qarorlar jurnaliga yoziladi.** Muhim qaror — scope, srok, arxitektura, UX oqimi, integratsiya yoki mijoz bilan kelishuvga ta'sir qiladigan har qanday qaror, u meetingda, Telegram'da yoki qo'ng'iroqda qabul qilinganidan qat'i nazar. Uni qaror qabul qilingan suhbatda qatnashgan PM yoki tech lead yozadi. Arxitektura qarorining batafsil tahlili ADR'da ([D11](D11-dasturchilar-qoidalari.md)) yoziladi, jurnalga esa unga havola qo'yiladi. *Nega:* "nega unday qilgandik?" va "kim aytgandi?" degan savollarga faqat yozib qo'yilgan sabab javob beradi.
 8. **Risk aniqlangan kuni reestrga yoziladi** va haftalik sync'da ([D09](D09-meetinglar-ritmi.md)) ko'riladi. Har riskning egasi va chorasi bor. *Nega:* aytilmagan risk srok o'tib ketganda birdan "chiqadi".
 9. **Jurnal va reestrning uyi bitta.** Ular loyiha hujjatlari yonida ([D03](D03-loyiha-boshlangich-hujjati.md) bilan bir joyda) yuritiladi; [D03](D03-loyiha-boshlangich-hujjati.md), [D05](D05-kickoff-va-doc-review.md), [D09](D09-meetinglar-ritmi.md), [D10](D10-ozgarishlarni-boshqarish.md) ularga havola qiladi, nusxa olmaydi. *Nega:* ikki joydagi jurnal tez orada ikki xil bo'lib qoladi.
+10. **Loyiha hujjatlari kompaniyaning ichki tizimida turadi:** ichki GitLab, private GitHub repo yoki ichki wiki (masalan, Confluence). Joy 1-darvozagacha tanlanadi, unga faqat loyiha jamoasi va mijoz tomondan kerakli odamlar kiradi. Ochiq repo, ochiq sayt, shaxsiy disk yoki Telegram chat hujjat joyi bo'lmaydi; Telegram'ga faqat hujjatga havola tashlanadi. *Nega:* loyiha hujjatlarida mijoz ma'lumotlari, risklar, sroklar va odamlar ismlari bor. Shaxsiy joydagi hujjat esa odam ketganda yo'qoladi.
 
 **Kichik loyihada (3–5 kishi).** 8 bosqich va darvozalar saqlanadi, lekin darvoza 15 daqiqalik [b.q.] qisqa tasdiq bo'ladi; 1–2- yoki 3–4-bosqichlar bir haftada o'tishi mumkin. Jurnal va reestr majburiy.
 
@@ -57,7 +58,7 @@ Quyida har bir darvozaning punktlari berilgan. ⛔ belgisi bloklovchi punktni bi
 - [ ] ⛔ Scope chegarasi: nima kiradi va nima kirmaydi
 - [ ] Mijoz tomondan qaror qiluvchi (PO) belgilangan
 - [ ] Jamoa va rollar belgilangan ([D01](D01-rollar-va-raci.md), 6.1-shablon)
-- [ ] Hujjatlar joyi, Jira loyihasi, qarorlar jurnali va risklar reestri ochilgan
+- [ ] Hujjatlar joyi (ichki tizimda, 10-qoida), Jira loyihasi, qarorlar jurnali va risklar reestri ochilgan
 
 **2-darvoza: Talablar → Dizayn**
 - [ ] ⛔ [D03](D03-loyiha-boshlangich-hujjati.md) to'liq; har bir story'da qabul mezoni bor
@@ -152,4 +153,4 @@ Shu doc bo'yicha to'ldirilgan variantni misol loyihada ko'ring: [Test Platformas
 
 ---
 
-Egasi: PM · Oxirgi yangilangan: 2026-11-07 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))
+Egasi: PM · Oxirgi yangilangan: 2026-11-11 · Keyingi ko'rib chiqish: pilot loyiha retrosidan keyin ([D17](D17-retro-va-standartni-yangilash.md))
