@@ -38,6 +38,9 @@ function docItems(dir = ''): { id: number; item: DefaultTheme.SidebarItem }[] {
 // Misol loyiha: standart doclarning to'ldirilgan variantlari
 const exampleDir = 'loyihalar/test-platformasi/';
 
+// Boshlash to'plami: yangi loyiha uchun ko'chirib to'ldiriladigan bo'sh fayllar
+const kitDir = 'boshlash-toplami/';
+
 function sidebar(): DefaultTheme.SidebarItem[] {
   const docs = docItems();
   const catalog = groups
@@ -57,10 +60,20 @@ function sidebar(): DefaultTheme.SidebarItem[] {
         { text: 'Root doc: standart haqida', link: '/00-root' },
         { text: 'Jarayon xaritasi', link: '/jarayon-xaritasi' },
         { text: 'Jarayon posteri (A3)', link: '/poster' },
+        { text: "Loyiha boshlash to'plami", link: `/${kitDir}` },
         { text: 'Manbalar va asoslar', link: '/manbalar' },
       ],
     },
     ...catalog,
+    {
+      text: "Boshlash to'plami (bo'sh fayllar)",
+      collapsed: true,
+      items: [
+        { text: 'Qanday ishlatiladi', link: `/${kitDir}` },
+        { text: 'Loyiha kartasi', link: `/${kitDir}loyiha-kartasi` },
+        ...docItems(kitDir).map((d) => d.item),
+      ],
+    },
     {
       text: 'Misol loyiha: Test Platformasi',
       collapsed: false,

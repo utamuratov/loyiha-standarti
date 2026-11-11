@@ -58,7 +58,9 @@ Kichik jamoada bir odam bir nechta rolni bajaradi (masalan, PM va analitik bitta
 
 ## Misol loyiha: Test Platformasi
 
-Standart qanday qo'llanishini ko'rsatish uchun bitta real loyiha olingan: **Test Platformasini bugun noldan qurayapmiz**. Uning hujjatlari standartdan alohida, [misol loyiha papkasida](loyihalar/test-platformasi/index.md) turadi: loyiha kartasi (mahsulot, jamoa, vositalar, repo) va har doc bo'yicha to'ldirilgan hujjat. Har docning "Misol" bo'limi o'sha hujjatga olib boradi. Yangi loyiha shu papka tuzilmasini nusxalab boshlanadi.
+Standart qanday qo'llanishini ko'rsatish uchun bitta real loyiha olingan: **Test Platformasini bugun noldan qurayapmiz**. Uning hujjatlari standartdan alohida, [misol loyiha papkasida](loyihalar/test-platformasi/index.md) turadi: loyiha kartasi (mahsulot, jamoa, vositalar, repo) va har doc bo'yicha to'ldirilgan hujjat. Har docning "Misol" bo'limi o'sha hujjatga olib boradi.
+
+**Yangi loyihani boshlash.** Yangi loyiha [Loyiha boshlash to'plamidan](boshlash-toplami/index.md) boshlanadi. Bu to'plam birinchi kundan 4-darvozagacha kerak bo'ladigan bo'sh fayllardan iborat. Unda kim, qaysi faylni va qaysi tartibda to'ldirishi ko'rsatilgan. Fayllar loyihaning ichki hujjatlar joyiga ko'chiriladi ([D02](D02-loyiha-hayot-sikli.md), 10-qoida).
 
 ## Standartni yozish va yangilash
 

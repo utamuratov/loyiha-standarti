@@ -4,7 +4,7 @@ Bu papka standart bo'yicha bitta loyihaning hujjatlar to'plami qanday ko'rinishi
 
 **Ssenariy: Test Platformasini bugun noldan qurayapmiz.** Natija hozirgi Test Platformasi darajasida bo'lishi kerak. Savol shundaki, unga qaysi bosqichlar, hujjatlar va qoidalar orqali, kamroq rework bilan yetiladi. Test Platformasining o'tmishda qanday qurilgani tahlil qilinmaydi: u jarayon namunasi emas (kamchiliklari ko'p), lekin release qilingan va har kuni ishlatilayotgan real mahsulot.
 
-**Yangi loyiha uchun.** Shu papka tuzilmasini nusxalang: `loyihalar/<loyiha-nomi>/`, ichida `index.md` (loyiha kartasi) va har doc uchun bitta fayl. Hali yozilmagan doc uchun fayl yaratilmaydi, u jadvalda "rejada" deb turadi.
+**Yangi loyiha uchun.** Bu papkani emas, [Loyiha boshlash to'plamini](../../boshlash-toplami/index.md) nusxalang: unda shu fayllarning bo'sh variantlari bor. Loyiha hujjatlari kompaniyaning ichki tizimida yuritiladi ([D02](../../D02-loyiha-hayot-sikli.md), 10-qoida). Bu papkadan esa to'ldirilgan namuna sifatida foydalaning.
 
 ## Loyiha kartasi
 

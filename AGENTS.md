@@ -1,9 +1,10 @@
 # Agent uchun ko'rsatmalar
 
-Bu fayl loyiha standartini yozayotgan agent (va odam muallif) uchun ish tartibi. Uchta joy bor:
+Bu fayl loyiha standartini yozayotgan agent (va odam muallif) uchun ish tartibi. To'rtta joy bor:
 
 - **Standart** — [00-root.md](00-root.md) (hayot sikli, rollar, doclar katalogi) va `DNN-....md` doclar. Unda faqat qoida, shablon va checklist; aniq loyiha faktlari yo'q.
 - **Misol loyiha** — [loyihalar/test-platformasi/](loyihalar/test-platformasi/index.md): loyiha kartasi (faktlar) va har doc bo'yicha to'ldirilgan hujjat.
+- **Boshlash to'plami** — [boshlash-toplami/](boshlash-toplami/index.md): yangi loyihaga ko'chiriladigan bo'sh fayllar (birinchi kundan 4-darvozagacha). Ularda qoida takrorlanmaydi, faqat forma, kim to'ldirishi va checklist bor; standart docga to'liq sayt manzili bilan havola qilinadi, chunki fayllar boshqa joyga ko'chiriladi. Standart docdagi shablon yoki checklist o'zgarsa, to'plamdagi tegishli fayl ham shu o'zgarish bilan birga yangilanadi.
 - **Ish rejasi** — [ish-rejasi.md](ish-rejasi.md): TODO, fazalar va yozish boshidagi kelishuvlar.
 
 Agentning vazifasi: root docdagi katalogdagi doclarni ish rejasidagi TODO tartibida birma-bir yozish. Har bir doc yangi loyihani qanday qurishni ko'rsatadi va boshqa loyihalarda shablon sifatida ishlatiladi; uning "Test Platformasini noldan qurish" ssenariysi bo'yicha to'ldirilgan varianti misol loyihada yoziladi.
